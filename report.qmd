@@ -1,9 +1,9 @@
 ---
 title: "Supporting Master’s Students and Supervisors with Metacheck — Project Report"
 author:
-  - name: "Pr. Dr. Daniël Lakens"
+  - name: "Daniël Lakens"
   - name: "Raphael Merz"
-  - name: "Dr. Cristian Mesquida"
+  - name: "Cristian Mesquida"
 format: html
 toc: true
 toc-depth: 3
@@ -12,7 +12,7 @@ editor: visual
 
 # Motivation and Procedure
 
-The aim of this project was to extend Metacheck, an existing tool for automatically checking research outputs with modules that could be useful to master’s students and their supervisors. Metacheck is a modular, meaning that each module performs a specific type of check. It is available as an [R package](https://www.scienceverse.org/metacheck/) and a [Shiny app](https://shiny.ieis.tue.nl/metacheck/). The motivation was that students often make recurring mistakes in areas such as adherence to reporting guidelines, interpretation of *p*-values or documentation of research practices (e.g., the reporting of a power analysis). Identifying such issues can require substantial time from supervisors, particularly when they need to provide similar feedback repeatedly. Automated checks could therefore help students in identifying and addressing potential issues before submitting their thesis, while simultaneously reducing the burden on supervisors.
+The aim of this project was to extend Metacheck, an existing tool for automatically checking research outputs with modules that could be useful to master’s students and their supervisors. Metacheck is a modular tool, meaning that each automated check is implemented as a separate module. It is available as an [R package](https://www.scienceverse.org/metacheck/) and a [Shiny app](https://shiny.ieis.tue.nl/metacheck/). One of the motivations behind Metacheck was that students often make recurring mistakes in areas such as adherence to reporting guidelines, interpretation of *p*-values or documentation of research practices (e.g., the reporting of a power analysis). Identifying such issues can require substantial time from supervisors, particularly when they need to provide similar feedback repeatedly. Automated checks could therefore help students in identifying and addressing potential issues before submitting their thesis, while simultaneously reducing the burden on supervisors.
 
 By now, Metacheck has developed into an extensible collection of automated checks for research outputs. Inspired by software development, where checks are used to identify potential problems before software is released, Metacheck screens research outputs (e.g., manuscripts and theses) for potential issues and provides information that can help researchers or students follow best practices. Importantly, these checks are intended to support rather than replace human expertise. For example, a check may identify a misreported statistical test or flag a misinterpreted *p*-value, but interpreting the result and deciding whether action is necessary remains the responsibility of the researcher or supervisor.
 
@@ -20,7 +20,7 @@ To better understand which aspects of thesis supervision could benefit from auto
 
 # Survey of IE&IS Supervisors
 
-The survey was shared in November 2025 with all IE&IS staff members involved in the supervision of master’s theses, with 22 participating. The survey consisted of four open-ended questions addressing (1) the most common types of feedback supervisors provide to master’s students on their theses, (2) which aspects of this feedback they believe could be (partially) automated, (3) which aspects they believe should not be automated, and (4) whether they or their students follow specific reporting guidelines, such as APA. The full survey can be found in Appendix A.
+The survey was shared in November 2025 with all IE&IS staff members involved in the supervision of master’s theses, with 22 participating. The survey consisted of four open-ended questions addressing (1) the most common types of feedback supervisors provide to master’s students on their theses, (2) which aspects of this feedback they believe could be (partially) automated, (3) which aspects they believe should not be automated, and (4) whether they or their students follow specific reporting guidelines, such as APA. The full survey can be found in [Appendix A](#sec-survey)
 
 ## Survey Results
 
@@ -34,25 +34,30 @@ Finally, most respondents reported using APA guidelines, while a small number me
 
 # Using Metacheck
 
-The survey results suggest that that automated checks could complement the existing supervision process. In particular, when supervisors repeatedly provide similar feedback on statistical reporting, citations and references, and the documentation of research practices, automated checks could allow students to detect and address some of these issues independently.
+The survey results suggest that automated checks could complement the existing supervision process. In particular, when supervisors repeatedly provide similar feedback on statistical reporting, citations and references, and the documentation of research practices, automated checks could allow students to detect and address some of these issues independently.
 
 Metacheck is well suited to this role because its checks are designed as supporting tools rather than automated evaluations. The output of a module does not constitute a judgment of the overall quality of a thesis. Instead, it highlights a potential issue, provides guidance, and leaves the final interpretation and decision to the user.
 
 Broadly speaking, Metacheck modules can be classified into four categories: **general modules**, **method modules**, **results modules** and **reference modules**. For a detailed description of all modules, readers are referred to the [Metacheck guide](https://www.scienceverse.org/metacheck_book/). First, the **general modules** check for statements related to Open Science practices, including open and code sharing, conflict of interest, ethics and funding.
 
-Second, the method modules check for preregistrations and the presence and reporting of power analyses.That is, if a power analysis is detected, the corresponding module provides feedback on whether the analysis is fully reported.
+Second, the method modules check for preregistrations and the presence and reporting of power analyses. That is, if a power analysis is detected, the corresponding module provides feedback on whether the analysis is fully reported.
 
-The results modules currently provide a broad collection of checks covering adherence to reporting guidelines, including the reporting of and recomputation of effect sizes and *p*-values, interpretation of *p*-values, and best research practices when sharing data and code. Where research outputs are shared in repositories, it can additionally examine the organisation and documentation of data and code, identify potential data-quality and reproducibility problems, and check aspects of compliance with standards for organizing research data.
+The results modules currently provide a broad collection of checks covering adherence to reporting guidelines, including the reporting and recomputation of effect sizes and *p*-values, interpretation of *p*-values, and best research practices when sharing data and code. Where research outputs are shared in repositories, it can additionally examine the organisation and documentation of data and code, identify potential data-quality and reproducibility problems, and check aspects of compliance with standards for organizing research data.
 
-Finally, the reference modules can identify inconsistencies in reference information and cross-reference cited literature with databases containing information about retractions, replication attempts, and post-publication peer review (i.e., comments on PubPeer). These checks can be useful to identify potentially problematic references, such as papers for which replication attempts exist but are not cited, or papers with PubPeer comments, which may concern methodlogical issues.
+Finally, the reference modules can identify inconsistencies in reference information and cross-reference cited literature with databases containing information about retractions, replication attempts, and post-publication peer review (i.e., comments on PubPeer). These checks can be useful to identify potentially problematic references, such as papers for which replication attempts exist but are not cited, or papers with PubPeer comments, which may concern methodological issues.
 
 The current functionality therefore aligns particularly well with the types of feedback that supervisors identified as potentially automatable: checks based on explicit reporting conventions, common statistical practices, citation and reference information, and other relatively well-defined criteria. At the same time, the survey highlighted several areas that are less suitable for automation, such as evaluating the overall quality of a thesis, judging methodological choices, assessing the substantive contribution of the research, or providing highly context-dependent feedback on its storyline. Metacheck does not attempt to replace this type of supervision. Instead, its role is to identify potential issues that can be checked systematically, allowing students to address more routine problems themselves and enabling supervisors to focus their time on feedback that requires expertise, context, and critical judgment.
 
-Finally, Metacheck can apply multiple modules to a single research output and combine their results into a single report, allowing a thesis and its associated research outputs to be screened across several dimensions at once. This makes it possible to use Metacheck as a first layer of quality control before a supervisor reviews the work in detail. Metacheck can also apply the same set of modules to multiple research outputs simulataneously, allowing supervisors to screen several master's theses in a single analysis.
+Metacheck can apply multiple modules to a single research output and combine their results into a single report, allowing a thesis and its associated research outputs to be screened across several dimensions at once. This makes it possible to use Metacheck as a first layer of quality control before a supervisor reviews the work in detail. Metacheck can also apply the same set of modules to multiple research outputs simultaneously, allowing supervisors to screen several master's theses in a single analysis. 
+
+Finally, Metacheck does not use LLMs by default, but some modules can optionally use LLMs to extract and classify information from text. This can be useful for tasks such as classifying power analyses or extracting information from power analyses statements.
 
 # Applying Metacheck to Master’s Theses
 
-To illustrate how Metacheck can be applied to master’s theses, we ran the R package `metacheck` on 10 master’s theses manually downloaded as PDFs from the [TU/e library portal](https://research.tue.nl/en/studentTheses/) on 10 August 2026. We searched for master’s theses written in 2025 within the Human-Technology Interaction (HTI) group, which yielded 55 results. We then used the `sample()` function in R to randomly select 10 unique numbers between 1 and 55. The report was written in Quarto using R, including the `metacheck`, `tidyverse` and `kableExtra` packages. All materials, generated data and code required to reproduce this report can be found on the [project's Github repository](https://github.com/cristianmesquida/metacheck_report).
+To illustrate how Metacheck can be applied to master’s theses, we applied selected modules from the R package `metacheck` to 10 master’s theses. We first searched the [TU/e library portal](https://research.tue.nl/en/studentTheses/) on 10 August 2026 for master’s theses completed in 2025 within the Human-Technology Interaction (HTI) group, which yielded 55 results. We then used the sample() function in R to randomly select 10 unique integers between 1 and 55, each corresponding to one master’s thesis. The selected theses were subsequently manually downloaded as PDFs from the TU/e library portal.
+
+The report was written in Quarto using R, including the `metacheck`, `tidyverse` and `kableExtra` packages. All materials, generated data and code required to reproduce this report can be found in the [project's Github repository](https://github.com/cristianmesquida/metacheck_report).
+
 
 ```{r}
 #| echo: FALSE
@@ -135,7 +140,7 @@ ethics_check$table |>
 
 ## `stat_p_nonsig` module
 
-The `stat_p_nonsig` module finds every non-significant *p*-value (*p* $\geq$\$\\geq\$ .05) so a reader can check whether the surrounding text interprets it correctly. A common error is to treat a non-significant result as evidence that there is no effect (“there was no difference between groups, *p* = .27”), when a non-significant result is simply inconclusive.
+The `stat_p_nonsig` module finds every non-significant *p*-value (*p* $\geq$ .05) so a reader can check whether the surrounding text interprets it correctly. A common error is to treat a non-significant result as evidence that there is no effect (“there was no difference between groups, *p* = .27”), when a non-significant result is simply inconclusive.
 
 @tbl-stat_p_nonsig shows the first five non-significant *p*-values detected by the module, along with the sentence in which each *p*-value appears. This allows users to assess whether the *p*-value may have been misinterpreted. In this case, none of the sentences include a statement indicating that there was no difference.
 
@@ -235,7 +240,7 @@ The `stat_effect_size` module also checks whether the reported effect size is co
 #| label: tbl-stat_effect_size_coherence
 #| tbl-cap: "Coherence of standardized effect sizes reported along with an *F*-test by the `stat_effect_size` module"
 
-# TODO CM: Can a mismatch occur solely due to rounding of effect size?
+# TODO CM: Can rounding of the reported effect size alone cause a mismatch?
 
 # Display results as a table
 effect_size$table |> 
@@ -256,7 +261,7 @@ effect_size$table |>
 
 ## `stat_check` module
 
-The `stat_check` module recomputes the *p*-value from each reported test statistic and its degrees of freedom. It flags cases where the reported *p*-value is inconsistent with the test statistic and degrees of freedom and, more seriously, where the inconsistency changes the statistical significance decision (i.e., a decision error, such as claiming significance when the recomputed *p*-value is not significant). The `stat_check` module return results only for *t*-tests and *F*-tests and detects only statistics reported in APA format, which is commonly used in psychology journals. @tbl-stat_check shows the five *p*-values identified as reporting errors by the module after recomputation.
+The `stat_check` module recomputes the *p*-value from each reported test statistic and its degrees of freedom. It flags cases where the reported *p*-value is inconsistent with the test statistic and degrees of freedom and, more seriously, where the inconsistency changes the statistical significance decision (i.e., a decision error, such as claiming significance when the recomputed *p*-value is not significant). The `stat_check` module returns results only for *t*-tests and *F*-tests and detects only statistics reported in APA format, which is commonly used in psychology journals. @tbl-stat_check shows the five *p*-values identified as reporting errors by the module after recomputation.
 
 ```{r}
 #| echo: FALSE
@@ -320,12 +325,14 @@ repo_check$summary_table |>
   kable()
 ```
 
-The module also detects naming issues in repository files, such as spaces in file names, which can cause problems when sharing code and data. To illustrate some of the issues that can be detected in file naming, we use Thesis 3, for which the module detected naming issues, as shown in @tbl-repo_check_summary. @tbl-repo_check_naming shows the first five naming issues detected by the module in Thesis 3, along with the type of issue and an explanation of each issue.
+The module also detects naming issues in repository files, such as spaces in file names, which can cause problems when sharing code and data. To illustrate some of the issues that can be detected in file naming, we use Thesis 4, for which the module detected naming issues, as shown in @tbl-repo_check_summary. 
+
+@tbl-repo_check_naming shows the first five naming issues detected by the module in Thesis 4, along with the type of issue and an explanation of each issue.
 
 ```{r}
 #| echo: FALSE
 #| label: tbl-repo_check_naming
-#| tbl-cap: "Naming issues detected by the `repo_check` module in Thesis 3"
+#| tbl-cap: "Naming issues detected by the `repo_check` module in Thesis 4"
 
 thesis_four <- module_run(theses[4], "repo_check")
 
@@ -345,9 +352,9 @@ thesis_four$naming_issues |>
 
 ## `power` module
 
-The \`power\` module uses regular expressions to identify sentences describing statistical power analyses and classifies each as a priori, sensitivity, or post-hoc. When collecting data, best practice is to conduct an a priori power analysis to ensure that study design has adequate statistical power to detect the effect size of interest.
+The `power` module uses regular expressions to identify sentences that may describe statistical power analyses and classifies each as a priori, sensitivity, or post-hoc. When collecting data, best practice is to conduct an a priori power analysis to ensure that study design has adequate statistical power to detect the effect size of interest.
 
-@tbl-power shows the three power analyses detected by the module, including the extracted sentence, the section were it was detected and the type of power analysis assigned. Two could not be classified (i.e., were labelled “unknown”) because they did not contain terms such as “a priori”, “sensitivity” or “post-hoc” while one was classified as “a priori”. It is worth noting that the third power analysis is not a power analysis but rather a statement about how small sample sizes may result in inadequate statistical power.
+@tbl-power shows the three power analyses detected by the module, including the extracted sentence, the section where it was detected and the type of power analysis assigned. Two could not be classified (i.e., were labelled “unknown”) because they did not contain terms such as “a priori”, “sensitivity” or “post-hoc” while one was classified as “a priori”. It is worth noting that the third power analysis is not a power analysis but rather a statement about how small sample sizes may result in inadequate statistical power.
 
 ```{r}
 #| echo: FALSE
@@ -373,7 +380,7 @@ power$table |>
   column_spec(3, width = "2cm")
 ```
 
-To assess the completeness of power analysis reporting, we rely on an LLM to extract and classify information from reported power analysis statements. This can be enabled by setting `llm_use(TRUE)`. The LLM is also used to classify potential power statements that do not contain terms such as “a priori,” “sensitivity,” or “post-hoc.” When enabled, the module reads each power analysis statement and extracts structured information, including the statistical test, planned sample size, alpha level, desired power, and effect size. It then uses this information to assess whether the power analysis is fully reported.
+To assess the completeness of power analysis reporting, we rely on an LLM to extract and classify information from reported power analysis statements. This can be enabled by setting `llm_use(TRUE)`. The LLM is also used to classify potential power statements that do not contain terms such as “a priori”, “sensitivity” or “post-hoc”. When enabled, the module reads each power analysis statement and extracts structured information, including the statistical test, planned sample size, alpha level, desired power, and effect size. It then uses this information to assess whether the power analysis is fully reported.
 
 ```{r}
 #| eval: FALSE
@@ -385,7 +392,8 @@ To assess the completeness of power analysis reporting, we rely on an LLM to ext
 llm_use(TRUE)
 
 # Specify model
-llm_model("groq/llama-3.3-70b-versatile") 
+llm_model("ollama/qwen3.5:latest") 
+llm_list()
 
 # Run power module with LLM support
 res_llm_power <- module_run(theses, "power")
@@ -409,7 +417,9 @@ res_llm_power$table
 
 ## `ref_pubpeer` module
 
-The `ref_pubpeer` module cross-references the cited references against [PubPeer](https://pubpeer.com), a platform for post-publication peer review. The module reports which cited references have PubPeer comments, how many, and a link, so readers can read the discussion and judge its relevance themselves. Comments can range from minor requests for clarification to serious concerns about the research. Therefore, identifying cited articles with potentially serious concerns raised on PubPeer can provide useful information for students and supervisors to consider when evaluating the cited literature. @tbl-ref_pubpeer shows the cited articles with PubPeer comments detected by the module, along with their corresponding DOIs and links to the PubPeer discussions.
+The `ref_pubpeer` module cross-references the cited references against [PubPeer](https://pubpeer.com), a platform for post-publication peer review. The module reports which cited references have PubPeer comments, how many comments are available, and a link to the corresponding discussion. PubPeer comments do not necessarily indicate that an article is problematic; comments can range from minor requests for clarification to substantive concerns about the research. Identifying cited articles with PubPeer discussions can therefore provide additional information for students and supervisors to consider when evaluating the cited literature.
+
+@tbl-ref_pubpeer shows the cited articles with PubPeer comments detected by the module, along with their corresponding DOIs and links to the PubPeer discussions.
 
 ```{r}
 #| echo: FALSE
@@ -447,35 +457,35 @@ capture.output(
 )
 ```
 
-# Appendix A: Survey 
+# Appendix A {#sec-survey}
 
-**Survey on Automated Feedback for Master Theses** 
+**Survey on Automated Feedback for Master Theses**
 
 Dear participant,
 
 \
-We are developing new modules for a tool designed to help master students and their supervisors check for common mistakes and improve adherence to best research practices in theses. This tool currently detects issues such as missing sample size justifications, incorrect statistical interpretations of non-significant p-values, and references to retracted papers. 
+We are developing new modules for a tool designed to help master students and their supervisors check for common mistakes and improve adherence to best research practices in theses. This tool currently detects issues such as missing sample size justifications, incorrect statistical interpretations of non-significant p-values, and references to retracted papers.
 
-This survey aims to identify common feedback provided by supervisors on master’s theses, focusing on recurring mistakes related to structural aspects, research methods and statistical reporting, and citations. Additionally, we also seek to understand which aspects of feedback supervisors believe could be automated to better assist students in the process. 
+This survey aims to identify common feedback provided by supervisors on master’s theses, focusing on recurring mistakes related to structural aspects, research methods and statistical reporting, and citations. Additionally, we also seek to understand which aspects of feedback supervisors believe could be automated to better assist students in the process.
 
 Examples of these automated checks include:
 
 - verifying the presence/absence of section headers;
 - analyzing the number of references and their citation frequency;
-- and checking whether tables and figures are referenced in the main text.  
+- and checking whether tables and figures are referenced in the main text.
 
 To develop these new modules, we are exploring different approaches, including rule-based text searches (e.g., identifying specific phrases indicating common mistakes) and using large language models (LLMs) to detect issues and provide automated suggestions. Note that we only use LLM and API providers with high data security standards, ensuring that any data processed by the tool will not be shared with third parties or used for model training.
 
-Your input will help shape the development of this tool, ensuring that it addresses real challenges faced by students and supervisors. The survey should take approximately  **5 minutes**  to complete. 
+Your input will help shape the development of this tool, ensuring that it addresses real challenges faced by students and supervisors. The survey should take approximately **5 minutes** to complete.
 
 Thank you for your time and insights!
 
-Q1: What are some of the most common types of feedback you provide to master students on their theses? Please focus on recurring issues related to the structure of the master thesis (e.g., missing headings), research methods (e.g., not reporting statistical tests, poor reporting practices (not reporting exact *p*-values), citations (missing reference), or other structural aspects.
+Q1: What are some of the most common types of feedback you provide to master students on their theses? Please focus on recurring issues related to the structure of the master thesis (e.g., missing headings), research methods (e.g., not reporting statistical tests, poor reporting practices (not reporting exact *p*-values), citations (missing reference), or other structural aspects.
 
 Q2: Are there any aspects of the feedback process that you think could be (partially) automated?
 
-Q3: Are there any aspects of thesis feedback that you believe should not be automated?
+Q3: Are there any aspects of thesis feedback that you believe should not be automated?
 
-Q4: Do you or your students follow any field-specific reporting guidelines when writing/critiquing the thesis?  For instance, social scientists and psychologists often use the American Psychological Association (APA) guidelines to format manuscripts and report results. 
+Q4: Do you or your students follow any field-specific reporting guidelines when writing/critiquing the thesis? For instance, social scientists and psychologists often use the American Psychological Association (APA) guidelines to format manuscripts and report results.
 
 Q5: Is there anything else you would like to share with us?
