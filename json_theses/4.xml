@@ -1,0 +1,2090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Dark Necessities? A scoping review on reconciliation with urban darkness</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct status="extracted">
+					<analytic>
+						<author>
+							<persName><forename type="first">Naud</forename><forename type="middle">R H</forename><surname>Janssen</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>Dr</roleName><forename type="first">Ir</forename><surname>Antal Haans</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>Dr</roleName><forename type="first">Ir</forename><surname>Yvonne De Kort</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>Dr</roleName><forename type="first">Uwe</forename><surname>Matzat</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="institution">Eindhoven University of Technology MASTER</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<address>
+									<postCode>20-06-2025 1396625</postCode>
+									<settlement>Eindhoven</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Dark Necessities? A scoping review on reconciliation with urban darkness</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">E82C2781165A20A343A5C56875CA7E97</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.9.0" ident="GROBID" when="2026-08-17T12:11+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">0.9.0</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=0, consolidateHeader=0, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[], flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Link to publication</head><p>Disclaimer This document contains a student thesis (bachelor's or master's), as authored by a student at Eindhoven University of Technology. Student theses are made available in the TU/e repository upon obtaining the required degree. The grade received is not published on the document as presented in the repository. The required complexity or quality of research of student theses may vary by program, and the required minimum study period may vary in duration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>General rights</head><p>Copyright and moral rights for the publications made accessible in the public portal are retained by the authors and/or other copyright owners and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with these rights.</p><p>• Users may download and print one copy of any publication from the public portal for the purpose of private study or research.</p><p>• You may not further distribute the material or use it for any profit-making activity or commercial gain Take down policy If you believe that this document breaches copyright please contact us providing details, and we will remove access to the work immediately and investigate your claim.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>A city without lights has become almost unimaginable in today's world. It is widely accepted that light provides increased security and safety, both objectively and perceptually <ref type="bibr" target="#b6">(Boyce, 2019)</ref>. It can also extend the day which is beneficial for our economic nighttime environment, and it can attract our attention towards beautiful scenes <ref type="bibr" target="#b6">(Boyce, 2019)</ref>. However, it has also been shown that artificial light at night (ALAN) can have negative consequences on human health and biodiversity <ref type="bibr" target="#b11">(Davis et al., 2023;</ref><ref type="bibr" target="#b31">Kørner, 2023)</ref>. Furthermore, energy consumption in the lighting sector is one of the most severe of all sectors <ref type="bibr" target="#b36">(Linares Arroyo et al., 2024)</ref>. In light of these recent findings, it is perhaps time to rethink the way we light our cities at night and to consider whether an abundance of lighting at night is absolutely necessary, or whether, and if so how, we can return to previous times with less ALAN. In this thesis, we explore these questions by performing a scoping review of research on darkness in urban environments. Through thematic analysis of the manuscripts from the scoping review, we will provide insights on the current state of darkness research and our current relationship with darkness. Finally, I will reflect on the findings and the question whether and how darkness should be incorporated as a design asset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1">The impact of lighting on energy consumption</head><p>The area of lighting technology contributes to 20% of all energy consumption globally and 6% of CO2 emissions globally <ref type="bibr" target="#b36">(Linares Arroyo et al., 2024)</ref>. This is reason enough for the lighting industry to focus on improvements in the sustainability and efficiency of its products. One of these recent developments has been the rapid improvements of LED technology, which have been praised for their energy-saving potential, expanded lifetime, and the increased visibility they provide <ref type="bibr" target="#b12">(De Almeida et al., 2014)</ref>. This seemed to offer the opportunity to keep the lighting design in the urban context unchanged, while decreasing energy consumption, CO2 emissions, and costs associated with lighting. However, a rebound effect is taking place, which only increases energy consumption and costs of the lighting design <ref type="bibr" target="#b22">(Fouquet &amp; Pearson, 2012)</ref>. Fouquet and Pearson explain that this is a trend which continuously can be seen in lighting research, where improvements in efficiency at first lead to a decrease in energy consumption, or costs, but that over time these reductions start increasing again, up until the point where they eventually exceed the energy consumption or costs associated with the previous technology. This effect is related to the relationship between per capita income and price elasticities of energy. When the factor associated with per capita income is smaller than the factor of price elasticity, a rebound effect will increase consumption up until the limit that citizens can permit themselves. This rebound effect is caused by rational human behavior, as <ref type="bibr" target="#b43">Otto et al. (2014)</ref> explain. They explain rational behavior as a means of trying to satisfy personal ends. Consequently, it seems rational behavior for using technology, in this case lighting technology, is to satisfy personal needs for light, without consideration of the overall effects of said behavior. <ref type="bibr">Otto et al.</ref> argue that to overcome this rational behavior, intrinsic motivation of the end-users has to change, in order for them to act "irrationally". Naturally, it seems impossible to intrinsically motivate our entire society, and rebound effects seem an inevitable outcome of technological developments in efficiency, hence a call for curtailment is being made. Curtailment of the current lighting design practices would imply that we are prohibited from using this amount of light and would have to find ways to reduce energy consumption, either in the form of dimming lights or partially shutting them off for a specified period of time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.2">The recognition of light pollution as a problem</head><p>With the increased usage of ALAN, several other problems beyond energy consumption have arisen. One of the mains concerns with ALAN is light pollution. Currently around 80% of the world lives under "light polluted skies" -a sky which has a brightness 8% higher than its natural sky brightness -with this number being close to 99% for Europe and North America <ref type="bibr" target="#b18">(Falchi et al., 2016)</ref>. Through satellite-based research, it has been estimated that observable light emissions increased by at least 49% from 1992 to 2017 <ref type="bibr" target="#b13">(de Miguel et al., 2021)</ref>. De Miguel et al. however suspect that, due to the spectra of LEDs being undetectable to satellites, the number might actually be somewhere between 270% and 400%. DarkSky (formerly known as the International Dark-Sky Association; IDA), a major authority in research on the negative effects of artificial light, defines light pollution as any adverse effect of artificial light. Although this term may appear broad, this definition is reasonable for DarkSky given the many applications and effects associated with artificial light, which they all want to encapsulate within a single definition. <ref type="bibr" target="#b45">Rajkhowa (2014)</ref> describes that light pollution can be experienced in the form of trespass, over-illumination, glare, clutter, and sky-glow and can affect plants, animals, humans and astronomy. However, general consensus on what light classifies as pollution is not reached. While some common constraints are shared, lighting pollution experts and light design professionals differ in their definition of light pollution <ref type="bibr">(Schulte-Römer, Meier, Dannemann, et al., 2019)</ref>. According to Schulte-Römer, Meier, Dannemann et al., light pollution experts regard all light at night as pollution, whereas lighting designers look at the context to determine whether light can be seen as pollution. Lighting designers look at the usefulness or value of light and only deem quantifiable factors as problems, such as glare, trespass, and unnecessary energy consumption. Light pollution experts point more towards the negative effects that light can have on flora, fauna, humans and ecosystems, and human experiences being lost. These differences highlight the absence of a holistic approach towards the problem. A review of the scientific literature on light pollution by <ref type="bibr" target="#b46">Rodrigo-Comino et al. (2023)</ref> revealed light pollution to be a multifaceted problem, difficult to tackle due to the many disciplines that can make impacts on lighting design. They state light pollution to be highly affected by decisions being made by stakeholders, policymakers, politicians, and local citizens. <ref type="bibr" target="#b38">Lyytimäki and Rinne (2013)</ref> show, however, that the general public is fairly unaware about ecological and health effects of light pollution. Citizens define light pollution as hindering outdoor relaxation or recreation, a definition which is far off from the definitions given by experts in lighting.</p><p>Light pollution is more than a mere disturbance, and impacts flora, fauna, humans, and ecosystems, as light pollution experts have specified <ref type="bibr">(Schulte-Römer, Meier, Dannemann, et al., 2019)</ref>. Biologically, circadian rhythms are entrained to the light-dark cycle of earth spanning over the 24-h period. The implementation of ALAN, however, has impacted these circadian rhythms. In early days, the invention of artificial light was praised for the ability to lengthen the day. However, as <ref type="bibr" target="#b31">Kørner (2023)</ref> describes, lengthening the day severely impacts the light-dark cycle we are entrained to. For virtually all organisms, our circadian rhythms are approximately 24 hours, but not exactly, and light acts as Zeitgebers for us to synchronize our internal biological clock <ref type="bibr" target="#b11">(Davis et al., 2023)</ref>. Davis et al. state that LEDs often emit excessive blue light, which is crucial for entrainment of the human circadian rhythm. This disrupts bodily systems, such as metabolism and the sleep-wake cycle, but also influences mood and cognition. Disruptions of these bodily systems can in turn lead to a vast range of problems, ranging from concentration-loss to cardiovascular diseases or increased risk of certain types of cancer <ref type="bibr" target="#b11">(Davis et al., 2023)</ref>. Davis et al. furthermore explain that alteration of the natural cycle also disturbs the biological rhythms of flora and fauna and thus impacts ecosystems. Not only the circadian rhythm of plants and animals is impacted, but also their photoperiodic timer: their ability to use the length of the day as a seasonal cue. By shifting circadian rhythms and the photoperiodic timer, animals can shift seasonal activities and can, for example, time their hibernation wrong and be awake in times when food supply is limited <ref type="bibr" target="#b11">(Davis et al., 2023)</ref>. These can be considered as the more indirect effects of light pollution on ecosystems, but ALAN can also have more direct effects. An example of this is the attraction of insects to bright lights, making them easy prey for predators, and thus decreasing the total amount of insects in an ecosystem <ref type="bibr" target="#b31">(Kørner, 2023)</ref>. A different example are migratory birds, that can be caught in upwards rising light beams <ref type="bibr" target="#b31">(Kørner, 2023)</ref>. The celestial light cues that these birds use to guide their way are almost invisible from within the beam, and as a result these birds are unable to escape the beam. <ref type="bibr" target="#b38">Lyytimäki and Rinne (2013)</ref> have shown that the average citizen is unaware of all the potential impacts of light pollution, and this partially might be explained by basic assumptions that we have about light. "More light is always positive", is an assumption that is often heard, as well as "regulating outdoor lighting is a violation of citizen's rights" <ref type="bibr" target="#b38">(Lyytimäki &amp; Rinne, 2013)</ref>. Lyytimäki and Rinne explain that light is associated with invention and revolution, while darkness is associated with backwardness. When citizens do get acquainted with the consequences of ALAN, it can invoke emotional responses <ref type="bibr" target="#b8">(Breukel &amp; Cieraad, 2024)</ref>. Breukel and Cieraad tested this by designing an eco-art installation with the aim of raising awareness on light pollution as an environmental problem. Public engagement in a multifaceted problem such as this can create more awareness in the wide range of consequences of ALAN. Therefore, it is perhaps important to help the general public understand all sides of the issue, instead of merely re-emphasizing the positive associations towards light that are currently being held.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.3">Limiting the negative effects of ALAN</head><p>Considering the negative effects of ALAN, it becomes obvious that there is a need to rethink our current lighting implementation. In 2014, Clanton proposed four simple rules on how to design urban lighting accordingly. They stated to use light only when necessary, use the lowest illuminance possible, minimize the amount of light emitted upwards, and dim or turn off lights during hours of curfew <ref type="bibr" target="#b9">(Clanton, 2014)</ref>. Light pollution experts agree with these recommendations, however, they can prove difficult to implement. When is light necessary, or what is the lowest illuminance possible in a specific situation? <ref type="bibr" target="#b19">Falchi et al. (2011)</ref> also explained some practical implementations that try to limit the amount of light pollution. According to them luminaire design should use full shielding, limit the area of lighting, eliminate over-lighting, shut off lights when not in use, and limit the growth in lighting installations. Nevertheless, even if one were to follow all of these prescriptions, some residual light pollution scatters into the sky through reflections.</p><p>With technological advancements in LEDs, these types of luminaires were deemed as the most sustainable form of lighting <ref type="bibr" target="#b12">(De Almeida et al., 2014;</ref><ref type="bibr">Schulte-Römer, Meier, Söding, et al., 2019)</ref>. However, although LEDs indeed show are more energy-efficient, they paradoxically are not environmentally friendly. The spectrum of blue-rich WLEDs (white light emitting diodes), although being praised as most sustainable, increases the problems of light pollution significantly, as they have a high peak in blue wavelength light. Blue wavelength light has the biggest effect on circadian misalignment and photoperiodic timing <ref type="bibr">(Schulte-Römer, Meier, Söding, et al., 2019)</ref> and skyglow <ref type="bibr" target="#b4">(Bierman, 2012)</ref>. Research is being done on blue-free WLEDs (white light emitting diodes), which show the same potential as the WLEDs currently in place, but limit the disruptions caused by it <ref type="bibr" target="#b40">(Menéndez-Velázquez et al., 2022)</ref>, as they emit light with hardly any blue components. Cutting down on blue components of light will affect circadian misalignment, photoperiodic timing, and skyglow less than with the current LEDs.</p><p>Both <ref type="bibr" target="#b9">Clanton (2014)</ref> and <ref type="bibr" target="#b19">Falchi et al. (2011)</ref> mention some form of shielding as a possible solution towards limiting light pollution and thus ALAN. Shielding offers the potential to reduce the amount of light that escapes towards the sky and causes skyglow. <ref type="bibr" target="#b32">Kyba et al. (2021)</ref> found that with fully shielded streetlighting in the city of Tucson, Arizona, streetlights still contribute towards around 20% of light pollution. In the situation where Tucson dims its street lighting, this can be reduced towards around 13%. This shows that streetlighting alone is not the only polluter, as other sources such as advertising or facade lights also contribute towards the problems caused by ALAN. This shows that focusing on streetlighting alone will not necessarily overcome problems caused by ALAN.</p><p>Both <ref type="bibr" target="#b9">Clanton (2014)</ref> and <ref type="bibr" target="#b19">Falchi et al. (2011)</ref> mention another principle that limits light pollution; shutting off lights when not in use or unnecessary. This could for example be achieved using adaptive street lighting and smart street lighting systems. The biggest benefit of such a system is the energy and waste saving potential, as the streetlights will be completely shut off when no one is near them and will only turn back on towards normal once the sensors notice something on the street. However, this in itself can cause other forms of light pollution, such as light startle (see <ref type="bibr" target="#b27">Haans, 2024)</ref>. Light startle is caused by the sudden onset of streetlights and can cause residents to feel the need to check what caused the onset and potentially induce feelings of anxiety when they cannot determine the reason for the onset.</p><p>An even more drastic change that limits the negative effects of ALAN would be curtailment. This would mean that we have to drastically limit our light usage, and dim streetlights or completely shut them off during a specified period of time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.4">Public backlash</head><p>Publicly announcing curtailment measures, such as reducing the intensity of street lighting will, however, often result in backlash from citizens. As Lyytimäki and Rinne (2013) pointed out, citizens regard this as a violation of their rights. This is mostly because improved street lighting has been associated with reductions in crime. While some research has indeed found that improved lighting reduces crime <ref type="bibr" target="#b54">(Welsh &amp; Farrington, 2008)</ref>, other research found mixed results. Other research suggests improved street lighting did not reduce crime but only reduced the fear of crime of citizens <ref type="bibr" target="#b2">(Atkins et al., 1991)</ref>. Furthermore, <ref type="bibr" target="#b54">Welsh and Farrington (2008)</ref> reported that not only nighttime crime was reduced in areas with improved street lighting, but also daytime crime. Welsh and Farrington therefore conclude that street lighting might have more of an impact on community building, or the feeling of social control, than it has on actual prevention of crime. Nevertheless, it shows that the effect is not direct, and that there might be other nonlight related factors that influence it. However, while improving street lighting might have an effect on crime, the opposite effect of reducing street lighting is not so evident. <ref type="bibr" target="#b10">Davies and Farrington (2020)</ref> found that switching off streetlights in English neighborhoods was related to differences in types of crime: where burglary and vehicle theft increased and violence on the streets decreased. Nevertheless, costs of crime did not show any significant changes, nor did criminal damage. The authors provide an explanation for this in stating that switching off street lighting might have deterred citizens from going out in the dark. Research done on power outages also suggests that total blackouts do not impact crime rates <ref type="bibr" target="#b33">(Lal et al., 2023)</ref>. The results that do show a statistically significant effect between increased lighting and reduced crime, also receive criticism that their method of testing cannot justify the claim. <ref type="bibr" target="#b39">Marchant (2004)</ref> claims that these findings underestimate the true variability in the data, as crime events are not statistically independent, but are correlated. In this sense, Marchant suggests that crimes tend to cluster in time and space and can be committed by the same individuals. This showcases the difficulty of defining any relationship between lighting and crime, as there might be several factors influencing it.</p><p>Reductions in dimming of streetlights, however, often go largely unnoticed by the general public <ref type="bibr" target="#b26">(Green et al., 2015;</ref><ref type="bibr" target="#b32">Kyba et al., 2021)</ref>. <ref type="bibr">Kyba et al. tested</ref> this by setting the lighting to 30%, 60%, 90% and 100% brightness on random days, receiving no comments or complaints at all from residents. Furthermore, no evidence was found that the dimming had any effect on public safety. A possible explanation for the lack of awareness for the dimming could be that the human eye is able to adapt quickly to all these situations.</p><p>These results prove the complexity of the situation, as dimming goes largely unnoticed, but does receive backlash once it is known by the public. Although the effect of light on traffic safety cannot be denied, the association that dimming streetlights decreases safety, in the form of crime or perceived safety, is strong enough to be sustained, even though citizens might not have noticed the dimming. This is no surprise, as these beliefs are sustained by professionals in the field, such as Lawrence Fennelly who states that shutting off streetlights would have an immediate effect on burglary, theft and vandalism <ref type="bibr" target="#b20">(Fennelly, 1982)</ref>. <ref type="bibr" target="#b44">Pease (1999)</ref> reflects on this statement as pure dogmatism towards darkness. They also argue that, with such a polarized opinion and beliefs, lighting actually does prevent crime, as long as you believe it. Fennelly's opinion on the effects of shutting off streetlights is unchanged in the sixth edition of The Handbook of Loss Prevention and Crime Prevention <ref type="bibr" target="#b21">(Fennelly, 2020)</ref>. Regardless of whether one agrees with the accuracy of any of these claims, it does show that these opinions are sustained in some way.</p><p>Research has shown that providing information on the environmental opportunities could increase the acceptance of residents for reduced street lighting, however, this effect could only be found in those who already regarded environmental values as important <ref type="bibr" target="#b5">(Boomsma &amp; Steg, 2014)</ref>. Boomsma and Steg also highlight the importance of aligning dimming strategies with citizens' values. This shows that reducing the impacts of ALAN is a sensitive matter, and compliance is needed from residents through value sensitive approaches for designing darkness into the city.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.5">The lack of a human perspective in streetlighting design</head><p>Current street lighting design is often not focused on people's values, but on technological performance indicators <ref type="bibr" target="#b51">(Thiel et al., 2017)</ref>. Thiel et al. explain the most important performance indicators of street lighting to be choice of technology, energy efficiency, planning of allocation of resources, technical efficiency, and evaluation of the performance level (e.g., uniformity). Even though the authors conclude that management of street lighting is an important factor in human lives, a human component in evaluating the performance of street lighting is missing. An example of this can be found in the management of outdoor lighting solutions in the Swedish Planning and Building Act (PBL; <ref type="bibr" target="#b23">Fraenkel et al., 2024)</ref>. The lighting masterplans consider both daytime and nighttime lighting as one, not taking into account the differences in uses between the daytime and nighttime context. As proposed by the authors, some values that are more apparent in nocturnal context include nighttime economy, a socially viable living environment, environmental conditions, and cultural and natural values. Between daytime and nighttime conditions, these values are weighed differently and should thus be implemented differently in the lighting design <ref type="bibr" target="#b23">(Fraenkel et al., 2024)</ref>. The lack of human perspective in lighting design has furthermore been acknowledged by <ref type="bibr">Amoruso et al. (2022)</ref> who did a scientific review on the human visual system and lighting theories. They found a lack of human perspective and saw that lighting design is often approached as an engineering subject. Instead, they make a proposition of how to design according to the capabilities of the human eye.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.6">The difficulty of defining darkness</head><p>Darkness is not an easily quantifiable term. While literal darkness can be seen as the absence of light, metaphorical darkness can have many implications, such as evil, but also mystery <ref type="bibr" target="#b3">(Barkman, 2010)</ref>. <ref type="bibr" target="#b3">Barkman (2010)</ref> speaks about aesthetical and ethical injustice against darkness. According to him, darkness is often grasped as a single term, not differentiating between literal and metaphorical darkness. This causes the associations towards metaphorical darkness to flow over in those for literal darkness. While Barkman introduces two aspects of darkness, <ref type="bibr" target="#b14">Dunn &amp; Edensor (2023)</ref> explain darkness as multiple and situational. Darkness is shaped by much more than its literal or metaphorical definition but is also shaped by weather conditions and affordances in landscape. A clear sky with moonlight translates towards different darkness than darkness during a cloudy night. The same is true for landscape affordances; trees in a forest that block the light generate different darkness than the darkness on an open field. Next to that, darkness is also shaped by seasonal variations and geographical location <ref type="bibr" target="#b50">(Tainio, 2024)</ref>. Based on the season and latitude, darkness occurs more frequently, showcasing that it has a temporal dynamic. In its essence, darkness can also be seen as paradoxical <ref type="bibr" target="#b14">(Dunn &amp; Edensor, 2023)</ref>. The term dark skies include both the darkness surrounding the earth, granting us the ability to see stars, but also the darkness concealing these views. In other words, both a sky filled with stars, as well as a vast emptiness of nothingness are spoken of as dark skies.</p><p>All these concepts make darkness difficult to quantify, and thus difficult to put as an asset. There is also a substantial difference between rural darkness and urban darkness. While conclusions drawn from research on rural darkness are often based on therapeutic wilderness sessions and talk about darkness as something to be experienced "out there" <ref type="bibr" target="#b16">(Erichsen, 2024;</ref><ref type="bibr" target="#b24">Frey, 2007;</ref><ref type="bibr" target="#b52">Tonetti, 2024)</ref>, urban darkness does not possess these qualities. In rural context, darkness is something that people seek to experience, while in urban context, darkness is a state of the environment that people are forced to deal with when going out. This alone makes it that rural darkness is a choice, while urban darkness is typically a condition. If urban darkness is simply defined as absence of light, it is unmeasurable, as absence is non-quantifiable. With the over-illumination of cities, <ref type="bibr">Edensor (2015)</ref> fears that we are losing our relationship with darkness. As we are growing more habituated towards ubiquitous illumination in the city, it grows harder and harder to imagine the nights as they once were, diminishing our relationship with darkness. In order for us to make substantial changes towards lighting design and its adverse effects, we should be aware of the relationship that we have with darkness, showing the importance of finding a contextually right definition for urban darkness. For the sake of this research, it is important to consider the boundaries of what aspects of darkness we take into account. As the definitions between literal and metaphorical darkness flow over in each other, both will be considered to a certain extent. While we are not interested in illuminance levels, we are interested in the feelings that darkness evokes after the sun has set. In this sense, we consider literal darkness as the setting of the sun, while metaphorical darkness is the aspect of feelings. This takes into account the psychological factors, contextuality, and temporality of darkness. As a working definition for urban darkness, it is therefore classified as the contextual state of the environment, and the feelings it evokes, after the sun has begun to settle.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.7">Purpose of this study</head><p>The aim of this research is to map out what research has been done on darkness in the urban environment and to determine our current relationship with it. As seen, both light pollution and darkness can be seen as a multifaceted problem which have many aspects involved. To determine all the aspects that should be taken into account, the first part of this research will be a scoping review, aimed at retrieving valuable research into attitudes, values, perceptions, or experiences of darkness. The scoping review follows the following two research questions: (1) What research is done on pedestrian's definitions, values, and perceptions of darkness or the absence of street lighting in the urban environment, and (2) Which measurement methods have been used to measure the abovementioned concepts. The second part of this research will be thematic analysis on the definition of darkness and our relationship to it, according to the articles found in the scoping review. The first research question aims to develop an understanding of what current research has already found on our relationship towards darkness, while the second research question aims to explore in what way we currently measure our appraisal of darkness. This master thesis serves as a base for understanding concepts explored in the Art of Darkness (European Commission, 2024) project, which is aiming at developing a quantitative measurement tool for darkness appraisal.</p><p>Since darkness is a multifaceted term, this means there should be boundaries present to limit the number of articles that qualify for the scoping review. For this, we used the PCC (population -concept -context) framework, which helps in defining research questions for scoping reviews <ref type="bibr" target="#b28">(JBI, 2024)</ref>. It can be argued that the experience of natural darkness is too dissimilar from the experience of urban darkness for research on the former to inform about the latter, hence the context of this project is on the urban environment. The main concept used in the scoping review is darkness. It was chosen to keep the concept rather broad, given the various implementations of darkness. For the population, we chose to focus on pedestrians only. While darkness is also an important topic in traffic safety (e.g., in autonomous vehicle detection), we wanted to focus solely on the human perspective of designing with darkness as the moral and aesthetic roles of how citizens interpret darkness in their environment is crucial for adaptation of the lighting design to limit light pollution. We choose to only focus on pedestrians since they are the slowest form of traffic. Cars and bikes have a higher speed and carry lights of their own, making them less affected by the darkness. Pedestrians do not carry lights and are more surrounded by the darkness. For cars and bikes, darkness in this sense has to do with traffic safety, e.g., not seeing obstacles, while for pedestrians, we hypothesize that darkness has more of an effect on internal attitudes or feelings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Scoping review</head><p>The scoping review was conducted according to the PRISMA-ScR (Preferred Reporting Items for Systematic reviews and Meta-Analyses extension for Scoping Reviews; <ref type="bibr" target="#b53">Tricco et al., 2018)</ref> and the JBI manual on how to conduct scoping reviews <ref type="bibr" target="#b28">(JBI, 2024)</ref>. The scoping review aimed to adhere to the checklist developed in the PRISMA-ScR, as far as the items were relevant inclusions for this master thesis. Because of time constraints and since we were interested in the breadth of articles that covers this topic, no critical appraisal of the included sources was done.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.1">Eligibility criteria</head><p>In order to filter out which articles were relevant for the research question, eligibility criteria were set up. Only articles that focused on opinions, values, attitudes, or feelings towards darkness by pedestrians were considered, given that they included a scope towards the urban context. Research papers were not excluded based on the type of research that was done, and no empirical research method had to be present. As darkness is a broad topic, exclusion reasons were also determined, to make sure that articles could be assessed correctly. Articles were excluded if they focused solely on ecology, traffic accidents or (fast) mobility, actual safety or crime rates, were not focused on the urban context or streetlights, reviewed policies currently in place, or focused predominantly on the technological aspects of lighting design, such as illuminance level for facial recognition over a specified distance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.2">Information sources</head><p>The databases included were Scopus and Web of Science. We have chosen these databases for their amount of peer reviewed, high-quality articles and scientific relevance, as opposed to other databases. Furthermore, both Scopus and Web of Science offer the possibility to use advanced search queries, which are crucial in filtering out irrelevant literature. Unpublished literature was not considered, and reference lists of included literature were not screened, for sake of time. The final search of literature was conducted on the 4th of March 2025.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.3">Search strategy</head><p>Developing the search query was an iterative process to determine which terms worked, and which terms yielded many insignificant results. For both Scopus and Web of Science, the final search query can be found in Appendix A. Instead of the chosen variables for the first part of the query, several synonyms were considered. Two variables that yielded more search results but were eventually excluded were 'values' and 'views'. We have chosen to exclude these variables due to their polysemous meanings. Furthermore, this was also done for the variable 'dim*', which resulted in way too many insignificant results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.4">Data collection</head><p>Screening of the literature was done using the Rayyan software, which enables for structured literature reviews. As per the PRISMA-ScR, screening consisted of two rounds: first Title-Abstract screening, followed by Full-text screening. Screening was done by two researchers independently. One researcher first removed all articles that were clearly off topic. The remaining entries were examined by both researchers. Articles that resulted in conflict between both researchers were discussed in a specified meeting along with a third researcher. For both the first and second round of screening, the same inclusion and exclusion criteria were used. Articles that could not be found due to accessibility reasons were excluded from the final list.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.5">Data charting</head><p>For data charting, MS Excel was used. For each article, the following items were extracted: Title, Author, Publication year, Publication country, Type of paper, Empirical method (if applicable), Data collection method (if applicable), Demographic participants (if applicable), Measurement instrument for darkness evaluation. When one of these items was not present in the source (e.g., non-empirical papers not having participants), it was noted down as NA. Data charting was only done by the main researcher.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Thematic Analysis</head><p>The result of the scoping review provided a list of manuscripts that focused on darkness research. In order to synthesize the data in there, thematic analysis was used to group similar concepts within and between papers. Using thematic analysis, key-phrases were established, after which codes were constructed, which translated to themes. This development from key-phrase to code to themes ensured that themes provided interpretive insights which were true to the data of the manuscripts. Using these themes, insights were developed towards an understanding of our current relationship with darkness. Thematic analysis was conducted using the MAXQDA software, which is useful for qualitative analysis because of its well-designed coding structures and the possibilities of the program. The thematic analysis was conducted according to the guidelines set by <ref type="bibr" target="#b41">Naeem et al. (2023)</ref>, to ensure credibility and consistency. The step-by-step process can be seen in Figure <ref type="figure" target="#fig_0">1</ref>.  <ref type="bibr" target="#b41">(Naeem et al., 2023)</ref> 2.2.1 Familiarizing with the data All articles have been re-read, and non-relevant sections were marked in red, creating snippets of data that were important. In the remainder of the text, relevant pieces of text were highlighted using different colors. After reading each article, a list of potential codes for the article was proposed, and a memo was added in MAXQDA showcasing important notes and my own reflection on the article after reading it. The list of potential codes serves as an initial coding system.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.2">Selection of keywords</head><p>Although <ref type="bibr" target="#b41">Naeem et al. (2023)</ref> specify that the next step in the thematic analysis process would be to select keywords, this step is not performed as strict as to their guidelines. They define keyword selection as the crucial parts of information that summarize the data. Upon initial selection of keywords, we noticed that a lot of context in these keywords was lost. For thematic analysis of larger pieces of text, it might therefore be better to not make a selection of keywords, but rather use key paragraphs or sentences, so the context is kept within the data. In this case, key-phrase selection serves as a method of summarizing larger pieces of text, keeping the context within the smaller pieces of data that are key-phrases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.3">Coding</head><p>In order to develop codes, the key-phrases of articles were re-read and developed into descriptive codes. These codes can be seen as short summaries that encapsulate the meaning of key-phrases. Similarity between the initial coding system developed in the familiarization phase, and this coding system was assessed, and codes were merged into one system. Codes were then assessed to determine whether they encapsulated all key-phrases within them, leading to the second iteration of codes (for example: constraints, paradoxes and comfort all merged into challenges). In this iteration process, several codes were also transitioned towards subcodes of a larger code group (e.g., 'Connectedness to place' and 'Connectedness to people' becoming subcodes of a larger code; 'Connectedness'). These codes were critically assessed on clarity for the third iteration stage, which led to the eventual coding system (for example: challenges transitioning towards darkness as an asset and limited space). How this process visually was done is partially shown in Appendix B.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.4">Theme development</head><p>The codes were transferred to the MIRO software, where they were placed as sticky notes with a density corresponding the number of times the code was used (see Figure <ref type="figure">2</ref>). MIRO enables for a visual inspection of relationship between codes and made it accessible to test how codes could relate to each other in becoming themes. Themes were developed first as descriptive themes, where they reflected the codes and data well. For the second iteration of the themes, these were written out including some examples from the data, to assess whether the theme truly reflected the data. Themes were then adjusted to match the data by either changing the themes or adding/removing codes associated with the theme. Several themes that were too similar were combined into one theme, changing them from being descriptive towards interpretive. For the third iteration of themes, these steps were repeated.</p><p>Figure <ref type="figure">2</ref>: Theme development according to density of codes 2.2.5 Conceptualization In the conceptualization phase, themes are further refined according to existing theory and defined within theoretical terms. According to <ref type="bibr" target="#b41">Naeem et al. (2023)</ref>, concepts refer to any mental representation of underlying social structure. For this research, the relationship between themes and existing research was explored as part of the discussion. The relationships between themes were assessed using the questions charted by <ref type="bibr" target="#b41">Naeem et al. (2023)</ref> to see whether they encapsulated the data and provided meaningful insights that explained the underlying message of themes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.6">Development of conceptual model</head><p>Although <ref type="bibr" target="#b41">Naeem et al. (2023)</ref> describe the sixth step to be the development of a conceptual model, this development or justification of a conceptual model was outside the scope of this paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Results</head><p>Figure <ref type="figure">3</ref> presents the PRISMA-flowchart for the scoping review. From the two databases included, 2468 unique sources of evidence were found. Through title-abstract screening 2429 articles were removed. The PRISMAflowchart provides a list of examples for exclusion reasons. As both researchers used the labels slightly different, no count for the exact usage of a label is provided. Eventually, 39 articles were full-text screened, which resulted in 15 more exclusions. In this phase, exclusions were mostly for accessibility reasons, where the article was unable to be accessed from within the TU/e library database. Other examples of exclusions were one article being written in French instead of English, one record being only an abstract (of a poster presentation), and several articles having the wrong scope, by focusing too much on the effects of light or on rural darkness. This eventually yielded a total amount of 24 studies being included in the thematic analysis part of this research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Descriptive statistics</head><p>Appendix C shows the table of all included articles. There were 44 different authors contributing to these 24 different manuscripts. Most authors were only present in one entry, but there were a few that were present in more, those being Taylor Stone and Mette Hvass each with five entries, and Nick Dunn and Ellen Kathrine Hansen with three entries each. The articles included were mostly theoretical papers, however, we also found several case studies and studies based on empirical evidence, showing the range of research conducted in this field. Most research was Western-Europe-based, however, there were also four entries from the United States and one from China. Figure <ref type="figure" target="#fig_1">4</ref> shows the distribution of research throughout Europe. Most research can be classified in the domain of environmental sciences, with six manuscripts being from the conference series "Earth &amp; Environmental Scienes". Other often included domains are ethics, geography, and urban planning. Interestingly, only one article specifically mentions the domain of lighting design. Figure <ref type="figure">5</ref> shows the distribution of publication years. As can be seen from Figure <ref type="figure">5</ref>, urban darkness is a very recent research topic, as no entries before 2013 were found, and the majority of articles ranged from 2022 and later. The last column in the table from Appendix C includes the measurement instruments used for darkness evaluation. Most articles did not mention an instrument of any kind. There were a few that mentioned (walk-along) interviews as the best measurement instrument for darkness appraisal, but wat becomes most evident is that there is no unified way for how to measure evaluation of darkness. Most authors include some form that they see most fit for the situation, or that they have experience with, rather than that there is a standardized way for how to assess this.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Themes</head><p>Figure <ref type="figure" target="#fig_2">6</ref> shows the table of themes. It distinguishes between main themes and sub-themes. Subthemes are attached to the main theme they are corresponding with. In the following section, the themes and sub-themes will be explained in the order in which they are presented on the table. In text, main themes are written in bold, while subthemes are written both in bold and italic. Themes are numbered according to the order of the table in Figure <ref type="figure" target="#fig_2">6</ref>, where sub-themes are numbered according to the main theme they belong to.</p><p>0 1 2 3 4 5 6 7 <ref type="formula">2013 2015 2018 2020 2021 2022 2023 2024 2025</ref>Publication years Theme 1: Perceptions of darkness shift across cultures, people, situations, and time.</p><p>How darkness is perceived really depends on the situation where it is presented. <ref type="bibr" target="#b66">Hvass (2024)</ref> highlights this by specifying the need for context-specific lighting; as being able to enhance the existing spatial and social qualities of a space. The contextual meaning of darkness is furthermore highlighted by <ref type="bibr" target="#b74">Stone (2018)</ref> who specifies that: "darkness is not a concrete thing but rather an evaluative consideration that directs understandings of, and relationship with, the world at night. Yet at the same time it is a real, tangible thing accessible to direct experience" (p. 7). Additionally, perception of darkness is highly dependent upon individual differences, as associations towards darkness are neither culturally nor historically universal <ref type="bibr">(Edensor, 2013)</ref>. This shows perception of darkness changes between, but also within subjects, from situation to situation. Next to that, darkness has temporal characteristics, both in the forms of seasonal variations and timing of darkness. As an example, <ref type="bibr" target="#b72">Rathsach and Hvass (2022)</ref> highlight the city of Anholt, Denmark. Anholt uses the light reflected from the moon to provide visibility at night, instead of implementing streetlights. Due to the phasing of the moon, people experience bright, semi-bright, and dark nights, altering their perception of how dark the city is. Lastly, landscape can have an effect on darkness, as some regions are simply ill-suited for DarkSky site placements, just because of their sky quality <ref type="bibr" target="#b71">(Pan et al., 2025)</ref>.</p><p>Theme 2: Visual perception of darkness is not absolute but shaped by adaptation.</p><p>Our perceptions of darkness are not absolute, which makes it difficult to compare situations. We are able to adapt to darkness, both perceptually and psychologically. This adaptation process shapes our perception of how dark an environment appears. This theme consists of two sub-themes, which explain these adaptations:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sub-theme 2.1: Perceptual adaptation allows our eyes to adjust over time and in relation to contrast.</head><p>Our eyes have the ability to adapt to darkness. In other words, our visual system slowly adjusts to increase visibility. This process demands time, however. Whereas adaptation to light happens within seconds, adaptation towards darkness takes several minutes to return to normal visual sensitivity <ref type="bibr">(Amoruso et al., 2022)</ref>. When illuminance levels are static, we are able to perceive the environment as less dark over time due to this adaptation. When illuminance levels change, we also adapt to these levels to maintain functional vision, although the quality and detail of what we perceive may shift. These sensitivity changes of the eye have to be accounted for when designing with darkness <ref type="bibr">(Amoruso et al., 2022)</ref>. However, the adaptation process also makes it difficult to compare perceptions of darkness between situations and people, as it is difficult to take individuals' level of adaptation into account. Furthermore, our perception of darkness is dependent upon the contrasts introduced. High contrast areas can create the experience of very dark areas. Reducing this contrast will also shift the perception of how dark the darkest area appears <ref type="bibr" target="#b66">(Hvass, 2024)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sub-theme 2.2: Psychological adaptation alters our sense of how dark an environment appears over time.</head><p>We have difficulties comparing darkness between days. This is because it is difficult to judge whether an environment looks equally dark as it normally does, or in other words, as the baseline scenario. This is called shifting baseline syndrome <ref type="bibr" target="#b70">(Lyytimäki, 2015)</ref>. <ref type="bibr" target="#b70">Lyytimäki (2015)</ref> explains this as follows: "The concept of shifting baseline syndrome refers to the changing human perceptions of the state of certain system due to loss of experience of past conditions. Based on their personal experiences, people may consider the current situation to be the typical or normal state, even when the system has changed considerably compared to earlier states" (p. 8). According to <ref type="bibr" target="#b76">Stone (2021b)</ref>, this can happen both within people and over generations. Within people, it means that we have forgotten about past experiences and judge the current situation to be the same as past ones. Over generations, this happens when past experiences are not passed on to new generations. Both these processes show how we are able to psychologically adjust our baseline to what we deem as "normal".</p><p>Theme 3: Our cities are designed solely for humans and cause us to become disconnected from the more-than-human world, which urban darkness could help restore.</p><p>It can be argued that the problems of light pollution are symptoms of an underlying problem: disconnection <ref type="bibr" target="#b69">(Lam, 2020)</ref>. As we are implementing more light in the designs of our cities, this results in consequences for non-human lifeforms (see the examples in Section 1.2). Although these consequences are recognized, they are often placed second to human interest <ref type="bibr" target="#b79">(Tainio, 2023)</ref>. Cities are anthropogenic in nature, they are designed by humans, for humans. Next to that, cities have become synonymous with light, and we cannot imagine the city without it <ref type="bibr">(Dunn, 2020b)</ref>. <ref type="bibr" target="#b75">Stone (2021a)</ref> explains this dependency as that "It implies that to have a truly dark sky-to be devoid of light pollution, and artificial light in general-cities also need to be devoid of human activity" (p. 10). This statement implies that we simply cannot exist anymore without lighting in our cities and that city lights and night sky have come into conflict. With this, cities have also come into conflict with other lifeforms inhabiting them. <ref type="bibr" target="#b73">Shaw (2015)</ref> explains these clashes as being part of a 'contact zone', where the behavior and roles of nocturnal species emerge from their interactions, rather than existing independently. If humans enter this nocturnal world, they get entangled in the web of interactions, which currently causes clashes. Shaw explains that therefore synergistic rewilding of the night can lead to urban restoration. Synergistic rewilding in this sense would mean rewilding our nights -to let go of human influence in dark areas -in a way that suits all users. <ref type="bibr" target="#b61">Dill (2022)</ref> proposes to do this through designated ecosystem strips within the city, leading to more natural flow between cities and nature, and leading to less conflict between species. <ref type="bibr" target="#b60">Challéat et al. (2021)</ref> agrees with this, but stresses that these should be dynamic to account for the temporal nature of darkness. This could for example mean turning lights off during hunting times for nocturnal predators and switching the lights back on when these animals are no longer active in that fraction of the night.</p><p>Theme 4: Our current appreciation and design approaches to darkness rely on large, uninterrupted areas, which pushes it outside the city and reduces our access to it.</p><p>As mentioned by <ref type="bibr">Amoruso et al. (2022)</ref>, to provide for non-noticeable shifts in darkness through the adaptive abilities of the eye, this would require large areas of space, since our eyes take time to adapt to darkness, and smaller areas would lead to a less gradual decrease in illumination levels, which we would notice. Even though denoted as an inalienable right to everyone, for a majority of the world this leads to darkness no longer being accessible within the city, as these areas do not fit in the city. To increase this accessibility, DarkSky aims at preservation through parks or reserves. DarkSky parks have a threshold for DarkSky quality, which requires them to, among other things, have a maximum level of skyglow. This requirement causes many parks to be substantially large that they need to be placed outside of the city too, however. This decreases their connectivity, which eventually results in impaired efficiency of the parks <ref type="bibr" target="#b71">(Pan et al., 2025)</ref>. According to Pan et al. regions with high urban development and population density are ill-suited for DarkSky parks. Nevertheless, it is possible to bring darkness into the city, just not with the DarkSky quality necessary for parks. This would result in unscenic darkness in the city, which is more difficult to enjoy as it demands an understanding of what happens in the shadows <ref type="bibr" target="#b79">(Tainio, 2023)</ref>. Additionally, the corridors between darkness and the city need to be well-maintained, as not to cause too large contrasts. Darkness should gradually be introduced, however, this again leads to large areas needing to be covered. <ref type="bibr">Amoruso et al. (2022)</ref> explain that "it is logical to question whether it is possible to identify a clear taxonomy of areas where darkness is preserved by zooming in the urban environment" (p. 11). This shows that our current understanding of darkness limits us in design opportunities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sub-theme 4.1: We only appreciate exceptional darkness, and not average darkness.</head><p>In our current understanding of darkness, we often associate it with starry night skies. A loss of the night often implies our disability to see the stars in the skies. Starry night skies contribute towards sublime experiences. Stone (2021b) captures the range of emotions as feelings of awe and wonder, but also of humility, immensity and vastness. As Lam (2020) states: "We do not need to be trained stargazers and astronomers to be impressed by the star-filled skies; when anyone looks up, opens themselves to the star-filled skies, they will be moved by it" (p. 16). This pictures how stars are, according to Latour's Actor-Network theory, actors, as they can influence our emotions and behavior <ref type="bibr" target="#b34">(Latour, 2005)</ref>. This, however, also explains why we are only able to appreciate exceptional darkness, instead of average darkness around us. Average darkness -the regular darkness on a street -is not moving for the general public <ref type="bibr" target="#b79">(Tainio, 2023)</ref>. As <ref type="bibr" target="#b79">Tainio (2023)</ref> denotes "unscenic nature may demand some effort to understand its structure and function. This cognitive undertaking allows the widening and deepening of one's perspective, which may bring forth the subtle aesthetic values of the unscenic environment. Knowing the ecological dependencies between the seemingly uninteresting vegetation, various animal species, and a specific place can turn dull streetside shrubs into an aesthetically significant environment." (p. 9). Tainio addresses average darkness as that which we are accustomed to in cities; where we can not see the stars on the sky. They explain that, to resolve light pollution problems, we should get familiar with mundane darkness and learn to appreciate life in the shadows, understanding how different conditions can shape the particularity of the nighttime environment. Even when reducing the amount of light in the city, starry night skies -and thus sublime darkness -may not exist within the city. This leads to Tainio noting that appreciating mundane darkness is a necessity. Without the appreciation of average darkness, large areas are indeed required for darkness preservation.</p><p>Theme 5: Through our lighting we try to treat places the same at night as during the day, although the identity of the environment shifts with the time of day.</p><p>As mentioned by Fraenkel et al. (2024; see section 1.5), lighting masterplans often treat day-and nighttime environments as one. However, it can be argued that places during the day and night support a different social environment, so treating them the same will not result in an identical perceived social environment. Dunn (2020a) explains it as; "places are partly defined by the social relations that occur both in and across them, which at night are far less frequent as many spaces are devoid of people" (p. 7). So, as places are devoid of people, social structure changes, but our lighting aims at extending the day into the night. Places are not static environments; there are ecological processes within a place itself that ever evolve its identity, but the definition of a place will also change when one engages with it, proving the dynamic nature of a place <ref type="bibr">(Dunn, 2020a)</ref>. This dynamic nature gives the place an identity; there are different inhabitants or occupants of the space and the ecological and social structure adapts accordingly. High luminous contrast differences will make the perception of all social qualities of a space impossible however and homogenous uniform light will wipe away the nighttime identity of a place by cloaking it under a bed of light <ref type="bibr">(Hvass &amp; Hansen 2022;</ref><ref type="bibr">Hvass et al., 2022)</ref>. By balancing the hierarchy of lighting layers and introducing darkness as a counterpart to light, different coexistences of light and dark are able to constitute towards the nighttime identity of a place <ref type="bibr" target="#b65">(Griffiths et al., 2023)</ref>.</p><p>Theme 6: Psychological barriers shape our engagement with darkness.</p><p>Our engagement with darkness is partially limited by our psychological representation of darkness. As established, our current appreciation for darkness is in the range of starry night skies and average darkness, which is often the case in dense urban places, is difficult to understand. The following three subthemes explain how our current understanding of darkness shapes our behavior towards it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sub-theme 6.1: People don't enter dark places because this is not rational behavior.</head><p>Cities and light have become interdependent on one another. Dunn (2020b) explains that "urban environments have become synonymous with the functional lighting layouts that were installed" (p. 4). This makes it that we are not accustomed to the darkness at night. <ref type="bibr" target="#b76">Stone (2021b)</ref> adds to this that the darkness caused by temporary blackouts in a city seems unreal; it is something that we cannot imagine anymore and do not know how to deal with. Because of this, it is not within our rational behavior to enter dark places. However, once people do enter these dark places, they state that it is not as scary as they expected <ref type="bibr" target="#b80">(Vuorenmaa et al., 2024)</ref>. In an experiment by Vuorenmaa et al., participants were interviewed in a walk-along interview through the neighborhood, where they also visited a dark forest at night. From afar, participants mentioned that they would have never thought about entering it, but from within, they were surprised by the visibility, and it felt less weird to enter such places from now on. Entering dark places being irrational behavior also comes from our associations with darkness, which are deeply embedded within modern society.</p><p>Sub-theme 6.2: Our negative associations with darkness are deeply embedded within modern society.</p><p>Historically seen, we have aimed at banishing darkness from the city through our lighting design. While in the beginning there was some resistance to this banishing, for centuries now we have accepted that darkness is not part of our city design. In the same way, lighting is linked to progress and urban development. <ref type="bibr" target="#b76">Stone (2021b)</ref> explains that the "lighting-as-safe and darkness-as-dangerous associations are deeply embedded perceptions" (p. 8). As they have been reinforced for centuries, it will not be easy to seize these associations from our thoughts. Additionally, these negative associations may even lead to nyctophobia -fear of the night -for some. This adds to the difficulty of breaking these associations, as for some it has developed into more than just associations. Nyctophobia is not universally shared and similar for people, adding to the complexity darkness perception <ref type="bibr">(Edensor, 2013)</ref>. Our negative associations towards darkness influence our behavior, which can lead to resistance towards darkness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sub-theme 6.3: Resistance to darkness comes not from the dimmed environment itself, but from the absence of choice to engage with it and the mental image we have of it.</head><p>Announced dimming strategies often lead to public resistance. Edensor (2013) explains this with an example: "Responses to these disruptions to the customary ubiquity of pervasive illumination have been angry, exemplified by one local newspaper alleging that such policies heralded a 'return to the dark ages'" (p. 1). This shows that resistance towards dimming is primarily based on expectations of these policies, rather than on the actual situation itself. As Edensor states, these policies are alleged to contribute towards a return to the dark ages, showcasing the negative associations and mental image we have attached to darkness in the city. The fact that resistance comes mostly from the mental image is supported by Hvass' (2024) claim that citizens had not noticed the unannounced dimming in their neighborhood. <ref type="bibr" target="#b73">Shaw (2015)</ref> adds in another dimension to this concept, by explaining that choice to enter the environment also influences acceptance. In their research, they conclude that "darkness can create a positive affective atmosphere where individuals have had choice over their ability to enter in[to it], but there seems to be a reverse process occurring where individuals do not have this power" (p. 6). This shows that the presence of choice to engage with darkness influences our acceptance of it. In dimming policies, we are often left with absence of choice to engage with increased darkness, leading to resistance. However, these findings also show that we can get more accustomed to darkness. Stone (2021b) claims that radical or abrupt changes will likely result in concern and will not be socially accepted, but slow steady changes might make us more familiar with darkness on a subconscious level.</p><p>Theme 7: Focusing solely on light pollution will limit the adverse effects of ALAN but does not reflect the benefits that increasing darkness has.</p><p>Focusing solely on limiting the adverse effects of light such as glare, light trespass, and skyglow will reduce the load on the environment, but is a one-sided solution. Limiting these effects will likely result in defining a threshold. However, these thresholds do not say anything about the positive values that darkness might have in certain situations. <ref type="bibr" target="#b78">Stone (2024)</ref> explains this well by stating that "Darkness is typically defined as the partial or total absence of light, which says very little about the qualities of darkness itself" (p. 8). This shows the one-sided view we have towards lighting. Additionally, solutions that incorporate these benefits of darkness will likely be more effective in urban restoration and enjoyment of stars in the skies <ref type="bibr" target="#b74">(Stone, 2018)</ref>. Furthermore, by these adverse effects reflect us humans, but do not say anything about negative effects of light on ecosystems. <ref type="bibr" target="#b71">Pan et al. (2025)</ref> explain that DarkSky places can contribute to gaining an understanding of the other adverse effects of light pollution by showing the benefits of darkness on ecosystems. These benefits of darkness can be classified as three subthemes attached to this theme:</p><p>Sub-theme 7.1: In darkness we are able to express ourselves and be authentic, allowing us to be connected to ourselves and others.</p><p>Darkness provides a cloak of privacy, in which we can be our authentic selves. Historically seen, darkness symbolized the place where those with diverse thoughts gathered, those who had to be overcome in order to provide a city of rationalized, liberal and responsible citizens <ref type="bibr">(Edensor, 2013)</ref>. Darkness provided a cloak for those citizens who did not fit this standard and allowed them to be themselves. This also allows for a deeper connection between those in the darkness <ref type="bibr" target="#b61">(Dill, 2022)</ref>. These opportunities for deeper connection are highlighted by <ref type="bibr" target="#b60">Challéat et al. (2021)</ref> as well, who phrase it that "cultural geography studies emphasize the extent to which darkness makes possible original forms of conviviality and intimacy, the occupation of public spaces, and the perception of the world through senses other than sight" (p. 3). This showcases the unique benefits of darkness in terms of connectedness and intimacy.</p><p>Sub-theme 7.2: Darkness is good for our health.</p><p>As stated earlier in section 1.2, light at night disrupts the synchronization of our biological clock. For a strong, healthy entrainment, we need to be exposed to a strong contrast between light and dark over the 24-hour cycle <ref type="bibr" target="#b47">(Schmal et al., 2020)</ref>. In this sense, it can be argued that darkness thus has health benefits, as it does not disrupt our synchronization and melatonin secretion, whereas light does <ref type="bibr" target="#b60">(Challéat et al., 2021)</ref>. Next to direct health benefits, Dill (2022) also argues that darkness is good for psychological wellbeing, as they explain that "perceptions of natural beauty produce declinations in cortisol levels, increase subjective wellbeing, and elicit feelings of connectedness between subjects and the broader, more-than-human and cosmic world" (p. 6). This connection to the more-than-human cosmic world leads to the third benefit:</p><p>Sub-theme 7.3: Darkness allows us to have a spiritual connection and stay connected to our heritage. <ref type="bibr" target="#b65">Griffiths et al. (2023)</ref> explain how darkness helps in putting humans in the more-than-human world, allowing us to be moved by myths and mythologies. Ancient cultures were often moved by these dark skies, which inspired them to create these myths <ref type="bibr">(Alva et al., 2025)</ref>. As Stone (2018) states, "The loss of the night also implies the loss of this heritage, and darkness at night is the precondition through which continued access is possible" (p. 11). This shows the spiritual connection with our ancestors through stories that darkness can enable. Darkness provides other benefits as well, such as ecological restoration, however, these three subthemes show benefits that are only true for us humans.</p><p>Theme 8: Because we are rarely required to engage with darkness, we overlook its complexities and fail to give it moral value.</p><p>We are not accustomed to being in the dark, and because of this, we are not aware of all its complexities and values, which results in us not being able to give it a moral value which accounts for these complexities and values. The average citizen does not recognize all adverse effects caused by light pollution. While disturbances such as glare or skyglow are noticeable, it is far more difficult to recognize ecological effects or ecosystems disruptions. With public engagement, and learning about darkness, we are more able to understand all facets of darkness. <ref type="bibr" target="#b79">Tainio (2023)</ref> explains this as a necessity to create an intimate relationship with the environment, in order to assimilate all its features. In order for us to better understand darkness, <ref type="bibr" target="#b76">Stone (2021b)</ref> argues that darkness should be encapsulated as an umbrella term, encompassing its various environmental concerns and placing it as a moral obligation to take into account. They argue that "this creates an important shift in the burden of proof-to show why not to incorporate the obligation, and give justifiable cause for that choice" (p. 10). In other words, Stone proposes that we have to shift our thinking around, not as to why light should be included, but why it is justifiable to get rid of darkness. Such moral obligations force us to understand all facets and effects of darkness and increase potential for resolving issues such as accessibility to nature <ref type="bibr" target="#b75">(Stone, 2021a)</ref>. Yet, understanding all facets and effects of darkness is a complex process. The complexity of darkness is further explained by the two subthemes:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sub-theme 8.1: Any exploration of darkness's value necessarily involves its relationship with artificial light.</head><p>Stone (2024) explained darkness to be often characterized as an absence of light, which shows the dependency of the two. Darkness and light are both complementary and contradictory; one cannot exist without the other, but the existence of the one diminishes the other. This also means that only through our lighting design can we influence urban darkness. Any approach for designing with darkness must therefore take into account this mediating effect of light on darkness <ref type="bibr" target="#b76">(Stone, 2021b)</ref>. <ref type="bibr">Edensor (2013)</ref> explains for example, that light is the most alluring when situated against darkness, thus showing the dependency of darkness on light perception.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sub-theme 8.2: Enhancing darkness to support one value inevitably affects the extent to which other values are realized.</head><p>The values of darkness are reciprocal in nature, they all affect each other <ref type="bibr" target="#b74">(Stone, 2018)</ref>. Stone explains this in the sense that, setting darkness as a goal for one value (e.g., darkness as a goal to increase sustainability), it will also create conditions which affect other values of darkness. Another example of this relationship can be given in setting darkness as a goal for economic efficiency. While darkness has both energy-and cost savings potential, it has also been linked with negatively impacting nighttime economy <ref type="bibr">(Dunn, 2020)</ref>. This shows how the values of darkness cannot be enhanced independently.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion</head><p>The aim of this research was to map out the breadth of research done on urban darkness using a scoping review. Based on the manuscripts included, our aim was to establish the current state of our understanding of darkness, both in terms of research and how we engage with it in our everyday lives. Section 3 provides the descriptive statistics for the manuscripts included and the themes that were developed from the data. The following section aims at establishing relationships between themes and interpreting how they shape our current relationship with darkness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Relation between themes</head><p>As Lam (2020) has argued, the problems caused by light pollution are symptoms of the underlying problem of disconnection. In the relationship between themes, disconnection can also be seen as the root which connects other themes. Disconnection to darkness influences our psychological barriers that shape our engagement. As we are disconnected from darkness, we are unsure of how to engage with it. This results in us behaving according to our learned associations. Behaving according to these learned associations can be seen as rational behavior, which in turn makes engaging with darkness irrational behavior. Our disconnectedness to darkness also causes us to be rarely required to engage with it. Several authors have established that in recent times we have banished darkness from the city <ref type="bibr">(Dunn, 2020;</ref><ref type="bibr" target="#b69">Lam, 2020;</ref><ref type="bibr" target="#b76">Stone, 2021b;</ref><ref type="bibr">Edensor, 2013)</ref>. This has caused not only disconnection but also increased the rarity of us being required to engage with darkness. Since we are so rarely required to engage with darkness, it can be seen as logical that it does not fit within our rational behavior. Furthermore, when curtailment measures are announced, it also explains why we want to resist it. As the sub-theme itself already described, resistance comes not from the darkness itself, but from our mental image and the lack of choice we have to engage with it. This suggests how in a sense, the subthemes from the theme Psychological barriers shape our engagement with darkness seem to be connected to each other. Further research could aim at establishing in what way the rationality of our behavior, our negative mental image of darkness, and the resistance to curtailment measures are correlated with each other.</p><p>DarkSky has aimed at preserving our connection to darkness, by providing DarkSky sites. However, it can be argued that DarkSky parks do not necessarily increase our accessibility to darkness but actually limit it. While indeed DarkSky parks allow us to become engaged with darkness, they focus on our engagement with starry night skies rather than our engagement with average darkness. In this sense, they reinforce the current situation that we only appreciate exceptional darkness. Furthermore, as Stone (2021a) suggests, we are placing that what we want to preserve outside urban settings. In this sense, Stone argues that DarkSky parks actually decrease our accessibility to darkness, as it suggests that DarkSky sites and urban dense areas cannot co-exist. If one were to agree that DarkSky sites actually make darkness less accessible, it does in this sense also relate back that our cities are designed solely for humans and cause disconnection from the more-than-human world. Placing darkness outside of urban areas would mean that the city is anthropogenic, while everything outside of the city belongs to the more-than-human world.</p><p>If we have grown disconnected from the more-than-human world and from darkness, it could also explain why we currently focus solely on limiting the effects of light pollution. As <ref type="bibr" target="#b72">Rathsach and Hvass (2022)</ref> have established, humans are the only species that want ALAN. As ALAN is inherently anthropogenic, we also seek to find an anthropogenic solution for the problems that it causes. Because we tend to overlook the complexities of darkness, we try to treat the problems caused by ALAN with solutions on ALAN. However, as the sub-theme suggests, any exploration of darkness' value necessarily involves its relationship with artificial light. It can be argued that the opposite is also true, which we currently fail to address.</p><p>4.2 Our current relationship with darkness</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.1">Extending the day into the night</head><p>The banishing of darkness from our cities also becomes evident in how we treat our environments similarly during the day and during the night, despite the differences in social functions that they might have. As an example, I want to highlight a study by <ref type="bibr" target="#b7">Boyce et al. (2000)</ref> on perceived safety at a parking lot during the day and night. Their conclusion is that 30 lux provides sufficient lighting to ensure that safety perceptions during the night are as close to the perceptions during the day as possible. Our aim in including this example is not to criticize Boyce et al.'s work on this, but to raise the question as to whether it should be necessary to perceive parking lots as safe during the night as during the day. <ref type="bibr" target="#b35">Li et al. (2015)</ref> have conducted research on physiological and psychological responses towards both darkness and nighttime and found that nighttime increased anxiety for fearful stimuli, regardless of illumination level. This implies that, regardless of illumination level, it is logical that we perceive spaces during the night as less safe than during the day; we are after all diurnal species. Additional support for this claim can be found in research by <ref type="bibr" target="#b29">Kalsbeek and Fliers (2013)</ref>, who show that the body has several hormonal processes that are governed by our internal clock. Using this governing of hormonal processes, an organism is able to ensure adaptation to its time-structured environment. <ref type="bibr">Kalsbeek and</ref> Fliers describe that we are different persons at different times of day, as our hormonal balance in our body is inherently different and adjusted to fit time-dependent events. Interestingly, only few authors mention the differences between night and darkness. The theme of darkness being contextual touches upon this by stating that perceptions of darkness are influenced by time. However, it can be argued that it is not darkness which has temporal characteristics, but night. Indeed, darkness can be influenced by seasonal variations <ref type="bibr" target="#b50">(Tainio, 2024)</ref> or by the cycle of the moon <ref type="bibr" target="#b72">(Rathsach &amp; Hvass, 2022)</ref>, however, on a daily basis the temporal variations of darkness are influenced by the setting and rising of the sun. This puts the findings from the thematic analysis in a different light, as several concepts might relate more to night than that of darkness. Further research would be necessary to establish which of the concepts are related to darkness, night, or both.</p><p>Despite the contextual differences, we currently aim at extending the day into the night. A possible explanation for this that I suggest can be found in (perceived) affordance theory <ref type="bibr" target="#b25">(Gibson, 1977;</ref><ref type="bibr" target="#b42">Norman, 1988)</ref>. As darkness decreases our visibility, we are no longer aware of the affordances that an environment offers, as we cannot see them anymore. Lighting our environment the same at night as during the day could thus imply that lighting is used as a design tool to preserve the affordances that we have designed in our environment.</p><p>Yet, it raises the question whether it is rational to light our nights. <ref type="bibr" target="#b43">Otto et al. (2014)</ref> explained rational behavior as a means of satisfying personal ends. Taking the definition of Otto et al., lighting our environment at night would seem rational. However, as <ref type="bibr" target="#b80">Vuorenmaa et al. (2024)</ref> have shown, learning about darkness can shift our thinking. By introducing the general public to the complexities of darkness, but also to the benefits of darkness, it might be possible to shift the rationale for lighting our night. This would shift lighting design to a demand-oriented policy, such as <ref type="bibr" target="#b59">Beaudet et al. (2022)</ref> proposed. In such a demand-oriented view, the rational behavior for lighting our nighttime environment would be to only use light when it creates benefits that darkness cannot offer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.2">How can we place darkness as a design asset</head><p>As the sub-themes from focusing solely on light pollution will limit the adverse effects of ALAN but does not reflect the benefits that darkness has show, darkness has several benefits. As Dill (2022) explained, the benefits on well-being are a consequence of experiencing natural beauty. A theory that could possibly explain this is Attention-Restoration theory (ART; <ref type="bibr" target="#b30">Kaplan, 1995)</ref>. ART states that natural scenes can restore the depleted attention span of a person. According to Kaplan, the attention span can be restored using involuntary attention, in other words, fascination. ART could explain why we appreciate exceptional darkness more than average darkness. Exceptional darkness, or in other words, starry night skies, provides high levels of (soft) fascination. They also partially fit Kaplan's definition of extent, another core component of restorative environments, as they show how the environment is constituted to a larger whole, even though they do not offer the possibility of exploring it. The restorative potential of starry night skies can however not be seen apart from darkness, as stars are only visible in darkness. Importantly, as <ref type="bibr" target="#b79">Tainio (2023)</ref> has proposed, learning to appreciate average darkness should be a necessity. The question then arises; can mundane darkness provide for the components of ART and then be implemented as a design asset? Further exploration of average darkness through the lens of ART is needed to determine whether it can provide the same benefits as exceptional darkness.</p><p>The benefits that darkness provides for increased connectedness can also be seen through a theoretical lens. As <ref type="bibr" target="#b61">Dill (2022)</ref> and <ref type="bibr" target="#b60">Challéat et al. (2021)</ref> note, dimmed environments allow for deeper connection due to the original forms of conviviality and intimacy that they create. The theoretical lens that could be applied to this is that of Altman's Privacy-Regulation theory <ref type="bibr" target="#b0">(Altman, 1975)</ref>. As darkness decreases our ability to see others, we might compensate for this through other interpersonal control mechanisms. In this situation, darkness would offer more privacy than we want, but darkness could also offer us the privacy that we seek, which would not result in increased connectedness, but still add to well-being. In any case, Privacy-Regulation theory also offers an interesting lens through which darkness could be explored in further research.</p><p>These two theories provide lenses through which darkness as a design asset, as something to design for, can be explored. <ref type="bibr" target="#b78">Stone (2024)</ref> proposes that the benefits that darkness offers should be considered as prima facie obligations: moral duties which are binding but can be overridden by stronger moral duties. They argue that positioning darkness in this way makes it a theoretical foundation, instead of an add-on with benefits. In this sense, Stone aims at positioning urban darkness as a form of urban restoration <ref type="bibr" target="#b77">(Stone, 2023)</ref>. They define urban restoration as the act of restoring not just the consequences of excessive lighting but also repairing the relationship that we have with darkness. Stone thus suggests that our relationship with darkness is broken and needs fixing. Placing urban darkness as a form of urban restoration can, according to Stone, thus increase our understanding of darkness and increase our connectedness with the more-than-human world.</p><p>Placing darkness as a design asset creates a human perspective in lighting design. Darkness has certain benefits that light does not possess and including it early onwards in the design can change the objective of designing an environment to include the human benefits needed for the specific situation, be it from either light or darkness. However, placing urban darkness as a form of urban restoration puts a more-than-human perspective in lighting design. Given the multi-faceted value of darkness, perhaps this more-than-human perspective is needed to create a healthy urban environment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.3">Curtailment of light or reconciliation with darkness?</head><p>This does not mean that we should seize all ALAN from existence, however. <ref type="bibr" target="#b6">Boyce (2019)</ref> has mentioned the benefits of ALAN to be providing visibility, security, safety, promoting nighttime economy, and increasing beauty of places. Indeed, for several of these, darkness cannot provide the benefits that light can. In the case study by <ref type="bibr" target="#b72">Rathsach and Hvass (2022)</ref> for example, the city of Anholt used the moon as a light source to provide visibility. However, due to the phasing of the moon, and thus the temporal variations of darkness, on dark nights the moon could not provide for sufficient visibility. This shows that light is certainly needed in some cases. Further evidence that backs this up can be found in studies on traffic accidents, which also specify the need for light at night <ref type="bibr" target="#b55">(Yannis et al., 2013)</ref>.</p><p>Yet, more light is not always positive. Hvass (2024) shows an empirical example where they found that reducing light -creating a more balanced hierarchy of lighting layers -actually increased perceived safety at a Danish tram station. From this example, it can be argued that both light and darkness have benefits for increasing perceived safety, however, these benefits depend on the context of the environment. Furthermore, the section above shows several cases of how darkness has benefits that light cannot create. These examples highlight the contextuality of both light and darkness. Looking at the opinion of the authors from the 24 manuscripts, no one is in favor of completely extinguishing light from our nighttime environment, but all specify that we need to balance light and darkness. In their view the benefits of light cannot be neglected, but darkness also offers potential benefits that we currently ignore.</p><p>Both the demand-oriented policy of light <ref type="bibr" target="#b59">(Beaudet et al., 2022)</ref> and placing darkness as a form of urban restoration <ref type="bibr" target="#b77">(Stone, 2023)</ref> acknowledge that the benefits of light cannot be neglected. Both these strategies aim at giving darkness a moral value. What becomes evident from this research however, is that for any implementation of giving darkness moral value, light should also be considered. Ultimately, the optimal balance between light and darkness is perhaps about visibility, yet the question is what we want to make visible. The more we light the street's surface, the darker the shadows we cast elsewhere. Defining this optimal balance between light and dark is the next step in research on our relationship with urban darkness. Hence, the solution will not be to choose between curtailment of light or reconciliation with darkness, but both.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.4">Steppingstone for future research</head><p>The recency from the 24 manuscripts of the scoping review shows the increased interest in darkness as a research topic, however, it also shows that we are very much in the early stages of darkness research. Research question 2 focused on the types of measurements tools included. It became apparent that most researchers used qualitative tools. Hvass (2024) mentions the importance of including both quantitative and qualitative methods for researching human experience for outdoor lighting. However, if one were to develop a meaningful quantitative tool, in this early stage of research a thorough understanding of the concept is of key importance. Therefore, more qualitative research is needed on topics such as, how the values of light and dark interact with each other, why entering dark places is considered irrational behavior and how this can be overcome, and on other potential benefits of darkness. Eventually, quantitative research is also needed to determine correlational relationships between concepts or values, if one were to develop a measurement tool such as the Art of Darkness (European Commission, 2024) project desires. This scoping review can be considered as a steppingstone for what research is needed in order to provide a thorough understanding of urban darkness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Limitations</head><p>The findings of this scoping review should be seen in light of several limitations. As this project focused solely on urban darkness, research on rural or natural darkness was excluded from the search. This made it that the results of the thematic analysis are not impacted by findings on rural darkness. To sketch a more complete story on our relationship with darkness, perhaps a similar scoping review on rural darkness can be interesting, as it allows to check whether the hypothesis that the two types of darkness are too distinct is valid.</p><p>Additionally, due to time constraints, the quality of the data entries was not critically reviewed. Another limitation for this scoping review was the search query. The search query was chosen to try and include as many relevant articles as possible, while limiting the amount of irrelevant hits. Using a post-hoc relevance-based search query in Scopus, the first 50 articles were screened when the terms "values", "assumptions", "associations", "perceptions", and "dim*" were separately included. This search revealed no additional manuscripts, however, it can be assumed that there might still be relevant articles outside of the first 50 indicated relevant articles by Scopus.</p><p>Another limitation was that the first half of the Title-Abstract screening phase was only done by a single researcher. Because of time constraints, the second researcher did not have time to Title-Abstract screen the entire bulk of articles. Therefore, the decision was made that the first researcher got rid of articles that were completely off topic. This means that there might be some possible interesting entries being incorrectly classified as wrong topic, whether by mistake or resulting from some bias of the first researcher. Additionally, for the second researcher to see which articles were labelled as "wrong topic", blind mode had to be turned off in Rayyan. This made it that the remainder is also limited by bias, as researchers could see each other's decisions.</p><p>As this research is a master thesis project, the research is subject to time constraints. This means that the themes developed from the thematic analysis might not represent all data that was present in the manuscripts. With more time on thematic analysis, there might still be other themes developed from the data. Furthermore, it could also be that the current themes as listed are subject to change.</p><p>Lastly, the exclusion criteria focused on urban darkness and excluded those articles that were only about the positive aspects of light. As mentioned, both darkness and light provide benefits at night, however, the benefits of light are not taken into consideration for the exclusion criteria of the scoping review. Consequently, this research in itself therefore provides a one-sided view, as the thematic analysis only included authors who are in favor of implementing more darkness in the cities. To provide a more elaborate conceptual model of the values of darkness, also the values of light have to be considered, as darkness and light are complementary to an extent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4">Conclusory remarks</head><p>All in all, this scoping review reveals several insights that can benefit research into the domain of darkness. The thematic analysis revealed the way we currently understand and explain darkness and shows the limitations that are inherent to our current definition of it. Our appreciation of darkness is only for the nocturnal sublime, but not for mundane darkness. With this appreciation, we have placed darkness outside of our cities, as placing it within the city will not grant us the values that we currently aim to seek. In our current understanding of light and dark, we aim at extending the day into the night, but the question is whether this is rational. This behavior has caused us to grow disconnected from darkness and because of this, negative beliefs and associations of darkness stay sustained in society.</p><p>Our current focus on lighting intensity and comfort seems to fit and feed the ignorance towards darkness. Perhaps it is time to move away from evaluating lighting itself and instead focus on the aesthetics and functions of the environment, and how light and darkness can contribute to this.</p><p>This scoping review does however not imply that we should seize all artificial light from existence. As humans, we actually do benefit from light at night, albeit in the right context. Several benefits of light cannot be met with total darkness, making light a necessity in some situations. However, we should focus on creating a more natural balance. One that allows us to regain connection with the natural rhythms present in our cities. Through implementation of darkness in our design principles, we can aim at developing places which include benefits from both light and dark, and are more aligned with these natural rhythms of the night.</p><p>In order to do so, we should focus on developing a holistic understanding of light and darkness combined. Research on light is in a further stadium than that of darkness at this point in time, therefore it is important to create a quantitative research tool which reflects the values of darkness. With quantitative research tools for both light and darkness, we can validate the complementary and contradictory relationships between light and dark. All in all, this research aims to highlight a sense of urgency in re-establishing our connection with darkness.</p><p>Collection Method Demographics How is Darkness Evaluation Measured Dark Sky Parks: public policy that turns off the lights Alva Brown Evans Morris Dunning 2025 US Case Study / Review article NA Purposeful samping NA Not measured Dark Adaptation in Urban Environments: An Innovative Design Framework for Pedestrian Lighting Amoruso Larsen Hvass Triantafyllidis Hansen 2022 Denmark Review article / Theoretical paper NA Exploratory literature collection NA Not measured Are citizens willing to accept changes in public lighting for biodiversity conservation? Beaudet Tardieu David 2022 France Empirical Quantitative DCE &gt; 18 years old Through DCE Grasping Darkness: the dark ecological network as a socialecological framework to limit the impacts of light pollution on biodiversity Challéat Barré Laforge Lapostelle Franchomme Sirami Le Viol Millian Kerbiriou 2021 France Theoretical paper NA NA NA Not measured In defense of wild night Dill 2022 US Theoretical paper NA NA NA Not measured Dark Design: A New Framework for Advocacy and Creativity for the Nocturnal Commons Dunn 2020 UK Theoretical Paper NA NA NA Not measured Place After Dark: Urban peripheries as alternative futures Dunn 2020 UK Theoretical Paper NA NA NA Not measured The gloomy city: Rethinking the relationship between light and dark Edensor 2013 UK Theoretical Paper NA NA NA Not measured Sensing dark places: Creating thick descriptions of nocturnal time and rhythm Griffiths Dunn Bézenac 2023 UK Methodological paper NA Unattended sensing Photographs Walking NA Own reflection Darker Cities due to the Energy Crisis and the need for contextspecific urban lighting Hvass 2024 Denmark Case Study Based on mixed design Complaints Interviews Photos Questionnaire NA Complaints Interviews Balanced Brightness Levels: Exploring how lighting affects humans' experiences of architectural and social urban contexts Hvass Hansen 2022 Denmark Empirical Mixed Field notes Interviews Questionnaires NA Interviews Lights out? Lowering Urban Lighting Hvass Waltorp 2022 Denmark Empirical Qualitative Interviews Photos Levels and Increasing Atmosphere at a Danish Tram Station Hansen More than Darkness Preservation: The Importance of the Dark, Star-Filled Skies in Urban Areas Lam 2020 US Theoretical Paper NA NA NA Not measured Avoiding overly bright future: The systems intelligent perspective on the management of light pollution Lyytimäki 2015 Finland Case Study Based on mixed design Questionnaire 52% male avg. age 42.9 years Not measured A multi-value based approach to identify potential dark sky places in mainland China Pan Yang Wang Zhang Liu Song Gao 2025 China Empirical Quantitative Range of index values for variables NA DarkSky quality The Moon as a Light Source: New sustainable ways of lighting up the cities Rathsach Hvass 2022 Denmark Empirical Mixed Literature review Questionnaire NA Questionnaire Night as Fragmenting Frontier: Understanding the Night that Remains in an era of 24/7 Shaw 2015 US Theoretical Paper NA NA NA Not measured The Value of Darkness Stone 2018 The Netherlands Theoretical Paper Re-envisioning the Nocturnal Sublime: On the Ethics and Aesthetics of Nighttime Lighting Stone 2021 The Netherlands Theoretical Paper NA NA NA Not measured Towards a Darker Future? Designing Environmental Values into the Next Generation of Streetlights Stone 2021 Switzerland Theoretical Paper / Methodological Paper NA NA NA Not measured Darkening cities as urban restoration Stone 2023 UK Theoretical Paper NA NA NA Not measured Theoretical Foundations of Designing for Darkness Stone 2024 Germany Theoretical Paper NA NA NA Not measured Darkness and Sustainability: Other Species' Night and Human Aesthetic Preferences Tainio 2023 Finland Theoretical Paper NA NA NA Not measured Co-designing safe and sustainable darkness for northern urban places Vuorenmaa Pihlajaniemi Parhankangas 2024 Finland Case Study / Methodological Paper Based on qualitative research Interviews NA Interviews</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Step-by-step process for thematic analysis<ref type="bibr" target="#b41">(Naeem et al., 2023)</ref> </figDesc><graphic coords="13,70.85,343.14,375.25,346.17" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Map showing distribution of research in Europe</figDesc><graphic coords="16,334.03,451.82,217.92,183.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Table of themes</figDesc><graphic coords="18,70.85,70.85,453.60,669.55" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><graphic coords="15,70.85,70.85,429.00,271.70" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><graphic coords="38,70.85,93.34,626.38,423.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><graphic coords="39,70.85,70.85,266.80,453.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><graphic coords="39,358.85,70.85,176.65,453.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><graphic coords="39,556.26,70.85,153.50,453.60" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data</head></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Appendix A: search queries for both Scopus and Web of Science Scopus search query: ( ALL ( perception* OR belief* OR attitude* OR feeling* OR experience* ) AND TITLE-ABS-KEY ( dark* OR lumin* OR illuminance ) AND TITLE-ABS-KEY ( "streetlight" OR ( street AND light* ) OR urban* OR "artificial light at night" OR dimm* OR alan OR pedestrian ) ) Web of Science search query: ALL=((perception OR perceptions) OR (belief OR beliefs) OR (attitude OR attitudes) OR (feeling OR feelings) OR (experience OR experiences)) AND TS=(dark* OR lumin* OR luminance) AND TS=("streetlight" OR (street AND light*) OR urban* OR "artificial light at night" OR dimm* OR alan OR pedestrian) Appendix C: Table of manuscripts included in the scoping review Title Authors Year Country Type of paper Empirical Method</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct status="extracted" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Privacy Mechanisms and Functions</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Altman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Environment and Social Behavior</title>
+		<imprint>
+			<publisher>Brooks/Cole Publishing Compant</publisher>
+			<date type="published" when="1975">1975</date>
+			<biblScope unit="page" from="32" to="51" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Altman, I. (1975). Privacy Mechanisms and Functions. In The Environment and Social Behavior (pp. 32-51). Brooks/Cole Publishing Compant.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Dark Adaptation in Urban Environments: An Innovative Design Framework for Pedestrian Lighting</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Amoruso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Larsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hvass</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Triantafyllidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Hansen</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1755-1315/1099/1/012044</idno>
+		<ptr target="https://doi.org/10.1088/1755-1315/1099/1/012044" />
+	</analytic>
+	<monogr>
+		<title level="j">IOP Conference Series: Earth and Environmental Science</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1099</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Amoruso, C. E., Larsen, M. H., Hvass, M., Triantafyllidis, G., &amp; Hansen, E. K. (2022). Dark Adaptation in Urban Environments: An Innovative Design Framework for Pedestrian Lighting. IOP Conference Series: Earth and Environmental Science, 1099(1). https://doi.org/10.1088/1755- 1315/1099/1/012044</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b2">
+	<monogr>
+		<title level="m" type="main">The influence of street lighting on crime and fear of crime</title>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Atkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Husain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angele</forename><surname>Storey</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1991">1991</date>
+			<publisher>Home Office, Crime Prevention Unit</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Atkins, Stephen., Husain, M. S. ., &amp; Storey, Angele. (1991). The influence of street lighting on crime and fear of crime. Home Office, Crime Prevention Unit.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">A New Philosophy of Darkness</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barkman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Christian Scholar&apos;s Review</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="265" to="274" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barkman, A. (2010). A New Philosophy of Darkness. Christian Scholar&apos;s Review, 39(3), 265-274.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Will switching to LED outdoor lighting increase sky glow?</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bierman</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1477153512437147</idno>
+		<ptr target="https://doi.org/10.1177/1477153512437147" />
+	</analytic>
+	<monogr>
+		<title level="j">Lighting Research and Technology</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="449" to="458" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bierman, A. (2012). Will switching to LED outdoor lighting increase sky glow? Lighting Research and Technology, 44(4), 449-458. https://doi.org/10.1177/1477153512437147</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The effect of information and values on acceptability of reduced street lighting</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Boomsma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Steg</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jenvp.2013.11.004</idno>
+		<ptr target="https://doi.org/10.1016/j.jenvp.2013.11.004" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Environmental Psychology</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="22" to="31" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Boomsma, C., &amp; Steg, L. (2014). The effect of information and values on acceptability of reduced street lighting. Journal of Environmental Psychology, 39, 22-31. https://doi.org/10.1016/j.jenvp.2013.11.004</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The benefits of light at night</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Boyce</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.buildenv.2019.01.020</idno>
+		<ptr target="https://doi.org/10.1016/j.buildenv.2019.01.020" />
+	</analytic>
+	<monogr>
+		<title level="j">Building and Environment</title>
+		<imprint>
+			<biblScope unit="volume">151</biblScope>
+			<biblScope unit="page" from="356" to="367" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Boyce, P. R. (2019). The benefits of light at night. Building and Environment, 151, 356-367. https://doi.org/10.1016/j.buildenv.2019.01.020</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Perceptions of safety at night in different lighting conditions</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Boyce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">H</forename><surname>Eklund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Hamilton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">D</forename><surname>Bruno</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lighting Research Technology</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="79" to="91" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Boyce, P. R., Eklund, N. H., Hamilton, B. J., &amp; Bruno, L. D. (2000). Perceptions of safety at night in different lighting conditions. Lighting Research Technology, 32(2), 79-91.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Using Light as a Medium to Convey Its Dark Side-A Light Festival Case Study</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Breukel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cieraad</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su16166941</idno>
+		<ptr target="https://doi.org/10.3390/su16166941" />
+	</analytic>
+	<monogr>
+		<title level="j">Sustainability (Switzerland)</title>
+		<imprint>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page">16</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Breukel, K., &amp; Cieraad, E. (2024). Using Light as a Medium to Convey Its Dark Side-A Light Festival Case Study. Sustainability (Switzerland), 16(16). https://doi.org/10.3390/su16166941</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Opinion: Light pollution... is it important?</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Clanton</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1477153513519378</idno>
+		<ptr target="https://doi.org/10.1177/1477153513519378" />
+	</analytic>
+	<monogr>
+		<title level="m">Lighting Research and Technology</title>
+		<imprint>
+			<publisher>SAGE Publications Ltd</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="volume">46</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Clanton, N. (2014). Opinion: Light pollution... is it important? In Lighting Research and Technology (Vol. 46, Issue 1, p. 4). SAGE Publications Ltd. https://doi.org/10.1177/1477153513519378</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">An examination of the effects on crime of switching off street lighting</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Davies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Farrington</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1748895818818861</idno>
+		<ptr target="https://doi.org/10.1177/1748895818818861" />
+	</analytic>
+	<monogr>
+		<title level="j">Criminology and Criminal Justice</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="339" to="357" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Davies, M. W., &amp; Farrington, D. P. (2020). An examination of the effects on crime of switching off street lighting. Criminology and Criminal Justice, 20(3), 339-357. https://doi.org/10.1177/1748895818818861</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Health Effects of Disrupted Circadian Rhythms by Artificial Light at Night</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Bumgarner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Fonken</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/23727322231193967</idno>
+		<ptr target="https://doi.org/10.1177/23727322231193967" />
+	</analytic>
+	<monogr>
+		<title level="j">Policy Insights from the Behavioral and Brain Sciences</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="229" to="236" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Davis, L. K., Bumgarner, J. R., Nelson, R. J., &amp; Fonken, L. K. (2023). Health Effects of Disrupted Circadian Rhythms by Artificial Light at Night. Policy Insights from the Behavioral and Brain Sciences, 10(2), 229-236. https://doi.org/10.1177/23727322231193967</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Solid state lighting review -Potential and challenges in Europe</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>De Almeida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Santos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bertoldi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Quicheron</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.rser.2014.02.029</idno>
+		<ptr target="https://doi.org/10.1016/j.rser.2014.02.029" />
+	</analytic>
+	<monogr>
+		<title level="j">Renewable and Sustainable Energy Reviews</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="30" to="48" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">De Almeida, A., Santos, B., Bertoldi, P., &amp; Quicheron, M. (2014). Solid state lighting review -Potential and challenges in Europe. Renewable and Sustainable Energy Reviews, 34, 30-48. https://doi.org/10.1016/j.rser.2014.02.029</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">First estimation of global trends in nocturnal power emissions reveals acceleration of light pollution</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>De Miguel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bennie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Rosenfeld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dzurjak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Gaston</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/rs13163311</idno>
+		<ptr target="https://doi.org/10.3390/rs13163311" />
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<imprint>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page">13</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">de Miguel, A. S., Bennie, J., Rosenfeld, E., Dzurjak, S., &amp; Gaston, K. J. (2021). First estimation of global trends in nocturnal power emissions reveals acceleration of light pollution. Remote Sensing, 13(16). https://doi.org/10.3390/rs13163311</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Under the night: The futures of dark skies</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Edensor</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9781003408444-24</idno>
+		<ptr target="https://doi.org/10.4324/9781003408444-24" />
+	</analytic>
+	<monogr>
+		<title level="m">Dark Skies: Places, Practices, Communities</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="251" to="267" />
+		</imprint>
+	</monogr>
+	<note>Taylor and Francis</note>
+	<note type="raw_reference">Dunn, N., &amp; Edensor, T. (2023). Under the night: The futures of dark skies. In Dark Skies: Places, Practices, Communities (pp. 251-267). Taylor and Francis. https://doi.org/10.4324/9781003408444-24</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Introduction to geographies of darkness</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Edensor</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1474474015604807</idno>
+		<ptr target="https://doi.org/10.1177/1474474015604807" />
+	</analytic>
+	<monogr>
+		<title level="m">Cultural Geographies</title>
+		<imprint>
+			<publisher>SAGE Publications Ltd</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="559" to="565" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Edensor, T. (2015). Introduction to geographies of darkness. In Cultural Geographies (Vol. 22, Issue 4, pp. 559-565). SAGE Publications Ltd. https://doi.org/10.1177/1474474015604807</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Light on Darkness: An investigation of darkness in relation to emotional affect and affordances</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Erichsen</surname></persName>
+		</author>
+		<ptr target="www.kth.se" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Erichsen, M. (2024). Light on Darkness: An investigation of darkness in relation to emotional affect and affordances. www.kth.se</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Art of Darkness -Appraising the sensory, emotional, and aesthetic experience of urban darkness</title>
+		<author>
+			<orgName type="collaboration">European Commission.</orgName>
+		</author>
+		<ptr target="Https://Cordis.Europa.Eu/Project/Id/101177779" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note>Project ID: 101177779</note>
+	<note type="raw_reference">European Commission. (2024). Art of Darkness -Appraising the sensory, emotional, and aesthetic experience of urban darkness (Project ID: 101177779). Https://Cordis.Europa.Eu/Project/Id/101177779.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">The new world atlas of artificial night sky brightness</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Falchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cinzano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Duriscoe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">C M</forename><surname>Kyba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Elvidge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Baugh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">A</forename><surname>Portnov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">A</forename><surname>Rybnikova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Furgoni</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/sciadv.1600377</idno>
+		<ptr target="https://doi.org/10.1126/sciadv.1600377" />
+	</analytic>
+	<monogr>
+		<title level="j">Science Advances</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Falchi, F., Cinzano, P., Duriscoe, D., Kyba, C. C. M., Elvidge, C. D., Baugh, K., Portnov, B. A., Rybnikova, N. A., &amp; Furgoni, R. (2016). The new world atlas of artificial night sky brightness. Science Advances, 2(6). https://doi.org/10.1126/sciadv.1600377</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Limiting the impact of light pollution on human health, environment and stellar visibility</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Falchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cinzano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Elvidge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Keith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Haim</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jenvman.2011.06.029</idno>
+		<ptr target="https://doi.org/10.1016/j.jenvman.2011.06.029" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Environmental Management</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2714" to="2722" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Falchi, F., Cinzano, P., Elvidge, C. D., Keith, D. M., &amp; Haim, A. (2011). Limiting the impact of light pollution on human health, environment and stellar visibility. Journal of Environmental Management, 92(10), 2714-2722. https://doi.org/10.1016/j.jenvman.2011.06.029</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Handbook of Loss Prevention and Crime Prevention</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fennelly</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+	<note>st ed.</note>
+	<note type="raw_reference">Fennelly, L. (1982). Handbook of Loss Prevention and Crime Prevention (1st ed.).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b21">
+	<monogr>
+		<title level="m" type="main">Handbook of Loss Prevention and Crime Prevention</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fennelly</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note>th ed.</note>
+	<note type="raw_reference">Fennelly, L. (2020). Handbook of Loss Prevention and Crime Prevention (6th ed.).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">The Long Run Demand for Lighting: Elasticities and Rebound Effects in Different Phases of Economic Development</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Fouquet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J G</forename><surname>Pearson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economics of Energy and Environmental Policy</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="83" to="100" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fouquet, R., &amp; Pearson, P. J. G. (2012). The Long Run Demand for Lighting: Elasticities and Rebound Effects in Different Phases of Economic Development. Economics of Energy and Environmental Policy, 1(1), 83-100.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Spatial planning for dark hours in Sweden -Conditions and proposal for action</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fraenkel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tastare</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Billger</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1755-1315/1320/1/012014</idno>
+		<ptr target="https://doi.org/10.1088/1755-1315/1320/1/012014" />
+	</analytic>
+	<monogr>
+		<title level="j">IOP Conference Series: Earth and Environmental Science</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1320</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fraenkel, C., Tastare, M., &amp; Billger, M. (2024). Spatial planning for dark hours in Sweden -Conditions and proposal for action. IOP Conference Series: Earth and Environmental Science, 1320(1). https://doi.org/10.1088/1755-1315/1320/1/012014</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Reintegrating Darkness: An Exploration into Lived Experiences of Natural Darkness</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Frey</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Frey, S. (2007). Reintegrating Darkness: An Exploration into Lived Experiences of Natural Darkness.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The Theory of Affordances</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Gibson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">An Ecological Approach to Visual Perception</title>
+		<imprint>
+			<publisher>Houghton-Mifflin Co</publisher>
+			<date type="published" when="1977">1977</date>
+			<biblScope unit="page" from="67" to="82" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gibson, J. J. (1977). The Theory of Affordances. In An Ecological Approach to Visual Perception (pp. 67-82). Houghton-Mifflin Co.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Reduced street lighting at night and health: A rapid appraisal of public views in England and Wales. Health and Place</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Perkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Steinbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Edwards</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.healthplace.2015.05.011</idno>
+		<ptr target="https://doi.org/10.1016/j.healthplace.2015.05.011" />
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="171" to="180" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Green, J., Perkins, C., Steinbach, R., &amp; Edwards, P. (2015). Reduced street lighting at night and health: A rapid appraisal of public views in England and Wales. Health and Place, 34, 171-180. https://doi.org/10.1016/j.healthplace.2015.05.011</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Effects of Smart Adaptive Street Lighting on Residents&apos; Behavior and Experiences: Results from a Field Test</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Haans</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/LS2463127.2024.10881342</idno>
+		<ptr target="https://doi.org/10.1109/LS2463127.2024.10881342" />
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Sustainable Smart Lighting World Conference and Expo</title>
+		<imprint>
+			<date type="published" when="2024">2024. 2024</date>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page">2024</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Haans, A. (2024). Effects of Smart Adaptive Street Lighting on Residents&apos; Behavior and Experiences: Results from a Field Test. 2024 IEEE Sustainable Smart Lighting World Conference and Expo, LS24 2024. https://doi.org/10.1109/LS2463127.2024.10881342</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b28">
+	<monogr>
+		<title level="m" type="main">JBI Manual for Evidence Synthesis</title>
+		<author>
+			<persName><surname>Jbi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">JBI. (2024). JBI Manual for Evidence Synthesis.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Daily regulation of hormone profiles</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kalsbeek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fliers</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-25950-0_8</idno>
+		<ptr target="https://doi.org/10.1007/978-3-642-25950-0_8" />
+	</analytic>
+	<monogr>
+		<title level="j">Handbook of Experimental Pharmacology</title>
+		<imprint>
+			<biblScope unit="volume">217</biblScope>
+			<biblScope unit="page" from="185" to="226" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kalsbeek, A., &amp; Fliers, E. (2013). Daily regulation of hormone profiles. Handbook of Experimental Pharmacology, 217, 185-226. https://doi.org/10.1007/978-3-642-25950-0_8</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">THE RESTORATIVE BENEFITS OF NATURE: TOWARD AN INTEGRATIVE FRAMEWORK</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kaplan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal o/Enuinm,mfol Ps&gt;clmlog~</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kaplan, S. (1995). THE RESTORATIVE BENEFITS OF NATURE: TOWARD AN INTEGRATIVE FRAMEWORK. In Journal o/Enuinm,mfol Ps&gt;clmlog~ (Vol. 16).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">The Necessity of Natural Darkness for Humans and Biodiversity</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">D</forename><surname>Kørner</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-36316-0_26</idno>
+		<ptr target="https://doi.org/10.1007/978-3-031-36316-0_26" />
+	</analytic>
+	<monogr>
+		<title level="s">Sustainable Development Goals Series</title>
+		<imprint>
+			<biblScope unit="volume">2788</biblScope>
+			<biblScope unit="page" from="335" to="344" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kørner, L. D. (2023). The Necessity of Natural Darkness for Humans and Biodiversity. In Sustainable Development Goals Series: Vol. Part F2788 (pp. 335-344). Springer. https://doi.org/10.1007/978-3-031-36316-0_26</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Direct measurement of the contribution of street lighting to satellite observations of nighttime light emissions from urban areas</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">C M</forename><surname>Kyba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ruby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">U</forename><surname>Kuechly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kinzey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sanders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Barentine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kleinodt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Espey</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1477153520958463</idno>
+		<ptr target="https://doi.org/10.1177/1477153520958463" />
+	</analytic>
+	<monogr>
+		<title level="j">Lighting Research and Technology</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="189" to="211" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kyba, C. C. M., Ruby, A., Kuechly, H. U., Kinzey, B., Miller, N., Sanders, J., Barentine, J., Kleinodt, R., &amp; Espey, B. (2021). Direct measurement of the contribution of street lighting to satellite observations of nighttime light emissions from urban areas. Lighting Research and Technology, 53(3), 189-211. https://doi.org/10.1177/1477153520958463</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b33">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Query</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>Crime During Power Outages</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lal, N., Lee, L. M., &amp; Query, J. (2023). Crime During Power Outages.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Reassembling the Social: An Introduction to Actor-Network-Theory</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Latour</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Latour, B. (2005). Reassembling the Social: An Introduction to Actor-Network-Theory. Oxford University Press.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Night or darkness, which intensifies the feeling of fear?</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Qiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijpsycho.2015.04.021</idno>
+		<ptr target="https://doi.org/10.1016/j.ijpsycho.2015.04.021" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Psychophysiology</title>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="46" to="57" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li, Y., Ma, W., Kang, Q., Qiao, L., Tang, D., Qiu, J., Zhang, Q., &amp; Li, H. (2015). Night or darkness, which intensifies the feeling of fear? International Journal of Psychophysiology, 97(1), 46-57. https://doi.org/10.1016/j.ijpsycho.2015.04.021</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b36">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">H</forename><surname>Linares Arroyo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Abascal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Degen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Aubé</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename><surname>Espey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gyuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hölker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jechow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kuffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sánchez De Miguel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Simoneau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Walczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">C M</forename><surname>Kyba</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Linares Arroyo, H., Abascal, A., Degen, T., Aubé, M., Espey, B. R., Gyuk, G., Hölker, F., Jechow, A., Kuffer, M., Sánchez de Miguel, A., Simoneau, A., Walczak, K., &amp; Kyba, C. C. M. (2024).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">trends and impacts of light pollution Nature Reviews Earth Environment</title>
+		<author>
+			<persName><surname>Monitoring</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Earth &amp; Environment</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="417" to="430" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Monitoring, trends and impacts of light pollution Nature Reviews Earth Environment. Nature Reviews Earth &amp; Environment, 5, 417-430.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Voices for the darkness: Online survey on public perceptions on light pollution as an environmental problem</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lyytimäki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rinne</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/1943815X.2013.824487</idno>
+		<ptr target="https://doi.org/10.1080/1943815X.2013.824487" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Integrative Environmental Sciences</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="127" to="139" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lyytimäki, J., &amp; Rinne, J. (2013). Voices for the darkness: Online survey on public perceptions on light pollution as an environmental problem. Journal of Integrative Environmental Sciences, 10(2), 127-139. https://doi.org/10.1080/1943815X.2013.824487</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Advance Access publication 8</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Marchant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">British</title>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="volume">44</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Marchant, P. R. (2004). Advance Access publication 8. In British Journal of Criminology (Vol. 44, Issue 3).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Light Pollution and Circadian Misalignment: A Healthy, Blue-Free, White Light-Emitting Diode to Avoid Chronodisruption</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Menéndez-Velázquez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Morales</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>García-Delgado</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ijerph19031849</idno>
+		<ptr target="https://doi.org/10.3390/ijerph19031849" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Environmental Research and Public Health</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Menéndez-Velázquez, A., Morales, D., &amp; García-Delgado, A. B. (2022). Light Pollution and Circadian Misalignment: A Healthy, Blue-Free, White Light-Emitting Diode to Avoid Chronodisruption. International Journal of Environmental Research and Public Health, 19(3). https://doi.org/10.3390/ijerph19031849</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b41">
+	<analytic>
+		<title level="a" type="main">A Step-by-Step Process of Thematic Analysis to Develop a Conceptual Model in Qualitative Research</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Naeem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ozuem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Howell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ranfagni</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/16094069231205789</idno>
+		<ptr target="https://doi.org/10.1177/16094069231205789" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Qualitative Methods</title>
+		<imprint>
+			<biblScope unit="page">22</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Naeem, M., Ozuem, W., Howell, K., &amp; Ranfagni, S. (2023). A Step-by-Step Process of Thematic Analysis to Develop a Conceptual Model in Qualitative Research. International Journal of Qualitative Methods, 22. https://doi.org/10.1177/16094069231205789</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b42">
+	<monogr>
+		<title level="m" type="main">The Psychology of Everyday Things</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Norman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1988">1988</date>
+			<publisher>Basic Books</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Norman, D. A. (1988). The Psychology of Everyday Things. Basic Books.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b43">
+	<analytic>
+		<title level="a" type="main">The critical challenge of climate change for psychology: Preventing rebound and promoting more individual irrationality</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Otto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">G</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Arnold</surname></persName>
+		</author>
+		<idno type="DOI">10.1027/1016-9040/a000182</idno>
+		<ptr target="https://doi.org/10.1027/1016-9040/a000182" />
+	</analytic>
+	<monogr>
+		<title level="j">European Psychologist</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="96" to="106" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Otto, S., Kaiser, F. G., &amp; Arnold, O. (2014). The critical challenge of climate change for psychology: Preventing rebound and promoting more individual irrationality. European Psychologist, 19(2), 96-106. https://doi.org/10.1027/1016-9040/a000182</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b44">
+	<analytic>
+		<title level="a" type="main">A REVIEW OF STREET LIGHTING EVALUATIONS: CRIME REDUCTION EFFECTS</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Pease</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Crime Prevention Studies</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="47" to="76" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pease, K. (1999). A REVIEW OF STREET LIGHTING EVALUATIONS: CRIME REDUCTION EFFECTS. Crime Prevention Studies, 10, 47-76.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Light Pollution and Impact of Light Pollution</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Rajkhowa</surname></persName>
+		</author>
+		<ptr target="www.ijsr.net" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Science and Research</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="861" to="867" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rajkhowa, R. (2014). Light Pollution and Impact of Light Pollution. International Journal of Science and Research, 3(10), 861-867. www.ijsr.net</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Light pollution: A review of the scientific literature</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rodrigo-Comino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Seeling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Seeger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Ries</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/20530196211051209</idno>
+		<ptr target="https://doi.org/10.1177/20530196211051209" />
+	</analytic>
+	<monogr>
+		<title level="j">In Anthropocene Review</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="367" to="392" />
+			<date type="published" when="2023">2023</date>
+			<publisher>SAGE Publications Inc</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rodrigo-Comino, J., Seeling, S., Seeger, M. K., &amp; Ries, J. B. (2023). Light pollution: A review of the scientific literature. In Anthropocene Review (Vol. 10, Issue 2, pp. 367-392). SAGE Publications Inc. https://doi.org/10.1177/20530196211051209</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Clocks in the Wild: Entrainment to Natural Light</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Schmal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Herzel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Myung</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fphys.2020.00272</idno>
+		<ptr target="https://doi.org/10.3389/fphys.2020.00272" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Physiology</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schmal, C., Herzel, H., &amp; Myung, J. (2020). Clocks in the Wild: Entrainment to Natural Light. Frontiers in Physiology, 11. https://doi.org/10.3389/fphys.2020.00272</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Lighting professionals versus light pollution experts? Investigating views on an emerging environmental concern</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Schulte-Römer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Dannemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Söding</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su11061696</idno>
+		<ptr target="https://doi.org/10.3390/su11061696" />
+	</analytic>
+	<monogr>
+		<title level="j">Sustainability (Switzerland)</title>
+		<imprint>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">11</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schulte-Römer, N., Meier, J., Dannemann, E., &amp; Söding, M. (2019). Lighting professionals versus light pollution experts? Investigating views on an emerging environmental concern. Sustainability (Switzerland), 11(6). https://doi.org/10.3390/su11061696</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b49">
+	<analytic>
+		<title level="a" type="main">The LED Paradox: How light pollution challenges experts to reconsider sustainable lighting</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Schulte-Römer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Söding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Dannemann</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su11216160</idno>
+		<ptr target="https://doi.org/10.3390/su11216160" />
+	</analytic>
+	<monogr>
+		<title level="j">Sustainability (Switzerland)</title>
+		<imprint>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page">11</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Schulte-Römer, N., Meier, J., Söding, M., &amp; Dannemann, E. (2019). The LED Paradox: How light pollution challenges experts to reconsider sustainable lighting. Sustainability (Switzerland), 11(21). https://doi.org/10.3390/su11216160</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Shadowplay: Interactions of Artificial Illumination and Darkness</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tainio</surname></persName>
+		</author>
+		<idno type="DOI">10.21827/potcj.2.3</idno>
+		<ptr target="https://doi.org/10.21827/potcj.2.3" />
+	</analytic>
+	<monogr>
+		<title level="j">Philosophy of the City Journal</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="30" to="44" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tainio, M. (2024). Shadowplay: Interactions of Artificial Illumination and Darkness. Philosophy of the City Journal, 2, 30-44. https://doi.org/10.21827/potcj.2.3</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Street lighting management and performance evaluation: Opportunities and challenges</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">G</forename><surname>Thiel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Ensslin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ensslin</surname></persName>
+		</author>
+		<idno type="DOI">10.4335/15.2.303-328</idno>
+		<ptr target="https://doi.org/10.4335/15.2.303-328" />
+	</analytic>
+	<monogr>
+		<title level="j">Lex Localis</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="303" to="328" />
+			<date type="published" when="2017">2017. 2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Thiel, G. G., Ensslin, S. R., &amp; Ensslin, L. (2017). Street lighting management and performance evaluation: Opportunities and challenges. Lex Localis, 15(2), 303-328. https://doi.org/10.4335/15.2.303-328(2017)</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Recapturing the dark experience-Encounters with natural darkness in Nordic settlements</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tonetti</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tonetti, S. (2024). Recapturing the dark experience-Encounters with natural darkness in Nordic settlements.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b53">
+	<analytic>
+		<title level="a" type="main">PRISMA extension for scoping reviews (PRISMA-ScR): Checklist and explanation</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Tricco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lillie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zarin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">K</forename><surname>O'brien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Colquhoun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Levac</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Moher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D J</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Horsley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Weeks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hempel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Akl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcgowan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Stewart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hartling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aldcroft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Garritty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Straus</surname></persName>
+		</author>
+		<idno type="DOI">10.7326/M18-0850</idno>
+		<ptr target="https://doi.org/10.7326/M18-0850" />
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Internal Medicine</title>
+		<imprint>
+			<biblScope unit="volume">169</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="467" to="473" />
+			<date type="published" when="2018">2018</date>
+			<publisher>American College of Physicians</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tricco, A. C., Lillie, E., Zarin, W., O&apos;Brien, K. K., Colquhoun, H., Levac, D., Moher, D., Peters, M. D. J., Horsley, T., Weeks, L., Hempel, S., Akl, E. A., Chang, C., McGowan, J., Stewart, L., Hartling, L., Aldcroft, A., Wilson, M. G., Garritty, C., … Straus, S. E. (2018). PRISMA extension for scoping reviews (PRISMA-ScR): Checklist and explanation. In Annals of Internal Medicine (Vol. 169, Issue 7, pp. 467-473). American College of Physicians. https://doi.org/10.7326/M18-0850</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Effects of Improved Street Lighting on Crime</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Welsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Farrington</surname></persName>
+		</author>
+		<idno type="DOI">10.4073/csr.2008.13</idno>
+		<ptr target="https://doi.org/10.4073/csr.2008.13" />
+	</analytic>
+	<monogr>
+		<title level="j">Campbell Systematic Reviews</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="51" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Welsh, B. C., &amp; Farrington, D. P. (2008). Effects of Improved Street Lighting on Crime. Campbell Systematic Reviews, 4(1), 1-51. https://doi.org/10.4073/csr.2008.13</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Effect of lighting on frequency and severity of road accidents</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Yannis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kondyli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Mitzalis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transport</title>
+		<imprint>
+			<biblScope unit="volume">166</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="271" to="281" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yannis, G., Kondyli, A., &amp; Mitzalis, N. (2013). Effect of lighting on frequency and severity of road accidents. Transport, 166(5), 271-281.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b56">
+	<monogr>
+		<title level="m" type="main">References -included articles from scoping review</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">References -included articles from scoping review</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Dark Sky Parks: public policy that turns off the lights</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Dunning</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/09640568.2023.2275535</idno>
+		<ptr target="https://doi.org/10.1080/09640568.2023.2275535" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Environmental Planning and Management</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Alva, A., Brown, E., Evans, A., Morris, D., &amp; Dunning, K. (2023). Dark Sky Parks: public policy that turns off the lights. Journal of Environmental Planning and Management. https://doi.org/10.1080/09640568.2023.2275535</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Dark Adaptation in Urban Environments: An Innovative Design Framework for Pedestrian Lighting</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Amoruso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Larsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hvass</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Triantafyllidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Hansen</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1755-1315/1099/1/012044</idno>
+		<ptr target="https://doi.org/10.1088/1755-1315/1099/1/012044" />
+	</analytic>
+	<monogr>
+		<title level="j">IOP Conference Series: Earth and Environmental Science</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1099</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Amoruso, C. E., Larsen, M. H., Hvass, M., Triantafyllidis, G., &amp; Hansen, E. K. (2022). Dark Adaptation in Urban Environments: An Innovative Design Framework for Pedestrian Lighting. IOP Conference Series: Earth and Environmental Science, 1099(1). https://doi.org/10.1088/1755- 1315/1099/1/012044</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Are citizens willing to accept changes in public lighting for biodiversity conservation?</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Beaudet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Tardieu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>David</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ecolecon.2022.107527</idno>
+		<ptr target="https://doi.org/10.1016/j.ecolecon.2022.107527" />
+	</analytic>
+	<monogr>
+		<title level="j">Ecological Economics</title>
+		<imprint>
+			<date type="published" when="0200">2022. 200</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Beaudet, C., Tardieu, L., &amp; David, M. (2022). Are citizens willing to accept changes in public lighting for biodiversity conservation? Ecological Economics, 200. https://doi.org/10.1016/j.ecolecon.2022.107527</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Grasping darkness: The dark ecological network as a social-ecological framework to limit the impacts of light pollution on biodiversity</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Challéat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Barré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Laforge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lapostolle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Franchomme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Sirami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Le Viol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Milian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kerbiriou</surname></persName>
+		</author>
+		<idno type="DOI">10.5751/ES-12156-260115</idno>
+		<ptr target="https://doi.org/10.5751/ES-12156-260115" />
+	</analytic>
+	<monogr>
+		<title level="j">Ecology and Society</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Challéat, S., Barré, K., Laforge, A., Lapostolle, D., Franchomme, M., Sirami, C., Le Viol, I., Milian, J., &amp; Kerbiriou, C. (2021). Grasping darkness: The dark ecological network as a social-ecological framework to limit the impacts of light pollution on biodiversity. Ecology and Society, 26(1). https://doi.org/10.5751/ES-12156-260115</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b61">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Dill</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/21550085.2021.1904496</idno>
+		<ptr target="https://doi.org/10.1080/21550085.2021.1904496" />
+		<title level="m">Defense of Wild Night. Ethics, Policy and Environment</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="153" to="177" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dill, K. M. (2022). In Defense of Wild Night. Ethics, Policy and Environment, 25(2), 153-177. https://doi.org/10.1080/21550085.2021.1904496</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Dark Design: A New Framework for Advocacy and Creativity for the Nocturnal Commons</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Dunn</surname></persName>
+		</author>
+		<idno type="DOI">10.18848/2325-1328/CGP</idno>
+		<ptr target="https://doi.org/10.18848/2325-1328/CGP" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Design in Society</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="19" to="30" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Dunn, N. (2020a). Dark Design: A New Framework for Advocacy and Creativity for the Nocturnal Commons. International Journal of Design in Society, 14(4), 19-30. https://doi.org/10.18848/2325-1328/CGP</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Place After Dark: Urban peripheries as alternative futures</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Dunn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Routledge Hanbook of Place</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="155" to="167" />
+		</imprint>
+	</monogr>
+	<note>st ed.</note>
+	<note type="raw_reference">Dunn, N. (2020b). Place After Dark: Urban peripheries as alternative futures. In The Routledge Hanbook of Place (1st ed., pp. 155-167).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b64">
+	<analytic>
+		<title level="a" type="main">The gloomy city: Rethinking the relationship between light and dark</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Edensor</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0042098013504009</idno>
+		<ptr target="https://doi.org/10.1177/0042098013504009" />
+	</analytic>
+	<monogr>
+		<title level="j">Urban Studies</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="422" to="438" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Edensor, T. (2015). The gloomy city: Rethinking the relationship between light and dark. Urban Studies, 52(3), 422-438. https://doi.org/10.1177/0042098013504009</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Sensing dark places: Creating thick descriptions of nocturnal time and rhythm</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Griffiths</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">É</forename><surname>De Bézenac</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9781003408444-9</idno>
+		<ptr target="https://doi.org/10.4324/9781003408444-9" />
+	</analytic>
+	<monogr>
+		<title level="m">Dark Skies: Places, Practices, Communities</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="94" to="104" />
+		</imprint>
+	</monogr>
+	<note>Taylor and Francis</note>
+	<note type="raw_reference">Griffiths, R., Dunn, N., &amp; de Bézenac, É. (2023). Sensing dark places: Creating thick descriptions of nocturnal time and rhythm. In Dark Skies: Places, Practices, Communities (pp. 94-104). Taylor and Francis. https://doi.org/10.4324/9781003408444-9</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Darker Cities due to the Energy Crisis and the need for context-specific urban lighting</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hvass</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1755-1315/1320/1/012015</idno>
+		<ptr target="https://doi.org/10.1088/1755-1315/1320/1/012015" />
+	</analytic>
+	<monogr>
+		<title level="j">IOP Conference Series: Earth and Environmental Science</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1320</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hvass, M. (2024). Darker Cities due to the Energy Crisis and the need for context-specific urban lighting. IOP Conference Series: Earth and Environmental Science, 1320(1). https://doi.org/10.1088/1755-1315/1320/1/012015</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Balanced Brightness Levels: Exploring how lighting affects humans&apos; experiences of architectural and social urban contexts</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hvass</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Hansen</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1755-1315/1099/1/012017</idno>
+		<ptr target="https://doi.org/10.1088/1755-1315/1099/1/012017" />
+	</analytic>
+	<monogr>
+		<title level="j">IOP Conference Series: Earth and Environmental Science</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1099</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hvass, M., &amp; Hansen, E. K. (2022). Balanced Brightness Levels: Exploring how lighting affects humans&apos; experiences of architectural and social urban contexts. IOP Conference Series: Earth and Environmental Science, 1099(1). https://doi.org/10.1088/1755-1315/1099/1/012017</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b68">
+	<analytic>
+		<title level="a" type="main">LIGHTS OUT? LOWERING URBAN LIGHTING LEVELS AND INCREASING ATMOSPHERE AT A DANISH TRAM STATION</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hvass</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Waltorp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Hansen</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9781003182610-8</idno>
+		<ptr target="https://doi.org/10.4324/9781003182610-8" />
+	</analytic>
+	<monogr>
+		<title level="m">Lighting Design in Shared Public Spaces</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="151" to="172" />
+		</imprint>
+	</monogr>
+	<note>Taylor and Francis</note>
+	<note type="raw_reference">Hvass, M., Waltorp, K., &amp; Hansen, E. K. (2022). LIGHTS OUT? LOWERING URBAN LIGHTING LEVELS AND INCREASING ATMOSPHERE AT A DANISH TRAM STATION. In Lighting Design in Shared Public Spaces (pp. 151-172). Taylor and Francis. https://doi.org/10.4324/9781003182610-8</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b69">
+	<analytic>
+		<title level="a" type="main">More than Darkness Preservation: The Importance of the Dark, Star-Filled Skies in Urban Areas</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">M</forename><surname>Lam</surname></persName>
+		</author>
+		<idno type="DOI">10.3167/nc.2020.150304</idno>
+		<ptr target="https://doi.org/10.3167/nc.2020.150304" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature and Culture</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="296" to="317" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lam, Y. M. (2020). More than Darkness Preservation: The Importance of the Dark, Star-Filled Skies in Urban Areas. Nature and Culture, 15(3), 296-317. https://doi.org/10.3167/nc.2020.150304</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Avoiding overly bright future: The systems intelligence perspective on the management of light pollution</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lyytimäki</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.envdev.2015.06.009</idno>
+		<ptr target="https://doi.org/10.1016/j.envdev.2015.06.009" />
+	</analytic>
+	<monogr>
+		<title level="j">Environmental Development</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="4" to="14" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lyytimäki, J. (2015). Avoiding overly bright future: The systems intelligence perspective on the management of light pollution. Environmental Development, 16, 4-14. https://doi.org/10.1016/j.envdev.2015.06.009</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b71">
+	<analytic>
+		<title level="a" type="main">A multi-value based approach to identify potential dark sky places in mainland China</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Gao</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.landurbplan.2024.105207</idno>
+		<ptr target="https://doi.org/10.1016/j.landurbplan.2024.105207" />
+	</analytic>
+	<monogr>
+		<title level="j">Landscape and Urban Planning</title>
+		<imprint>
+			<biblScope unit="page">253</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Pan, X., Yang, D., Wang, L., Zhang, W., Liu, N., Song, X., &amp; Gao, C. (2025). A multi-value based approach to identify potential dark sky places in mainland China. Landscape and Urban Planning, 253. https://doi.org/10.1016/j.landurbplan.2024.105207</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b72">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Rathsach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hvass</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1755-1315/1099/1/012046</idno>
+		<ptr target="https://doi.org/10.1088/1755-1315/1099/1/012046" />
+		<title level="m">The Moon as a Light Source: New sustainable ways of lighting up cities at night. IOP Conference Series: Earth and Environmental Science</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page">1099</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rathsach, C. M., &amp; Hvass, M. (2022). The Moon as a Light Source: New sustainable ways of lighting up cities at night. IOP Conference Series: Earth and Environmental Science, 1099(1). https://doi.org/10.1088/1755-1315/1099/1/012046</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Night as Fragmenting Frontier: Understanding the Night that Remains in an era of 24/7</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Shaw</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/gec3.12250</idno>
+		<ptr target="https://doi.org/10.1111/gec3.12250" />
+	</analytic>
+	<monogr>
+		<title level="j">Geography Compass</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="637" to="647" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shaw, R. (2015). Night as Fragmenting Frontier: Understanding the Night that Remains in an era of 24/7. Geography Compass, 9(12), 637-647. https://doi.org/10.1111/gec3.12250</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b74">
+	<analytic>
+		<title level="a" type="main">The Value of Darkness: A Moral Framework for Urban Nighttime Lighting</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Stone</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11948-017-9924-0</idno>
+		<ptr target="https://doi.org/10.1007/s11948-017-9924-0" />
+	</analytic>
+	<monogr>
+		<title level="j">Science and Engineering Ethics</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="607" to="628" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stone, T. (2018). The Value of Darkness: A Moral Framework for Urban Nighttime Lighting. Science and Engineering Ethics, 24(2), 607-628. https://doi.org/10.1007/s11948-017-9924-0</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Re-envisioning the Nocturnal Sublime: On the Ethics and Aesthetics of Nighttime Lighting</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Stone</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11245-018-9562-4</idno>
+		<ptr target="https://doi.org/10.1007/s11245-018-9562-4" />
+	</analytic>
+	<monogr>
+		<title level="j">Topoi</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="481" to="491" />
+			<date type="published" when="2021">2021a</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stone, T. (2021a). Re-envisioning the Nocturnal Sublime: On the Ethics and Aesthetics of Nighttime Lighting. Topoi, 40(2), 481-491. https://doi.org/10.1007/s11245-018-9562-4</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Towards a Darker Future? Designing Environmental Values into the Next Generation of Streetlights</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Stone</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-52313-8_11</idno>
+		<ptr target="https://doi.org/10.1007/978-3-030-52313-8_11" />
+	</analytic>
+	<monogr>
+		<title level="j">Philosophy of Engineering and Technology</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="201" to="223" />
+			<date type="published" when="2021">2021b</date>
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stone, T. (2021b). Towards a Darker Future? Designing Environmental Values into the Next Generation of Streetlights. In Philosophy of Engineering and Technology (Vol. 36, pp. 201-223). Springer Nature. https://doi.org/10.1007/978-3-030-52313-8_11</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Darkening cities as urban restoration</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Stone</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9781003408444-14</idno>
+		<ptr target="https://doi.org/10.4324/9781003408444-14" />
+	</analytic>
+	<monogr>
+		<title level="m">Dark Skies: Places, Practices, Communities</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="149" to="160" />
+		</imprint>
+	</monogr>
+	<note>Taylor and Francis</note>
+	<note type="raw_reference">Stone, T. (2023). Darkening cities as urban restoration. In Dark Skies: Places, Practices, Communities (pp. 149-160). Taylor and Francis. https://doi.org/10.4324/9781003408444-14</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Theoretical Foundations of Designing for Darkness</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Stone</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1755-1315/1320/1/012001</idno>
+		<ptr target="https://doi.org/10.1088/1755-1315/1320/1/012001" />
+	</analytic>
+	<monogr>
+		<title level="j">IOP Conference Series: Earth and Environmental Science</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1320</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Stone, T. (2024). Theoretical Foundations of Designing for Darkness. IOP Conference Series: Earth and Environmental Science, 1320(1). https://doi.org/10.1088/1755-1315/1320/1/012001</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Darkness and Sustainability: Other Species&apos; Night and Human Aesthetic Preferences</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tainio</surname></persName>
+		</author>
+		<idno type="DOI">10.19205/69-70.23.5</idno>
+		<ptr target="https://doi.org/10.19205/69-70.23.5" />
+	</analytic>
+	<monogr>
+		<title level="j">Polish Journal of Aesthetics</title>
+		<imprint>
+			<biblScope unit="page" from="61" to="75" />
+			<date type="published" when="2023">2023. 2023(69-70</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tainio, M. (2023). Darkness and Sustainability: Other Species&apos; Night and Human Aesthetic Preferences. Polish Journal of Aesthetics, 2023(69-70), 61-75. https://doi.org/10.19205/69- 70.23.5</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Co-designing safe and sustainable darkness for northern urban places</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Vuorenmaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Pihlajaniemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Parhankangas</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1755-1315/1320/1/012004</idno>
+		<ptr target="https://doi.org/10.1088/1755-1315/1320/1/012004" />
+	</analytic>
+	<monogr>
+		<title level="j">IOP Conference Series: Earth and Environmental Science</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1320</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vuorenmaa, R., Pihlajaniemi, H., &amp; Parhankangas, O. (2024). Co-designing safe and sustainable darkness for northern urban places. IOP Conference Series: Earth and Environmental Science, 1320(1). https://doi.org/10.1088/1755-1315/1320/1/012004</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

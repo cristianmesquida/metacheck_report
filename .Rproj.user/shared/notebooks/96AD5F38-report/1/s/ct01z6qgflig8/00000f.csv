@@ -1,0 +1,3 @@
+"0","module_run(theses, ""power"")
+"
+"1","Power Analysis Check: The LLM check for power analyses failed to run; no results could be extracted. This is not the same as finding no power analyses -- please check manually or re-run the check."

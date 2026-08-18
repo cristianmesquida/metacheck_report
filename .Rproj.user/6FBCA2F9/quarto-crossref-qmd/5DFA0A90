@@ -1,0 +1,74 @@
+{
+    "entries": [
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "repo_check_naming",
+            "suffix": "",
+            "title": "Naming issues detected by the `repo_check` module"
+        },
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "ref_pubpeer",
+            "suffix": "",
+            "title": "PubPeer comments on cited articles detected using the `ref_pubpeer module`"
+        },
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "repo_check_summary",
+            "suffix": "",
+            "title": "Summary of the `repo_check` module"
+        },
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "stat_check",
+            "suffix": "",
+            "title": "Errors in the reporting of *p*-values detected by `stat_check` module"
+        },
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "power_llm",
+            "suffix": "",
+            "title": "Classification and completeness of power analyses by the `power` module using LLM functionality"
+        },
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "power",
+            "suffix": "",
+            "title": "Power analyses detected by the `power` module"
+        },
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "stat_p_nonsig",
+            "suffix": "",
+            "title": "Non-significant *p*-values detected by the `stat_p_nonsig` module"
+        },
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "stat_effect_size",
+            "suffix": "",
+            "title": "Statistical tests detected by the `stat_effect_size` module"
+        },
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "stat_effect_size_coherence",
+            "suffix": "",
+            "title": "*Student's *t*-tests detected by the `stat_effect_size` module"
+        },
+        {
+            "file": "report.qmd",
+            "type": "tbl",
+            "id": "marginal",
+            "suffix": "",
+            "title": "*P*-values detected as being interpreted as marginally significant by the `marginal` module"
+        }
+    ]
+}

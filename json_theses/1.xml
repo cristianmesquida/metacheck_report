@@ -1,0 +1,1315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">A Comparative Study of Explainable AI Methods for Computer-Aided Design</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-07">July, 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct status="extracted">
+					<analytic>
+						<author>
+							<persName><forename type="first">Theo</forename><forename type="middle">P</forename><surname>Bruinsma</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">MASTER A Comparative Study of Explainable AI Methods for Computer-Aided Design Bruinsma</orgName>
+								<orgName type="institution">Eindhoven University of Technology</orgName>
+								<address>
+									<country>Theo P</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><roleName>Dr</roleName><forename type="first">Chao</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Human-Technology Interaction</orgName>
+								<orgName type="institution">Eindhoven University of Technology</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><roleName>Dr</roleName><forename type="first">Chris</forename><forename type="middle">C P</forename><surname>Snijders</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Human-Technology Interaction</orgName>
+								<orgName type="institution">Eindhoven University of Technology</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">A Comparative Study of Explainable AI Methods for Computer-Aided Design</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-07">July, 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">2403C08FE3B527A947660CF559DAB4AB</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.9.0" ident="GROBID" when="2026-08-17T12:11+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">0.9.0</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=0, consolidateHeader=0, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[], flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>AI-assisted decision-making</term>
+					<term>explainable AI</term>
+					<term>electrical engineering</term>
+					<term>computer-aided design</term>
+					<term>printed circuit boards</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Link to publication</head><p>Disclaimer This document contains a student thesis (bachelor's or master's), as authored by a student at Eindhoven University of Technology. Student theses are made available in the TU/e repository upon obtaining the required degree. The grade received is not published on the document as presented in the repository. The required complexity or quality of research of student theses may vary by program, and the required minimum study period may vary in duration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>General rights</head><p>Copyright and moral rights for the publications made accessible in the public portal are retained by the authors and/or other copyright owners and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with these rights.</p><p>• Users may download and print one copy of any publication from the public portal for the purpose of private study or research.</p><p>• You may not further distribute the material or use it for any profit-making activity or commercial gain Take down policy If you believe that this document breaches copyright please contact us providing details, and we will remove access to the work immediately and investigate your claim.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A Comparative Study of Explainable AI Methods for Engineering Tasks</head><p>AI-assisted decision-making is increasingly applied in the fields of healthcare, finance, and law <ref type="bibr" target="#b15">(Lai et al., 2023)</ref>. AI systems are believed to enhance the performance and efficiency of human-AI systems <ref type="bibr" target="#b15">(Lai et al., 2023)</ref>. AI-assisted decision-making can be described as AI providing predictions and/or explanations to assist in decision-making <ref type="bibr">(Steyvers &amp; Kumar, 2024)</ref>.</p><p>Regulations such as the European Union's General Data Protection Regulation (Regulation (EU), 2016) and the Artificial Intelligence Act (2024) have established transparency and accountability as critical requirements for AI systems. This shows the recognition from governmental agencies that stakeholders must be able to understand how AI systems reach their conclusions. Similar sentiment can be found in the research field of human-AI Interaction (HAII) <ref type="bibr" target="#b15">(Lai et al., 2023)</ref>. The research field Explainable AI (XAI) is concerned with increasing transparency and trustworthiness of AI systems <ref type="bibr">(Rawal et al., 2022)</ref>. XAI is foundational for responsible AI, which emphasizes fairness, interpretability, and accountability in AI systems <ref type="bibr" target="#b13">(Kim et al., 2024)</ref>.</p><p>XAI research focuses on methods that provide explanations for AI decisions, including domains such as healthcare, finance, and law <ref type="bibr" target="#b15">(Lai et al., 2023)</ref>. Common XAI approaches include feature contribution and visual explanations, which are usually appreciated by end-users <ref type="bibr" target="#b37">(Wang et al., 2022;</ref><ref type="bibr" target="#b11">Islam et al., 2022)</ref>. Much research focuses on evaluating XAI methods to determine their suitability for particular tasks or application domains <ref type="bibr" target="#b11">(Islam et al., 2022)</ref>. Common evaluation metrics include trust, performance, mental models, and satisfaction <ref type="bibr" target="#b13">(Kim et al., 2024;</ref><ref type="bibr" target="#b15">Lai et al., 2023)</ref>. However, the field of HAII and XAI is relatively young and lacks standardization of its studies <ref type="bibr" target="#b13">(Kim et al., 2024;</ref><ref type="bibr" target="#b15">Lai et al., 2023)</ref>.</p><p>It is thus important to select well-known, common, and high-quality evaluation methods.</p><p>Further findings from <ref type="bibr" target="#b15">Lai et al. (2023)</ref> include that the researchers often study a limited set of decision tasks. Due to the limited variety of application domains in XAI research, challenges remain in developing XAI systems that effectively support across a broader set of domains and levels of user expertise <ref type="bibr" target="#b37">(Wang et al., 2022)</ref>.</p><p>One of those underexplored domains is that of engineering. While there is HAII research on AI within the engineering domain, such as that by <ref type="bibr" target="#b3">Chong et al. (2022)</ref>, no prior studies have evaluated XAI methods specifically for engineering-related tasks. A potential application of (X)AI in the engineering domain is in the development phase. In this phase, engineers use Computer-Aided Design (CAD) software to design a technical product in preparation for manufacturing. CAD tasks involve open-ended problem solving, multi-step reasoning, and domain-specific constraints (i.e., electronics has different constraints than mechanics), resulting in tasks that differ significantly from classification or diagnosis tasks. In contrast to previously studied tasks <ref type="bibr" target="#b15">(Lai et al., 2023)</ref>, CAD tasks have unique characteristics: they follow the rules of physics and often requires calculations; have a theoretically ideal solution, but reality mandates making trade-offs; they take place in a 2D or 3D design space; have various levels of difficulty; have quality requirements that may or may not be documented; and come with professional risks. These characteristics present unique challenges and opportunities for XAI methods.</p><p>Engineers use complex mathematical algorithms in CAD tools to increase their efficiency and product performance. Mechanical CAD tools use computational fluid dynamics to optimize airflow through a computer <ref type="bibr" target="#b16">(Lee et al., 1994)</ref>; electronic CAD tools have algorithms called "auto-routers" that solve a maze problem for printed circuit boards (PCBs) to route interconnects between components <ref type="bibr" target="#b0">(Badriyah et al., 2016)</ref>; and architectural CAD tools perform structural analysis using finite element methods to compute building strength <ref type="bibr" target="#b12">(Kaveh, 2014)</ref>. A common thread among algorithms in CAD tools is that they are highly interactive, as they require human input and oversight to come to a satisfying design. Despite their valid output, their internal logic is often not transparent to users. This makes them an interesting evaluation task for XAI research, with potential generalizability across engineering domains. CAD tools for PCB design are specifically interesting for research due to their repeatable tasks that enable robust experimental designs. Additionally, the design problems have a symbolic structure (e.g., layers, traces, and net lists), which could facilitate rich explanations.</p><p>Unfortunately, the integration of algorithms in electronic CAD tools has faced severe challenges. Traditional auto-router algorithms are non-transparent in their decision-making, have not made significant technical advancements in the past decades, and the output is not satisfactory, so engineers still have to improve the output <ref type="bibr" target="#b18">(Marrakchi, 2020)</ref>. However, <ref type="bibr" target="#b41">Zuken (2023)</ref> has recently shown promising results of their latest AI for PCB layout tasks. Instead of the traditional algorithms, it uses a blackbox machine learning model, trained by reinforcement learning, and is based on verified high-quality PCB designs. Even still, this commercial AI lacks explainability features, and the XAI field has not caught up to the developments of AI in CAD tasks.</p><p>This study contributes to the growing body of XAI research by investigating the underexplored engineering domain with a Computer-Aided Design evaluation task: AI-assisted PCB layout design. It explores how different explanation methods affect the user experience and performance of engineers.</p><p>By doing so, this study addresses a crucial research gap and informs research and development of XAI systems to increase their suitability for engineering contexts. Therefore, this study proposes the following research question: Which Explainable AI method gives engineers the best user experience in AI-assisted PCB design, and how does it relate to performance outcomes?</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature Review Explainable AI Overview</head><p>Explainable AI (XAI) refers to systems that make the internal reasoning of a black-box AI system more transparent and understandable to users. A central concept of XAI is the explanation, which may take on various forms depending on the AI model and task context. While various definitions of explanations exist, a widely cited and accepted definition is proposed by <ref type="bibr" target="#b19">Miller (2019)</ref> based on social sciences. To <ref type="bibr" target="#b19">Miller (2019)</ref>, explanations are a cognitive and social process with the goal of helping users understand a decision. The cognitive process entails communicating the cause of an outcome, and the social process means the explanation should satisfy stakeholders. Thereby, an explanation should not only be accurate but also relevant, understandable, and pragmatic. This definition is suitable for HAII research as explanations should not only be technically accurate but also fit for complex real-world settings.</p><p>Various stakeholders are involved in AI development, each with different needs. Governments prioritize legal compliance, fairness, and accountability; developers require insights that aid in debugging, optimizing user experience, and aligning model behavior with intended outcomes; researchers seek valid, user-centered methods to evaluate explanation quality and address the lack of standardization in the field; end-users seek clarity, trust, and usability in their interactions with AI systems <ref type="bibr" target="#b2">(Brdnik et al., 2025;</ref><ref type="bibr" target="#b9">Hoffman et al., 2019;</ref><ref type="bibr" target="#b22">Nauta et al., 2023)</ref>. Aligning XAI methods with the various stakeholder requirements can be challenging due to their diverse needs and discrepancies in XAI evaluation methods <ref type="bibr" target="#b9">(Hoffman et al., 2019)</ref>, but alignment is crucial to align with the EU's vision for trustworthy AI (Regulation (EU), 2016).</p><p>XAI methods can often be grouped by their characteristics, as explained by <ref type="bibr" target="#b21">Molnar (2025)</ref>: posthoc explanations take a black-box model and generate explanations after the prediction was made, whereas other AI models are interpretable by design (e.g., decision trees and linear regression models).</p><p>Post-hoc explanations can be further divided into model-agnostic and model-specific explanations, where model-agnostic explanations can be applied to most types of AI models (e.g., partial dependence plots and counterfactual explanations) and the other is specific to certain types of AI models (e.g., saliency maps and adversarial examples). Model-agnostic explanations can be further classified into local explanations that clarify individual predictions or global explanations that elaborate on the overall model behavior. Other than these classifications, explanations can take on many forms <ref type="bibr" target="#b21">(Molnar, 2025)</ref>:  Rule-based explanations (e.g., decision trees and decision rules), which explicitly describe the conditional logic that goes on in an AI model.</p><formula xml:id="formula_0"></formula><p> Visual-based explanations (e.g., saliency maps), suitable for spatial and graphic data.</p><p>The large variety of XAI types creates the challenge of selecting a suitable XAI method given an AI model and application task. Poorly chosen or designed XAI methods can cause more harm than good. Harmful consequences have been identified to be overreliance, disengagement, dissatisfaction, or incomprehension <ref type="bibr">(Steyvers &amp; Kumar, 2024)</ref>. The real-world application of such poorly designed XAI methods is risky to all stakeholders. It is therefore important to appropriately choose suitable XAI methods per application and evaluate whether these support alignment of AI, humans, and tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Comparing the Benefits and Limitations of Explainable AI</head><p>Several studies have compared the effectiveness of different XAI methods across tasks and domains, thereby highlighting the benefits and limitations of each method. SHAP and LIME are two widely used and studied post-hoc methods. <ref type="bibr" target="#b32">Salih et al. (2024)</ref> demonstrated that SHAP can explain non-linear feature relationships and has strong theoretical foundations in game theory. In contrast, LIME is more computationally efficient and model-agnostic but can only give local linear approximations, limiting insights into non-linear effects. Unfortunately, both methods produce inconsistent explanations depending on the used model and the presence of collinear features, which was found to be problematic in healthcare applications. While <ref type="bibr" target="#b32">Salih et al. (2024)</ref> proposed a metric to quantify the explanation stability, they still found that minor differences led to major shifts in its feature's importance. <ref type="formula">Nwakanma et al.   (2023)</ref>also compared SHAP and LIME for the application of presence detection. They found SHAP to be more intuitive thanks to its visual nature, while LIME was more accurate regarding its statistical predictions, and suggested including both to compensate for their weaknesses. <ref type="bibr" target="#b29">Rong et al. (2024)</ref> conducted a systematic analysis of 97 papers that conducted human-centered XAI evaluation. They found that XAI is typically effective in improving users' subjective understanding, but there are mixed results regarding improving trust and usability. Interestingly, interactive explanations tend to perform better in terms of user engagement and perceived usefulness. These interactive explanations can be questioned further or allow users to see changes in the explanation as they manipulate the input. Overall, it is clear that each XAI method has unique benefits and limitations. To match XAI with its application, they should be thoroughly evaluated.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Evaluation of Explainable AI</head><p>Creating coherent and goal-oriented XAI research requires careful consideration of how to evaluate different XAI methods. <ref type="bibr" target="#b13">Kim et al. (2024)</ref> proposed a high-level distinction between human-centered and computer-centered evaluation. Human-centered evaluation focuses on assessing how explanations improve human performance and experience for decision-making tasks, whereas computer-centered evaluation of XAI emphasizes correctness and completeness of the explanations. The latter is outside the scope of this study. <ref type="bibr" target="#b5">Doshi-Velez &amp; Kim (2017)</ref> further categorize human-centered evaluation into three approaches based on the level of how close the evaluation is to a real-world application:  Functionally-grounded approach uses proxy tasks and does not use human users in its evaluation.</p><p> Human-grounded approach uses simplified tasks and lay users to make a general evaluation.</p><p> Application-grounded approach uses domain experts and real-world tasks to evaluate XAI methods for specific applications.</p><p>Each approach has strengths and weaknesses, and selecting an approach should depend on the research goal. For example, to evaluate the effectiveness of XAI in specific real-world domains (e.g., design or engineering), it is desirable to pursue an application-grounded approach. Systematic reviews on XAI evaluation <ref type="bibr" target="#b5">(Doshi-Velez &amp; Kim, 2017;</ref><ref type="bibr" target="#b13">Kim et al., 2024;</ref><ref type="bibr" target="#b15">Lai et al., 2023)</ref> found that there is currently no consensus on which evaluation method should be used; the field of HAII is still developing and working towards standardization. Therefore, to promote comparison between studies, XAI research should use common evaluation metrics. Further recommendations from <ref type="bibr" target="#b13">Kim et al. (2024)</ref> and <ref type="bibr" target="#b15">Lai et al. (2023)</ref> include using multiple, complementary types of metrics to increase construct validity and encourage comparability across studies. It is thus beneficial to compare subjective and objective measures, as well as qualitative and quantitative.</p><p>Subjective measures such as self-reported questionnaires with Likert-scales and interviews and widely used to capture participants' perceived trust <ref type="bibr" target="#b10">(Hoffman et al., 2023)</ref>, satisfaction <ref type="bibr" target="#b10">(Hoffman et al., 2023)</ref>, and mental effort <ref type="bibr" target="#b8">(Hart &amp; Staveland, 1988)</ref>. While these methods help capture the user's perspective, their limits are also acknowledged <ref type="bibr" target="#b35">(van der Waa et al., 2021)</ref>. <ref type="bibr" target="#b9">Hoffman et al. (2019)</ref> note that subjective reports may not correspond with actual understanding and behavior. Thereby raising concerns regarding construct validity and misinterpretation of analysis results. A proposed solution to this limitation is to compare subjective and objective measures to see if, for example, self-reported ease of use aligns with objective performance measures <ref type="bibr" target="#b14">(Lage et al., 2019)</ref>. <ref type="bibr" target="#b13">Kim et al. (2024)</ref> and <ref type="bibr" target="#b15">Lai et al. (2023)</ref> found common subjective measurements and methods to be based on the works by <ref type="bibr" target="#b8">Hart &amp; Staveland (1988)</ref>, <ref type="bibr" target="#b9">Hoffman et al. (2019)</ref>, and <ref type="bibr" target="#b10">Hoffman et al. (2023)</ref>. A survey of empirical methodologies by <ref type="bibr" target="#b36">Vereschak et al. (2021)</ref> identified several trust-related behavioral measures, which this study will use to compare to subjective measures. Demographics such as years of relevant experience can be used as an exploratory predictor for performance-related evaluation.</p><p>Qualitative feedback on XAI interaction offers an opportunity to uncover rich and nuanced user needs. Qualitative evaluation methods include interviews, open-ended questions, focus groups, or the talk-aloud protocol. Though the most feasible method for online experiments is using open-ended questions, as they do not require a researcher to be present. Benefits from qualitative feedback include finding responses to specific XAI elements, working outside the bounds of single construct questionnaires, and gaining a deeper understanding of individual differences <ref type="bibr" target="#b29">(Rong et al., 2024)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Computer-Aided Design as an Evaluation Task</head><p>AI-assisted engineering in CAD software comes with unique challenges and opportunities for HAII research. Especially when compared to the common set of evaluation tasks in HAII research such as prediction, classification, recommendation, and estimation tasks <ref type="bibr" target="#b15">(Lai et al., 2023)</ref>. CAD work requires exact solutions that are bound to physics. It involves technical problem-solving where engineers identify physical constraints to work around. It requires the use of domain knowledge, balancing tradeoffs, and working in a 2D or 3D design space. Furthermore, while engineering decisions do not directly risk human lives, they carry significant consequences for product reliability, manufacturability, and safety. These characteristics are rarely found in other HAII evaluation tasks and provide the opportunity to evaluate technical reasoning and decision-making.</p><p>As was already mentioned, there is limited variety in HAII evaluation tasks. To the best of the researcher's knowledge, few studies have explored XAI for engineering tasks. One relevant study measured confidence in self and AI for bridge truss engineering tasks <ref type="bibr" target="#b3">(Chong et al., 2022)</ref>. In their experiment, participants connected bridge elements with trusses to make a strong construction. After participants made their decision, an AI suggested an alternative construction that the AI believed was optimal.</p><p>After participants decided to follow the AI suggestion or use their initial design, they got feedback on whether their design choice was advantageous. <ref type="bibr" target="#b3">Chong et al. (2022)</ref> found that the AI suggestions and feedback could mislead users and inflate their confidence. Thereby highlighting the risks associated with using AI in critical tasks.</p><p>While no academic literature was found on XAI for engineering, some XAI methods are in use in commercial software. For instance, ESTECO's Reduced Order Modeling and ML toolbox generates physics-informed predictions of aerodynamic performance <ref type="bibr" target="#b7">(Genovese &amp; Scardigli, 2024)</ref>. A "Proper Orthogonal Decomposition" is used to convert Computational Fluid Dynamics simulation data into interpretable components. These components are used in surrogate models, which make predictions for new designs. This method maintains physical traceability and explains how a change in design affects performance, making it suitable not just for experienced engineers but also those with less simulation expertise <ref type="bibr" target="#b7">(Genovese &amp; Scardigli, 2024)</ref>. Finally, AI for creative design appears to be a growing field of research interest, such as applying generative AI to quickly make conceptual designs <ref type="bibr" target="#b40">(Zhu &amp; Luo, 2023)</ref>.</p><p>However, creative design should not be treated the same as engineering because the criteria for "correctness" are much more subjective for creative design.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Printed Circuit Board Design as an Engineering Task</head><p>A sub-domain within engineering that is working towards AI integration is the development of printed circuit boards (PCBs). Similar to many other engineering domains, PCBs are developed on a computer in Computer-Aided Design (CAD) software. As explained in the introduction, CAD tools share many similarities across engineering domains, and studying a specific sub-domain could provide valuable XAI findings generalizable across engineering domains.</p><p>PCBs are a central component in electronic devices and can be found in practically all devices with a battery or power cord. A PCB consists of electronic components that can either be passive (e.g., resistors, capacitors, and inductors) or active (e.g., microcontrollers, sensors, and lights). Through the interplay of these components, a PCB gets a function tailored to the context it was designed for. For example, a PCB with a light sensor and a motor controller could function to close blinds when light is detected; alternatively, a PCB with a button, a microcontroller, a battery, and an antenna can work as a wireless doorbell system (see Figure <ref type="figure">1</ref>.1). Figure <ref type="figure">1</ref>.2 breaks down the wireless doorbell and shows an exploded view, as well as how interconnected electronic components work together to create a function (see Figure <ref type="figure">1</ref>.3). Figure <ref type="figure">1</ref>.4 shows a render from PCB design software, and Figure <ref type="figure">1</ref>.5 shows a view of the copper layer that PCB engineers typically work on. Finally, it is brought to the main topic of this study, an engineer creates the PCB in CAD software (see Figure <ref type="figure">1</ref> <ref type="bibr">.6)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 1</head><p>Doorbell System from User Interaction to PCB Engineering, subfigure 1, 2, 3, and 6 by OpenAI ( <ref type="formula">2025)</ref>1. Pressing the button rings the doorbell. But how can it do that? 2. Inside is a circuit board with components that combine into a functionality.</p><p>3. The button signal travels to the microcontroller, then is sent wirelessly by an antenna. 4. Copper traces on a circuit board interconnect component (screenshot 3D PCB render).</p><p>5. Designing requires consideration of trace routing and component placement (screenshot copper layer). 6. PCB engineers use ECAD software to design circuits before manufacturing.</p><p>The PCB engineering process is typically carried out by specialized engineers and requires several key steps, including component selection, schematic design, physical layout design, simulation, fabrication, and testing. Throughout the whole history of PCBs, engineers have had to manually place components and draw interconnections ("route traces"). Nowadays, CAD software is used, which automates many of the steps involved. Nevertheless, even in the most advanced CAD software, engineers are still required to manually route traces using graphical interfaces. While auto-routers and auto-placers are available, their results are often unsatisfactory to engineers.</p><p>The company "Zuken" is one of history's ECAD pioneers, and they recently developed an advanced AI model to do auto-routing and auto-placement <ref type="bibr" target="#b41">(Zuken, 2023)</ref>. This model is able to make highquality designs with satisfactory results for engineers. AI implementation, such as that of Zuken, can significantly assist engineers in their design process, thereby saving much development time.</p><p>However, there is a lack of Explainable AI as the model's outputs are shown without explanations. This motivated this Master's Thesis to further research how Explainable AI could be implemented into ECAD tools.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Current Research</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gaps between Current Explainable AI Methods and Engineering Requirements</head><p>Most XAI methods do not fully facilitate the requirements of PCB design. SHAP and LIME often rely on tabular, textual, or image data. However, PCB design software has a large variety of data types: text, geometrical, 2D, 3D, numerical, Boolean, and connectivity data. However, even these are not enough to capture all data in PCB design <ref type="bibr" target="#b41">(Zuken, 2023)</ref>. Given this large collection of data, popular XAI methods are unlikely to capture all the AI's reasoning.</p><p>Additionally, XAI methods typically aim to explain a black-box prediction, which may not be as valuable to PCB engineers. Instead, engineers require nuanced support in their design and decisionmaking process. A domain-specific XAI method should go beyond showing why a prediction is made and instead clarify how a PCB design can be improved. It should understand the complex layout decisions, respect electrical and mechanical constraints, and allow engineers to remain in control. Without this domain-specificity, explanations risk being too abstract or generic to be meaningful.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A Conceptual Explainable AI Method for Printed Circuit Board Design</head><p>Given the aforementioned gaps and challenges in the field of HAII and the unique characteristics of PCB engineering, there is a need to develop a novel XAI method. This study introduces a concept for a novel XAI method tailored to PCB engineering and juxtaposes it with a well-known and studied alternative.</p><p>Fulfillment of several requirements is essential to be effective in the PCB domain. Given that PCBs include several sub-technologies, such as analog, digital, power, or serial signals, and component placement, the method must be flexible enough to adapt its content to the type of technology being designed. Due to the visual nature of PCBs, it should include at least visual, and preferably also textual, components to increase understanding in various user groups <ref type="bibr" target="#b28">(Ribera &amp; Lapedriza, 2019)</ref>. Finally, due to time constraints, it was chosen to create global explanations to communicate the AI's internal rules and intentions globally. Even still, it should be "local-enough" to adapt to various technology types.</p><p>The novel XAI method's design was inspired by PCB "application notes", commonly shared between manufacturers and electrical engineers to ensure designs are being created correctly. A global model-agnostic explanation is adapted to the PCB technology and offers justification for design choices made in the AI suggestions. The XAI method combines a visual diagram with textual statements to effectively inform users, and the content is based on books by <ref type="bibr" target="#b1">Bogatin (2017)</ref>. For example, when placing a component known as a decoupling capacitor, the XAI method will show an Ideal Design example, accompanied by texts like "place the capacitor as close as possible to the microcontroller". Apart from mimicking application notes, junior engineers also receive similar feedback from senior engineers in the PCB domain.</p><p>To set up an effective XAI evaluation, the novel XAI method is juxtaposed with a contrasting method inspired by Shapley values. Shapley values are well-known and provide local model-agnostic explanations. In this study, the method is adapted into a Feature Importance waterfall plot. It shows how individual design features contribute positively or negatively to an AI's internal design score. Throughout the report, it is referred to as the "Feature Importance" XAI method, while the novel method is referred to as "Ideal Design". While it is not made for engineering tasks, the Feature Importance is suitable enough to provide meaningful comparisons.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Aims and Contributions of the Current Research</head><p>This study aims to address the gaps in the field of HAII and XAI, especially around engineering tasks. Explainable AI is explored in the context of simulated but realistic PCB design decisions. The range of evaluation tasks in HAII is broadened by focusing on technical decision-making in the engineering of PCB designs. An exploratory approach is chosen to compare a novel domain-specific XAI method with a well-established feature-based XAI method. A comprehensive evaluation is included by combining both objective measures (acceptance rate, error detection, decision time, and level of questioning) and subjective measures (trust, satisfaction, mental effort, and preference). Furthermore, qualitative feedback from participants is thematically analyzed to provide a rich insight into how users experience AI explanations. This study contributes to the development of context-specific XAI methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method Experimental Design</head><p>This thesis presents an exploratory study on decision tasks in AI-assisted PCB design and includes a novel XAI method, "Ideal Design". A within-subject design was used with three conditions: first, a control condition (no XAI), followed by two counterbalanced XAI conditions, "Feature Importance" (similar to SHAP) and "Ideal Design". The study aimed to follow the application-grounded approach <ref type="bibr" target="#b5">(Doshi-Velez &amp; Kim, 2017)</ref> but could not truly achieve this due to the challenges of integrating this study into a real work environment. Instead, an online study was conducted where participants were screened for relevant technical background, were given a simulated engineering task, and a performance-based scoring system with a monetary incentive to simulate a real-world engineering context.</p><p>Following recommendations from the HAII field <ref type="bibr" target="#b13">(Kim et al., 2024)</ref>, standardized questionnaires were used to assess trust, satisfaction, and mental effort. To compare and gain a deeper understanding, additional metrics were collected: objective metrics (decision time, level of questioning, acceptance rate, and error detection) <ref type="bibr" target="#b36">(Vereschak et al., 2021)</ref> and qualitative feedback on helpful and unhelpful XAI aspects. Finally, participants indicated their preferred XAI method. The experiment was hosted online on the TU/e HTI server and took no more than 50 minutes. The study was approved by the TU/e Ethical Review Board (experiment ID 2207), and all participants provided informed consent and received monetary compensation for their participation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Participants</head><p>The sample size was calculated based on expected differences in the main dependent variable of interest: self-reported trust. A realistic and meaningful difference between any two conditions would be 0.5 points on a 7-point Likert scale and a 1.53 points standard deviation <ref type="bibr" target="#b2">(Brdnik et al., 2025)</ref>. Using the Superpower package in R, a sample size of 25 is calculated to achieve a power of 90% (see Appendix A). Five extra participants were added to account for unforeseen issues. Therefore, the recruitment goal for this experiment was 30 participants.</p><p>Participants were recruited through the online platform <ref type="bibr">Prolific (n.d.)</ref>. After logging in, participants submitted the informed consent form (approved by the TU/e Ethical Review Board) and gave explicit consent to their participation and optionally consented to publicly sharing their recorded data in the Open Science Framework (n.d.). Prolific participants were recruited using digital screeners: a degree in engineering, age 18 to 99, Undergraduate, Graduate, or Postgraduate, approval rate of 95 to 100, and fluent in English. All recruited participants completed a pre-screening questionnaire with five questions and a limited time (see Appendix C). If participants had fewer than four answers correct or did not finish in time, they were blocked from continuing the experiment. Prolific participants were paid £6,50. Participants were informed they could win an extra reward (€3) if they were among the top 3 best-scoring participants. Participants who failed the pre-screening questionnaire still got a €0.70 compensation for their time and effort.</p><p>Seven TU/e electrical engineering students signed up for the experiment, though none of them responded to the online invitation. On Prolific, 76 participants responded to the experiment invitation, of which 19 failed the pre-screening questionnaire and 25 did not start, leaving 32 Prolific participants who completed the experiment. Only those who completed the experiment were included in the analysis.</p><p>The total sample size was 32 (N = 32), with an average age of 32.9 years (SD = 11.2 years), ranging from 20 to 58 years old. The average years of relevant experience is 6.2 years (SD = 4.1 years), ranging from 1 to 20 years. Of the participants, 53.1% were males (n = 17) and 46.8% were females (n = 15). 56.3% had a Bachelor's degree (Undergraduate) (n = 18), 40.6% had a Master's degree (Graduate) (n = 13), and 3.1% answered "Other" in the education question (n = 1).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Stimuli</head><p>The stimuli used in this experiment were a series of interactive PCB design tasks presented on a custom web interface (see Appendix B). Each task came with a task description and four AI suggestions (static screenshots of PCB designs). Participants could explore, accept, or reject suggestions by using the control buttons. A total of 39 unique tasks were created and randomly distributed across the three within-subject conditions: control (no XAI), Feature Importance (SHAP-like visual explanation), and Ideal Design (a novel XAI method modeled after technical application notes, providing both visual and textual explanations). Stimuli were consistent across conditions. For the 30 normal tasks, the suggestion order was ranked from good to suboptimal designs, whereas the nine error detection tasks featured four intentionally bad designs presented in no particular order.</p><p>Each condition came with a timer to simulate the time pressure found in a professional environment. Rejecting an AI suggestion triggered a time penalty of 3 minutes to simulate the cost of manually designing a PCB subsection. The task order was randomized to control for task difficulty and variance in suggestion quality. Participants' interactions were recorded per task, including decision time, keystrokes, and AI suggestion acceptance or rejection. The control condition was always presented first, while Feature Importance and Ideal Design were counterbalanced. Order effects may occur when participants always move from the control condition to an XAI condition. However, a different approach was deemed unfeasible due to practical constraints.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Web Interface</head><p>A new web interface was developed because no existing survey tool fit the experiment's purpose. The website can be run locally and requires PHP (version 8.4.7). Sent an inquiry to the researcher to request access (tpbruinsma@hotmail.nl). Figure <ref type="figure" target="#fig_2">2</ref> shows screenshots of the web interface. Participants could explore AI suggestions by clicking the buttons in the control window. With their engineering knowledge either accept an AI suggestion or reject all four suggestions. An overview of every window shown in the experiment can be found in Appendix B, including the login screen and questionnaires. Screenshot of the Experiment Web Interface Note. 1) Screenshot of KiCad PCB design software; 2) Highlighted AI suggestion; 3) Control window; 4) Zoom functionality; 5) AI explanation window; 6) Timer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Tutorial Video</head><p>After participants finished the pre-screening and gave their consent, they were presented with a tutorial video. The first tutorial introduced the experiment topic, the relevance of the study, and its general structure. A demonstration from <ref type="bibr" target="#b41">Zuken (2023)</ref> illustrated the concept of AI-assisted PCB design in an enterprise software tool. Next, a technical background was given, participants were told they were designing a "robotic motor controller", and were provided the relevant background knowledge (i.e., a block diagram, schematic, legend, and 3D renders). They were informed about the scoring system, which determined if they would receive a bonus reward. The goal of the study was not directly revealed.</p><p>Instead, it was explained that the electronics industry is adding AI to their design software and that participating in the study helps with this development. Additionally, the EU's regulations on the need for transparent and understandable AI systems were briefly noted.</p><p>After the control condition, participants viewed a second tutorial video explaining the addition of XAI elements. Starting with Ideal Design, which was described as similar to an industry-standard 1 2 3 4 5 6</p><p>19 "application note" (a technical document describing best design practices). It was described as explaining the goal towards which the AI optimizes (similar to a global model-agnostic explanation). Next, Feature Importance was explained as breaking down each AI suggestion into a waterfall plot. Herein, design features were valued as positive or negative, which resulted in a final design score, allowing for comparison among AI suggestions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Engineering Tasks</head><p>Choosing one of the four AI suggestions is considered the engineering task in this study. Normally, during the PCB development process, engineers would have to manually place components onto a digital PCB (e.g., drag chips and resistors into position) and route traces between a component's connection pads (e.g., draw connections where copper will remain after etching a copper clad). In these experiments, the development process was assisted by an AI that made decisions for placement and trace routing, thereby saving engineers a significant amount of time.</p><p>Engineering tasks can involve various aspects of the PCB, for example, routing a power supply line, a sensitive analog signal, or a noisy motor connection. Five variations of engineering tasks were chosen based on layout challenges that are commonly found in PCB designs <ref type="bibr" target="#b31">(Salazar et al., 2019)</ref> (see Table <ref type="table" target="#tab_0">1</ref>). The engineering task type determined what circuitry and suggestions would be shown. Participants were tasked with selecting a design suggestion they deemed best, or could reject all suggestions. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>AI Suggestions</head><p>Each engineering task had four suggestions. A new database with AI design suggestions had to be created because currently, no such dataset exists. The experimenter created plausible and diverse solutions that an AI might suggest in a real-world setting. In the industry, multiple AI agents exist for this task, the AI designer made by Zuken <ref type="bibr" target="#b41">(Zuken, 2023)</ref> being one of the best. Unfortunately, it was unfeasible to include in the experiment. Instead, the experimenter mimicked the AI interaction style seen in Zuken's demonstration videos and used their own PCB experience to create realistic designs. The suggestions were ordered based on design quality, from good to suboptimal. Except for the nine error detection tasks, where all suggestions were bad designs in no particular order.</p><p>It is possible that participants would show different behavior when presented with suggestions generated by an actual AI. However, the focus of this study is to take an interface without an XAI method and compare it with two XAI methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Error Detection Tasks</head><p>Per condition, three hidden errors were added to assess participants' reliance on AI explanations and accuracy of their mental model <ref type="bibr" target="#b9">(Hoffman et al., 2019)</ref>. In other experiments, these error detection tasks often focus on erroneous AI explanations (i.e., the explanation does not fit the suggestion). However, it was deemed more valuable to measure overreliance and whether XAI methods influence a participant's ability to notice bad AI suggestions. These tasks were added at random points after the third task for each condition. Participants were not informed about the presence of erroneous designs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Scoring System</head><p>A scoring system was introduced to motivate participants to critically evaluate the design suggestions' quality and to simulate a professional PCB design environment. Professional PCB engineers pay close attention to make their designs "first time right", because mistakes can cost a lot of time and money. On the other hand, engineers have to manage their development time so as not to spend too much time. This can be generalized across engineering domains, as development comes with a tradeoff between design quality and development time. This tradeoff is mimicked by the scoring system, where it is better to accept good designs (𝐴𝐺), reject bad designs (𝑅𝐵), and spend less time (𝑇). Total decision time per condition (excluding time penalties) was compared to the maximum observed decision time (𝑇 ). The final formula is: 𝑆𝑐𝑜𝑟𝑒 = + + 1 -. Participants were informed during the tutorial video that they could win a bonus reward by following the aforementioned goals. The formula was not shared with participants.</p><p>Participants were given a three-minute time penalty for when they rejected an AI suggestion, which is roughly equal to the time spent manually designing a subsection of the PCB. This time penalty simulated a tradeoff that professional PCB engineers would have to make when using AI assistance in their design process (i.e., accepting AI suggestions saves time, but accepting bad designs lowers the score). The time penalties were not included in the scoring system, as the rate of wrongfully rejecting designs is already included in the formula in .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>AI Explanations</head><p>The second and third conditions in this study were counterbalanced XAI methods: Feature Importance and Ideal Design. The latter is a novel XAI method developed specifically for PCB engineering tasks. Feature Importance explanations were adapted from SHAP and were included for their ability to map to PCB design features, give local model-agnostic explanations (i.e., motivate design choices per suggestion), and the extensive research available for comparison <ref type="bibr" target="#b2">(Brdnik et al., 2025)</ref>. The novel XAI method's Ideal Design gives a global explanation of what the AI optimizes for, not explained by variable names and values, but by given domain-and task-specific engineering rules. An AI assistant in PCB design can recognize the type of task at hand (i.e., Table <ref type="table" target="#tab_0">1</ref>), and the AI explanation will therefore change depending on the task at hand. This is also included in the experiment.</p><p>Feature Importance. This XAI method is adapted from the waterfall plot that is commonly used for Shapley values <ref type="bibr" target="#b17">(Lundberg &amp; Lee, 2017)</ref>. The features are chosen based on relevant design features for the given type of engineering task.</p><p>For example, when routing an analog signal, features would include: proximity to noise, trace length, and active shielding. Figure <ref type="figure" target="#fig_4">3</ref> shows how the value of these features is plotted. This plot was shortly explained in the second tutorial video, and during the trials, a short textual description is given for the plot and its features. Feature Importance Explanation for a Good Design (left) and a Relatively Worse Design (right)</p><p>Ideal Design. This novel XAI method was developed specifically for PCB engineering tasks.</p><p>In contrast to Feature Importance, which uses plots, Ideal Design uses a visual explanation of what the AI optimizes towards. It shows a visual diagram and textual explanation containing detailed design guidelines: "Traces have a clearance of three times their width" (see Figure <ref type="figure">4</ref>). Explanations are both textual and visual for general usability <ref type="bibr" target="#b28">(Ribera &amp; Lapedriza, 2019)</ref> and should increase correct understanding, team performance, ease of use, and appropriate trust <ref type="bibr" target="#b34">(Szymanski et al., 2021)</ref>. Ideal Design contrasts Feature Importance, which gives local explanations, whereas Ideal Design gives a global explanation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 4</head><p>Ideal Design Explanation for Analog Signals Feature Importance and Ideal Design have been chosen for their ability to be applied in the PCB context and their notable differences. These different explanations aim to see if differences between participants can be measured.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measurements</head><p>Before the experiment's start, global information is collected: participant ID, login method, date, time, condition order, task order, and whether participants completed the pre-screening questionnaire.</p><p>Objective behavioral measures <ref type="bibr" target="#b36">(Vereschak et al., 2021)</ref> were repeatedly measured for each task (both for normal and error detection tasks): decision time, level of questioning, final suggestion, and whether the AI suggestion was accepted. The decision time measurement starts when the engineering task is shown and stops when the participant submits their decision. The level of questioning measures how many suggestions the participant requests. The initial AI suggestion was always shown, and the participant could thus request three more AI suggestions. The final suggestion was recorded, and if this AI suggestion was accepted or rejected. Additionally, the condition in which the task was presented was recorded.</p><p>After completing all tasks of a given condition, questionnaires were presented to make a subjective evaluation of satisfaction <ref type="bibr" target="#b10">(Hoffman et al., 2023)</ref>, trust <ref type="bibr" target="#b10">(Hoffman et al., 2023)</ref>, and mental effort <ref type="bibr" target="#b8">(Hart &amp; Staveland, 1988)</ref>. For the control condition, only trust was recorded because the questionnaires for satisfaction and mental effort focused on AI explanations. Trust and satisfaction were measured by two multi-item 5-point Likert scale questionnaires, and mental effort with a single-item 20-point scale.</p><p>The trust questionnaire included one reverse-coded item (Question 6), which was recoded before analysis. These evaluation methods are chosen as they are commonly used in the field of AI-assisted decision-making <ref type="bibr" target="#b13">(Kim et al., 2024)</ref>. After all conditions and questionnaires were completed, participants were asked to indicate their preferred XAI method and given four open-ended questions on what they found (un)helpful in each XAI method.</p><p>Finally, demographics were collected to gain a general understanding of the participants (age and gender), their relevant educational level, and years of electronics experience.</p><p>The internal consistency of the trust and satisfaction questionnaires was evaluated using Cronbach's alpha. All scales yielded alpha values above the commonly accepted threshold of α = 0.70, indicating acceptable reliability (see Table <ref type="table" target="#tab_1">2</ref>). This suggests that the items within each questionnaire consistently measured the intended underlying constructs. For future analyses, item responses were averaged per participant and condition to create composite scores for trust and satisfaction. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Procedure</head><p>The experiment was conducted online, and participants were advised to reserve 50 minutes and remain focused throughout the experiment. Figure <ref type="figure">5</ref> shows the full experimental procedure. A pre-screening questionnaire was included to assess participants' relevant knowledge of PCB engineering (see Appendix C). This questionnaire included five multiple-choice questions and a limited completion time. The first nine participants had four minutes, which was then adjusted to three minutes for a stricter screening procedure. Participants who finished within the time limit and answered at least four questions correctly were allowed to proceed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 5</head><p>Experiment Procedure Flowchart Next, participants were shown the informed consent form, which had been approved by the TU/e Ethics Review Board. After digitally signing the form, they were directed to the first video tutorial, which provided general information and instructions for the experiment. A link to the video can be found in Appendix C.</p><p>The experiment began with the control condition (i.e., no XAI method). Participants completed ten engineering tasks, wherein they used their engineering judgement to evaluate and select the best AI design suggestion (see Stimuli for more details). After the third engineering task, three error detection tasks were added at random positions throughout the remainder of the condition. These tasks included intentionally bad designs, and participants were expected to recognize and reject them. However, they were not explicitly told about these error detection tasks. Instead, the first tutorial stated that "the AI can suggest suboptimal designs" and "rejecting bad designs increases your score". The first nine participants received no feedback after accepting or rejecting a design. But the remaining participants did receive feedback after accepting bad design suggestions to raise their awareness and critical thinking. After finishing 13 tasks in total, participants were given the trust questionnaire to assess their trust in the AI designer (see Appendix C).</p><p>The second video tutorial was then shown, which explained the addition of XAI methods with a short overview. Similar to the control condition, 13 tasks were given, but with the addition of an XAI method (Ideal Design or Feature Importance). After completing the tasks, three questionnaires were given (see Appendix C): satisfaction questionnaire about the explanation, a trust questionnaire about the AI designer, and a mental effort questionnaire about the task difficulty. Completing both conditions directed participants to the final webpage, where they indicated which XAI method they preferred. Four open questions about which aspects they (dis)liked and found (un)helpful allowed participants to motivate their decision. Demographics were collected, and then TU/e participants received payment instructions, whereas Prolific participants were directed back to Prolific, thus concluding the experiment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Analysis</head><p>The data analysis was performed in Stata 17 (StataCorp LLC., 2025). Descriptive analyses were conducted for an initial impression of the measured variables.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Subjective Measures</head><p>A repeated-measures ANOVA was planned, with condition as a within-subject factor and participant ID as the subject identifier. This allowed for modeling individual variability in responses. Premodel assumptions were evaluated. Normality was tested using the Shapiro-Wilk test as well as skewness and kurtosis statistics. Equality of variance was examined with Levene's test. The assumption of normality was violated for trust, satisfaction, and mental effort. The cubic transformation improved the normality of trust and satisfaction sufficiently and allowed for a repeated-measures ANOVA on the transformed data. However, mental effort remained non-normally distributed, which was therefore analyzed using the nonparametric Kruskal-Wallis test on the non-transformed data. Equality of variance was tested with Levene's test and was not violated for any of the measures, both before and after transformation. Finally, preference data were analyzed descriptively and visually inspected across conditions but not included in other analyses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Objective Measures</head><p>Acceptance and Rejection Rates. Acceptance and rejection rates were analyzed at trial-level for each participant. To conduct pre-model assumption tests, good and bad designs were analyzed separately, and the binary values at trial-level were transformed into decision rates at condition-level (only for assumption testing). Testing the rates revealed violations of normality and a negative skew for acceptance of good designs, while rejecting bad designs was positively skewed. Sphericity assumptions were not met either. Given the plan to analyze the binary outcome variables at trial-level, transformations were not attempted.</p><p>To analyze whether participants accepted good design suggestions and rejected bad design suggestions, a mixed-effects generalized linear model was used. This model could reveal trial-level variations while accounting for the highly skewed outcome variables by using a binomial distribution. Additionally, a logit link was selected to ensure predictions remain within a range of 0 to 1.</p><p>In both models, the XAI condition was included as a fixed effect (dummy-coded), and participant ID was modeled as a random intercept to account for individual differences. Additional covariates were explored for task-and participant-level variation: participant gender, age, years of experience, education level, condition order (binary variable "Ideal Design first"), and intervention exposure (if the participant got feedback on accepting bad designs). The trial number was not included due to high correlation with the XAI condition, the control condition was always presented first and always had the lowest trial numbers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Pre-Processing</head><p>Each participant completed ten standard engineering tasks and three error detection tasks per condition, resulting in 39 tasks in total. However, in one participant's datasets, seven trials were left unrecorded due to a software issue. Double-clicking the "Accept suggestion" button unintentionally skipped the next task. This issue was resolved immediately. Because this participant had consistent decision patterns throughout the experiment, it is assumed that their missing tasks behavior would have been comparable. Therefore, their data is still included in the analysis. A single participant with "Other" as education level was recoded to "Bachelor".</p><p>During a quality check of the first nine participants, it was found that most participants failed to reject any of the bad suggestions, thus failing the error detection tasks. This could indicate a lack of emphasis on the rejection option in the video tutorial and control interface. An intervention was introduced for the remaining participants: if a participant accepted a bad design, they received an alert stating, "Warning: This was a bad design! In future tasks, try to identify and reject designs with such issues.".</p><p>Post-intervention data inspection showed that the rejection rate of both good and bad designs went up, potentially indicating increased awareness of bad design suggestions, negative consequences of accepting bad designs, and the choice to reject suggestions. The full dataset was used in subsequent analyses.</p><p>Though results with and without pre-intervention participants were compared to assess the robustness of findings.</p><p>The aforementioned issue was not identified during the pilot study because the pilot participant correctly rejected seven out of nine bad suggestions. For the two bad designs that the pilot participant accepted, they reported that "I felt like I had to choose one of the designs, even if they were suboptimal.</p><p>Only later I remembered that I could have rejected them". Before the experiment, it was thus not expected that error detection tasks would be missed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Descriptive Statistics</head><p>19 participants received the Feature Importance explanations before the Ideal Design explanation. The remaining 13 participants received the Ideal Design explanation before Feature Importance, a true counterbalance was thus not reached. The cause was a software limitation: the condition order was alternated even when participants failed the pre-screening questionnaire. Resulting in an unequal balance for participants who did complete the experiment.</p><p>The trust scale, satisfaction scale, and mental effort results are shown in a box plot in Figure <ref type="figure" target="#fig_5">6</ref>.</p><p>Table <ref type="table" target="#tab_2">3</ref> shows the descriptive statistics of all subjective measures (except preferred XAI method). Finally, 15 participants preferred Feature Importance, and 17 participants preferred Ideal Design. Box Plot of Trust Scales, Satisfaction Scale, and Mental Effort per Condition Note. Trust and satisfaction were measured using a 5-point Likert scale (5 = Strongly agree), where higher values indicate greater trust or satisfaction. Mental effort was measured on a 20-point scale, with higher values indicating greater perceived mental effort. FI = Feature Importance; ID = Ideal Design.</p><p>2 3 4 5 5-point Likert Scale ControlFI ID Trust 2 3 4 5 5-point Likert Scale FI ID Satisfaction 0 5 10 15 20 20-point Scale FI ID Mental Effort Box plots are used to visualize the acceptance rate of good designs, rejection rate of bad designs, and decision time (see Figure <ref type="figure" target="#fig_6">7</ref>). For the level of questioning, a bar graph was used (see Figure <ref type="figure" target="#fig_7">8</ref>). Table <ref type="table" target="#tab_3">4</ref> shows the descriptive statistics of all objective measures. Acceptance and rejection rates were averaged across 13 tasks per condition, where a higher percentage indicates better decision-making. Decision time is a simple measure between when the task and suggestions are shown, and the decision is submitted.</p><p>The level of questioning ranged between zero and three, zero indicating that participants did not request additional suggestions, and three indicating that participants requested all suggestions. Box Plots of good design acceptance rate, bad design rejection rate, and decision time per condition Note. Con. = Control; FI = Feature Importance; ID = Ideal Design. Bar Plot of Level of Questioning per Condition 0 20 40 60 80 100 Acceptance Rate of Good Suggestions (%) Con. FI ID Acceptance 0 20 40 60 80 100 Rejection Rate of Bad Suggestions (%) Con. FI ID Rejection 0 100 200 300 400 Decision Time (s) Con. FI ID Time 0 50 100 150 200 250 Number of Trials Control Feature Importance Ideal Design 0 1 2 3 0 1 2 3 0 1 2 3 Number of Extra Suggestions Requested The correlation between subjective and objective measures was explored without prior expectations. The nonparametric Spearman correlation table was used due to violations of normality in several measures. Correlations were explored with all conditions grouped together, but showed no significant correlations. Next, the correlations were tested for each condition separately (see Appendix D).</p><p>Two significant correlations showed up. In the control condition, the rejection rate of bad design suggestions correlated significantly with the trust scale (ρ = -.378, p = .033). Meaning that participants with a higher rejection rate of bad designs also showed lower self-reported trust during the control condition. In the Feature Importance condition, rejection rate of bad design suggestions correlated significantly with preferred XAI method (ρ = .365, p = .040). Meaning that participants with a higher rejection rate of bad designs also more often preferred the Feature Importance explanation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis of Trust Questionnaire</head><p>A repeated measures ANOVA was performed to compare the effects of three different XAI conditions and individual differences on self-reported trust (results in Table <ref type="table" target="#tab_4">5</ref>). The test showed that individual differences (F(31, 62) = 10.37, p &lt; .001) was a significant predictor while XAI condition (F(2, 62) = 0.08, p = .924) was not. The model explained 84% of the variation in trust scores (R 2 = .839), with most variance contributed by between-subject differences. No post-hoc comparisons were conducted for the XAI condition, as there was no significant effect from the XAI condition. The analysis did not support any influence of XAI methods on trust. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis of Satisfaction Questionnaire</head><p>Descriptive statistics indicate that Feature Importance has higher satisfaction ratings (M = 4.152, SD = 0.609) than Ideal Design (M = 3.911, SD = 0.746). A repeated measures ANOVA was performed to measure the effect of XAI conditions and individual differences on self-reported satisfaction (see Table <ref type="table" target="#tab_5">6</ref>). The test showed that both individual differences (F(31, 62) = 8.57, p = .009) and XAI condition (F(1, 62) = 7.55, p &lt; .001) are significant predictors. Individual differences explained far more variation than XAI methods. The model explained 90% of the variation in satisfaction scores (R 2 = .898), with most variance contributed by between-subject differences. No post-hoc tests were conducted as satisfaction was measured for two conditions. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis of Mental Effort Questionnaire</head><p>Descriptive statistics reveal that Feature Importance has lower mental effort ratings (M = 14.375, SD = 4.353) than Ideal Design (M = 15.156, SD = 4.408). To check for significant differences, two Kruskal-Wallis tests were conducted. No significant effect was found for condition as predictor, χ²(1) = 0.649, p = .421 (corrected for ties). Participant ID as a predictor showed significant effects on mental effort, χ²(31) = 56.295, p = .004 (corrected for ties), indicating that self-reported mental effort differed significantly between participants. No post-hoc comparisons are conducted for the XAI condition as it only has two levels in this test.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis of Accepted Good Design Suggestions</head><p>A mixed-effects generalized linear model with a binomial distribution and logit link was used to explore predictors of the binary variable "good design accepted" at the trial level (N = 956). The model included fixed effects for XAI condition, task presentation order, gender, intervention, condition order, age, years of experience, and education level. Error detection tasks were excluded from this analysis. A random intercept was specified for participant ID to account for repeated measures.</p><p>The main predictor of interest is the XAI condition, and the analysis was run multiple times: complete model, excluding demographics, excluding experiment variables (e.g., condition and task order), and finally, the model was run with only the XAI condition as a predictor. No significant differences were found thus the complete model is used. The overall model was significant with Wald χ²(8) = 18.70, p = .017. Significant predictors were gender (B = -1.666, SE = 0.597, z = -2.79, p = .005) and whether the intervention was included (B = -2.638, SE = 0.835, z = -3.16, p = .002). From the model, it is suggested that females have accepted fewer good design suggestions, as well as the intervention having a negative effect. No post-hoc comparisons were conducted due to the main predictors not being significant.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis of Rejected Bad Design Suggestions</head><p>A mixed-effects generalized linear model with a binomial distribution and logit link was used to explore predictors of the binary variable "bad design rejected" for error detection tasks on trial-level (N = 285). The initial model included fixed effects for XAI condition, gender, intervention, condition order, age, years of experience, and education level. Tasks with good design suggestions were excluded from this analysis. A random intercept was specified for participant ID to account for repeated measures.</p><p>The main predictor of interest is the XAI condition, and the analysis was run multiple times: initial complete model, excluding demographics, excluding experiment variables, and finally, the model was run with only the XAI condition as a predictor. Using only the XAI condition as a predictor resulted in a significant model, and a significant post-hoc comparison. The final model therefore only includes the XAI condition as a predictor. The overall model was significant with Wald χ²(2) = 8.76, p = .013. The only significant predictor was Feature Importance (B = 1.380, SE = 0.479, z = 2.88, p = .004). Its positive effect indicated that during the Feature Importance condition, participants were more likely to reject bad design suggestions.</p><p>Post-hoc pairwise comparison analysis revealed that Feature Importance only had a significant contrast to the Control condition (Contrast = 0.139, SE = 0.046, z = 2.86, p = .013). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis of Decision Time</head><p>A mixed-effects generalized linear model with a gamma distribution and log link was used to explore predictors of decision time at the trial level (N = 1241). The model included fixed effects for XAI condition, gender, age, years of experience, and education level. A random intercept was specified for participant ID to account for repeated measures.</p><p>The main predictor of interest is the XAI condition, and the analysis was run multiple times: complete model, excluding demographics, excluding experiment variables, and finally, the model was run with only the XAI condition as a predictor. No significant differences were found thus the complete model is used. Twenty-nine outliers were found with z-scores above three, equivalent to ±180 seconds. Their inclusion did not significantly affect model coefficients and p-values. Inspecting the outliers' keystrokes showed that some had extensive interactions, while others made no keystrokes, potentially due to being distracted. Moreover, 27 out of 29 outliers belonged to the Control condition. Therefore, excluding outliers should be interpreted with caution, as it may suppress variability inherent to the baseline condition.</p><p>Given the risk of excluding realistic observations, all observations were included in the main analysis.</p><p>The overall model was significant with Wald χ²(12) = 178.72, p &lt; .001. A significant and positive effect came from when the task was an error detection task (B = 0.582, SE = 0.194, z = 2.99, p = .003), showing how participants took longer to make a decision when the AI gave bad design suggestions. The remaining significant effects were negative and came from the XAI conditions. Feature Importance significantly decreased the decision time (B = -0.669, SE = 0.065, z = -10.29, p &lt; .001), as well as Ideal Design (B = -0.705, SE = 0.065, z = -10.82, p &lt; .001). Other factors and interactions were not significant.</p><p>To further understand the effect of each condition, a post-hoc pairwise comparison analysis was conducted with Sidak-adjusted significance levels. (Table <ref type="table" target="#tab_10">11</ref>). Both explanations had a significant contrast in comparison to the control condition. But compared to each other, the explanations were not significantly different. A possible interpretation is that both were effective at decreasing decision time, but this could also be due to learning or fatigue effects. For that reason, a linear fit with a 95% confidence interval was plotted with trial number on the x-axis and decision time on the y-axis (see Appendix E).</p><p>This included both condition orders and revealed a clear downward trend in decision time, even when excluding the control condition tasks. Two margin plots were made, one for each condition order (see Appendix E). This similarly revealed a downward trend in decision time. It is therefore very likely that the decrease in decision time is not due to the explanations but due to learning or fatigue effects. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis of Level of Questioning</head><p>A mixed-effects generalized linear model with a Poisson distribution and log link was used to explore predictors of decision time at the trial level (N = 1241). The model included fixed effects for XAI condition, intervention, condition order, task type (error detection), gender, age, years of experience, education level, and interactions between error detection tasks and participant characteristics. A random intercept was specified for participant ID to account for repeated measures.</p><p>The main predictor of interest is the XAI condition, and the analysis was run multiple times: complete model, excluding demographics, excluding experiment variables, and finally, the model was run with only the XAI condition as a predictor. No significant differences were found when excluding variables. Thus, the entire model is reported. The overall model was almost significant with Wald χ²(12) = 19.01, p = .088. Ideal Design had a significant negative effect (B = -0.168, SE = 0.071, z = -2.37, p = .018), and female participants had</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>This study aimed to investigate the influences of explainable AI methods on user experience and performance during simulated AI-assisted PCB layout tasks in CAD software. For this aim, an online experiment was conducted wherein participants used AI design suggestions to create a printed circuit board. The combined measures suggest that the Feature Importance explanation supports participants' critical evaluation of design suggestions better than Ideal Design. Qualitative analysis revealed that Ideal Design was better for building a holistic understanding of the AI's reasoning, while Feature Importance was more helpful at comparing AI suggestions. Finally, variations in individual preferences highlighted different cognitive processes in participants and demonstrated how explanations should not only align with the application but also with individual users.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Influences of XAI Methods on Subjective Trust, Satisfaction, and Mental Effort</head><p>Comparison results of the trust questionnaires showed no significant differences between XAI conditions. This suggests that including an XAI method does not influence trust in the AI designer.</p><p>Given that trials and their corresponding AI suggestions were randomized across conditions suggests it is unlikely that suggestion quality could have contributed to measurable differences. Instead, individual differences were likely the primary cause of variability in trust. Prior research has identified several factors that influence trust in AI systems, including users' prior experience with AI and individual selfconfidence <ref type="bibr" target="#b36">(Vereschak et al., 2021)</ref>, which were not measured in this study but may explain the observed variation.</p><p>Comparison results of the satisfaction questionnaires showed significant differences, wherein Feature Importance had higher satisfaction than Ideal Design. Though this difference was relatively small compared to individual differences. This suggests that Feature Importance has a slightly better user experience than Ideal Design. Prior research has emphasized that user satisfaction with AI explanations can be determined by factors such as convenience, logical inference, and credibility, as well as perceptions of usefulness, ease of use, and the system's ability to adapt and improve over time <ref type="bibr" target="#b39">(Xing &amp; Jiang, 2024)</ref>.</p><p>Comparison results of the mental effort scale showed no significant difference between the two XAI methods. Most variation was on participant-level, which could indicate that influences from familiarity with circuit board design, technical confidence, or task engagement have an influence on cognitive workload. Additionally, it is possible that the participants' answers to mental effort were directed to the task, and not to how difficult it was to understand the AI explanation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Influences of XAI Methods on Decision Rates, Decision Time, and Level of Questioning</head><p>The model predicting acceptance of good designs was statistically significant, though the XAI condition itself was not a significant predictor in either case. Female participants showed significantly lower acceptance rates of AI suggestions, indicating a gender-related difference in AI reliance. This aligns with findings from <ref type="bibr" target="#b20">Møgelvang et al. (2024)</ref> and <ref type="bibr" target="#b30">Russo et al. (2025)</ref>, who both found that females show less reliance on AI. The second significant predictor was the inclusion of the feedback intervention (i.e., an alert when accepting bad design suggestions), which significantly reduced acceptance rates.</p><p>This could indicate that participants became more critical of AI suggestions when they received an alert that they accepted a design they should have rejected.</p><p>The rejection of bad designs showed a significant model. Feature Importance was a significant predictor and showed that participants were better able to detect bad design suggestions with this explanation. This may be due to the local explanations that quantified bad design aspects and the feature contribution bars becoming red for badly executed design features. Whereas the global Ideal Design did not change when exploring suggestions for a design task. Similar findings were found by <ref type="bibr" target="#b25">Prinster et al. (2024)</ref> in healthcare, where local explanations improved diagnostic accuracy more than global ones.</p><p>A significant model was made for decision time. Analysis showed a significant positive effect for bad design suggestions, indicating that participants recognized these bad designs and were more critical during their decision-making. However, descriptive statistics show that the rejection rate of bad design suggestions was typically below 50%. This means that while the decision time was typically higher, it did not always lead to successfully rejecting the bad design suggestions. A significant negative effect came from the Feature Importance and Ideal Design XAI conditions. Post-hoc comparison showed significant differences between both conditions and control, but not between each other. Visual inspection for learning or fatigue effects showed that decision time decreased throughout the experiment (Appendix E). The reduction in decision time should be interpreted carefully and may largely be due to learning or fatigue effects.</p><p>The model for the level of questioning was almost significant and came with a non-significant post-hoc comparison. It is therefore unlikely to contain useful information.</p><p>Exploratory correlation analysis showed two significant correlations between subjective and objective measures. The rejection rate of bad designs negatively correlated with self-reported trust (for the control condition). This may indicate that participants adapted their strategies based on the available XAI method. For example, they may have relied more on their judgment in the control condition.</p><p>The preference for Feature Importance positively correlated with the rejection rate of bad designs. This may indicate that users who favored local feature-based explanations were better able to apply them to effectively reject bad designs. This aligns with the results of the mixed-effects generalized linear model used for rejections of bad design suggestions, where Feature Importance had significantly higher rejection rates than the control condition. These findings may demonstrate the ability of local explanations to better demonstrate that certain design aspects are executed poorly by the AI..</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Comparing Qualitative Feedback Between XAI Methods</head><p>Feature Importance was appreciated for clearly highlighting which PCB properties influenced the AI's decisions and in which direction, thereby supporting design prioritization and improvement.</p><p>However, several participants noted that it felt abstract and was sometimes difficult to translate into concrete design actions. <ref type="bibr" target="#b32">Salih et al. (2024)</ref> also found that feature-based explanations are typically more difficult to grasp. In contrast, Ideal Design was frequently described as easy to understand, visual, and intuitive. This was attributed to the visual explanation being congruent with the appearance of a real </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implications</head><p>This study has several theoretical, practical, and methodological implications for research and development of explainable AI in the engineering context and AI-assisted PCB design. Theoretically, the results support existing literature that emphasizes the significance of individual user characteristics for shaping trust in AI systems <ref type="bibr" target="#b36">(Vereschak et al., 2021)</ref>. While previous research often focused on generalized tasks such as classification or recommendation, this study contributes insights into how individual preferences show in a technical decision-making context. The results did not support the notion that XAI format alone can significantly influence trust. Instead, individual differences are a more likely determinant. These findings align with <ref type="bibr" target="#b19">Miller (2019)</ref>, whose theory explains that both cognitive and social factors influence reliance on AI and that XAI should be comprehensible and subjectively satisfying.</p><p>Furthermore, this study shows how XAI specificity to its application domain can result in benefits that can be measured qualitatively at participant-level. As the qualitative analysis showed how a SHAP-like explanation (i.e., Feature Importance) can translate PCB design properties into quantitative design scores, which help build a detailed understanding of the AI's internal logic. Additionally, the global explanation of Ideal Design helped build a more beginner-friendly understanding of an AI design agent for PCB making, as the visual and textual elements helped create an intuitive explanation of the AI's goals. Thereby showing the benefit of qualitative evaluation in understanding participants' internal reasoning.</p><p>Practical implications can be derived from the qualitative analysis. This study suggests that Ideal Design supports intuitive understanding through concrete and visual explanations, while Feature Importance offers more granular insight into feature-level reasoning, though comes with higher cognitive demand (only supported by qualitative analysis, not by quantitative analysis). This apparent trade-off poses an interesting future direction for XAI research and development, namely by combining these strengths into a hybrid explanation. Potentially by using the visual overview of Ideal Design, and allowing users to mouse-click through PCB design features to see a specific feature's contribution to the AI's internal design score. Thereby making the explanation more interactive. Another potential direction is to focus on customizable explanations. This study showed strong differences in individual preferences, a future XAI system could adapt to fit a user's preferences and so universally improve user experience.</p><p>Though the influences of this on performance should be validated.</p><p>And methodologically, this study shows the value of combining a wide range of measurements in exploratory studies by uncovering individual preferences that were not captured by questionnaires and behavioral measures. This aligns with recommendations for the HAII and XAI research fields by <ref type="bibr" target="#b13">Kim et al. (2024)</ref> and <ref type="bibr" target="#b15">Lai et al. (2023)</ref> by evaluating XAI through human-centered frameworks.</p><p>Finally, the study demonstrates the value of expanding XAI research into the engineering domain by focusing on a different type of task, explanation method, and user group. Engineering tasks have characteristics unique in the AI research field, and by studying this, new aspects of AI-assisted decision-making can be uncovered.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations</head><p>The generalizability of the results is limited by characteristics of the recruited participant sample. Participants were selected via the online platform Prolific (n.d.), with screening based on educational level, relevant work experience, and a custom pre-screening questionnaire to assess domain knowledge. However, observed behavioral data raised concerns about the actual level of electronics engineering expertise in the sample. Specifically, before the feedback intervention, participants were generally unable to identify bad design suggestions. Even though it was confirmed in the pilot study that these bad design suggestions should be obvious to a student engineer. Additionally, the sample had an approximately equal ratio of females and males, which does not reflect the male-dominated demographics of the electronics engineering profession. These findings demonstrate a limit in generalizability to a professional PCB engineering environment. Nonetheless, qualitative insights of this study were valuable in understanding how different XAI methods are experienced in the context of PCB design, thereby contributing to the research aims.</p><p>unmeasured factors. Future research should examine participant-level variables like prior AI experience, confidence in self and AI, and perceived vulnerability. Alternatively, task-level elements could be explored, such as users' control over the AI suggestions, decision feedback elements, and quality of AI design suggestions. Including these variables may show a more complete picture of how these XAI methods influence trust in AI and decision rates.</p><p>Future studies should take into account the limitations of simulated environments and online recruitment. While this study used a handcrafted AI system to isolate the effects of explanation format, this approach does not capture how users interact with live, adaptive AI systems in a professional engineering environment. Potential new findings can be found when studying with an experiment that is closer to a real-world setting. In other words, following the application-grounded approach as defined by <ref type="bibr" target="#b5">Doshi-Velez &amp; Kim (2017)</ref>. Potential paths for future research include field experiments in a professional environment, collaborations with ECAD software developers, and experimenting in a longitudinal study to find long-term effects. These approaches would enhance the ecological validity of XAI research directed at specific domains.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>This study demonstrated that the inclusion and format of AI explanations significantly influence how users engage with AI assistance in Computer-Aided Design tasks. In an AI-assisted PCB layout task, the local feature-based explanation increased rejection rates of bad design suggestions, indicating supported critical thinking. While the global visual-based explanation "Ideal Design" helped users intuitively understand AI reasoning. Importantly, a wide variety of individual preferences were found that play a major role when aligning users, explanations, and application context. By combining qualitative and quantitative measures, this study gave a deeper view of how users make sense of AI assistance.</p><p>These findings highlight the need for personalized hybrid AI explanations in the engineering domain. They show that a single explanation format cannot serve all users and contexts equally. For researchers, the study offers a domain-specific contribution by demonstrating a novel evaluation task and explanation format for Computer-Aided Design tasks. For developers, it suggests that personalized hybrid explanations may offer better results for effective human-AI collaboration. Technical Background Information of the PCB Design, Available Throughout the Experiment 61 After finishing the second video tutorial, participants were shown PCB engineering tasks, this time, however, with an Ideal Design explanation (Figure B 7) or the Feature Importance explanation (Figure B 8). PCB Layout Task, Ideal Design Condition Figure B 8   Questionnaire Pages for Preferences, Qualitative Feedback, and Demographics (all were Shown on a Singular Webpage) 64 After completing the final questionnaire, TU/e participants were directed to the closing page, which included payment instructions and contact information. Prolific participant payments were handled through the Prolific website. Payment Page with a Thank You Message, Payment Instructions, and Contact Information</p><p>Table F 2 Feature Importance, Unhelpful Aspects Summarized Unhelpful aspects Description Frequency Too abstract or difficult to understand Participants found the explanation hard to understand or overly abstract. They noted a lack of concrete examples or actionable guidance. 9 Missing or unclear visual guidance Visual aids were confusing, missing, or didn't show layouts or concrete representations. 5 Lacks specificity or explanatory detail The explanation lacked precision, context, or reasoning behind design decisions. 4 Overly technical or AI focused Participants felt the explanation focused too much on abstract graphs or the AI's internal logic, rather than userfriendly insights. 2 Minor clarity or presentation issues Small issues with wording, color coding, or unclear phrasing were mentioned. 2 No negative feedback given Participants explicitly stated that they found no issues or were fully satisfied with the explanation. 10 Table F 3 Ideal Design, Helpful Aspects Summarized Helpful aspects Description Frequency Clarity and understandability Explanation was well-structured, detailed, and easy to understand -even when complex. 8 Concrete examples of good design Provided a clear reference or example of what a successful layout looks like, aiding interpretation. 8 Visual representation and layout clarity Diagrams, graphics, and visualizations helped participants see how the design works or should look. 7 Helps improve design quality and efficiency Made it easier to design, decide, or iterate faster and more accurately. 5 Insight into key features Clarified which features mattered most in the AI's scoring or decision. 2</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>I</head><figDesc>would like to express my gratitude to my first supervisor, Dr. Chao Zhang, whose patience and openness allowed me to explore bold and creative ideas, and whose guidance helped shape them into rigorous research. His support has been instrumental throughout this project. I am also grateful to my second supervisor, Dr. Chris C. P. Snijders, for his insightful and critical feedback. His eye for detail and high standards for academic work have greatly elevated the quality of this thesis. Special thanks to my parents, whose care and support in every form, practical, emotional, and otherwise, enabled me to fully dedicate myself to this thesis. Their encouragement and belief in me meant more than words can say. Lastly, I would like to mention my family and friends for always showing interest in my work and offering support along the way. Their curiosity and encouragement have been a continuous source of motivation.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><figDesc>Feature-based methods (e.g., SHAP and LIME), which quantify how much each input feature contributes to the model output. Example-based explanations (e.g., counterfactuals), which describe what inputs would give a certain output.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2</head><label>2</label><figDesc>Figure2</figDesc><graphic coords="19,70.56,123.84,454.08,244.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><figDesc>A waterfall plot for Shapley values includes: an average score of the training data, weighted features, feature values, and a final predicted value. These elements can be mapped to the PCB engineering context, and for this experiment the following mapping was chosen: weighted features are measurable aspects of the PCB (e.g., component clearance or trace length), feature values are positive or negative depending on their contribution to the overall design quality, average score is the average design score from the AI's training data, and the final score is the summation of all values. However, there is no real AI in this experiment; all suggestions and explanations are made by the experimenter. The aforementioned values are therefore also made by the experimenter.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 Feature</head><label>3</label><figDesc>Figure3</figDesc><graphic coords="24,70.56,123.84,192.96,368.88" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 6 Box</head><label>6</label><figDesc>Figure6</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 7 Box</head><label>7</label><figDesc>Figure7</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 8 Bar</head><label>8</label><figDesc>Figure8</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><figDesc>PCB layout. Participants found it helpful to see what the AI considered a good design, which supported faster comprehension and action. That said, some feedback pointed to Ideal Design being overly general and lacking in detailed justifications. For example, it did not explicitly explain why the first suggestion is preferred over the second suggestion, and what performance consequences each has. In sum, Feature Importance tended to support understanding and prioritization of PCB properties, while Ideal Design facilitated holistic understanding and practical application, though it lacks some precision and depth.These patterns suggest that the two methods serve different cognitive needs and user experience may depend on the user's goals.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure B 6</head><label>6</label><figDesc>Figure B 6</figDesc><graphic coords="61,70.56,123.84,454.08,597.84" type="vector_box" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Figure B 7 PCB</head><label>7</label><figDesc>Figure B 7</figDesc><graphic coords="62,70.56,199.68,454.08,253.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Figure B 9</head><label>9</label><figDesc>Figure B 9</figDesc><graphic coords="63,70.32,150.48,198.96,99.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Figure B 10</head><label>10</label><figDesc>Figure B 10</figDesc><graphic coords="64,70.56,199.68,442.80,405.36" type="vector_box" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>Figure B 11</head><label>11</label><figDesc>Figure B 11</figDesc><graphic coords="65,70.56,199.68,197.76,375.36" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><graphic coords="25,72.00,123.96,227.88,233.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15"><graphic coords="57,70.92,255.12,452.04,388.32" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16"><graphic coords="58,70.92,174.60,278.52,479.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_17"><graphic coords="59,70.56,199.68,179.76,465.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_18"><graphic coords="60,70.56,326.16,454.08,253.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Overview of Engineering Task Types and the Corresponding Description Given to Participants</figDesc><table><row><cell>Engineering task type</cell><cell>Task Description</cell></row><row><cell>Decoupling capacitor</cell><cell>Select the layout where the decoupling capacitor [C14]</cell></row><row><cell></cell><cell>is best routed for chip [MOVEMENT_SENSOR1].</cell></row><row><cell>Power line</cell><cell>Select the layout where the power line</cell></row><row><cell></cell><cell>is best routed to supply [INPUT 3.3V REGULATOR].</cell></row><row><cell>Digital signals</cell><cell>Select the layout where the digital signal</cell></row><row><cell></cell><cell>[ROTATION_SENSOR OUTPUT A] is routed best.</cell></row><row><cell>Analog signals</cell><cell>Select the layout where the analog signal from [EXTERNAL TORQUE</cell></row><row><cell></cell><cell>SENSOR] is best routed to [MICROCONTROLLER1].</cell></row><row><cell>Serial signals</cell><cell>Select the layout where the serial signals for</cell></row><row><cell></cell><cell>[SPI MOVEMENT_SENSOR1] are routed best.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Cronbach's Alpha Tests for Internal Consistency per Condition</figDesc><table><row><cell>Measure</cell><cell>Condition</cell><cell>Cronbach's Alpha</cell></row><row><cell>Trust</cell><cell>Control</cell><cell>.789</cell></row><row><cell></cell><cell>Feature Importance</cell><cell>.723</cell></row><row><cell></cell><cell>Ideal Design</cell><cell>.812</cell></row><row><cell>Satisfaction</cell><cell>Feature Importance</cell><cell>.864</cell></row><row><cell></cell><cell>Ideal Design</cell><cell>.899</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Descriptive Statistics for Subjective Measures</figDesc><table><row><cell>Measure</cell><cell>Condition</cell><cell>Obs.</cell><cell>Mean</cell><cell>SD</cell><cell>Min</cell><cell>Max</cell></row><row><cell>Trust</cell><cell>Control</cell><cell>32</cell><cell>3.719</cell><cell>0.591</cell><cell>2</cell><cell>5</cell></row><row><cell></cell><cell>Feature Importance</cell><cell>32</cell><cell>3.699</cell><cell>0.570</cell><cell>2.125</cell><cell>4.75</cell></row><row><cell></cell><cell>Ideal Design</cell><cell>32</cell><cell>3.684</cell><cell>0.655</cell><cell>2.25</cell><cell>4.625</cell></row><row><cell>Satisfaction</cell><cell>Feature Importance</cell><cell>32</cell><cell>4.152</cell><cell>0.609</cell><cell>2.143</cell><cell>5</cell></row><row><cell></cell><cell>Ideal Design</cell><cell>32</cell><cell>3.911</cell><cell>0.746</cell><cell>2.286</cell><cell>5</cell></row><row><cell>Mental effort</cell><cell>Feature Importance</cell><cell>32</cell><cell>14.375</cell><cell>4.353</cell><cell>2</cell><cell>20</cell></row><row><cell></cell><cell>Ideal Design</cell><cell>32</cell><cell>15.156</cell><cell>4.408</cell><cell>3</cell><cell>20</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4</head><label>4</label><figDesc>Descriptive Statistics for Objective Measures</figDesc><table><row><cell>Measure</cell><cell>Condition</cell><cell>Obs.</cell><cell>Mean</cell><cell>SD</cell><cell>Min</cell><cell>Max</cell></row><row><cell>Good Design Accepted</cell><cell>Control</cell><cell>319</cell><cell>0.887</cell><cell>0.317</cell><cell>0</cell><cell>1</cell></row><row><cell></cell><cell>Feature Importance</cell><cell>320</cell><cell>0.903</cell><cell>0.296</cell><cell>0</cell><cell>1</cell></row><row><cell></cell><cell>Ideal Design</cell><cell>317</cell><cell>0.886</cell><cell>0.318</cell><cell>0</cell><cell>1</cell></row><row><cell>Bad Design Rejected</cell><cell>Control</cell><cell>95</cell><cell>0.095</cell><cell>0.294</cell><cell>0</cell><cell>1</cell></row><row><cell></cell><cell>Feature Importance</cell><cell>96</cell><cell>0.240</cell><cell>0.429</cell><cell>0</cell><cell>1</cell></row><row><cell></cell><cell>Ideal Design</cell><cell>94</cell><cell>0.149</cell><cell>0.358</cell><cell>0</cell><cell>1</cell></row><row><cell>Decision Time</cell><cell>Control</cell><cell>414</cell><cell cols="2">58.017 109.165</cell><cell>2.2</cell><cell>1275.6</cell></row><row><cell></cell><cell>Feature Importance</cell><cell>416</cell><cell>29.849</cell><cell>37.731</cell><cell>2.6</cell><cell>259.5</cell></row><row><cell></cell><cell>Ideal Design</cell><cell>411</cell><cell>29.475</cell><cell>39.536</cell><cell>2.1</cell><cell>245.6</cell></row><row><cell>Level of Questioning</cell><cell>Control</cell><cell>397</cell><cell>1.065</cell><cell>1.287</cell><cell>0</cell><cell>3</cell></row><row><cell></cell><cell>Feature Importance</cell><cell>403</cell><cell>1.010</cell><cell>1.240</cell><cell>0</cell><cell>3</cell></row><row><cell></cell><cell>Ideal Design</cell><cell>403</cell><cell>0.901</cell><cell>1.240</cell><cell>0</cell><cell>3</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5</head><label>5</label><figDesc>Subjective Trust Results of Repeated Measures ANOVA</figDesc><table><row><cell>Source</cell><cell>SS</cell><cell>df</cell><cell>MS</cell><cell>F</cell><cell>p</cell></row><row><cell>Participant</cell><cell>40961</cell><cell>31</cell><cell>1321.3</cell><cell>10.37</cell><cell>&lt; .001</cell></row><row><cell>XAI Condition</cell><cell>20.173</cell><cell>2</cell><cell>10.087</cell><cell>0.08</cell><cell>.924</cell></row><row><cell>Error</cell><cell>7903.8</cell><cell>62</cell><cell>127.48</cell><cell></cell><cell></cell></row><row><cell>Total</cell><cell>48885</cell><cell>95</cell><cell>514.59</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 6</head><label>6</label><figDesc>Subjective Satisfaction Results of Repeated Measures ANOVA</figDesc><table><row><cell>Source</cell><cell>SS</cell><cell>df</cell><cell>MS</cell><cell>F</cell><cell>p</cell></row><row><cell>Participant</cell><cell>54262</cell><cell>31</cell><cell>1750.4</cell><cell>8.57</cell><cell>&lt; .001</cell></row><row><cell>XAI Condition</cell><cell>1541.0</cell><cell>1</cell><cell>1541.0</cell><cell>7.55</cell><cell>.009</cell></row><row><cell>Error</cell><cell>6328.4</cell><cell>31</cell><cell>204.14</cell><cell></cell><cell></cell></row><row><cell>Total</cell><cell>62132</cell><cell>63</cell><cell>986.22</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 7</head><label>7</label><figDesc>Mixed-Effects Generalized Linear Model for Correctly Accepting Good Design Suggestions</figDesc><table><row><cell>Predictor</cell><cell>B</cell><cell>SE</cell><cell>z</cell><cell>p</cell><cell>95% CI</cell></row><row><cell>Feature Importance</cell><cell>0.207</cell><cell>0.288</cell><cell>0.72</cell><cell>0.472</cell><cell>[-0.357, 0.771]</cell></row><row><cell>Ideal Design</cell><cell>-0.001</cell><cell>0.280</cell><cell>0.00</cell><cell>0.997</cell><cell>[-0.550, 0.548]</cell></row><row><cell>Intervention</cell><cell>-2.638</cell><cell>0.835</cell><cell>-3.16</cell><cell>0.002</cell><cell>[-4.274, -1.002]</cell></row><row><cell>Ideal Design first</cell><cell>-0.336</cell><cell>0.627</cell><cell>-0.54</cell><cell>0.591</cell><cell>[-1.565, 0.892]</cell></row><row><cell>Female</cell><cell>-1.666</cell><cell>0.597</cell><cell>-2.79</cell><cell>0.005</cell><cell>[-2.837, -0.496]</cell></row><row><cell>Education: Master</cell><cell>0.815</cell><cell>0.685</cell><cell>1.19</cell><cell>0.234</cell><cell>[-0.527, 2.157]</cell></row><row><cell>Experience</cell><cell>-0.045</cell><cell>0.094</cell><cell>-0.48</cell><cell>0.634</cell><cell>[-0.230, 0.140]</cell></row><row><cell>Age</cell><cell>0.019</cell><cell>0.031</cell><cell>0.62</cell><cell>0.533</cell><cell>[-0.041, 0.079]</cell></row><row><cell>Participant ID</cell><cell>1.462</cell><cell>0.689</cell><cell></cell><cell></cell><cell>[0.580, 3.684]</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 8</head><label>8</label><figDesc>Mixed-Effects Generalized Linear Model for Correctly Rejecting Bad Design Suggestions</figDesc><table><row><cell>Predictor</cell><cell>B</cell><cell>SE</cell><cell>z</cell><cell>p</cell><cell>95% CI</cell></row><row><cell>Feature Importance</cell><cell>1.380</cell><cell>0.479</cell><cell>2.88</cell><cell>.004</cell><cell>[0.441, 2.319]</cell></row><row><cell>Ideal Design</cell><cell>0.617</cell><cell>0.499</cell><cell>1.24</cell><cell>.217</cell><cell>[-0.362, 1.596]</cell></row><row><cell>Participant ID</cell><cell>2.411</cell><cell>1.313</cell><cell></cell><cell></cell><cell>[0.830, 7.008]</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 9</head><label>9</label><figDesc>Pairwise Comparisons of Predictive Margins for Decision Time</figDesc><table><row><cell>Pairwise Comparison</cell><cell>Contrast</cell><cell>SE</cell><cell>z</cell><cell>p</cell><cell>95% CI</cell></row><row><cell>Feature Importance vs Control</cell><cell>0.139</cell><cell>0.048</cell><cell>2.86</cell><cell>.013</cell><cell>[0.023, 0.254]</cell></row><row><cell>Ideal Design vs Control</cell><cell>0.051</cell><cell>0.042</cell><cell>1.23</cell><cell>.524</cell><cell>[-0.048, 0.151]</cell></row><row><cell>Ideal Design vs Feature Importance</cell><cell>-0.087</cell><cell cols="3">0.049 -1.78 .210</cell><cell>[-0.204, 0.030]</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 10</head><label>10</label><figDesc>Mixed-Effects Generalized Linear Model for Decision Time</figDesc><table><row><cell>Predictor</cell><cell>B</cell><cell>SE</cell><cell>z</cell><cell>p</cell><cell>95% CI</cell></row><row><cell>Feature Importance</cell><cell>-0.669</cell><cell>0.065</cell><cell>-10.29</cell><cell>&lt; .001</cell><cell>[-0.796, -0.541]</cell></row><row><cell>Ideal Design</cell><cell>-0.705</cell><cell>0.065</cell><cell>-10.82</cell><cell>&lt; .001</cell><cell>[-0.833, -0.578]</cell></row><row><cell>Intervention</cell><cell>0.218</cell><cell>0.256</cell><cell>0.85</cell><cell>.395</cell><cell>[-0.284, 0.719]</cell></row><row><cell>Ideal Design first</cell><cell>-0.043</cell><cell>0.247</cell><cell>-0.18</cell><cell>.861</cell><cell>[-0.527, 0.440]</cell></row><row><cell>Error detection task</cell><cell>0.582</cell><cell>0.194</cell><cell>2.99</cell><cell>.003</cell><cell>[0.201, 0.963]</cell></row><row><cell>Female</cell><cell>0.379</cell><cell>0.229</cell><cell>1.65</cell><cell>.099</cell><cell>[-0.071, 0.829]</cell></row><row><cell>Education: Master</cell><cell>-0.328</cell><cell>0.256</cell><cell>-1.28</cell><cell>.200</cell><cell>[-0.830, 0.174]</cell></row><row><cell>Experience</cell><cell>-0.015</cell><cell>0.039</cell><cell>-0.38</cell><cell>.702</cell><cell>[-0.091, 0.061]</cell></row><row><cell>Age</cell><cell>0.013</cell><cell>0.012</cell><cell>1.09</cell><cell>.274</cell><cell>[-0.010, 0.036]</cell></row><row><cell>Error * Education</cell><cell>-0.088</cell><cell>0.138</cell><cell>-0.64</cell><cell>.520</cell><cell>[-0.358, 0.181]</cell></row><row><cell>Error * Experience</cell><cell>-0.036</cell><cell>0.019</cell><cell>-1.9</cell><cell>.058</cell><cell>[-0.073, 0.001]</cell></row><row><cell>Error * Age</cell><cell>-0.012</cell><cell>0.006</cell><cell>-1.91</cell><cell>.056</cell><cell>[-0.025, 0.000]</cell></row><row><cell>Participant ID</cell><cell>0.362</cell><cell>0.096</cell><cell></cell><cell></cell><cell>[0.215, 0.607]</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10"><head>Table 11</head><label>11</label><figDesc>Pairwise Comparisons of Predictive Margins for Decision Time</figDesc><table><row><cell>Pairwise Comparison</cell><cell>Contrast</cell><cell>SE</cell><cell>z</cell><cell>p</cell><cell>95% CI</cell></row><row><cell>Feature Importance vs Control</cell><cell>-28.763</cell><cell cols="4">4.621 -6.22 &lt; .001 [-39.796, -17.730]</cell></row><row><cell>Ideal Design vs Control</cell><cell>-29.855</cell><cell cols="4">4.710 -6.34 &lt; .001 [-41.102, -18.608]</cell></row><row><cell>Ideal Design vs Feature Importance</cell><cell>-1.092</cell><cell cols="3">1.893 -0.58 0.917</cell><cell>[-5.613, 3.428]</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11"><head>Table 12</head><label>12</label><figDesc>Mixed-Effects Generalized Linear Model for Level of Questioning</figDesc><table><row><cell>Predictor</cell><cell>B</cell><cell>SE</cell><cell>z</cell><cell>p</cell><cell>95% CI</cell></row><row><cell>Feature Importance</cell><cell>-0.056</cell><cell>0.069</cell><cell>-0.81</cell><cell>.416</cell><cell>[-0.191, 0.079]</cell></row><row><cell>Ideal Design</cell><cell>-0.168</cell><cell>0.071</cell><cell>-2.37</cell><cell>.018</cell><cell>[-0.307, -0.029]</cell></row><row><cell>Intervention</cell><cell>-0.171</cell><cell>0.667</cell><cell>-0.26</cell><cell>.798</cell><cell>[-1.479, 1.137]</cell></row><row><cell>Ideal Design first</cell><cell>-0.518</cell><cell>0.650</cell><cell>-0.8</cell><cell>.425</cell><cell>[-1.792, 0.755]</cell></row><row><cell>Error Detection Task</cell><cell>0.188</cell><cell>0.242</cell><cell>0.77</cell><cell>.438</cell><cell>[-0.287, 0.662]</cell></row><row><cell>Female</cell><cell>-1.913</cell><cell>0.612</cell><cell>-3.13</cell><cell>.002</cell><cell>[-3.112, -0.713]</cell></row><row><cell>Education: Master</cell><cell>-0.455</cell><cell>0.670</cell><cell>-0.68</cell><cell>.497</cell><cell>[-1.769, 0.858]</cell></row><row><cell>Experience</cell><cell>-0.041</cell><cell>0.103</cell><cell>-0.4</cell><cell>.689</cell><cell>[-0.243, 0.161]</cell></row><row><cell>Age</cell><cell>0.011</cell><cell>0.031</cell><cell>0.37</cell><cell>.714</cell><cell>[-0.049, 0.072]</cell></row><row><cell>Error Dete… * Education</cell><cell>0.041</cell><cell>0.157</cell><cell>0.26</cell><cell>.795</cell><cell>[-0.267, 0.348]</cell></row><row><cell>Error Det… * Experience</cell><cell>-0.028</cell><cell>0.028</cell><cell>-1</cell><cell>.320</cell><cell>[-0.083, 0.027]</cell></row><row><cell>Error Detection t… * Age</cell><cell>-0.001</cell><cell>0.007</cell><cell>-0.17</cell><cell>.866</cell><cell>[-0.014, 0.012]</cell></row><row><cell>Participant ID</cell><cell>2.496</cell><cell>0.792</cell><cell></cell><cell></cell><cell>[1.34, 4.648]</cell></row></table></figure>
+		</body>
+		<back>
+
+			
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Acknowledgements</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>If the XAI condition was a significant predictor, post-hoc analysis of predictive margins would be conducted. The post-hoc assumption of outliers was assessed visually by inspecting histograms and box plots of the residuals. Observations showing extreme deviation were flagged as potential outliers.</p><p>If there is a significant difference between Feature Importance and Ideal design, then Decision Time and Level of Questioning. Pre-model assumption testing of trial-level measures revealed that decision time and level of questioning were positively skewed. Multiple transformations (e.g., log, square root, inverse) were applied, but did not improve normality. Kurtosis and sphericity assumptions were not met either. Because of the failed assumptions and complexity of trial-level variation, a mixed-effects generalized linear model, the same model as the decision rates.</p><p>For decision time, a gamma distribution with a log link was selected, as it is well-suited to skewed time-based measurements. For the level of questioning, which is an interval variable, a discrete Poisson distribution with a log link was used. In both models, the XAI condition was included as a fixed effect (dummy-coded), and participant ID was modeled as a random intercept to account for individual differences. Additional covariates were the same as for decision rates. Though an extra covariate was included to explore if bad design suggestions changed the outcome variables, a binary indicator for an error detection task was used. Additional interaction terms were included between error detection tasks and age, experience, and education level. Post-model analysis and assumptions were handled the same way as decision rates.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Summary of Qualitative Feedback</head><p>Participants' answers to the open-ended questions were summarized using a data-driven approach. Without prior expectations, responses were inductively coded based on their content. The following steps were taken: each response was given an initial code, similar codes were grouped, and each group was given a title and description that summarized the participants' feedback. Finally, the results were posted in a table with a frequency count of how often this group was mentioned. This analysis was manually conducted in Excel (Microsoft, 2025). slightly higher levels of questioning (B = -1.913, SE = 0.612, z = -3.13, p = .002). Post-hoc margin analysis revealed no significant contrasts. Due to the lack of significance, this was not analyzed further.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Summary of Qualitative Feedback</head><p>Participants' answers of the open-ended questions were read and summarized, as described in the Methods section. A complete summary of the feedback can be found in Appendix . The paragraphs hereunder describe the two most common helpful and unhelpful aspects for each condition. All reported aspects will be considered for the Discussion section.</p><p>For Feature Importance, six distinct aspects were identified. The most often reported helpful aspect was that it explicitly connected design features to the AI's reasoning, thereby reportedly helping participants understand what PCB design aspects to focus on or improve (mentioned nine times). The second most common helpful aspect was that the explanation was easy to understand, and supposedly supported trust and mental processing (mentioned seven times).</p><p>Five distinct unhelpful aspects were reported for Feature Importance. The most common reason was that the explanation was too abstract or difficult to understand, participants reported that it was missing actionable guidance or examples (mentioned nine times). The second most common aspect is that the explanation was missing visual support and was reportedly harder to contextualize to the CAD environment (mentioned five times).</p><p>For Ideal Design, five distinct helpful aspects were identified. The two most frequently mentioned were that the explanation was clear and easy to understand, it reportedly helped simplify the complex design context (mentioned eight times), and secondly, that it provided concrete examples of good PCB layouts. This supported interpretation and application due to the visual nature (mentioned eight times).</p><p>Five unhelpful aspects were identified for Ideal Design. The most frequently mentioned issue was that the explanation lacked sufficient detail or clarity, participants reported that the content or visuals were unclear (mentioned five times). Another common concern was that it did not explain why certain layouts were preferred or what the consequences would be for suboptimal choices (mentioned four times). Similarly, some found the feedback too vague or generic to be actionable (mentioned four times).</p><p>Another limitation comes from the handcrafted AI systems. Instead of experimenting with a functional AI model that gives real design suggestions and calculates its explanations, all were handcrafted by the researcher to simulate AI-generated outputs. This approach was intentional due to the restricted access to professional PCB design software that supports AI-generated designs. However, this approach limited the experiment's design to one wherein participants could only directly interact with the PCB design through a control interface, and each trial was detached from the previous trial by focusing on isolated sections of the PCB. In reality, PCB engineers are more likely to work in a specific order, for example, by routing the important data signals before focusing on the power distribution. In a real-world scenario, interaction with the PCB would be more flexible and logical, and the AI-generated suggestions could have different variability, error rates, capabilities, or interaction methods. Even still, the simulated setup allowed for a controlled environment in which the core research aims could be studied meaningfully.</p><p>An order effect is possible because participants always started with the control condition. Different behavior might emerge if the control condition had been queued after the XAI conditions, or if a between-subjects design had been used. However, due to feasibility constraints, the current approach was chosen while remaining aware of any order effects in the discussion. The condition order may have influenced participants' baseline perceptions of the task, potentially influencing the perceived value of the subsequent XAI conditions.</p><p>Finally, a lot of variation in this study's models is attributed to individual variation, but could not be explained by the participants' years of relevant experience. This could be a result of missing relevant participant-level predictors. As <ref type="bibr" target="#b36">Vereschak et al. (2021)</ref> explained, personal background plays a vital role in shaping user experience, possible predictors could have been AI familiarity or attitude towards automation. Future research could include these predictors to explain some of the variation found in this study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Recommendations</head><p>While the XAI condition had no significant effect on decision rates and self-reported trust in this study, significant individual differences were found, which may be possible to be explained by other</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A Power Analysis -A Priori</head><p>The required sample size was calculated using R and the Superpower package. The R-code and output can be seen below: </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix B Screenshots of Experiment Interface</head><p>In their invitation through email or by advertising on Prolific, participants were directed to the welcome page (Figure <ref type="figure">B</ref> 1). The figure shows the email login page, for Prolific participants, it would be identical, except they logged in using their Prolific ID.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure B 1</head><p>Welcome Page With Instructions to Sign Up, Log In, and Find Support Logging in directed participants to the pre-screening questionnaire (Figure <ref type="figure">B</ref> 2). They had three minutes to complete multiple-choice questions specific to the PCB engineering domain.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure B 2</head><p>Pre-Screening Page with a Repetition of the Target Group, Timer, and Questions Participants who qualified for the study were shown the informed consent form (Figure <ref type="figure">B</ref> 3).</p><p>Participants could explicitly state if they agreed to having their data shared in the Open Science Framework public repository and whether they consented to participating in the study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure B 3</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Informed Consent Page</head><p>After signing the consent form, they were shown a video tutorial. They could only continue the experiment after they had waited the full duration of the video.</p><p>Video tutorial -part 1: <ref type="url" target="https://youtu.be/0fkHmXtWBAw">https://youtu.be/0fkHmXtWBAw</ref> Participants were in the first condition and were shown the PCB engineering task without the XAI method (Figure <ref type="figure" target="#fig_20">B 4</ref>). The interface included a control interface to explore, accept, and reject the AI suggestions. Additionally, the info button allowed participants to view the technical background of PCB design, which included a block diagram, schematic, 3D renders, color legend, and an unrouted PCB layout <ref type="bibr">(Figure B 6)</ref>. After the control condition (i.e., 10 PCB engineering tasks, 3 error detection tasks, and the trust questionnaire), participants were directed to a second video tutorial to explain the XAI conditions.</p><p>Video tutorial -part 2: <ref type="url" target="https://youtu.be/d29zPwkfNt8">https://youtu.be/d29zPwkfNt8</ref>  Preference Which explanation method do you prefer? ☐Feature Importance ☐ Ideal Design Qualitative Feedback What did you like or find helpful about the AI explanation Ideal Design? What did you dislike or find unhelpful about the AI explanation Ideal Design? What did you like or find helpful about the AI explanation Feature Importance? What did you dislike or find unhelpful about the AI explanation Feature Importance? Demographics What's your age? What's your gender? What's your highest (completed) educational degree relevant to electronics? How many years of experience do you have in electronics (including educational years)? Appendix D Correlation Matrix Table D 1 Correlation Matrix for Subjective and Objective Measures Control Feature Importance Ideal Design Trust Trust Satisfaction Mental effort Preference Trust Satisfaction Mental Effort Preference Decision time .263 .087 .167 .090 -.119 .216 .246 .001 .051 Final suggestion .120 -.113 .061 .168 -.279 -.048 -.059 .151 -.069 Level of questioning .088 -.109 .027 .083 -.103 -.108 -.099 .148 -.024 First condition is Ideal Design .080 -.066 -.090 -.149 .243 .004 -.038 -.028 -.243 Intervention included -.068 -.076 -.004 .038 -.248 -.144 -.057 .073 .248 Acceptance of good designs .277 .085 .182 .162 -.273 .286 .255 -.066 .222 Rejection of bad designs -.378* -.088 -.140 -.163 .365* .033 .013 .069 -.272 Note. *p &lt; .05 Appendix E Decision Time Throughout the Experiment Table F 1 Feature Importance, Helpful Aspects Summarized Helpful aspects Summary of Participant Feedback Frequency Feature Importance and prioritization Liked that the explanation showed which PCB design aspects influenced AI decisions or scores, helping them understand what to focus on or improve. 9 Comprehensibility and clarity Appreciated clear, understandable explanations or displays that improved trust or mental processing. 7 Visual presentation and structure Found graphs, diagrams, or clear layout visually helpful in interpreting AI output. 4 Decision support for PCB improvement Found the explanation useful for making design decisions, improving outcomes, or guiding the design process. 5 Process explanation Liked how the explanation clarified the AI's internal logic, aims, or steps -including real-time reasoning. 4 Efficiency and ease of use Felt that the explanation made their work easier or quicker. 2 Table F 4 Ideal Design, Unhelpful Aspects Summarized Unhelpful aspects Description Frequency Too vague or generic in feedback The explanation lacked specificity or clarity in what was wrong or how features impacted results. 4 Lacks justification for AI decisions Did not explain why a certain layout was preferred or what happens if rules are not followed. 4 Lacks detail or clarity Not enough detail or precision in the explanation; visuals or language were unclear or confusing. 5 Includes unnecessary information Some content was irrelevant or too much, reducing usefulness. 2 Missing design score for comparison The explanation lacked a global efficiency metric, making it harder to compare board suggestions. 1 No negative feedback given Participants found the explanation entirely helpful or gave no critical comments.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_19"><figDesc>c("XAI", "SHAP", "Counterfactual", "OptimalDesign") design_result &lt;-ANOVA_design(design = "3w", n = n, mu = mu, sd = sd, r = r</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_20"><head>Figure B 4 PCB</head><label>4</label><figDesc>Layout Task, Control Condition Without XAI Figure B 5 Control Interface Shown at the Bottom of the Screen During PCB Engineering Tasks Appendix C Questionnaire Content Pre-Screening (multiple choice) The following multiple-choice questions were used to assess participants' baseline knowledge relevant to PCB design. Correct answers are indicated with [Correct answer]. 1. What is the primary function of a decoupling capacitor placed close to an IC's power pin?  To store charge for later use during low-voltage events  To equalize current through the power rail  To increase overall PCB capacitance  [Correct answer] To minimize voltage ripple and suppress high-frequency noise 2. What is the risk of routing a high-speed digital signal in parallel to another trace over a long distance? The trace will radiate excessive heat  The signal will experience thermal drift  [Correct answer] The signal will experience crosstalk  Signal propagation will slow down significantly 3. Why is a continuous ground plane beneficial in a multilayer PCB?  It increases board rigidity and prevents warping  [Correct answer] It helps reduce EMI and maintain consistent signal return paths  It eliminates the need for decoupling capacitors by stabilizing voltage directly beneath the IC  It acts as a backup power supply during transients 4. Why is it critical to match the land pattern (footprint) of a component in the PCB design phase?  To allow automated test probes to access the component during functional testing  [Correct answer] To ensure proper soldering and alignment  To reduce the number of vias required  To allow for interchanging components in assembly</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_21"><head>Figure E 1 MarginsFigure E 2 Box</head><label>12</label><figDesc>Plots of Decision Time for Both Condition Orders, Showing Potential Learning EffectsPlots of Decision Time on Trial-Level With Linear Fit and 95% Confidence Interval</figDesc></figure>
+			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct status="extracted" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The implementation of Genetic Algorithm and Routing Lee for PCB design optimization</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Badriyah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Setyorini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Yuliawan</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/IAC.2016.7905706</idno>
+		<ptr target="https://doi.org/10.1109/IAC.2016.7905706" />
+	</analytic>
+	<monogr>
+		<title level="m">Conference on Informatics and Computing (ICIC)</title>
+		<imprint>
+			<date type="published" when="2016">2016. 2016</date>
+			<biblScope unit="page" from="148" to="153" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Badriyah, T., Setyorini, F., &amp; Yuliawan, N. (2016). The implementation of Genetic Algorithm and Routing Lee for PCB design optimization. 2016 International Conference on Informatics and Computing (ICIC), 148-153. https://doi.org/10.1109/IAC.2016.7905706</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Signal and Power Integrity-Simplified</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bogatin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Pearson</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bogatin, E. (2017). Signal and Power Integrity-Simplified. Pearson.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A Comprehensive User-Centric Method for Evaluating and Comparing XAI Explanations</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Brdnik</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Karakatič</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Sašo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Šumak</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/10447318.2025.2470278</idno>
+		<ptr target="https://doi.org/10.1080/10447318.2025.2470278" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Human-Computer Interaction</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="20" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Brdnik, S., Karakatič ,Sašo, &amp; and Šumak, B. (2025). A Comprehensive User-Centric Method for Evaluating and Comparing XAI Explanations. International Journal of Human-Computer In- teraction, 1-20. https://doi.org/10.1080/10447318.2025.2470278</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The Evolution and Impact of Human Confidence in Artificial Intelligence and in Themselves on AI-Assisted Decision-Making in Design</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Raina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Goucher-Lambert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kotovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cagan</surname></persName>
+		</author>
+		<idno type="DOI">10.1115/1.4055123</idno>
+		<ptr target="https://doi.org/10.1115/1.4055123" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Mechanical Design</title>
+		<imprint>
+			<biblScope unit="page">145</biblScope>
+			<date type="published" when="2022">2022. 031401</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chong, L., Raina, A., Goucher-Lambert, K., Kotovsky, K., &amp; Cagan, J. (2022). The Evolution and Im- pact of Human Confidence in Artificial Intelligence and in Themselves on AI-Assisted Deci- sion-Making in Design. Journal of Mechanical Design, 145(031401). https://doi.org/10.1115/1.4055123</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b4">
+	<monogr>
+		<ptr target="https://en.wikipe-dia.org/wiki/Specctra" />
+		<title level="m">Speccta [Computer software</title>
+		<imprint>
+			<publisher>Cooper &amp; Chyan Technology, Inc</publisher>
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cooper &amp; Chyan Technology, Inc. (1989). Speccta [Computer software]. https://en.wikipe- dia.org/wiki/Specctra</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b5">
+	<monogr>
+		<author>
+			<persName><forename type="first">F</forename><surname>Doshi-Velez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kim</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1702.08608" />
+		<title level="m">Towards A Rigorous Science of Interpretable Machine Learning</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Doshi-Velez, F., &amp; Kim, B. (2017). Towards A Rigorous Science of Interpretable Machine Learning. https://arxiv.org/abs/1702.08608</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Proposal for a Regulation of The European Parliament and of The Council Laying Down Harmonised Rules on Artificial Intelligence (Artificial Intelligence Act) and Amending Certain Union Legislative Acts</title>
+		<author>
+			<persName><surname>Eu Ai Act</surname></persName>
+		</author>
+		<ptr target="https://eur-lex.eu-ropa.eu/legal-content/EN/TXT/?uri=celex%3A52021PC0206" />
+	</analytic>
+	<monogr>
+		<title level="j">Official Journal of the European Union</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">EU AI Act. (2024). Proposal for a Regulation of The European Parliament and of The Council Laying Down Harmonised Rules on Artificial Intelligence (Artificial Intelligence Act) and Amending Certain Union Legislative Acts. Official Journal of the European Union. https://eur-lex.eu- ropa.eu/legal-content/EN/TXT/?uri=celex%3A52021PC0206</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Instant design predictions with Explainable AI through Reduced Order Modeling</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Genovese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Scardigli</surname></persName>
+		</author>
+		<ptr target="https://engineering.esteco.com/blog/explainable-ai-reduced-order-modeling/" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Genovese, S., &amp; Scardigli, A. (2024). Instant design predictions with Explainable AI through Reduced Order Modeling. https://engineering.esteco.com/blog/explainable-ai-reduced-order-modeling/</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">G</forename><surname>Hart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">E</forename><surname>Staveland</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0166-4115</idno>
+		<ptr target="https://doi.org/10.1016/S0166-4115" />
+	</analytic>
+	<monogr>
+		<title level="m">Human Mental Workload</title>
+		<editor>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Hancock</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">N</forename><surname>Meshkati</surname></persName>
+		</editor>
+		<meeting><address><addrLine>North-Holland</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1988">1988</date>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="62386" to="62389" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hart, S. G., &amp; Staveland, L. E. (1988). Development of NASA-TLX (Task Load Index): Results of Empirical and Theoretical Research. In P. A. Hancock &amp; N. Meshkati (Eds.), Human Mental Workload (Vol. 52, pp. 139-183). North-Holland. https://doi.org/10.1016/S0166- 4115(08)62386-9</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b9">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Hoffman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Mueller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Litman</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1812.04608" />
+		<title level="m">Metrics for Explainable AI: Challenges and Prospects</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hoffman, R. R., Mueller, S. T., Klein, G., &amp; Litman, J. (2019). Metrics for Explainable AI: Challenges and Prospects. https://arxiv.org/abs/1812.04608</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Measures for explainable AI: Explanation goodness, user satisfaction, mental models, curiosity, trust, and human-AI performance</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Hoffman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Mueller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Litman</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fcomp.2023.1096257</idno>
+		<ptr target="https://doi.org/10.3389/fcomp.2023.1096257" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Computer Science</title>
+		<imprint>
+			<biblScope unit="page" from="5" to="2023" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hoffman, R. R., Mueller, S. T., Klein, G., &amp; Litman, J. (2023). Measures for explainable AI: Explana- tion goodness, user satisfaction, mental models, curiosity, trust, and human-AI performance. Frontiers in Computer Science, Volume 5-2023. https://doi.org/10.3389/fcomp.2023.1096257</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">A Systematic Review of Explainable Artificial Intelligence in Terms of Different Application Domains and Tasks</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">U</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Begum</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/app12031353</idno>
+		<ptr target="https://doi.org/10.3390/app12031353" />
+	</analytic>
+	<monogr>
+		<title level="j">Applied Sciences</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Islam, M. R., Ahmed, M. U., Barua, S., &amp; Begum, S. (2022). A Systematic Review of Explainable Ar- tificial Intelligence in Terms of Different Application Domains and Tasks. Applied Sciences, 12(3). https://doi.org/10.3390/app12031353</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Computational structural analysis and finite element methods (1-1 online resource (445 pages))</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kaveh</surname></persName>
+		</author>
+		<ptr target="http://site.ebrary.com/id/10819178" />
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>WorldCat</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kaveh, A. (2014). Computational structural analysis and finite element methods (1-1 online resource (445 pages)). Springer; WorldCat. http://site.ebrary.com/id/10819178</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Human-centered evaluation of explainable AI applications: A systematic review</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Maathuis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sent</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/frai.2024.1456486</idno>
+		<ptr target="https://doi.org/10.3389/frai.2024.1456486" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Artificial Intelligence</title>
+		<imprint>
+			<biblScope unit="page" from="7" to="2024" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kim, J., Maathuis, H., &amp; Sent, D. (2024). Human-centered evaluation of explainable AI applications: A systematic review. Frontiers in Artificial Intelligence, Volume 7-2024. https://doi.org/10.3389/frai.2024.1456486</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b14">
+	<monogr>
+		<title level="m" type="main">An Evaluation of the Human-Interpretability of Explanation</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Lage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Narayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gershman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Doshi-Velez</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1902.00006" />
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lage, I., Chen, E., He, J., Narayanan, M., Kim, B., Gershman, S., &amp; Doshi-Velez, F. (2019). An Evalu- ation of the Human-Interpretability of Explanation. https://arxiv.org/abs/1902.00006</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Towards a Science of Human-AI Decision Making: An Overview of Design Space in Empirical Human-Subject Studies</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Smith-Renner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><forename type="middle">V</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Tan</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3593013.3594087</idno>
+		<ptr target="https://doi.org/10.1145/3593013.3594087" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency</title>
+		<meeting>the 2023 ACM Conference on Fairness, Accountability, and Transparency</meeting>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1369" to="1385" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lai, V., Chen, C., Smith-Renner, A., Liao, Q. V., &amp; Tan, C. (2023). Towards a Science of Human-AI Decision Making: An Overview of Design Space in Empirical Human-Subject Studies. Pro- ceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency, 1369- 1385. https://doi.org/10.1145/3593013.3594087</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Application of CFD Technology to electronic thermal management</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Chambers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mahalingam</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ECTC.1994.367557</idno>
+		<ptr target="https://doi.org/10.1109/ECTC.1994.367557" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings. 44th Electronic Components and Technology Conference</title>
+		<meeting>44th Electronic Components and Technology Conference</meeting>
+		<imprint>
+			<date type="published" when="1994">1994. 1994</date>
+			<biblScope unit="page" from="411" to="420" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lee, T., Chambers, B., &amp; Mahalingam, M. (1994). Application of CFD Technology to electronic ther- mal management. 1994 Proceedings. 44th Electronic Components and Technology Confer- ence, 411-420. https://doi.org/10.1109/ECTC.1994.367557</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A Unified Approach to Interpreting Model Predictions</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Lundberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-I</forename><surname>Lee</surname></persName>
+		</author>
+		<ptr target="http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predic-tions.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+		<editor>
+			<persName><forename type="first">I</forename><surname>Guyon</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">U</forename><forename type="middle">V</forename><surname>Luxburg</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Bengio</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">H</forename><surname>Wallach</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Fergus</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Vishwanathan</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">&amp;</forename><forename type="middle">R</forename><surname>Garnett</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="4765" to="4774" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lundberg, S. M., &amp; Lee, S.-I. (2017). A Unified Approach to Interpreting Model Predictions. In I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, &amp; R. Garnett (Eds.), Advances in Neural Information Processing Systems 30 (pp. 4765-4774). Curran Asso- ciates, Inc. http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predic- tions.pdf</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b18">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Marrakchi</surname></persName>
+		</author>
+		<ptr target="https://www.microsoft.com/nl-nl/mi-crosoft-365" />
+		<title level="m">Autorouting, or No Autorouting? A History of Failed Design Automation</title>
+		<meeting><address><addrLine>Excel</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2020">2020. 2025</date>
+		</imprint>
+	</monogr>
+	<note>Version 365 Computer software</note>
+	<note type="raw_reference">Marrakchi, D. (2020). Autorouting, or No Autorouting? A History of Failed Design Automation. https://resources.altium.com/p/to-autoroute-or-not-to-autoroute-a-history-of-failed-design-au- tomation Microsoft. (2025). Excel (Version 365) [Computer software]. https://www.microsoft.com/nl-nl/mi- crosoft-365</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Explanation in artificial intelligence: Insights from the social sciences. Artificial Intelligence</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Miller</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.artint.2018.07.007</idno>
+		<ptr target="https://doi.org/10.1016/j.artint.2018.07.007" />
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">267</biblScope>
+			<biblScope unit="page" from="1" to="38" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Miller, T. (2019). Explanation in artificial intelligence: Insights from the social sciences. Artificial In- telligence, 267, 1-38. https://doi.org/10.1016/j.artint.2018.07.007</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Gender Differences in the Use of Generative Artificial Intelligence Chatbots in Higher Education: Characteristics and Consequences</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Møgelvang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bjelland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Grassini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ludvigsen</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/educsci14121363</idno>
+		<ptr target="https://doi.org/10.3390/educsci14121363" />
+	</analytic>
+	<monogr>
+		<title level="j">Education Sciences</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Møgelvang, A., Bjelland, C., Grassini, S., &amp; Ludvigsen, K. (2024). Gender Differences in the Use of Generative Artificial Intelligence Chatbots in Higher Education: Characteristics and Conse- quences. Education Sciences, 14(12). https://doi.org/10.3390/educsci14121363</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b21">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Molnar</surname></persName>
+		</author>
+		<ptr target="https://christophm.github.io/interpretable-ml-book" />
+		<title level="m">Interpretable Machine Learning: A Guide for Making Black Box Models Explainable</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note>rd ed.</note>
+	<note type="raw_reference">Molnar, C. (2025). Interpretable Machine Learning: A Guide for Making Black Box Models Explaina- ble (3rd ed.). https://christophm.github.io/interpretable-ml-book</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">From Anecdotal Evidence to Quantitative Evaluation Methods: A Systematic Review on Evaluating Explainable AI</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nauta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Trienes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Pathak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Schmitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schlötterer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van Keulen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Seifert</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3583558</idno>
+		<ptr target="https://doi.org/10.1145/3583558" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Computing Surveys</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">13s</biblScope>
+			<biblScope unit="page" from="1" to="42" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nauta, M., Trienes, J., Pathak, S., Nguyen, E., Peters, M., Schmitt, Y., Schlötterer, J., van Keulen, M., &amp; Seifert, C. (2023). From Anecdotal Evidence to Quantitative Evaluation Methods: A Sys- tematic Review on Evaluating Explainable AI. ACM Computing Surveys, 55(13s), 1-42. https://doi.org/10.1145/3583558</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b23">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Nwakanma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Chinaechetam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ahakonye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Anyanwu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Njoku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D.-S</forename><surname>Kim</surname></persName>
+		</author>
+		<title level="m">Explainable Activity Detection and Classification: SHAP vs LIME</title>
+		<imprint>
+			<date type="published" when="2023-06">2023. June</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nwakanma, C., Chinaechetam, N., Ahakonye, L., Anyanwu, G., Njoku, J., &amp; Kim, D.-S. (2023, June). Explainable Activity Detection and Classification: SHAP vs LIME.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b24">
+	<monogr>
+		<ptr target="https://chat-gpt.com/s/" />
+		<title level="m">Online Research Material Repository</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note>Open Science Framework ChatGPT [Computer software m_686436579a788191b500f14da031bdda</note>
+	<note type="raw_reference">Open Science Framework. (n.d.). Online Research Material Repository. https://osf.io/ OpenAI. (2025). ChatGPT [Computer software]. https://chat- gpt.com/s/m_686436579a788191b500f14da031bdda</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Care to Explain? AI Explanation Types Differentially Impact Chest Radiograph Diagnostic Performance and Physician Trust in AI</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Prinster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mahmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Saria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jeudy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">T</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">H</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-M</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.233261</idno>
+		<ptr target="https://doi.org/10.1148/radiol.233261" />
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<imprint>
+			<biblScope unit="volume">313</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">233261</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Prinster, D., Mahmood, A., Saria, S., Jeudy, J., Lin, C. T., Yi, P. H., &amp; Huang, C.-M. (2024). Care to Explain? AI Explanation Types Differentially Impact Chest Radiograph Diagnos- tic Performance and Physician Trust in AI. Radiology, 313(2), e233261. https://doi.org/10.1148/radiol.233261</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Recent Advances in Trustworthy Explainable Artificial Intelligence: Status, Challenges, and Perspectives</title>
+		<author>
+			<persName><forename type="first">;</forename><forename type="middle">A</forename><surname>Prolific</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mccoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Rawat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Sadler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Amant</surname></persName>
+		</author>
+		<author>
+			<persName><surname>St</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TAI.2021.3133846</idno>
+		<ptr target="https://doi.org/10.1109/TAI.2021.3133846" />
+	</analytic>
+	<monogr>
+		<title level="m">Prolific | Easily collect high-quality data from real people</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="852" to="866" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Prolific. (n.d.). Prolific | Easily collect high-quality data from real people. https://www.prolific.com/ Rawal, A., McCoy, J., Rawat, D. B., Sadler, B. M., &amp; Amant, R. St. (2022). Recent Advances in Trust- worthy Explainable Artificial Intelligence: Status, Challenges, and Perspectives. IEEE Trans- actions on Artificial Intelligence, 3(6), 852-866. https://doi.org/10.1109/TAI.2021.3133846</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)</title>
+		<ptr target="https://eur-lex.eu-ropa.eu/eli/reg/2016/679/oj" />
+	</analytic>
+	<monogr>
+		<title level="j">Official Journal of the European Union</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>EU</publisher>
+		</imprint>
+	</monogr>
+	<note>Regulation</note>
+	<note type="raw_reference">Regulation (EU). (2016). Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). Official Journal of the European Union. https://eur-lex.eu- ropa.eu/eli/reg/2016/679/oj</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Can we do better explanations? A proposal of User-Centered Explainable AI</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ribera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lapedriza</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ribera, M., &amp; Lapedriza, A. (2019). Can we do better explanations? A proposal of User-Centered Ex- plainable AI.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Towards Human-Centered Explainable AI: A Survey of User Studies for Model Explanations</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Rong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Leemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T.-T</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fiedler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Unhelkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Seidel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kasneci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kasneci</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tpami.2023.3331846</idno>
+		<ptr target="https://doi.org/10.1109/tpami.2023.3331846" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2104" to="2122" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rong, Y., Leemann, T., Nguyen, T.-T., Fiedler, L., Qian, P., Unhelkar, V., Seidel, T., Kasneci, G., &amp; Kasneci, E. (2024). Towards Human-Centered Explainable AI: A Survey of User Studies for Model Explanations. IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(4), 2104-2122. https://doi.org/10.1109/tpami.2023.3331846</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Gender differences in artificial intelligence: The role of artificial intelligence anxiety</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Russo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Romano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Clemente</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Iacovone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">E</forename><surname>Gladwin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Panno</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fpsyg.2025.1559457</idno>
+		<ptr target="https://doi.org/10.3389/fpsyg.2025.1559457" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Psychology</title>
+		<imprint>
+			<biblScope unit="page" from="16" to="2025" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Russo, C., Romano, L., Clemente, D., Iacovone, L., Gladwin, T. E., &amp; Panno, A. (2025). Gender dif- ferences in artificial intelligence: The role of artificial intelligence anxiety. Frontiers in Psy- chology, Volume 16-2025. https://doi.org/10.3389/fpsyg.2025.1559457</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Printed Circuit Board (PCB) design process and fabrica</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Salazar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Marzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Silvestre</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note>tion</note>
+	<note type="raw_reference">Salazar, J., Marzo, J., &amp; Silvestre, S. (2019). Printed Circuit Board (PCB) design process and fabrica- tion.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">A Perspective on Explainable Artificial Intelligence Methods: SHAP and LIME</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Salih</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Raisi-Estabragh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">B</forename><surname>Galazzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Radeva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lekadir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Menegaz</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/aisy.202400304</idno>
+		<ptr target="https://doi.org/10.1002/aisy.202400304" />
+	</analytic>
+	<monogr>
+		<title level="j">Advanced Intelligent Systems</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Salih, A. M., Raisi-Estabragh, Z., Galazzo, I. B., Radeva, P., Petersen, S. E., Lekadir, K., &amp; Menegaz, G. (2024). A Perspective on Explainable Artificial Intelligence Methods: SHAP and LIME. Advanced Intelligent Systems, 7(1). https://doi.org/10.1002/aisy.202400304</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Three Challenges for AI-Assisted Decision-Making</title>
+		<author>
+			<persName><forename type="first">Llc</forename><surname>Statacorp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+		<idno type="DOI">10.1177/17456916231181102</idno>
+		<ptr target="https://doi.org/10.1177/17456916231181102" />
+	</analytic>
+	<monogr>
+		<title level="m">Stata (Version 17</title>
+		<imprint>
+			<date type="published" when="2024">2025. 2024</date>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="722" to="734" />
+		</imprint>
+	</monogr>
+	<note>Computer software</note>
+	<note type="raw_reference">StataCorp LLC. (2025). Stata (Version 17) [Computer software]. https://www.stata.com/ Steyvers, M., &amp; Kumar, A. (2024). Three Challenges for AI-Assisted Decision-Making. Perspectives on Psychological Science, 19(5), 722-734. https://doi.org/10.1177/17456916231181102</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Visual, textual or hybrid: The effect of user expertise on different explanations</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Szymanski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Millecamp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Verbert</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3397481.3450662</idno>
+		<ptr target="https://doi.org/10.1145/3397481.3450662" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 26th International Conference on Intelligent User Interfaces</title>
+		<meeting>the 26th International Conference on Intelligent User Interfaces</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="109" to="119" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Szymanski, M., Millecamp, M., &amp; Verbert, K. (2021). Visual, textual or hybrid: The effect of user ex- pertise on different explanations. Proceedings of the 26th International Conference on Intelli- gent User Interfaces, 109-119. https://doi.org/10.1145/3397481.3450662</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Evaluating XAI: A comparison of rule-based and example-based explanations</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Van Der Waa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Nieuwburg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cremers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Neerincx</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.artint.2020.103404</idno>
+		<ptr target="https://doi.org/10.1016/j.artint.2020.103404" />
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">291</biblScope>
+			<biblScope unit="page">103404</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">van der Waa, J., Nieuwburg, E., Cremers, A., &amp; Neerincx, M. (2021). Evaluating XAI: A comparison of rule-based and example-based explanations. Artificial Intelligence, 291, 103404. https://doi.org/10.1016/j.artint.2020.103404</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">How to Evaluate Trust in AI-Assisted Decision Making? A Survey of Empirical Methodologies</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Vereschak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Bailly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Caramiaux</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3476068</idno>
+		<ptr target="https://doi.org/10.1145/3476068" />
+	</analytic>
+	<monogr>
+		<title level="j">Proc. ACM Hum.-Comput. Interact</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vereschak, O., Bailly, G., &amp; Caramiaux, B. (2021). How to Evaluate Trust in AI-Assisted Decision Making? A Survey of Empirical Methodologies. Proc. ACM Hum.-Comput. Interact., 5(CSCW2). https://doi.org/10.1145/3476068</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Will You Accept the AI Recommendation? Predicting Human Behavior in AI-Assisted Decision Making</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yin</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3485447.3512240</idno>
+		<ptr target="https://doi.org/10.1145/3485447.3512240" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Web Conference 2022</title>
+		<meeting>the ACM Web Conference 2022</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="1697" to="1708" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang, X., Lu, Z., &amp; Yin, M. (2022). Will You Accept the AI Recommendation? Predicting Human Be- havior in AI-Assisted Decision Making. Proceedings of the ACM Web Conference 2022, 1697-1708. https://doi.org/10.1145/3485447.3512240</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b38">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wanner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Heinrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Janiesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zschech</surname></persName>
+		</author>
+		<title level="m">How Much AI Do You Require? Decision Factors for Adopting AI Technology</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wanner, J., Heinrich, K., Janiesch, C., &amp; Zschech, P. (2020). How Much AI Do You Require? Decision Factors for Adopting AI Technology.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Factors influencing user experience in AI chat systems -a satisfaction study based on factor analysis and linear regression</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Jiang</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/K-10-2023-2237</idno>
+		<ptr target="https://doi.org/10.1108/K-10-2023-2237" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Kybernetes, ahead-of-print(ahead-ofprint</note>
+	<note type="raw_reference">Xing, J., &amp; Jiang, Q. (2024). Factors influencing user experience in AI chat systems -a satisfaction study based on factor analysis and linear regression. Kybernetes, ahead-of-print(ahead-of- print). https://doi.org/10.1108/K-10-2023-2237</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Generative Transformers for Design Concept Generation</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Luo</surname></persName>
+		</author>
+		<idno type="DOI">10.1115/1.4056220</idno>
+		<ptr target="https://doi.org/10.1115/1.4056220" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computing and Information Science in Engineering</title>
+		<imprint>
+			<biblScope unit="page">23</biblScope>
+			<date type="published" when="2023">2023. 041003</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhu, Q., &amp; Luo, J. (2023). Generative Transformers for Design Concept Generation. Journal of Com- puting and Information Science in Engineering, 23(041003). https://doi.org/10.1115/1.4056220</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b41">
+	<monogr>
+		<author>
+			<persName><surname>Zuken</surname></persName>
+		</author>
+		<ptr target="https://www.zuken.com/us/product/cr-8000/ai-pcb-de-sign/" />
+		<title level="m">AI PCB Design</title>
+		<imprint>
+			<date type="published" when="2023-09-26">2023. September 26</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zuken. (2023, September 26). AI PCB Design. https://www.zuken.com/us/product/cr-8000/ai-pcb-de- sign/</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b42">
+	<monogr>
+		<title level="m" type="main">I am confident in the AI designer. I feel that it works well</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">I am confident in the AI designer. I feel that it works well.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b43">
+	<monogr>
+		<title level="m">The outputs of the AI designer are very predictable</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">The outputs of the AI designer are very predictable.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b44">
+	<monogr>
+		<title level="m" type="main">The AI designer is very reliable. I can count on it to be correct all the time</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">The AI designer is very reliable. I can count on it to be correct all the time.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b45">
+	<monogr>
+		<title level="m">I feel safe that when I rely on the AI designer I will get the right answers</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">I feel safe that when I rely on the AI designer I will get the right answers.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b46">
+	<monogr>
+		<title level="m" type="main">The AI designer is efficient in that it works very quickly</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">The AI designer is efficient in that it works very quickly.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b47">
+	<monogr>
+		<title level="m">I am wary (cautious) of the AI designer</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">I am wary (cautious) of the AI designer.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b48">
+	<monogr>
+		<title level="m">The AI designer can perform the task better than a novice human user</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">The AI designer can perform the task better than a novice human user.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b49">
+	<monogr>
+		<title level="m" type="main">Mental Effort (Hart &amp; Staveland, 1988) How much mental and perceptual activity was required? Was the task easy or demanding, simple or complex?</title>
+		<imprint/>
+	</monogr>
+	<note>I like using the AI designer for decision making</note>
+	<note type="raw_reference">I like using the AI designer for decision making. Mental Effort (Hart &amp; Staveland, 1988) How much mental and perceptual activity was required? Was the task easy or demanding, simple or complex?</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

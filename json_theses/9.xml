@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">The influence of Virtual Reality safety training on the hazard recognition and safety behaviour of Heijmans employees Hoedemakers, Bram J</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct status="extracted">
+					<analytic>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="institution">Eindhoven University of Technology MASTER</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">The influence of Virtual Reality safety training on the hazard recognition and safety behaviour of Heijmans employees Hoedemakers, Bram J</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">85D076A55FCD4B4D89FB8870E111EA8C</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.9.0" ident="GROBID" when="2026-08-17T12:11+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">0.9.0</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=0, consolidateHeader=0, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[], flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Link to publication</head><p>Disclaimer This document contains a student thesis (bachelor's or master's), as authored by a student at Eindhoven University of Technology. Student theses are made available in the TU/e repository upon obtaining the required degree. The grade received is not published on the document as presented in the repository. The required complexity or quality of research of student theses may vary by program, and the required minimum study period may vary in duration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>General rights</head><p>Copyright and moral rights for the publications made accessible in the public portal are retained by the authors and/or other copyright owners and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with these rights.</p><p>• Users may download and print one copy of any publication from the public portal for the purpose of private study or research.</p><p>• You may not further distribute the material or use it for any profit-making activity or commercial gain Take down policy If you believe that this document breaches copyright please contact us providing details, and we will remove access to the work immediately and investigate your claim.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Even though many construction companies have adopted policies to strive towards a safe working environment in the last couple of years, construction work is still one of the most unsafe jobs in the Netherlands <ref type="bibr">(Juridisch Bureau Letselschade &amp; Gezondheidsrecht, 2024)</ref> and in the rest of the world <ref type="bibr">(OSHA, 2024)</ref>. In the Netherlands, about 408 accidents involving construction workers happen yearly, which is about 155 accidents per 100.000 employees. <ref type="bibr">(Ministerie van Sociale Zaken en Werkgelegenheid, 2023)</ref>. This ratio per 100.000 employees makes construction the second most dangerous employment sector, preceded only by the waste management sector. Construction accounts for a large number of fatal workrelated accidents in the Netherlands as well, with an average of 12.2 fatal accidents per year. <ref type="bibr">Guo and colleagues (2011)</ref> mention that a lack of safety training is a key factor in on-site accidents.</p><p>While traditional safety protocols like monthly safety discussions and physical training sessions are beneficial, virtual reality (VR) training offers a more immersive and interactive experience. By simulating real-world construction scenarios, VR can expose employees to potential hazards in a controlled environment, allowing them to develop practical skills and responses without the risk of injury. This development enhances the understanding of safety procedures and increases engagement and retention of the information presented. As a result, VR training can reduce the likelihood of accidents caused by human error or lack of hazard recognition.</p><p>Moreover, VR training allows for scalable and customizable learning experiences.</p><p>Employees can experience specific job-related risks that they are likely to encounter on construction sites, which may not always have been addressed in generic safety meetings. By tailoring the scenarios to different roles and sites, VR ensures that every worker receives relevant and focused training. Additionally, VR simulations could be used more than once, allowing workers to practice safety measures multiple times until they are confident in their responses. This practice could contribute to a significant reduction in both minor and fatal accidents within the industry by having construction company employees.</p><p>To reduce the number of accidents, the Dutch construction company Heijmans mandates, amongst other things, safety discussions that are organized for every one of their projects. These safety discussions are VCA* approved, which means that they are certified by the government to maintain a safe work environment per Dutch laws. The safety discussion is a mandatory monthly meeting for every project within the construction company Heijmans, where all employee groups-like crane operators, cement pourers or electrical maintenance workers-assigned to that project discuss a topic that is applicable to the type of work they are carrying out during that period. This includes safety topics for working at heights, working heavy loads and working with electrical voltage. This interpretation ranges from discussing a central question within groups to having several people present something about safety at the workplace. These safety discussions are part of a more extensive workspace safety policy that Heijmans introduced in 2013 called <ref type="bibr">GO, or "No Accidents" ("Geen Ongevallen";</ref><ref type="bibr">Heijmans, 2013)</ref>. This policy aims to achieve zero fatal accidents in the short term and eliminate all preventable accidents in the long term. Despite previous efforts, the rate of accidents in construction has not been declining, signalling the need for a shift from the regular safety training protocol. GO primarily focuses on fostering and encouraging more proactive safety behavior. Proactive safety behavior refers to actively anticipating, identifying, and addressing of potential hazards before they escalate into accidents <ref type="bibr">(Griffin &amp; Neal, 2000)</ref>. This focus was prompted by the observation that construction workers were often reluctant to report or act upon safety-related issues they encountered on-site, such as failing to address unsafe practices by coworkers or neglecting to report hazardous conditions. By encouraging workers to take initiative and engage in preventative actions, the GO policy aimed to create a safer work environment. For improving safety in the workplace, hazard recognition and safety behavior are important factors in employees. For Heijmans, these two indicators need to be improved in their employees to reach their goal of no preventable accidents.</p><p>As part of Heijmans' broader GO initiative, which focuses on improving safety at all levels, VR safety training has been developed to enhance workplace safety by adding an innovative and different way of training employees. This VR training is not part of the mandatory training protocol at Heijmans but can be requested on-site as an optional extra training. With this research, we aim to study the effects of VR training on the overall safety behavior and hazard recognition of construction company employees to understand how much impact this training can have on employees and their behavior in the workplace.</p><p>Heijmans has a long history of using VR and VR headsets, for example, in Building Information Modeling (BIM). This technology helps visualize digital 3D models by displaying the model in VR and has proven to be an effective visualization tool at Heijmans, letting project developers spot errors in the build models far into the process of preparations for building. As an example, with the use of BIM, project developers in a recent project at Heijmans managed to spot 66 errors in the digital models far into the preparation stage. This experience of using VR in other areas provides potential for the use of VR for training purposes.</p><p>Data collected by Heijmans shows us a good satisfaction on the VR safety training, scoring an average grade of 8.1 (out of 10) given by particpants and ~75 % of participants stating they think the VR safety training helps with safety in the workplace (VR Veiligheid team Heijmans) According to OSHA (2024), investing in safety projects yields substantial financial returns for construction companies in the form of saved costs of accidents and injuries.</p><p>Investing in safety programs will thus not only reduce the number of accidents but will also lead to economic gain. Dutch company Ape studied the costs of workplace accidents in the Netherlands. According to Ape, an average workplace accident costs a company 2730 Euros.</p><p>When looking at fatal accidents, the costs for the company are, on average, 70.000 Euros; for an accident where the person cannot perform their job anymore, it costs the company 110.000 Euros on average <ref type="bibr" target="#b1">(Ape, 2005)</ref>. These numbers do not even include the societal costs per workplace accident, which are 4500 Euros, 635.000 Euros, and 136.000 Euros, respectively.</p><p>The goal of the present study is to evaluate the effectiveness of VR safety training on improving hazard recognition and safety behavior among construction employees. This is important as it can provide insight into whether VR training is an efficient and impactful method for enhancing workplace safety. With this goal, we ask the question: What are the effects of having a VR safety training instead of a standard monthly safety discussion on the hazard recognition and safety behavior in construction company employees?</p><p>For a substantial construction company like Heijmans, the results of this study may indicate how valuable this technology is in achieving safety goals and whether or not it should be integrated into standard safety protocols.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature study</head><p>Human error-particularly unawareness and misjudgement of hazardous situationsaccounts for at least 49% of accidents in construction <ref type="bibr" target="#b12">(Haslam et al., 2005)</ref>. While errors cannot be completely eliminated, proper and effective training of hazard recognition and safety behavior can reduce the likelihood of their occurrence <ref type="bibr" target="#b31">(Reason, 2000;</ref><ref type="bibr" target="#b35">Strauch, 2002)</ref>.</p><p>Implementing effective safety training programs is one of the most direct methods to minimize human errors <ref type="bibr" target="#b7">(Goldenhar, Moran, &amp; Colligan, 2001)</ref> and can significantly reduce costs by preventing accidents <ref type="bibr" target="#b27">(Neville, 1998)</ref>.</p><p>A safety hazard is defined as "a condition or set of conditions that have the potential to cause injury, illness, or death to workers, or damage to property and the environment." <ref type="bibr" target="#b23">(Manuele, 2013)</ref>. For safety behavior we take our definition from <ref type="bibr">Griffin &amp; Neal (2010)</ref>: "employee actions that contribute to the safety of the workplace".</p><p>In <ref type="bibr">Lingard &amp; Rowlison (2005)</ref>, hazard recognition is defined as "the process of identifying conditions or practices in the workplace that have the potential to cause harm to workers or damage to property." It involves being able to proactively identify existing or potential hazards in a work environment before they result in accidents or injuries. They mostly emphasize the importance of hazard recognition in preventing workplace accidents and maintaining a safe working environment.</p><p>Safety training and hazard recognition training have both been shown to be effective.</p><p>Regarding safety behavior, it was found that perceptions of the importance of safety training predicted actual safety behavior <ref type="bibr" target="#b33">(Robertson et al., 1999)</ref>. In the same study, however, it was found that any large changes in perceived safety climate did not necessarily lead to changes in actual safety behavior. <ref type="bibr">Barrett and colleagues (1999)</ref> showed that hazard recognition can be improved in construction with a specific training program of visually degraded stimuli. <ref type="bibr">Barrrett and Kowalski (1995)</ref> found that a training program using simulation exercises was also successful in increasing participants' hazard recognition.</p><p>In various studies in the field of construction and VR, it was found that using VR in the safety training of construction employees can significantly improve safety performance and safety behavior <ref type="bibr" target="#b32">(Rey-Becerra et al., 2023;</ref><ref type="bibr">Nykänen et al., 2020;</ref><ref type="bibr" target="#b0">Adami et al., 2021)</ref>.</p><p>Other comparable studies however found only partial or no evidence for improvement of safety behavior <ref type="bibr" target="#b34">(Sacks et al., 2013;</ref><ref type="bibr" target="#b11">Han et al., 2021)</ref>. However in these latter studies, the performance scores for VR participants were still higher than for traditionally trained participants.</p><p>In a literature review by <ref type="bibr">Li and colleagues (2018)</ref>, 90 VR-construction safety related articles were reviewed. They showed that VR technologies have been explored and implemented in several safety enhancement areas. It was found that the three most used applications in these studies included hazard identification, safety education and training, and safety inspection and instruction.</p><p>In the meta-analysis by <ref type="bibr">Man and colleagues (2024)</ref>, the results indicated that VR is substantially more effective than traditional methods for construction training and education.</p><p>Specifically, VR outperformed traditional methods for behavior assessments, skill development, and in experience-based measurements <ref type="bibr">(Man et al., 2024)</ref>. VR had a greater impact on general safety training than on crane safety training and on electrical safety training. These are all effect sizes, with effects ranging from medium to large effects.</p><p>Moreover, novice workers benefited more from VR-based training than experienced workers when compared to traditional methods <ref type="bibr">(Man et al., 2024)</ref>. <ref type="bibr">Zhao and colleagues (2014)</ref> specifically researched the effectiveness of VR simulation and training on electrical hazards in construction. Their justification for this was the high amount of fatalities in this part of the construction field. In their explorative data collection about safety regulations, they found that the majority of construction electrocutions can be attributed to a lack of awareness of electrical hazards and improper worker behavior. <ref type="bibr">Adami and colleagues (2021)</ref> tested the impact of the VR safety trainings on knowledge acquisition, safety behavior and operational skills of construction employees.</p><p>They focused on operating heavy machinery, as the validation of training effectiveness was not done in earlier literature using actual equipment. From their experiment, it was found that when using VR safety training for using heavy equipment -namely controlling a crane robotthe average gain in knowledge was greater among those who completed the VR-based training (60.22%) than those who completed a traditional on-site in-person training (39.55%).</p><p>The participants of the VR-based training also scored better on safety behavior than the onsite trainees (2.6 vs 2.3 rating). They showed a larger improvement in operational skills than the on-site trainees (2.65 vs. 2.29) <ref type="bibr" target="#b0">(Adami et al., 2021)</ref>.</p><p>In the study by <ref type="bibr">Adami and colleagues (2021)</ref>, the variables were measured using tests conducted by a hired expert to ensure reliable, objective data on the impact of VR safety training. In contrast, <ref type="bibr">Sacks, Perlman, and Barack (2012)</ref> used a self-developed tool called the "Safety Knowledge Test" to assess improvements in participants' safety knowledge.. This test consisted of measuring hazard recognition by asking participants to list the potential hazards in a picture, (safety) behavior by letting participants describe how one would act in such a situation, and safety knowledge by asking theoretical questions about how to properly use a working tool or name which tool they should use in a certain task. Responses to these items were scored by safety instructors in the construction field, and combined into a single performance indicator. No significant differences were found in this study between the impact of VR safety training and traditional training, which contradicts the findings of quite some literature in this field of study <ref type="bibr">(Sacks, Perlman &amp; Barack, 2012)</ref>.</p><p>A study in 2020 by Nykänen and colleagues adapted the "Safety Knowledge Test" from <ref type="bibr">Sacks, Perlman, and Barack (2012)</ref>. Again, all three tasks were scored together in one variable, which leaves the data open for questions about validity and reflection of real effects.</p><p>Here, an independent research member would score these questions, as the questions were framed so the answers would be simple and short. Checking the questions was easier with a list of possible answers, eliminating the need for a professional to score the tests for the participants. The authors created the questionnaire items, and this time, the questions were reviewed by a small group of construction workers to ensure the validity of all questions.</p><p>Several self-report variables regarding safety and individual perception of safety were also measured for this experiment Another literature review <ref type="bibr" target="#b10">(Guo et al., 2016)</ref> finds that existing research primarily focuses on developing or customizing specific methods or platforms for certain aspects of safety training but lacks a comprehensive, all-encompassing approach or platform. In other words, while there may be platforms designed specifically for training in areas such as machinery operation, no single, unified platform addresses all safety training needs across various fields. For example, a construction worker might use one platform to learn about equipment handling and a completely different method to train for fall prevention, rather than having one integrated system that covers all aspects of their safety training. As a result, this leads to high training costs and reduced efficiency In <ref type="bibr">Li and colleagues (2018)</ref>, it was also noted that safety culture varies across different countries and regions, which influences workers' attitudes toward construction hazards. Therefore, they stress the need for comparative experiments among subjects, regions or countries.</p><p>As found by <ref type="bibr">Toyoda and colleagues (2022)</ref>, there was a lack of longitudinal studies in the field of VR safety trainings in construction found during the review. A reason mentioned was difficulties for funding, as most research projects have a limited funding duration. The lack of longitudinal studies in VR safety training research is problematic because it limits our understanding of the long-term effects and long-term sustainability of this training method.</p><p>Without these studies, it's difficult to determine whether the benefits of VR safety training, such as improved knowledge retention or behavior change, are maintained over time.</p><p>Additionally, longitudinal research is essential for evaluating the long-term impact on realworld safety outcomes, such as an actual reduction in workplace accidents or injuries. The absence of such studies means that we may be missing important insights into how VR safety training can contribute to long-term and impactful safety improvements, which is crucial for its effectiveness in industries like construction, where long-term safety practices are critical.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Question</head><p>As stated, the goal of our study is to evaluate the effectiveness of VR safety training on improving hazard recognition and safety behavior among construction employees. For achieving this goal, we will be analysing the populations of electrical engineers and on-site construction workers that handle heavy loads within Heijmans as employees.</p><p>We come to our research question: What are the effects of having a VR safety training instead of a standard monthly safety discussion on the hazard recognition and safety behavior in construction company employees?</p><p>To answer this question, an objective assessment tool will be needed to measure this effectiveness within and between the participants. Moreover, self-report items will be used to measure engagement and intentions regarding safety. While objective tools can measure actual behavior, self-reports help assess behavioral intentions-whether participants intend to act safely in future situations. The intentions to engage in safety behaviors often correlate with actual behavior, and self-report surveys can shed light on these intentions in a way that objective tests cannot.</p><p>In line with the literature and data collected by Heijmans on satisfaction about the VR safety training, we come to the following hypotheses HYPOTHESIS 1: Employees perceive the VR training to be more useful and enjoyable than the safety discussion HYPOTHESIS 2: Employees that follow the VR safety training show more improvement in hazard recognition than employees who participate in the safety discussion.</p><p>HYPOTHESIS 3: Employees that follow the VR safety training show more improvement in safety behavior than employees who participate in the safety discussion.</p><p>HYPOTHESIS 4: Employees that follow the VR safety show more improvement in safety motivation and perceived safety engagement than employees who participate in the safety discussion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method Design</head><p>We implemented a 2 (training manipulation: safety discussion vs. VR safety training) by 2 (time: before vs. after intervention) quasi experimental design, with training manipulation as the between-subjects variable and time as the within-subjects variable. The dependent variables measured in the study were perceived utility, perceived satisfaction, safety motivation, perceived safety engagement, hazard recognition, and safety behavior. These were measured using questionnaires. The intervention we used as a manipulation in this study was a training for construction workers focused on workplace safety at Heijmans. In the context of the study, the training was either a standard safety training discussion or a VR safety training. In the VR safety training, an introductory presentation and short evaluation and discussion afterwards were both part of the intervention in the context of this study. note: the variables measured are under Baseline and After, the type of intervention under "Toolbox" (safety training).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Participants</head><p>The subject population consisted entirely of employees from the construction company Heijmans. These employees were either electrical technicians or on-site construction workers trained in crane operation. Electrical technicians participated in the VR safety training "NEN3140," while the on-site construction workers trained in crane operation took part in the VR safety training "Handling Heavy Loads."</p><p>A total of 51 electrical technicians participated in the study, with all of them (100%) being male. The average age of respondents was 47.4 (SD = 12.8; range 22 to 68). From these 51 participants, 12 (23,5% retention) filled in the follow-up questionnaire.</p><p>Due to circumstances involving no planned safety discussions ,only 17 on-site construction workers participated in the study, which is lower than anticipated. 16 of them were male (94,1%), 1 of them was female (5,9%). The average age of these respondents was 44 (SD = 12.2; range 26 to 64). From these 17 participants, 8 (47% retention) filled in the follow-up questionnaire.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VR safety training &amp; safety discussion</head><p>The VR safety training that was researched started with a short presentation using PowerPoint slides given by the VR safety instructor on why Heijmans uses VR for safety training and how to use the VR training. The VR training itself followed, being a narratively and textually semi-guided step-by-step training on electrical maintenance and replacing fuse boxes safely ("NEN3140") or a narratively and textually semi-guided step-by-step VR training on how to safely work with heavy loads on any construction site ("Handling heavy loads"). The VR training included guidance on what to do next, like "pick up a tension strap from the locker next to you", but still let the participant make choices, like "Choose one of these three tension straps". The training allowed for mistakes to be made, like in this case choosing the wrong tension strap, and showed the repercussions of wrongfully made choices.</p><p>Choosing a wrong tension strap, for example one that showed tears, would result in the heavy load crashing down before the eyes of the VR user. After the repercussions of a wrongfully made choice were shown, it was then explained in text why the choice made by the VR user was wrong. In the case of the example, the text that appeared, read "You chose a worn tension strap, so the heavy load made the strap snap. Always use a tension strap that is free of damage and always get rid of any damaged tension straps you see". Finally the trainer hosted an evaluation in the form of a short discussion between the participants on how they perceived the training and how it made them think differently about workplace safety.</p><p>The standard safety discussion is organized by the project leader, who arranges a meeting focused on a specific topic related to the work being performed. This topic is selected to address relevant safety concerns or common risks present in the workplace. The format typically begins with a central presentation or oral introduction led by the project leader or another employee who has been assigned this role in advance. Following the introduction, the discussion shifts to a more interactive format, where employees share recent unsafe situations they've encountered, explore ways to work more safely, and discuss frequently occurring hazards in their work environment. It's important to note that the setup of the safety discussion can vary from session to session, which we will talk about later in the limitations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Procedure</head><p>On the day of the intervention, participants gathered at their workplace. They either participated in a standard safety discussion or underwent the VR safety training, depending on the condition to which they were assigned. Before the VR safety training or standard safety discussion, each participant had to fill in a survey. All variables were measured using surveys made with Limesurvey (Limesurvey GmbH, 2012) and administered via links to the Limesurvey and QR codes. The participants completed the surveys on their mobile phones or laptops. The survey required them to provide demographic information, such as name, age, and gender, and it served as a baseline measurement for the dependent variables. These dependent variables measured are safety motivation, personal safety engagement on a selfreport basis, and hazard recognition and safety behavior by an objective test.</p><p>During the VR training, a dedicated employee introduced the session and provided guidance when participants needed assistance. Since only two VR headsets were available per session, the participants were divided into smaller groups, and each group completed the VR safety training in turns. After the training, there was a brief moderated discussion in which participants shared their thoughts on key aspects of the VR safety training and discussed important or dangerous safety concerns in the workplace. This part of the VR safety training helped participants share thoughts and contextualise the VR safety training to their everyday working experience.</p><p>One week after the intervention, participants received another email with a link to a follow-up survey. This survey measured the dependent variables from the baseline again. It also assessed perceived utility of the training, satisfaction and a grade given to the training, to be used by Heijmans in their records for VR safety training. It also included tasks to measure hazard recognition and safety behavior, similar to the initial survey but with different items.</p><p>Once participants completed the follow-up survey, they received a final email thanking them for their participation, marking the end of the experiment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measurements</head><p>For measuring safety behavior and hazard recognition, a method based on previous literature was used, in which participants were asked to identify hazards and assess safety practices in a series of images. This approach, which follows the tests conducted by Nykanen and colleagues (2020) and <ref type="bibr">Sacks and colleagues (2013)</ref>, involved creating 40 images in collaboration with safety experts at Heijmans. Specifically, 20 images were designed for electrical technicians and 20 for on-site construction workers trained in crane operation. For each group, 10 items focused on measuring hazard recognition were made, where participants were tasked with identifying three construction site hazards across four images per item, one of which did not contain any hazards. The remaining 10 items were used to measure safety behavior, each using one image to show one specific construction site hazard.</p><p>To minimize the training effect on these objective measures, different sets of questions based on distinct images were created for the before and after assessments. This distinctiveness was needed as a question will not measure person skill as well when the question is answered for the second time by the same person . A participant did not have to assess the same images twice. All 20 images per work field were tested by a small group of employees (n=10 for electrical maintenance workers; n=11 for on-site construction workers) from that work field before the experiment. The scores of the images were computed and they were ordered by total score. The images with the lowest score would be deemed the most difficult, the one with the highest score the least difficult. The images were then divided between the before and after measurements one by one, starting at the top of the ordered list and going down, to ensure the difficulty of both before and after tests was comparable. This should eliminate the possible extra dimension of task difficulty between the before and after tests. To ensure a subset connection needed for a Rasch model, each group of questions needed to have at least one overlapping question with the other question group, so a comparison can be made between all participants and within participants (after versus before). This gave us four groups of images per training type ("NEN3140" and "Aanslaan van Lasten"), with only the division of NEN3140 used as shown in figure <ref type="figure" target="#fig_1">2</ref>. Perceived utility was measured through a self-report using a 4-item battery developed by Nykanen and colleagues (2020). Participants responded on a 7-point Likert scale, with 1 indicating "I completely disagree" and 7 indicating "I completely agree." An example item from the battery is, "The safety training enhanced your skills in identifying hazards at the workplace." This was assessed in a survey participants received one week after the intervention. One missing response was found and removed before combining into a single score. The perceived utility scale showed a Cronbach's alpha of 0.858 and an interitem covariance of 0.20. The responses were aggregated to a single score by averaging over all of the items on the scale Perceived satisfaction was also measured via self-report using a 5-item battery based on Nykanen and colleagues (2020). Participants rated their responses on the same 7-point Likert scale. One of the items included in this battery was, "I learned new things during the training." Like perceived utility, this was measured through a survey distributed one week after the intervention. The perceived satisfaction scale showed a Cronbach's alpha of 0.883 and an interitem covariance of 1.36. The responses were aggregated to a single score by averaging over all of the items on the scale.</p><p>Safety motivation was measured using a self-report scale adapted from Nykanen and colleagues (2020) and Neil, <ref type="bibr" target="#b26">Griffin, and Hart (2000)</ref>. The scale consisted of three items rated on a 7-point Likert scale, where 1 represented "I completely disagree" and 7 represented "I completely agree." An example item is, "I feel that it is worthwhile putting an effort into maintaining or improving my personal safety." Safety motivation was measured both before the intervention and in a follow-up survey one week after the intervention. The safety motivation scale demonstrated a strong internal consistency, with a Cronbach's alpha of 0.867 and an interitem covariance of 1.06. The responses were aggregated to a single score by averaging over all of the items on the scale Perceived safety engagement was also assessed via a self-report scale adapted from Nykanen and colleagues (2020) and Neil, <ref type="bibr" target="#b26">Griffin, and Hart (2000)</ref>. This scale consisted of four items measured on a 7-point Likert scale and captured two components: ( <ref type="formula">1</ref> Hazard recognition was measured using an objective test adapted from Nykanen and colleagues (2020) and <ref type="bibr">Sacks and colleagues (2013)</ref>. The test was based on the Hazard Recognition Task developed by <ref type="bibr">Sacks and colleagues (2013)</ref>, in which participants were shown an image containing four pictures of situations on a construction site. Three of the four pictures each contained one identifiable hazard, while the fourth picture did not have any hazards. Participants were asked to complete an open-ended question, briefly listing all perceived hazards in the pictures, with a maximum of three hazards to identify. Their responses were scored based on the correct identification of hazards. This task was measured twice: once in a survey before the intervention and again in a survey received a week after the intervention.</p><p>The pictures used for the Hazard Recognition Task in the "Aanslaan van Lasten" were taken using the camera of a Samsung Galaxy phone. For the NEN3140 Hazard Recognition Task and the Safety Behavior Task, the majority of the pictures were sourced from the website elektrischefoutjes.nl, which hosts a large database of images depicting electrical mishaps. . Note: from top left to bottom right: Media (source: elektrischefoutjes.nl), Arc Flash and Electrical Safety: Safe Work Practices (source: HAZWOPER-OSHA training youtube channel <ref type="url" target="https://www.youtube.com/watch?v=h3c-gCQ5ya4">https://www.youtube.com/watch?v=h3c-gCQ5ya4</ref>), Media (source: elektrischeweetjes.nl), Lockout Tagout (LOTO) Energy Control Procedures(source: HAZWOPER-OSHA training youtube channel <ref type="url" target="https://www.youtube.com/watch?v=5D4L9eWvg6c">https://www.youtube.com/watch?v=5D4L9eWvg6c</ref>)</p><p>Safety behavior was assessed using another part of the objective test adapted from Nykanen and colleagues (2020) and based on the Safety Behavior Task developed by <ref type="bibr">Sacks and colleagues (2013)</ref>. In this task, participants were shown an image of a construction scene with a specific hazard depicted. They were then asked how they would behave in that situation, with four possible response options: (a) work as usual, (b) inform the foreman and continue working as usual, (c) fix the hazardous situation themselves, or (d) refuse to work in that situation. Participants were scored based on the number of correct choices they made, with each correct response indicating an appropriate safety behavior. This task was measured twice: once in a survey before the intervention and again in a survey received a week after the intervention. Note: media (source: elektrischefoutjes.nl)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Consideration</head><p>After consideration of the low sample size and close to absence of participants from the standard safety discussion for the population of on-site construction workers, it was decided that the on-site construction workers and the data of the "Aanslaan van lasten" VR safety training and standard safety discussion would be left out of the analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis</head><p>In the program Facets <ref type="bibr">(Linacre, 2024)</ref>, we ran a Rasch analysis with five Facets, including: 1) persons, 2) if the data is from before or after an intervention 3) whether the person was in the VR group or in the regular training group, 4) if the data is from a baseline moment, a moment after a VR training or a moment after a regular training, and 5) the items that the person responded to.</p><p>To show whether the safety discussion and VR safety training had a significant impact on hazard recognition and safety behavior, we performed a t-test on two Rasch-based point estimates to compare the before and after interventions values of hazard recognition and safety behavior for the safety discussion and VR safety training, as well as comparing both after values to see whether the after measures differ significantly from each other.</p><p>All but one safety behavior item fitted the model with MS-values below 2.00. The item with MS&gt;2.00 was Safety Behavior 3. This item was removed from the model to see if it had an effect on the item difficulties of other items and if any MS-values would change drastically. Before and after removing the item Safety Behavior 3 from the model, one person had an MS-value of &gt;2.00, while all other person ability values fitted the model with MSvalues below 2.00. This person (participant ID 23) was removed from the model to see if any MS-values would change drastically. After removing this respondent and item from the model, all items and respondents fit the model sufficiently with MS-values&lt;2.00.</p><p>For the measurement model, the Rasch model produces χ² (2) = 28.4, p &lt; 0.00.</p><p>For the person ability model, we find a χ²(42) = 135.3, p &gt; 0.00 in our Rasch model.</p><p>Lastly, for the item difficulty model, the Rasch analysis results in χ²(18) = 66.8, p &lt; 0.00.</p><p>In the program Stata (StataCorp, 2023), we ran t-tests on the difference of satisfaction between the VR safety training and the safety discussion. After that we ran a repeated measures mixed ANOVA on the safety engagement between all of the mixed groups.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Rasch scale Hazard Recognition and Safety Behavior</head><p>We performed a t-test on the baseline survey to test whether the groups assigned to a VR safety training or a safety discussion differed significantly in person ability. No significant differences in person ability were found between the groups for hazard recognition t(49) = -1.55, p = 0.129 and for safety behavior t(49) = -1.08, p = 0.288.</p><p>For the person ability, we found M = 1.32 logits (SD = 1.25; range 4.9 to -1.25).</p><p>From the Rasch scale for the item difficulty, we find M = 0.00 logits (SD = .86; range 1.87 to -1.50), with M being 0 because the items are centred to difficulty. For the measurements model, we found M=-.77 logits (SD =.; range 3.0 to -1.41). Table 2 Person measurement report The personal ID (pID), person skill (θ), model standard error (S.E.), infit and outfit pID δ (S.E.) Infit Outfit 50 4.90(1.86) Maximum 47 3.00(.78) .73 .54 28 2.74(.80) .89 .92 24 2.65(.65) .93 1.11 11 2.62(.56) .96 .92 18 2.58(.60) .69 .69 2.58(.60) .95 1.04 36 2.58(.60) 1.05 1.32 42 2.58(.60) 1.17 1.46 3 1.94(.56) 1.02 .94 16 1.94(.56) .99 .86 7 1.93(.54) .65 .64 49 1.93(.43) .68 .75 48 1.75(.42) .92 1.02 45 1.73(.58) 1.07 1.05 34 1.67(.53) .65 .80 1 1.65(.53) 1.43 1.42 41 1.65(.53) .88 .81 10 1.64(.53) 1.08 .94 12 1.56(.45) 1.15 1.41 27 1.40(.95) .63 .60 15 1.39(.40) .82 .79 20 1.39(.40) .73 1.11 43 1.39(.40) 1.08 1.08 29 1.38(.56) 1.04 .97 2 1.37(.52) .70 .71 5 1.18(.43) 1.40 1.21 6 1.10(.52) .74 .75 9 1.10(.52) 1.41 1.40 17 1.09(.53) 1.05 1.23 13 .79(.62) .62 .61 38 .62(.93) .79 .76 21 .56(.52) 1.24 1.21 14 .52(.55) .75 .97 22 .38(.61) .68 1.37 26 .36(1.15) .78 .60 30 .36(1.15) 1.18 1.21 8 .02(.56) 1.83 1.62 35 -.67(.73) 1.37 1.38 -.71(1.59) .00 .00 4 -1.21(.43) .72 .53 51 -1.30(.74) 0.34 .35 33 -1.41(.70) 1.05 1.89 note: items are ordered by θ. The person with participant id 23 was removed from the model due to them having an outfit &gt; 2.00 For the Rasch model, 73,58% variance of the data is explained by the Rasch measures. The Rasch-Andrich thresholds for hazard recognition were: Threshold 1 (-2.21 logits), Threshold 2 (0.31 logits), and Threshold 3 (1.89 logits). This indicates that a score of -2.21 logits corresponds to the transition between attaining 0 points from a question to receiving 1 point for a quesiton, while a score of 0.31 logits represents the transition from attaining 1 point in a question to attaining 2 points in a question and a score of 1.89 logits represents the transition between attaining 2 points to attaining 3 points from a question.</p><p>From the t-test on two Rasch-based point estimates we find a significant positive difference of hazard recognition and safety behavior between the VR training and the baseline, t(45) = 5.11, p &gt;0.000. We also find a significant positive difference of hazard recognition and safety behavior between the standard safety discussion and the baseline with t(45) = 2.28, p = 0.023. Finally, we find a significant positive difference of hazard recognition and safety behavior between the VR safety training and the standard safety discussion with t(45) = 2.43 , p = 0.015.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Satisfaction and Perceived Utility</head><p>For the combined variable of satisfaction, the difference between the means of the two groups is t(10)= 0.2114, with a 95% confidence interval of <ref type="bibr">[-1.4789, 1.9018]</ref>. With a p-value of 0.7862, we fail to reject the null hypothesis, indicating that there is no statistically significant difference in the satisfaction levels (satisf_m) between the VR safety training group and the safety discussion group.</p><p>For the variable of perceived utility, the mean difference between the two groups is t(9)= 0.5583, with a 95% confidence interval of [-0.0013, 1.1179]. The p-value is 0.0504, which suggests a level of statistical significance. Although we do not reject the null hypothesis that the group means are equal, as p &gt; 0.05, the difference in perceived utility (p_util_m) between the VR safety training group and the safety discussion group may still be considered noteworthy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Repeated Measures Mixed Anova</head><p>A repeated measures ANOVA was conducted to evaluate the effect of Virtual Reality (VR)</p><p>and time (after) on the combined variable of safety engagement. The main effect of VR was not statistically significant, F(1, 49) = 0.05, p = .820. The main effect of time (after) was also not significant, F(1, 8) = 2.63, p = .144. The interaction effect between VR and time (VR#after) was not significant, F(1, 8) = 0.66, p = .441. The residual mean square error (MSE) was 0.398, with and adjusted R-squared of 0.66</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this research we tried to explore the effectiveness of a VR safety training on construction company employees and compare them to the effects of a regular safety discussion. To examine this effectiveness, we formalised the main research question: "What are the effects of having a VR safety training instead of a standard monthly safety discussion on the hazard recognition and safety behavior in construction company employees?". In addition to the variables of hazard recognition and safety behavior, we performed and exploratory research on perceived usefulness, enjoyability, safety motivation and perceived safety engagement, the latter two being combined into the variable of safety engagement.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hazard recognition and safety behavior</head><p>From our data we see a significant improvement in hazard recognition and safety behavior for employees after a VR safety training. We also conclude a significant difference of effectiveness between a VR safety training and the standard safety discussion, with the VR safety training being significantly more effective in improving hazard recognition and safety behavior than a standard safety discussion.This implies that there is a effect on skill of the VR safety training according to our data. As only one VR safety training was analysed and Heijmans currently has 9 working VR safety trainings in their virtual library, these findings show us there is a lot of promise for VR safety trainings as an innovative approach to safety at the construction site and that all separate VR safety trainings could be researched on their effectiveness. This research could help steer the design process of any future trainings, as the more effective trainings can be identified and replicated more effectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Usefulness &amp; enjoyability</head><p>In our data we do not have any evidence to support that the perceived usefulness and enjoyability of a VR safety training is significantly higher than that of a standard safety discussion. This finding is not in line with data that we have from Heijmans, where most participants of a VR safety training express enjoyment and perceive the training to be productive and effective (VR Veiligheid team Heijmans). This discrepancy could be attributed to the low sample size. We project that if the scale of usefulness and enjoyability is sound and you would enlarge the sample size, one would encounter significant differences, in line with the data Heijmans already possesses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Safety engagement</head><p>The outcome of this research has shown high reported scores on safety motivation and safety engagement, which counteracted the validity of the constructs measuring these variables. A ceiling effect was encountered, which implies that the tool measuring these variables could be not sound according to our data. The reason why these scores are so high is not explained in the outcome of this research and extended research is necessary to find out why the motivation scores are so high and the implications of this high motivation for further research on safety engagement. The question arises if employees are overconfident in their abilities and stay that way after an intervention or if the participants all were engaged individuals that pride on their safety engagement, which did not change after an intervention.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations</head><p>The safety discussion varying from session to session is a limitation. The effectiveness of these discussions may depend on a variety of factors, such as the engagement and participation of employees, the clarity of the topic presented, and the approach taken by the person leading the discussion. As a result, the impact of these discussions may fluctuate depending on how they are conducted. This variability in the setup and execution of safety discussions could be considered a limitation, as it makes it difficult to standardize the effectiveness of the method across different teams or projects. Each safety discussion might yield different outcomes depending on how well it is structured, how actively employees engage, and the leadership style of the project leader or facilitator.</p><p>A limitation identified in this study is the absence of an image gallery depicting common hazards encountered on construction sites at Heijmans. Visual aids are crucial for helping workers' recognize hazards and their ability to respond appropriately to these situations. Because of the absence of an image gallery, images were used in this research that might have been not useful because they were taken from the internet, what was available and representative enough. The development of an image gallery with good images might be a suggestion for Heijmans. An image gallery can create more possibilities for research of the potential for workers to develop a comprehensive understanding of the risks they might face on the job site.</p><p>It can be noted that the data is only collected from participants who actively took part in the study. This introduces the potential for bias, as these participants may be more motivated or have gained more from the training compared to those who did not participate.</p><p>This could affect the representativeness of the data, as the results may not be fully generalizable to the entire population.</p><p>Another limitation was the extremely low response rate for the other selected sample, the on-site construction workers, with only one worker completing both surveys related to this specific safety discussion. The low number of responses restricts the ability to assess the quality of this specific intervention and was thusly the reason the analysis of this training was left out.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Future research</head><p>The overestimation of safety engagement based on self-reports suggests the need for objective data to supplement these findings. While self-report surveys provide useful information, they should be complemented with more reliable measures, such as direct observation of safety practices or standardized tests for which the adapted Safety Knowledge Test could become one. Objective assessments of workers' actual safety behaviors and hazard recognition would provide a clearer picture of the true stance of workers on site regarding workplace safety, allowing for more accurate evaluations of training effectiveness ánd safety standards that individual employees hold themselves to. This does not mean one should adhere to just objective measures, but it stresses the need for a balance of subjective and objective measures, where it is easier to rely on subjective measure because of time, resources and financial costs.</p><p>The Safety Knowledge Test developed in this study has strong potential as a tool for evaluating safety training. To increase its applicability, the test should be adapted to cover a wider range of construction-specific hazards and safety scenarios. This would make the test more comprehensive and relevant to all of Heijmans' workers daily experiences on the job.</p><p>Additionally, regularly administering this test before and after training interventions could offer valuable insights into the effectiveness of different safety programs, providing data to guide improvements in training strategies. This test can serve as an objective, standardized way to assess the hazard recognition and safety behavior changes resulting from safety training interventions.</p><p>The results of this study suggest that the adaptation of the Safety Knowledge test from Nykänen and colleagues (2020) is a reliable and valid tool for assessing hazard recognition and safety behavior in Heijmans employees, with strong internal validity, and good person, item, and measurement fit for the NEN3140 test. The data shows us that the type of test that was created for Heijmans employees in this study, the adaptation of the Safety Knowledge test, could be a good template for tests for other types of employees within Heijmans, to better measure hazard recognition and safety behavior on a more company-wide scale.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>In this study we aimed to investigate the effectiveness of a VR safety training compared to a standard safety discussion. Based on our data, Heijmans employees who follow a VR safety training show a significant improvement in hazard recognition and safety behavior compared to before the training. Additionally, this improvement was found to be significantly larger compared to the observed improvement seen with traditional safety discussions.</p><p>No evidence was found in the data to suggest that users of VR safety training reported higher satisfaction, perceived utility, or safety engagement compared to those who participated in the safety discussion. As a result, our data does not indicate that employees found VR training to be significantly more useful or enjoyable than the safety discussion, nor did it lead to greater improvements in safety engagement. Despite the enhanced learning outcomes in hazard recognition and safety behavior, the VR training did not result in higher levels of satisfaction or perceived utility when compared to the standard safety discussion.</p><p>Our findings indicate that Heijmans employees who underwent the VR safety training demonstrated a significant improvement in their ability to recognize workplace hazards and show safe behaviors when compared to their performance from before the training. This improvement suggests that VR safety training provides a more effective means of enhancing critical safety skills by offering a practical, hands-on experience within a virtual setting that is more effective than a standard safety discussion.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1</head><label>1</label><figDesc>Figure 1 Design of the study</figDesc><graphic coords="14,106.25,552.01,342.49,142.10" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2</head><label>2</label><figDesc>Figure 2 Division of items for NEN3140</figDesc><graphic coords="19,89.90,98.45,415.20,172.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><figDesc>) safety compliance, with items such as "I use the correct safety procedures to do my job" and "I use all the necessary safety equipment to do my job," and (2) safety participation, with items such as "I voluntarily perform tasks or activities that help improve workplace safety" and "I put in extra effort to improve the safety of the workplace." Like safety motivation, perceived safety engagement was measured both before and one week after the intervention. The perceived safety engagement scale had a Cronbach's alpha of 0.923 for demonstrating strong internal consistency and an interitem covariance of 1.15. The responses were aggregated to a single score by averaging over all of the items on the scale After combining the constructs of perceived safety engagement safety motivation and into a single safety engagement scale, the Cronbach's alpha improved to 0.931 with an interitem covariance of . This indicates that the combined scale has good internal consistency and effectively measures a construct together.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3</head><label>3</label><figDesc>Figure 3 example image of Hazard Recognition task for NEN3140</figDesc><graphic coords="22,224.30,98.45,214.18,167.10" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 4</head><label>4</label><figDesc>Figure 4 example image of Safety Behavior Task for NEN3140</figDesc><graphic coords="23,137.75,98.45,319.71,180.05" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 5</head><label>5</label><figDesc>Figure 5 Probablity curve</figDesc><graphic coords="27,174.65,283.27,245.95,178.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Item measurement reportThe item, item difficulty (δ), model standard error (S.E.), infit and outfit</figDesc><table><row><cell>Item</cell><cell>δ (S.E.)</cell><cell>Infit</cell><cell>Outfit</cell></row><row><cell>Safety behavior 9</cell><cell>1.87(.50)</cell><cell>1.28</cell><cell>1.34</cell></row><row><cell>Safety behavior 4</cell><cell>1.40(.47)</cell><cell>.80</cell><cell>.68</cell></row><row><cell>Safety behavior 7</cell><cell>1.19(.46)</cell><cell>1.04</cell><cell>1.03</cell></row><row><cell>Safety behavior 1</cell><cell>.88(.44)</cell><cell>.86</cell><cell>.80</cell></row><row><cell>Safety behavior 5</cell><cell>.55(.46)</cell><cell>1.27</cell><cell>1.67</cell></row><row><cell>Safety behavior 8</cell><cell>.35(.36)</cell><cell>1.09</cell><cell>1.16</cell></row><row><cell>Safety behavior 2</cell><cell>.27(.46)</cell><cell>1.25</cell><cell>1.47</cell></row><row><cell>Safety behavior 10</cell><cell>.05(.47)</cell><cell>1.12</cell><cell>1.20</cell></row><row><cell>Safety behavior 6</cell><cell>-.18(.49)</cell><cell>1.07</cell><cell>1.00</cell></row><row><cell>Hazard recognition 7</cell><cell>-.27(.32)</cell><cell>.73</cell><cell>.74</cell></row><row><cell>Hazard recognition 4</cell><cell>-.40(.31)</cell><cell>.72</cell><cell>.73</cell></row><row><cell>Hazard recognition 8</cell><cell>-.41(.32)</cell><cell>.83</cell><cell>.83</cell></row><row><cell>Hazard recognition 3</cell><cell>-.48(.32)</cell><cell>.86</cell><cell>.78</cell></row><row><cell>Hazard recognition 9</cell><cell>-.48(.33)</cell><cell>.79</cell><cell>.73</cell></row><row><cell>Hazard recognition 6</cell><cell>-.60(.32)</cell><cell>.81</cell><cell>.78</cell></row><row><cell cols="2">Hazard recognition 10 .66(.26)</cell><cell>1.02</cell><cell>1.02</cell></row><row><cell>Hazard recognition 1</cell><cell>-.77(.35)</cell><cell>1.71</cell><cell>1.64</cell></row><row><cell>Hazard recognition 5</cell><cell>-.82(.34)</cell><cell>.69</cell><cell>.66</cell></row><row><cell>Hazard recognition 2</cell><cell>-1.50(.67)</cell><cell>.65</cell><cell>.67</cell></row></table><note><p>note: items are ordered by δ. Safety Behavior 3 was removed from the model due to it having an infit &gt; 2.00</p></note></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Survey used in study -Baseline survey before intervention Naam: …………………………………….… Geslacht: Man / Vrouw / Anders / Zeg ik liever niet Leeftijd: ……... Laatste cijfer telefoonnummer: … Totaal mee oneens Totaal mee eens 1 2 3 4 5 6 7 Appendix B Hazard recognition &amp; safety behavior task Hazard recognition question text Je loopt de werkplaats op waar je te werk zal gaan vandaag en je kijkt om je heen. Op de onderstaande foto's zie je verschillende delen van de werkplaats: [Image of hazard recognition task] Benoem de drie belangrijkste gevaren. Bij gebrek aan gespotte gevaren, vul "." in.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Safety behavior question text</head><p>Je loopt de werkplaats op waar je te werk zal gaan vandaag en je kijkt om je heen. Op de onderstaande foto zie je een situatie op de werkplaats:</p><p>[Image of safety behavior task] -Ik ga aan het werk zoals gewoonlijk.</p><p>-Ik informeer mijn leidinggevende van de situatie en ga aan het werk zoals gewoonlijk.</p><p>-Ik probeer het probleem zelf op te lossen.</p><p>-Ik weiger te werken in deze situatie.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix C</head><p>Addition to survey used in study -Added to survey after intervention</p><p>Satisfaction &amp; Percieved Utility items Totaal mee oneens Totaal mee eens 1 2 3 4 5 6 7 1. De VR training is nuttig om de veiligheid op de werkvloer te verbeteren 2. Ik geloof dat door de VR training een of meer van mijn werkgewoonten zal veranderen/is veranderd 3. De VR training werkt inspirerend 4. Ik heb nieuwe dingen geleerd tijdens de VR training 5. Ik was gefocust tijdens de VR training 6. Geef de VR veiligheidstraining een cijfer tussen 1 en 10 …………..</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct status="extracted" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Effectiveness of VR-based training on improving construction workers&apos; knowledge, skills, and safety behavior in robotic teleoperation</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Adami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Rodrigues</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Woods</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Becerik-Gerber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Soibelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Copur-Gencturk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lucas</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.aei.2021.101431</idno>
+		<ptr target="https://doi.org/10.1016/j.aei.2021.101431" />
+	</analytic>
+	<monogr>
+		<title level="j">Advanced Engineering Informatics</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page">101431</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Adami, P., Rodrigues, P. B., Woods, P. J., Becerik-Gerber, B., Soibelman, L., Copur- Gencturk, Y., &amp; Lucas, G. (2021). Effectiveness of VR-based training on improving construction workers&apos; knowledge, skills, and safety behavior in robotic teleoperation. Advanced Engineering Informatics, 50, 101431. https://doi.org/10.1016/j.aei.2021.101431</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b1">
+	<analytic>
+		<title/>
+		<author>
+			<persName><surname>Ape B.V</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Kosten en baten van arbeids-veiligheidstrajecten</title>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">APE b.v. (2005) Kosten en baten van arbeids-veiligheidstrajecten</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Hazard recognition training program for construction, maintenance and repair activities</title>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">A</forename><surname>Barrett</surname></persName>
+		</author>
+		<idno type="DOI">10.26616/NIOSHPUB99158</idno>
+		<ptr target="https://doi.org/10.26616/NIOSHPUB99158" />
+		<imprint>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barrett, Edward A. et al. (1999). Hazard recognition training program for construction, maintenance and repair activities. https://doi.org/10.26616/NIOSHPUB99158</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Effective hazard recognition training using a latent-image, three-dimensional slide simulation exercise</title>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">A</forename><surname>Barrett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathleen</forename><forename type="middle">M</forename><surname>Kowalski-Trakofler</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Barrett, Edward A. and Kowalski-Trakofler, Kathleen M. (1995). Effective hazard recognition training using a latent-image, three-dimensional slide simulation exercise.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b4">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">G</forename><surname>Bond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Fox</surname></persName>
+		</author>
+		<title level="m">Applying the Rasch model: Fundamental measurement in the human sciences</title>
+		<meeting><address><addrLine>Mahwah, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Erlbaum</publisher>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+	<note>nd ed.</note>
+	<note type="raw_reference">Bond, T. G., &amp; Fox, C. M. (2007). Applying the Rasch model: Fundamental measurement in the human sciences (2nd ed.). Mahwah, NJ: Erlbaum.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Perceived usefulness, perceived ease of use, and user acceptance of information technology</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">D</forename><surname>Davis</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/249008</idno>
+		<ptr target="https://doi.org/10.2307/249008" />
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">319</biblScope>
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. MIS Quarterly, 13(3), 319. https://doi.org/10.2307/249008</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Effectiveness of VR-based training on improving construction workers&apos; knowledge, skills, and safety behavior in robotic teleoperation</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gencturk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lucas</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.aei.2021.101431</idno>
+		<ptr target="https://doi.org/10.1016/j.aei.2021.101431" />
+	</analytic>
+	<monogr>
+		<title level="j">Advanced Engineering Informatics</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page">101431</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Gencturk, Y., &amp; Lucas, G. (2021). Effectiveness of VR-based training on improving construction workers&apos; knowledge, skills, and safety behavior in robotic teleoperation. Advanced Engineering Informatics, 50, 101431. https://doi.org/10.1016/j.aei.2021.101431</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Health and safety training in a sample of open-shop construction companies</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Goldenhar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Moran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Colligan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0022-4375(01)00045-7</idno>
+		<ptr target="https://doi.org/10.1016/s0022-4375(01)00045-7" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal Of Safety Research</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="237" to="252" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Goldenhar, L. M., Moran, S. K., &amp; Colligan, M. (2001). Health and safety training in a sample of open-shop construction companies. Journal Of Safety Research, 32(2), 237-252. https://doi.org/10.1016/s0022-4375(01)00045-7</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Perceptions of safety at work: A framework for linking safety climate to safety performance, knowledge, and motivation</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Griffin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Neal</surname></persName>
+		</author>
+		<idno type="DOI">10.1037/1076-8998.5.3.347</idno>
+		<ptr target="https://doi.org/10.1037/1076-8998.5.3.347" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal Of Occupational Health Psychology</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="347" to="358" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Griffin, M. A., &amp; Neal, A. (2000). Perceptions of safety at work: A framework for linking safety climate to safety performance, knowledge, and motivation. Journal Of Occupational Health Psychology, 5(3), 347-358. https://doi.org/10.1037/1076- 8998.5.3.347</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Using game technologies to improve the safety of construction plant operations</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Skitmore</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.aap.2011.06.002</idno>
+		<ptr target="https://doi.org/10.1016/j.aap.2011.06.002" />
+	</analytic>
+	<monogr>
+		<title level="j">Accident Analysis &amp; Prevention</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="204" to="213" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guo, H., Li, H., Chan, G., &amp; Skitmore, M. (2011). Using game technologies to improve the safety of construction plant operations. Accident Analysis &amp; Prevention, 48, 204-213. https://doi.org/10.1016/j.aap.2011.06.002</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Visualization technology-based construction safety management: A review</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Skitmore</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.autcon.2016.10.004</idno>
+		<ptr target="https://doi.org/10.1016/j.autcon.2016.10.004" />
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="135" to="144" />
+		</imprint>
+	</monogr>
+	<note>Automation in Construction</note>
+	<note type="raw_reference">Guo, H., Yu, Y., &amp; Skitmore, M. (2016). Visualization technology-based construction safety management: A review. Automation in Construction, 73, 135-144. https://doi.org/10.1016/j.autcon.2016.10.004</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Safety evaluation and failure behavior of degraded tunnel structure with compound diseases of voids and lining defects</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Koga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Sakaguchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12517-021-07489-2</idno>
+		<ptr target="https://doi.org/10.1007/s12517-021-07489-2" />
+	</analytic>
+	<monogr>
+		<title level="j">Arabian Journal Of Geosciences</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Han, W., Jiang, Y., Li, N., Koga, D., Sakaguchi, O., &amp; Chen, H. (2021). Safety evaluation and failure behavior of degraded tunnel structure with compound diseases of voids and lining defects. Arabian Journal Of Geosciences, 14(15). https://doi.org/10.1007/s12517-021-07489-2</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Contributing factors in construction accidents</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Haslam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hide</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gibb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gyi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Pavitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Atkinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Duff</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.apergo.2004.12.002</idno>
+		<ptr target="https://doi.org/10.1016/j.apergo.2004.12.002" />
+	</analytic>
+	<monogr>
+		<title level="j">Applied Ergonomics</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="401" to="415" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Haslam, R., Hide, S., Gibb, A., Gyi, D., Pavitt, T., Atkinson, S., &amp; Duff, A. (2005). Contributing factors in construction accidents. Applied Ergonomics, 36(4), 401-415. https://doi.org/10.1016/j.apergo.2004.12.002</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b13">
+	<analytic>
+		<ptr target="https://www.juridischbureauletselschade.nl/meeste-dodelijke-ongevallen-bij-bouw-industrie-en-vervoer/" />
+	</analytic>
+	<monogr>
+		<title level="m">Meeste dodelijke ongevallen bij bouw, industrie en vervoer</title>
+		<imprint>
+			<date type="published" when="2024-12-31">2024, 31 december</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Juridisch Bureau Letselschade &amp; Gezondheidsrecht. (2024, 31 december). Meeste dodelijke ongevallen bij bouw, industrie en vervoer. https://www.juridischbureauletselschade.nl/meeste-dodelijke-ongevallen-bij-bouw- industrie-en-vervoer/</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A critical review of virtual and augmented reality (VR/AR) applications in construction safety</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Chan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.autcon.2017.11.003</idno>
+		<ptr target="https://doi.org/10.1016/j.autcon.2017.11.003" />
+	</analytic>
+	<monogr>
+		<title level="j">Automation in Construction</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="150" to="162" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li, X., Yi, W., Chi, H., Wang, X., &amp; Chan, A. P. (2017). A critical review of virtual and augmented reality (VR/AR) applications in construction safety. Automation in Construction, 86, 150-162. https://doi.org/10.1016/j.autcon.2017.11.003</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b15">
+	<monogr>
+		<title level="m" type="main">LimeSurvey: An open source survey tool</title>
+		<author>
+			<persName><forename type="first">Limesurvey</forename><surname>Gmbh</surname></persName>
+		</author>
+		<ptr target="https://www.limesurvey.org" />
+		<imprint>
+			<publisher>LimeSurvey GmbH</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">LimeSurvey GmbH. (n.d.). LimeSurvey: An open source survey tool. LimeSurvey GmbH. https://www.limesurvey.org</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Detecting multidimensionality: Which residual data-type works best</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Linacre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Outcome Measurement</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="486" to="512" />
+			<date type="published" when="1998">1998. 2002</date>
+		</imprint>
+	</monogr>
+	<note>Linacre, J. M. Construction of measures from many-facet data Journal of Applied Measurement</note>
+	<note type="raw_reference">Linacre, J. M. (1998). Detecting multidimensionality: Which residual data-type works best? Journal of Outcome Measurement, 2, 266-283. Linacre, J. M. (2002). Construction of measures from many-facet data. Journal of Applied Measurement, 3, 486-512.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Data variance: Explained, modeled and empirical</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Linacre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rasch Measurement Transactions</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="942" to="943" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Linacre, J. M. (2003). Data variance: Explained, modeled and empirical. Rasch Measurement Transactions, 17, 942-943.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Facets (version 4.1.8). (Computer software)</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Linacre</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<pubPlace>Beaverton, Oregon Winsteps</pubPlace>
+		</imprint>
+	</monogr>
+	<note>com</note>
+	<note type="raw_reference">Linacre, J. M. (2010). Facets (version 4.1.8). (Computer software). Beaverton, Oregon Winsteps.com.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Dichotomizing rating scales</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Linacre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rasch Measurement Transactions</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page">1228</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Linacre, J. M. (2009). Dichotomizing rating scales. Rasch Measurement Transactions, 23, 1228.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Occupational Health and Safety in Construction Project Management</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lingard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rowlinson</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9780203507919</idno>
+		<ptr target="https://doi.org/10.4324/9780203507919" />
+	</analytic>
+	<monogr>
+		<title level="m">Routledge eBooks</title>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lingard, H., &amp; Rowlinson, S. (2004). Occupational Health and Safety in Construction Project Management. In Routledge eBooks. https://doi.org/10.4324/9780203507919</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Implementing and evaluating novel safety training methods for construction sector workers: Results of a randomized controlled trial</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lukander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Räsänen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Heikkilä</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Teperi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jsr.2020.09.015</idno>
+		<ptr target="https://doi.org/10.1016/j.jsr.2020.09.015" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Safety Research</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="page" from="205" to="221" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lukander, K., Räsänen, T., Heikkilä, T., &amp; Teperi, A. (2020b). Implementing and evaluating novel safety training methods for construction sector workers: Results of a randomized controlled trial. Journal of Safety Research, 75, 205-221. https://doi.org/10.1016/j.jsr.2020.09.015</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Are virtual reality applications effective for construction safety training and education? A systematic review and meta-analysis</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Man</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C L</forename><surname>So</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jsr.2023.11.011</idno>
+		<ptr target="https://doi.org/10.1016/j.jsr.2023.11.011" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal Of Safety Research</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="page" from="230" to="243" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Man, S. S., Wen, H., &amp; So, B. C. L. (2023). Are virtual reality applications effective for construction safety training and education? A systematic review and meta-analysis. Journal Of Safety Research, 88, 230-243. https://doi.org/10.1016/j.jsr.2023.11.011</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Preventing Serious Injuries &amp; Fatalities: Time for a Sociotechnical Model for an Operational Risk Management System</title>
+		<author>
+			<persName><forename type="first">Fred</forename><forename type="middle">A</forename><surname>Manuele</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Prof. Safety</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="51" to="59" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Manuele, Fred A. (2013). &quot;Preventing Serious Injuries &amp; Fatalities: Time for a Sociotechnical Model for an Operational Risk Management System.&quot; Prof. Safety 58: 51-59.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b24">
+	<monogr>
+		<ptr target="https://www.nlarbeidsinspectie.nl/publicaties/rapporten/2022/09/05/monitor-arbeidsongevallen-2021" />
+		<title level="m">Monitor arbeidsongevallen 2021. Rapport | Nederlandse Arbeidsinspectie</title>
+		<imprint>
+			<publisher>Ministerie van Sociale Zaken en Werkgelegenheid</publisher>
+			<date type="published" when="2023-02-14">2023. February 14</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ministerie van Sociale Zaken en Werkgelegenheid. (2023, February 14). Monitor arbeidsongevallen 2021. Rapport | Nederlandse Arbeidsinspectie. https://www.nlarbeidsinspectie.nl/publicaties/rapporten/2022/09/05/monitor- arbeidsongevallen-2021</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A study of the lagged relationships among safety climate, safety motivation, safety behavior, and accidents at the individual and group levels</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Neal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Griffin</surname></persName>
+		</author>
+		<idno type="DOI">10.1037/0021-</idno>
+		<ptr target="https://doi.org/10.1037/0021-9010.91.4.946" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal Of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="946" to="953" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Neal, A., &amp; Griffin, M. A. (2006). A study of the lagged relationships among safety climate, safety motivation, safety behavior, and accidents at the individual and group levels. Journal Of Applied Psychology, 91(4), 946-953. https://doi.org/10.1037/0021- 9010.91.4.946</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The impact of organizational climate on safety climate and individual behavior</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Neal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Griffin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hart</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0925-7535(00)00008-4</idno>
+		<ptr target="https://doi.org/10.1016/s0925-7535(00)00008-4" />
+	</analytic>
+	<monogr>
+		<title level="j">Safety Science</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="99" to="109" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Neal, A., Griffin, M., &amp; Hart, P. (2000). The impact of organizational climate on safety climate and individual behavior. Safety Science, 34(1-3), 99-109. https://doi.org/10.1016/s0925-7535(00)00008-4</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b27">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Neville</surname></persName>
+		</author>
+		<ptr target="https://openurl.ebsco.com/EPDB%3Agcd%3A4%3A27438084/detailv2?sid=ebsco%3" />
+		<title level="m">Workplace accidents. | EBSCOhost</title>
+		<imprint>
+			<date type="published" when="1998">1998, 1 januari</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Neville, H. (1998, 1 januari). Workplace accidents. | EBSCOhost. https://openurl.ebsco.com/EPDB%3Agcd%3A4%3A27438084/detailv2?sid=ebsco%3</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Evaluation of the efficacy of a virtual realitybased safety training and human factors training method: study protocol for a randomised-controlled trial</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nykänen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Puro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tiikkaja</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Injury Prevention</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="360" to="369" />
+			<date type="published" when="2020">2020. 2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nykänen M, Puro V, Tiikkaja M, et al. (2020a) Evaluation of the efficacy of a virtual reality- based safety training and human factors training method: study protocol for a randomised-controlled trial Injury Prevention 2020;26:360-369.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Implementing and evaluating novel safety training methods for construction sector workers: Results of a randomized controlled trial</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nykänen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Puro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tiikkaja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Kannisto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lantto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Simpura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Uusitalo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lukander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Räsänen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Heikkilä</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Teperi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jsr.2020.09.015</idno>
+		<ptr target="https://doi.org/10.1016/j.jsr.2020.09.015" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal Of Safety Research</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="page" from="205" to="221" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Nykänen, M., Puro, V., Tiikkaja, M., Kannisto, H., Lantto, E., Simpura, F., Uusitalo, J., Lukander, K., Räsänen, T., Heikkilä, T., &amp; Teperi, A. (2020). Implementing and evaluating novel safety training methods for construction sector workers: Results of a randomized controlled trial. Journal Of Safety Research, 75, 205-221. https://doi.org/10.1016/j.jsr.2020.09.015</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Hazard recognition and risk perception in construction</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perlman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sacks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Barak</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ssci.2013.11.019</idno>
+		<ptr target="https://doi.org/10.1016/j.ssci.2013.11.019" />
+	</analytic>
+	<monogr>
+		<title level="j">Safety Science</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page" from="22" to="31" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Perlman, A., Sacks, R., &amp; Barak, R. (2013). Hazard recognition and risk perception in construction. Safety Science, 64, 22-31. https://doi.org/10.1016/j.ssci.2013.11.019</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Human error: models and management</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Reason</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/bmj.320.7237.768</idno>
+		<ptr target="https://doi.org/10.1136/bmj.320.7237.768" />
+	</analytic>
+	<monogr>
+		<title level="j">BMJ</title>
+		<imprint>
+			<biblScope unit="volume">320</biblScope>
+			<biblScope unit="issue">7237</biblScope>
+			<biblScope unit="page" from="768" to="770" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Reason, J. (2000). Human error: models and management. BMJ, 320(7237), 768-770. https://doi.org/10.1136/bmj.320.7237.768</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Improvement of short-term outcomes with VR-based safety training for work at heights</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Rey-Becerra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">H</forename><surname>Barrero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ellegast</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kluge</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.apergo.2023.104077</idno>
+		<ptr target="https://doi.org/10.1016/j.apergo.2023.104077" />
+	</analytic>
+	<monogr>
+		<title level="j">Applied Ergonomics</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="page">104077</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rey-Becerra, E., Barrero, L. H., Ellegast, R., &amp; Kluge, A. (2023). Improvement of short-term outcomes with VR-based safety training for work at heights. Applied Ergonomics, 112, 104077. https://doi.org/10.1016/j.apergo.2023.104077</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Improving Safety on Construction Sites by changing Personnel Behaviour: Phase 2. Health and Safety Executive</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">T</forename><surname>Robertson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Duff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Marsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Philips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Weyman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cooper</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Robertson, IT., Duff, R., Marsh, TW., Philips, RA., Weyman, A., &amp; Cooper, D. (1999). Improving Safety on Construction Sites by changing Personnel Behaviour: Phase 2. Health and Safety Executive.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Construction safety training using immersive virtual reality</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sacks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perlman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Barak</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/01446193.2013.828844</idno>
+		<ptr target="https://doi.org/10.1080/01446193.2013.828844" />
+	</analytic>
+	<monogr>
+		<title level="j">Construction Management and Economics</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1005" to="1017" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sacks, R., Perlman, A., &amp; Barak, R. (2013). Construction safety training using immersive virtual reality. Construction Management and Economics, 31(9), 1005-1017. https://doi.org/10.1080/01446193.2013.828844</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Normal accidents: yesterday and today</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Strauch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the First Workshop on the Investigation and Reporting of Incidents and Accidents</title>
+		<meeting>the First Workshop on the Investigation and Reporting of Incidents and Accidents</meeting>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+		<respStmt>
+			<orgName>Department of Computing Science, University of Glasgow, Scotland</orgName>
+		</respStmt>
+	</monogr>
+	<note>IRIA 2002</note>
+	<note type="raw_reference">Strauch, B. (2002). Normal accidents: yesterday and today. In Proceedings of the First Workshop on the Investigation and Reporting of Incidents and Accidents (IRIA 2002), Department of Computing Science, University of Glasgow, Scotland.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">VR-based health and safety training in various high-risk engineering industries: a literature review</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Toyoda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Russo-Abegão</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Glassey</surname></persName>
+		</author>
+		<idno>41239- 022-00349-3</idno>
+		<ptr target="https://doi.org/10.1186/s" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal Of Educational Technology in Higher Education</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2022">2022b</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Toyoda, R., Russo-Abegão, F., &amp; Glassey, J. (2022b). VR-based health and safety training in various high-risk engineering industries: a literature review. International Journal Of Educational Technology in Higher Education, 19(1). https://doi.org/10.1186/s41239- 022-00349-3</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b37">
+	<monogr>
+		<author>
+			<persName><forename type="first">B</forename><surname>Vogel</surname></persName>
+		</author>
+		<ptr target="https://www.constructionnews.co.uk/health-and-safety/construction-fatalities-70-worse-than-five-years-ago-04-07-2024/" />
+		<title level="m">Construction fatalities 70% worse than five years ago | Construction News. Construction News</title>
+		<imprint>
+			<date type="published" when="2024-07-05">2024, July 5</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vogel, B. (2024, July 5). Construction fatalities 70% worse than five years ago | Construction News. Construction News. https://www.constructionnews.co.uk/health-and- safety/construction-fatalities-70-worse-than-five-years-ago-04-07-2024/</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Virtual reality simulation for construction safety promotion</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lucas</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/17457300.2013.861853</idno>
+		<ptr target="https://doi.org/10.1080/17457300.2013.861853" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal Of Injury Control And Safety Promotion</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="67" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhao, D., &amp; Lucas, J. (2014). Virtual reality simulation for construction safety promotion. International Journal Of Injury Control And Safety Promotion, 22(1), 57-67. https://doi.org/10.1080/17457300.2013.861853</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">februari)</title>
+		<author>
+			<persName><surname>Bigrentz</surname></persName>
+		</author>
+		<ptr target="https://www.oshaonlinecenter.com/articles/construction-safety-statistics" />
+	</analytic>
+	<monogr>
+		<title level="m">41 Construction Safety Statistics for 2024</title>
+		<imprint>
+			<date type="published" when="2024-02">2024. 2024, February. 2024. 2024. 2025. 2024</date>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+	<note>Construction Safety Statistics OSHA Elektrischefoutjes.nl Construction Safety Statistics</note>
+	<note type="raw_reference">Bigrentz (2024). 41 Construction Safety Statistics for 2024. (2024, February). https://www.bigrentz.com/blog/construction-safety-statistics Construction Safety Statistics (2024). (n.d.-b). Construction Safety Statistics (2024). OSHA Elektrischefoutjes.nl. (z.d.). https://elektrischefoutjes.nl/ OSHA. (2025, 12 februari). Construction Safety Statistics (2024). OSHA Online Center. https://www.oshaonlinecenter.com/articles/construction-safety-statistics</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b40">
+	<monogr>
+		<title level="m" type="main">Heijmans</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">O</forename><surname>Veiligheidsprogramma</surname></persName>
+		</author>
+		<ptr target="https://www.youtube.com/@hazwoper-osha" />
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Veiligheidsprogramma GO! (2013). Heijmans. https://www.heijmans.nl/nl/over- heijmans/veiligheidsprogramma-go/ HAZWOPER-OSHA training. (z.d.). YouTube. https://www.youtube.com/@hazwoper-osha</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

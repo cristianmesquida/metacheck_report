@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">From Proximity to Similarity: Understanding the Dynamics of Social Interaction in Modern Office Environments</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct status="extracted">
+					<analytic>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">From Proximity to Similarity Understanding the Dynamics of Social Interaction in Modern Office Environments Penning de Vries</orgName>
+								<orgName type="institution">Eindhoven University of Technology MASTER</orgName>
+								<address>
+									<country>Sophie J</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">From Proximity to Similarity: Understanding the Dynamics of Social Interaction in Modern Office Environments</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">9D79C537ABB39F0525515E1984C672E4</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.9.0" ident="GROBID" when="2026-08-17T12:11+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">0.9.0</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=0, consolidateHeader=0, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[], flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>social interaction</term>
+					<term>physical proximity</term>
+					<term>similarity</term>
+					<term>ERGMs</term>
+					<term>social networks</term>
+					<term>space syntax</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Link to publication</head><p>Disclaimer This document contains a student thesis (bachelor's or master's), as authored by a student at Eindhoven University of Technology. Student theses are made available in the TU/e repository upon obtaining the required degree. The grade received is not published on the document as presented in the repository. The required complexity or quality of research of student theses may vary by program, and the required minimum study period may vary in duration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>General rights</head><p>Copyright and moral rights for the publications made accessible in the public portal are retained by the authors and/or other copyright owners and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with these rights.</p><p>• Users may download and print one copy of any publication from the public portal for the purpose of private study or research.</p><p>• You may not further distribute the material or use it for any profit-making activity or commercial gain Take down policy If you believe that this document breaches copyright please contact us providing details, and we will remove access to the work immediately and investigate your claim.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Nowadays, 11.2 million jobs in the Netherlands are based in offices. A large number of office spaces, approximately 105,000, are needed to accommodate all these workers. Despite the high number of office jobs and spaces in the Netherlands, it is ultimately the employee's choice to travel to the office for work. Hybrid working has gained popularity, causing office workers to stay home more often. Those who choose to travel to the office do so to interact with colleagues in person, attend meetings, or find a quieter place to focus <ref type="bibr" target="#b26">(Van Elburg, 2024)</ref>.</p><p>The office spaces and the interaction patterns that develop among the inhabitants of a building are the topics of this thesis.</p><p>The need for in-person interaction is particularly crucial in the high-tech industry, which plays a vital role in the Dutch economy. In 2021, the high-tech industry accounted for ten percent of the country's total employment. The Dutch high-tech industry primarily focuses on research and development (R&amp;D). Within this sector, innovation, design, and the production of complex products are critical focal points <ref type="bibr" target="#b27">(van Kappen et al., 2024)</ref>. To effectively create these products, an organization must bring together knowledge from individuals, teams, and departments (Ajith <ref type="bibr" target="#b1">Kumar &amp; Ganesh, 2009)</ref>. Casual conversations among employees can be especially effective in generating new ideas that contribute to innovative products, services, and processes <ref type="bibr" target="#b11">(Huang &amp; Li, 2009)</ref>.</p><p>The environment plays a crucial role in fostering casual conversations. Several key factors can encourage interactions within public spaces, which also apply to office environments. For instance, movable seating allows employees to adjust their positions based on sunlight, shade, or social dynamics. Similarly, refreshment points such as coffee machines can attract people and encourage them to linger and socialize. In addition, proximity to pedestrian traffic, such as situating communal areas near busy corridors, promotes social interaction. Finally, the concept of triangulation, for example incorporating art installations or collaborative workstations, can stimulate interaction by providing a common point of interest <ref type="bibr" target="#b28">(Whyte, 1980)</ref>.</p><p>While the environment can facilitate casual conversations and interactions, social interaction in an office is not as straightforward as one might think. Decades ago, <ref type="bibr" target="#b2">Allen and Fustfeld (1975)</ref> studied interaction within office environments, specifically in R&amp;D organizations. Their findings revealed that colleagues separated by more than twenty-five meters were significantly less likely to communicate than those closer to each other. They also noted that housing an organization in a tall building can lead to communication challenges.</p><p>Recent research has acknowledged that these findings of physical proximity remain relevant today <ref type="bibr" target="#b21">(Sailer &amp; McCulloh, 2012;</ref><ref type="bibr" target="#b24">Sugiyama et al., 2021)</ref>.</p><p>While physical proximity has long been studied as a key factor in fostering social interaction in office environments, multiple factors are likely at play. Another factor that may influence interactions is the concept of similarity, particularly through the mechanism of homophily. Homophily suggests that people are more likely to interact with those who are similar to themselves <ref type="bibr" target="#b16">(McPherson et al., 2001)</ref>. Employees are more likely to interact with colleagues if they share the same business unit, job function, office building, or have overlapping work groups and other informal structures <ref type="bibr" target="#b12">(Kleinbaum et al., 2013)</ref>. Despite this recognition, much of the literature focuses heavily on physical proximity, often overlooking how similarities between colleagues can affect workplace interactions. This oversight creates a gap in understanding how various dynamics, particularly those related to colleague similarities, influence workplace interactions.</p><p>Another factor worth considering is the rise of hybrid working, as more employees divide their time between home and the office <ref type="bibr" target="#b26">(Van Elburg, 2024)</ref>. This shift raises questions about the importance of proximity for social interaction. When employees split their time between home and the office, they are often not in the same space as their colleagues. As a result, spontaneous interactions may decline, giving way to more scheduled meetings.</p><p>Consequently, the focus may shift towards understanding how the presence of colleagues, whether physical or virtual, influences interactions and communication in work environments.</p><p>As proximity becomes less consistent in hybrid work environments, factors like similarity may become more significant in fostering interaction. This thesis investigates how office layout in an R&amp;D organization influences social interaction. Yet unlike earlier studies, this research will consider the potential effects of similarity alongside physical proximity. This leads to the research question: "How do physical space, in the form of office layout, similarity, and presence affect social interaction?" Exploring this question will contribute to academic knowledge and offer practical implications for designing workspaces that foster collaboration and innovation in modern organizations.</p><p>The next section will provide a theoretical background based on previous research.</p><p>Following that, the methods used in this study will be outlined, specifically focusing on the case study, space syntax methodologies, observations, and social network analysis. After this, the results of these analyses will be presented. Subsequently, the thesis will be discussed, along with practical recommendations. Finally, a conclusion will summarize how physical space, along with similarity, influences social interaction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Theory and Hypotheses</head><p>This chapter introduces the theoretical background and hypotheses that form the foundation of this study. It examines the role of office design in influencing social interactions, focusing on physical proximity, similarity, and hybrid working. Building on previous research, the chapter provides a comprehensive analysis of how these factors shape social interaction in the workplace.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Physical proximity</head><p>The relationship between physical proximity and social interaction is often discussed in research on office design, but the reasons behind this connection are rarely explored. One of the most well-known studies regarding office design and interaction within the office was performed by <ref type="bibr" target="#b2">Allen and Fustfeld (1975)</ref>. They demonstrated that a space's physical and architectural layout significantly influences communication. Their research, which brought together several studies on communication in R&amp;D organizations, revealed that colleagues separated by more than twenty-five meters were less likely to communicate than those closer to each other. Recent studies have supported these findings <ref type="bibr" target="#b21">(Sailer &amp; McCulloh, 2012;</ref><ref type="bibr" target="#b22">Sailer &amp; Penn, 2009;</ref><ref type="bibr" target="#b24">Sugiyama et al., 2021;</ref><ref type="bibr" target="#b29">Wineman et al., 2009)</ref>. For example, <ref type="bibr" target="#b24">Sugiyama et al. (2021)</ref> found through a systematic review that shorter distances between employees were associated with more frequent and longer face-to-face interactions.</p><p>The influence of proximity on social interaction may vary depending on the nature of the organization. While <ref type="bibr" target="#b2">Allen and Fustfeld (1975)</ref> found that, in most organizations, daily interactions typically occur within twenty-five meters, <ref type="bibr" target="#b22">Sailer and Penn (2009)</ref> extended this idea by showing that interactions in research institutes tend to occur at much greater distances, often exceeding forty-one meters. This difference highlights how organizational context can shape the relationship between physical proximity and social interaction.</p><p>In addition to organizational context, the office layout also plays a crucial role in determining the frequency of interactions. For instance, organizations with an open-plan office layoutwhere employees work in a shared space with minimal barriers between themare often perceived as having a closer physical proximity. As a result, these open-plan offices tend to facilitate more frequent and spontaneous interactions <ref type="bibr" target="#b2">(Allen &amp; Fustfeld, 1975;</ref><ref type="bibr" target="#b21">Sailer &amp; McCulloh, 2012;</ref><ref type="bibr" target="#b29">Wineman et al., 2009)</ref>.</p><p>The concept of proximity becomes more complex in office environments situated in large buildings with multiple floors. <ref type="bibr" target="#b2">Allen and Fustfeld (1975)</ref> acknowledged that housing an organization in a tall building can lead to communication problems. Therefore, they recommended that offices should be limited to single-story buildings whenever possible. Even though Allen and Fustfeld's research was conducted many years ago, a more recent study by <ref type="bibr" target="#b21">Sailer and McCulloh (2012)</ref> confirmed that colleagues interact more frequently with those on the same floor.</p><p>Building on the proven connection between physical proximity and social interaction within an office space, the first hypothesis is formulated as follows:</p><p>Hypothesis 1: Employees who are physically closer to each other in the office are more likely to engage in social interaction. This hypothesis emphasizes the role of spatial layout in shaping workplace dynamics and suggests that reducing physical distance between employees could increase opportunities for communication.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Similarity</head><p>Although physical proximity indeed appears to be a key factor for interaction within an office, as noted before, <ref type="bibr" target="#b22">Sailer and Penn (2009)</ref> argue that its influence might not be as straightforward as assumed. They suggest that different organizations respond differently to similar office layouts. For example, distance does not necessarily limit interaction between colleagues in a research institute. Instead, colleagues tend to engage with one another based on expertise rather than proximity. These observations suggest that the patterns of interaction within an office can vary depending on individual employees' specific needs and preferences. <ref type="bibr" target="#b22">Sailer and Penn (2009)</ref> are not the only ones who question the influence of physical proximity on interaction. <ref type="bibr" target="#b29">Wineman et al. (2009)</ref> noted that office seating arrangements are often flexible. Over time, employees may move closer to the colleagues they frequently work with. This suggests that frequent interaction can influence physical proximity, as employees may choose to sit closer to those they regularly collaborate with, meaning that proximity might not be the main factor driving social interaction.</p><p>Social interaction in office environments may thus not be only driven by physical proximity. <ref type="bibr" target="#b13">Koskinen et al. (2003)</ref> explored how trust is key in facilitating tacit knowledge sharing through informal, face-to-face interactions. Tacit knowledge is most effectively communicated in settings that allow for immediate feedback and clarity. Koskinen's study found that trust between colleagues increases the likelihood of knowledge sharing, as individuals become more open and accessible. Importantly, trust is built on shared experiences and understanding, suggesting that colleagues who have worked together in the past are more likely to share valuable insights and knowledge.</p><p>While <ref type="bibr" target="#b13">Koskinen et al. (2003)</ref> emphasized the role of trust in social interaction, <ref type="bibr" target="#b23">Steen (2009)</ref> suggested that physical proximity might be a key factor in building this trust in the first place. According to <ref type="bibr" target="#b23">Steen (2009)</ref>, the growing familiarity from regularly seeing someone in the office can help build trust over time. This increased trust can lead to stronger collaborative relationships, facilitating knowledge sharing and collaboration within the office environment.</p><p>Based on <ref type="bibr" target="#b13">Koskinen et al. (2003)</ref>, it can be suggested that similarities, such as shared experiences, may play a crucial role in promoting knowledge sharing and, in turn, enhancing communication among colleagues. The concept of homophily, which refers to the tendency for people to interact more frequently with others who are similar to themselves, provides a mechanism through which similarity influences social interaction. Homophily suggests that individuals are more likely to connect with others with similar social characteristics, creating stronger group connections. These stronger connections lead to more efficient communication as information flows more easily within these closer circles. Groups that rely on strong connections or relationships to function, such as businesses, tend to interact mainly within their social circles, where they already have established ties, rather than reaching out to new or unfamiliar groups <ref type="bibr" target="#b16">(McPherson et al., 2001)</ref>.</p><p>It is worth considering whether similarities could influence the relationship between office design, interaction, and physical proximity. <ref type="bibr" target="#b12">Kleinbaum et al. (2013)</ref> noted that people are much more likely to interact if they share the same business unit, job function, or office building, or if they have overlapping work groups and other informal structures. Similarly, <ref type="bibr" target="#b21">Sailer and McCulloh (2012)</ref> found that employees tend to interact more frequently with colleagues who belong to the same research group or team. These findings suggest that office design and seating arrangements that group people with similar roles or responsibilities could naturally encourage more frequent interactions.</p><p>Given these findings, it is important to consider not only the effect of proximity but also the influence of similarity on social interactions. Therefore, the second hypothesis of this study proposes the following: Hypothesis 2: The more similar employees are -in terms of shared experiences or interests -the more likely they are to engage in social interaction.</p><p>While proximity may encourage casual encounters, employee similarities may ultimately foster more meaningful and frequent connections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Hybrid Working</head><p>With the rise of hybrid working, many employees now split their time between home and the office, which has been shown to enhance overall job satisfaction <ref type="bibr" target="#b4">(Bloom et al., 2022;</ref><ref type="bibr" target="#b5">Choudhury et al., 2024)</ref>. According to <ref type="bibr" target="#b3">Appel-Meulenbroek et al. (2022)</ref>, employees can be broadly categorized into two types: those who prefer working in an office environment and those who favor working from home. Factors such as anticipated crowdedness on the office floor and the availability of private spaces for concentration and meetings significantly influence these preferences. Their study suggests that to attract employees back to the office, organizations should prioritize reducing crowdedness, providing private spaces for focused work, and ensuring that meeting facilities are well-equipped. At the same time, organizations must acknowledge the importance of a well-designed home workspace and consider hybrid working models that offer flexibility.</p><p>Van Elburg (2024) highlights that the rise of hybrid working has already altered the architectural layout of office environments. Those who choose to come to the office often do so to interact with colleagues in person, attend meetings, or find a quieter place to focus. As a result, office layouts have evolved from traditional large office landscapes into more homelike environments, featuring coffee corners and comfortable seating areas to encourage interaction. These changes in how offices are used challenge the notion that physical proximity alone drives social interaction in today's workplaces. Hybrid working practices affect physical proximity, as employees spend less time sharing the same physical space with their colleagues. This shift could alter or moderate the impact of proximity on social interaction in the office.</p><p>While proximity may remain a key factor in fostering interaction, the extent to which employees work in the office versus remotely could also shape these dynamics. For this reason, hybrid working will be considered as a control variable in this study. It is important to account for how hybrid working might influence or moderate the relationship between office design and social interaction, as it could provide additional insight into the way office layouts impact communication and collaboration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Method</head><p>This study investigates how physical space, specifically office layout, employee similarity, and presence, influences social interactions in workplace environments. The focus is on a research group in the Atlas building at Eindhoven University of Technology. A mixedmethods approach was adopted to comprehensively examine the dynamics of social interaction and test the two main hypotheses: (1) employees who are physically closer to each other are more likely to interact, and (2) employees who share similar characteristics are more likely to interact.</p><p>Several methodological approaches were used to test the two hypotheses of this study.</p><p>Space syntax analysis, specifically segment map analysis, was used to examine how physical proximity facilitates or constrains social interactions. Interaction patterns within the workplace were mapped using a combination of existing data and a network survey to capture who communicates with whom. Direct observations were carried out to capture spontaneous interactions, offering a more comprehensive understanding of who interacts with whom and where these interactions occur within the office.</p><p>The data was analyzed using Exponential Random Graph Models (ERGMs), a statistical approach that allows for the simultaneous examination of the effects of physical proximity and similarity on social interactions. A more detailed description of the methodology is provided in the following sections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Case Study</head><p>The office building used for this case study is the Atlas building on the campus of Eindhoven University of Technology. The Atlas building is the most sustainable education building in the world and accommodates the departments of Industrial Design, and Industrial Engineering and Innovation Sciences (Eindhoven University of Technology, n.d.). This thesis focused on one of the research groups within the Atlas building.</p><p>The researchers of the research group, referred to as employees in this paper, are situated across two designated floors in the Atlas building, see Figure <ref type="figure" target="#fig_0">1</ref>. Notably, one of the floors predominantly hosts PhD candidates, while the other floor accommodates PhD candidates, postdoctoral researchers, assistant professors, associate professors, and full professors. This distinction in the type of employees present on each floor may influence the dynamics of interaction and collaboration. Specifically, the physical separation of teams across different floors can create communication barriers and may lead to limiting opportunities for interaction and collaboration <ref type="bibr" target="#b2">(Allen &amp; Fustfeld, 1975)</ref>.</p><p>One of the floors, referred to as the top floor, features a hallway that contains several offices shared by multiple employees. In addition to the offices, the top floor provides two meeting rooms and several seating areas for employees who prefer not to work inside their offices or need to step out of their offices to not disturb their colleagues. In contrast, the other floor, referred to as the bottom floor, is an open space with multiple desks for employees to use. It is the only floor equipped with a coffee machine, which likely serves as a key area for informal social interactions. Like the top floor, the bottom floor also contains several meeting rooms. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Physical Proximity</head><p>To address Hypothesis 1, space syntax analysis was used to measure spatial proximity between employee workstations. The hypothesis suggests that employees who are physically closer to each other in the office are more likely to engage in social interactions.</p><p>Space syntax, first introduced in The Social Logic of Space by <ref type="bibr" target="#b10">Hillier and Hanson (1984)</ref>, is a method for understanding how the design of spaces influences human interactions and behaviors and how these interactions, in return, affect space design. <ref type="bibr" target="#b20">Sailer and Koutsolampros (2021)</ref> explained that the main idea of space syntax is that space is made meaningful through how its different parts are connected, creating a system people live in and move through. For example, an office layout with direct, uninterrupted pathways between key areas, such as workstations and meeting rooms, may facilitate easier movement and increase the likelihood of spontaneous encounters and interactions.</p><p>Segment map analysis is a space syntax method that investigates the possibilities for movement within a space. Segment map analysis was used in this study to measure the spatial relationships within the office layout, incorporating actual distances and the detailed arrangement of the environment <ref type="bibr" target="#b21">(Sailer &amp; McCulloh, 2012)</ref>. This method divides the space into segments, with each segment representing a portion of the environment. The distance between two workplaces is determined by counting how many segments one must pass through to travel between them.</p><p>To illustrate this process, Figure <ref type="figure" target="#fig_1">2</ref> presents a simplified example map of an office layout. The figure includes the axial lines, segmentations, and a graph that reflects the office's spatial configuration. The graph within the figure shows how desks are represented as nodes while the segments between desks, such as hallways or doorways, are represented as edges.</p><p>The graph illustrates the paths employees must take to move between workspaces, accurately reflecting their spatial proximity.</p><p>The office layout of the Atlas building includes a staircase that connects the two separate floors, creating a multi-level environment. It was chosen to treat the staircase as a distinct segment, marking the transition between floors and affecting the overall spatial network. Additionally, the staircase was accounted for as two segments to reflect the added effort required to use the stairs.</p><p>From the graph, a matrix was created to quantify the spatial relationships between employees. The matrix included every employee in the office and represented the number of segments between their workstations. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Social Interaction</head><p>Both hypotheses address social interaction between the employees of the research group. This social interaction was captured in multiple ways: a network survey, observations, and existing records. Each of these methods provided a different perspective of the social interaction, offering a wide understanding of the dynamics of the group.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.1.">Network survey</head><p>The primary focus of this study was to examine the informal communication within the organization, which represents the ongoing patterns of interaction referred to as the communication network. This communication network was captured through a network survey sent to all researchers of the research group. Capturing a social network through a survey is a commonly used method within an organizational setting. Conducting such a survey involves the straightforward process of first defining the network by compiling a list of all individuals within it and then asking group members to characterize their relationships with one another <ref type="bibr" target="#b8">(Cross et al., 2002)</ref>.</p><p>The survey of this study consisted of three main sections: demographics, hybrid working, and the communication network. The demographic section gathered basic information about participants, including their names, ages, and gender identity, to help provide context for the study. The hybrid working section asked participants whether they work in a hybrid model and, if so, how many days per week they are present in the office.</p><p>A question adapted from <ref type="bibr" target="#b8">Cross et al. (2002)</ref> was used to capture the communication network: "How much do you typically communicate with this person relative to others in the group?" Respondents could choose from the following response options: 0) I do not know this person, 1) I am this person, 2) much less than others, 3) less than others, 4) about the same as others, 5) more than others, and 6) much more than others. Additionally, the participants were asked to specify whether their communication with a person was primarily online, in person, or somewhere in between. The response options were: 0) I do not know this person, 1) I am this person, 2) online, 3) mostly online, 4) equal mix, 5) mostly in person, and 6) in person.</p><p>The entire survey contained 118 questions, and participants were required to rate 56 employees using the two communication-related questions. It was estimated that the survey took approximately 10 to 15 minutes to complete.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.2.">Observations</head><p>Observations were included in this study to capture spontaneous informal interactions and the locations where these interactions occurred. In the network survey, employees were asked to indicate how often they communicate with specific colleagues. However, it is important to consider how employees perceive their interactions. For instance, one employee may regard a quick greeting as insignificant, while another may consider even brief exchanges as meaningful. This difference in perception suggests that the network survey may not capture all interactions, particularly those that some respondents might overlook, such as small talk. Therefore, including observations not only provides information about spontaneous interactions and their locations but also helps to address this limitation by providing a more comprehensive understanding of who interacts with whom within the office.</p><p>Previous research has demonstrated the effectiveness of observations in office environments by observing behaviors along a predetermined route <ref type="bibr" target="#b19">(Rashid et al., 2006)</ref>. Similar to the study by <ref type="bibr" target="#b19">Rashid et al. (2006)</ref>, a predetermined route was followed on the two designated floors to ensure that all areas were systematically covered. The observation area was designed to include not only the hallways leading to the offices on the two floors but also the spaces leading to the stairs and elevators, as employees must pass through these areas to reach their workplaces. The path taken can be seen in Figures <ref type="figure" target="#fig_2">3</ref> and <ref type="figure" target="#fig_3">4</ref>. Notably, the route sometimes brought the observer to hallways divided into two sections by furniture. In such cases, the observer focused solely on interactions occurring in the section of the hallway they walked through.  Observations were conducted over the course of two weeks, with five observation periods each day. These periods were distributed across five distinct time slots to capture a variety of workplace interactions: early morning (8:30-9:30 AM), mid-morning (10:30-11:30 AM), lunchtime (12:30-1:30 PM), mid-afternoon (2:30-3:30 PM), and late afternoon (4:30-5:30 PM). Each time slot was observed daily, ensuring thorough coverage of the workday throughout the week. The route was walked five times a day during the designated time slots, with each walk taking approximately five to ten minutes. This approach allowed for systematic recording of all spontaneous interactions while ensuring consistency and reliability in the data collection process.</p><p>The decision to conduct observations over the course of two weeks minimized biases that could arise from a single observation and provided a fuller picture of the weekly flow of activities. By spreading the observations across several time slots and days, the data became more representative and less likely to be influenced by rare occurrences.</p><p>A total of fifty rounds of observations were conducted along the specified route. During each observation, all spontaneous face-to-face interactions involving verbal communication within the hallway and at office entrances on the two designated floors were recorded. Nonverbal exchanges, such as eye contact or gestures, were not included. Planned meetings were excluded from the observations, with the focus placed instead on unplanned interactions in open spaces rather than in offices or meeting rooms.</p><p>The observations were conducted by a single observer, the author of this report, who walked the predetermined route while remaining as discreet as possible. The observer did not count their own interactions to avoid bias. Observations were documented in real-time using a mobile phone to fill in the interaction table (see Table <ref type="table" target="#tab_0">1</ref>), which included the interaction ID, time, and individuals involved. A printed map was used to mark the interaction IDs on the layout, providing spatial context and helping to visualize where interactions occurred most frequently. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.3.">Existing records</head><p>In addition to data collected through the network survey and observations, this study utilized existing records. While the primary focus was on the communication network, additional insights into the relationships among employees were gained by examining two formal networks. These formal networks represent the more structured and task-related relationships, which differ from the more dynamic interactions captured in the communication network.</p><p>Since the research group operates within an academic organization, its employees frequently collaborate on research. This shared effort was captured in the research publication network, which was constructed based on co-authorship data. Each connection, or edge, in this network represented a joint research contribution or partnership. The data for this network were primarily obtained from published research listed on the Eindhoven University of Technology Research Portal. To ensure relevance, only research publications from 2021 onward were included, as the research group had previously been located in a different building on the university campus.</p><p>Another key responsibility of the research group is supervising students, particularly for Master's Thesis Projects and PhD research. This formed the basis for the supervision network, which documented collaborative supervision efforts within the group. Often, such supervision involves two employees working together. Similar to the publication network, data for the supervision network were obtained from the Eindhoven University of Technology research portal, where all completed theses are published. Information about PhD supervision was provided by the secretary of the research group. For consistency, only records from 2021 onward were included.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Exploring Drivers of Interaction</head><p>To gain insights into how physical space, in the form of office layout, and similarity affects social interaction, this study used exponential random graph models (ERGMs) via the ERGM package in R. Data on physical proximity and social interaction were analyzed to explore these relationships.</p><p>ERGMs are powerful, flexible, and widely used modeling approaches for building and testing statistical models of networks <ref type="bibr" target="#b15">(Luke, 2015)</ref>. Similar to logistic regression, ERGMs estimate the presence of a binary dependent variable -in this case, communication between employees -based on specified covariates <ref type="bibr" target="#b21">(Sailer &amp; McCulloh, 2012)</ref>. In this study, these covariates included both node attributes (e.g., tenure, areas of expertise, gender, and hybrid working) and edge characteristics (e.g., the interactions between nodes and the distances between them), which helped explain the network structure.</p><p>This study investigates whether similarity and/or physical proximity influenced the frequency of interaction among employees in the research group. The networks, also called the dependent networks, were represented as a series of nodes (employees), with edges indicating interactions between them. The matrices used to create the networks were binary, with values of 1 representing the presence of a connection (e.g., interaction, publication, or supervision) and 0 indicating its absence.</p><p>To make the communication data binary, responses from the survey were transformed into a binary format, based on the level of communication between individuals. Respondents were asked to rate how much they typically communicate with another person relative to others in the group, using a scale from 0 to 6. For the purposes of the ERGM analysis, responses indicating a level of communication "less than others" (i.e., a rating of 3) or higher were treated as a relationship and assigned a value of 1. Responses indicating no communication, such as "I do not know this person" (rating 0), "I am this person" (rating 1), or "much less than others" (rating 2), were excluded or treated as 0s. The "much less than others" category was considered as 0 because it could imply minimal interaction, such as talking only once, which does not reflect a sustained communication relationship.</p><p>Additionally, if one respondent indicated a strong relationship (e.g., "more than others"</p><p>or "much more than others") but the other respondent did not indicate a similarly strong relationship, the interaction was still counted as a relationship and assigned a value of 1. This approach was taken because even one participant indicating a strong relationship suggests some level of communication that would be relevant for understanding the network. On the other hand, if one respondent indicated "less than others" while the other indicated "I do not know this person," the interaction was counted as a 0, reflecting the lack of any meaningful connection. This transformation allowed for the establishment of a clear binary measure of interaction between employees. This transformation allowed for the establishment of a clear binary measure of interaction between employees.</p><p>The ERGM modeling process was conducted in two stages. First, three base models The final ERGM assessed how spatial factors and similarity attributes influenced communication patterns while controlling for the overall network structure. This approach provided a clear picture of how the office layout, alongside similar characteristics, influenced communication within the organization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Results</head><p>The results are structured to align with the methodological framework, starting with the segment analysis to explore physical proximity. This is followed by findings from the network survey and direct observations. The chapter concludes with the results of the ERGMs, which integrate data from all sources to evaluate the combined effects of physical proximity and employee similarity on social interactions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Physical Proximity</head><p>The segment analysis showed that the average distance between employees' workplaces was seven segments. The minimum distance between employees was zero segments, indicating a shared workplace, while the maximum distance was 17 segments.</p><p>The network graph identified three clusters within the research group's work environment, as shown in Figures <ref type="figure" target="#fig_5">5</ref> and <ref type="figure" target="#fig_6">6</ref>. The largest cluster is on the top floor and is connected through Hallway 1 (H1). The second cluster, on the bottom floor, connects to Hallway 1 via the staircase (S). The third cluster, also on the top floor, is linked to Hallway 1 through Hallway 2 (H2).</p><p>The analysis also identified that segments do not pass through social areas, such as the coffee machine. As a result, these areas are not near the primary segment network.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Network Survey</head><p>The survey was sent to the current research group, which consists of 55 employees. Of these, 43 employees agreed to participate by providing informed consent. Ultimately, 33 employees completed the entire questionnaire and were included in the analysis, comprising 18 women and 15 men, with ages ranging from 22 to 63.</p><p>In terms of academic roles, the research group consists of 27 PhD candidates, 5 postdoctoral researchers, 9 assistant professors, 9 associate professors, and 5 full professors, making a total of 55 members. Among the respondents, there are 15 PhD candidates, 3 postdoctoral researchers, 5 assistant professors, 8 associate professors, and 2 full professors, making a total of 33. Figure <ref type="figure" target="#fig_7">7</ref> provides an overview of these amounts. Notably, nearly all of the associate professors completed the questionnaire, while the response rate among full professors was the lowest, with only 2 participating. While 82% of the employees report working in a hybrid manner, spending time both at home and in the office, the majority still spend a significant amount of time in the office.</p><p>Specifically, 52% of the employees are in the office for 3 to 4 days per week, with an additional 30% attending 5 days per week and 18% attending 1 to 2 days per week. This suggests that even though hybrid working is common, the employees remain frequently present in the office.</p><p>However, it is important to note that even when employees are physically in the office, they may still rely on video calls for meetings with colleagues who are not in the office on the same days. This could explain why employees continue to report spending substantial time in the office while still engaging in remote communication.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Observations</head><p>Out of fifty rounds of observations, a total of six interactions were observed. The route for these observation rounds included the bottom and top floors. Still, all reported observations occurred exclusively on the top floor, with one interaction occurring on the staircase leading to the top floor, as shown in Figure <ref type="figure" target="#fig_8">8</ref>. Interestingly, half of these limited interactions occurred in front of the same office, which is the secretary's office.</p><p>One possible explanation is the central role of the secretary in the organization. Since all employees likely interact with the secretary for administrative tasks or inquiries, this area may naturally attract people who stop to ask questions or seek assistance. Another explanation relates to the office's location rather than its function. Positioned at the beginning of the hallway, the secretary's office is a point that all employees must pass. This strategic placement increases the likelihood of spontaneous encounters in this area, making it a natural hotspot for social interactions.</p><p>In contrast, the bottom floor may have seen no observed interactions because it lacks a similar focal point. The employees from the top floor, which has the largest amount of employees, may not need to cross or visit the bottom floor unless they have specific tasks there, which significantly reduces the chances of spontaneous interactions. This highlights how both the function and location of a space can influence social dynamics within an office environment.</p><p>The timing of the interactions observed varied. Two interactions occurred during lunchtime around 12:30 PM, one on the top floor and the other on the staircase leading to the top floor. Two different interactions were noted in the morning around 9:00 AM, both on the top floor. One interaction took place around 3:00 PM on the top floor, and the final interaction was recorded around 5:00 PM on the top floor.</p><p>The nature of these conversations was only observed and not specifically inquired about. Therefore, it is possible that some interactions could have been planned, such as agreedupon lunch meetings. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Exponential Random Graph Models</head><p>Three ERGMs were developed and analyzed as part of this study. In this study, the ERGMs were used to examine how physical proximity and similarity attributes (such as tenure, academic expertise, and gender) influence interaction patterns. The three networks used in the analysis are depicted in Figure <ref type="figure" target="#fig_9">9</ref>.</p><p>An overview of the network metrics, summarized in Table <ref type="table" target="#tab_1">2</ref>, shows that the communication network is the most connected and cohesive, with a high density (0.774), a single component, and a high clustering coefficient (0.802). In contrast, the supervision and publication networks are sparser, with lower densities (0.091 and 0.042), more fragmented components (14 and 16), and lower clustering coefficients (0.413 and 0.184), indicating that interactions in these networks are more limited and less cohesive. The diameter values also reflect these differences, with the communication network having a shorter diameter (2) compared to longer distances in the supervision (4) and publication (7) networks, further emphasizing the greater connectivity in the communication network. When exploring the three networks further, it is found that the communication network exhibits the strongest small-world characteristics (see Table <ref type="table" target="#tab_2">3</ref>). Small-world networks are those that combine high clustering with short average path lengths, making them highly cohesive <ref type="bibr" target="#b6">(Comellas &amp; Sampels, 2002)</ref>. The communication network reflects this with a high clustering coefficient (0.802) and a short average path length (1.256). These values suggest that the communication network is well-connected. Similarly, the supervision network also shows small-world characteristics, with a moderate clustering coefficient (0.413) and a relatively short average path length (2.115), though it is more fragmented with 14 components. The publication network, in contrast, shows low clustering (0.184) and a longer average path length (3.029), indicating that it is more disconnected and less cohesive.</p><p>To better understand the structure of the three networks, they were compared to randomly generated networks. Random networks serve as a baseline, highlighting whether the characteristics observed in the actual networks are more than just a result of random chance.</p><p>For instance, if the networks exhibit higher clustering and shorter paths than the random networks, it suggests that interactions are guided by specific factors or relationships, rather than occurring randomly.</p><p>When compared to random networks, both the communication and supervision networks stand out for their higher clustering coefficients and shorter path lengths. This suggests that the network is not completely random but is likely influenced by specific factors or relationships. The publication network, however, is more interconnected, but with longer paths between nodes compared to the random network. Now that we have a better understanding of the individual networks and their characteristics, the results of each ERGM model will be displayed. The findings will be presented sequentially, beginning with the communication network model, followed by the supervision network model, and concluding with the publication network model. Note that during all simulations the Markov Chain Monte Carlo diagnostic percentage was zero, indicating that the models were well-fitted.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.1.">Modeling Communication</head><p>The base model, which included only the baseline likelihood of interaction (edges), was estimated using an ERGM. The communication network model focuses on the interactions among employees within the organization. The results of the base model, summarized in Table <ref type="table" target="#tab_3">4</ref>, indicate that the edge parameter (estimate = 1.068, p &lt; .001) is statistically significant. This suggests that, on average, there is a higher likelihood of interaction between two employees in the communication network than what would be expected if interactions occurred randomly. When the covariates -expertise, tenure, gender, distance, and hybrid working -were introduced, the results from the full ERGM provided further insights into the factors influencing communication patterns within the organization, as shown in Table <ref type="table" target="#tab_4">5</ref>. As a reminder, pre-existing connections established through prior supervision collaborations were included as edge covariates, enabling the model to account for their influence on interaction patterns. This adjustment applies not only to the communication network but also to the supervision and publication networks.</p><p>The edge estimate in the full model of the communication network represents the baseline probability of interaction between employees. The edge estimate is 1.094 (p &lt; .001), indicating that the covariates significantly influence the likelihood of communication within the research group. The positive estimate suggests that the observed connections in the network are not random. Specifically, the introduction of the covariates increases the probability that two individuals will interact.</p><p>The full ERGM also examined the influence of similarity in expertise on communication. The estimate for expertise was 0.431, with a p-value of 0.114, indicating that this effect is not statistically significant. Therefore, having a similar expertise does not appear to be a strong driver of interactions in the organization.</p><p>In contrast, tenure similarity was found to have a significant positive effect on communication. The estimate for tenure similarity is 1.112, with a highly significant p-value of less than 0.001. This indicates that employees with similar tenure levels are more likely to communicate with each other.</p><p>The effect of gender similarity on communication was found to be not significant with an estimate of -0.001 and a p-value of 0.998. This indicates that gender does not play a significant role in driving communication within the research group.</p><p>The effect of physical proximity, which is represented by the distance matrix (which measures the physical distance between employees), gave an estimate of 0.023 with a p-value of 0.414. This suggests that physical distance between employees does not significantly influence the frequency of communication.</p><p>Finally, the model considered the effect of hybrid working on communication. The estimate for hybrid working was -0.404, with a p-value of 0.049, indicating that employees working in a hybrid model are less likely to communicate with others than those working primarily in the office. Table 6 compares the base model and the full model, revealing a significant improvement in fit when additional covariates are included. The base model considers only edges and has a residual deviance of 600.33 with 527 degrees of freedom. When the additional covariates are included in the full model, the residual deviance decreases to 566.82 with 522 degrees of freedom. The change in deviance is statistically significant (p &lt; .001), suggesting that the full model better fits the data than the base model. Therefore, the covariates contribute to explaining the likelihood of communication within the organization. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.2.">Modeling Supervision</head><p>The base model for the supervision network is summarized in Table <ref type="table" target="#tab_6">7</ref>. This network represents the relationships between employees based on their roles as supervisors of master students, PhD candidates, or research projects. The results of the base model indicate that the edge parameter has an estimate of -2.304, with a significant p-value (p &lt; .001). This negative estimate suggests that the likelihood of interaction between employees in the supervision network is lower than what would be expected if interactions occurred randomly. The results of the full ERGM for the supervision network (summarized in Table <ref type="table" target="#tab_7">8</ref>) show that including additional covariates improves the model's ability to explain the network structure. The estimate for the edge parameter is -2.336, with a p-value less than 0.001. This negative estimate indicates that the likelihood of interaction within the supervision network is generally lower than expected by chance. In other words, the supervision network is more sparse than random chance would predict, suggesting that interactions between employees in the supervision network occur less frequently than expected. This sparsity may reflect the hierarchical structure of the network, where interactions are more structured and limited to those between individuals in supervisory roles.</p><p>When considering the impact of the various covariates, expertise similarity appears to be a significant factor. The expertise similarity estimate is 1.280, with a p-value less than 0.001.</p><p>This result indicates that employees with similar areas of expertise are more likely to supervise a mentee together.</p><p>On the other hand, tenure similarity negatively affects the likelihood of supervisory interactions. The estimate for tenure similarity is -1.622, with a p-value of less than 0.001. This suggests that employees with similar tenure are less likely to interact within the supervision network. This finding could indicate that in the research group, newer employees, such as PhD candidates are paired with more experienced staff for mentorship, reducing direct interactions between those with similar tenures.</p><p>Gender similarity plays a role in supervisory interactions. The estimate for gender similarity is 0.956, with a p-value of 0.004, indicating that employees of the same gender are more likely to supervise a mentee together.</p><p>The distance matrix shows a significant relationship with supervisory interactions. The estimate for the distance matrix is -0.118, with a p-value of 0.01. This negative estimate indicates that employees who are physically farther apart are less likely to interact within the supervision network. This may be influenced by the office seating arrangements within the research group, where proximity is often linked to expertise and academic roles, factors that may not be as relevant in more informal communication interactions.</p><p>Finally, hybrid working does not significantly affect interactions within the network.</p><p>The estimate for hybrid working is 0.256, with a p-value of 0.41. A comparison of the fit between the base and full models for the supervision network is provided in Table <ref type="table" target="#tab_8">9</ref>. The deviance values indicate how well each model fits the data. The change in deviance between the models is statistically significant (p &lt; .001 for the base model and p &lt; .001 for the full model), indicating that including covariates significantly improves the model's ability to explain supervisory interactions within the organization. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.3.">Modeling Publication</head><p>The base model for the publication network is summarized in Table <ref type="table" target="#tab_7">8</ref>. The publication network reflects the professional collaborations on research projects within the research group.</p><p>In Table <ref type="table" target="#tab_9">10</ref>, the estimate for the edge parameter is -3.136, with a significant p-value (p &lt; .001), indicating that the likelihood of collaborated publication within the network is significantly lower than would be expected by chance. The negative value suggests that connections between employees in the publication network are less likely than random connections, indicating that the publication network is more sparse than expected. The full model for the publication network, as summarized in Table <ref type="table" target="#tab_10">11</ref>, incorporates several covariates to improve the model's explanatory power. The edge parameter estimate is -2.856, with a p-value of 0.003. This indicates that, overall, connections within the publication network are less likely than would be expected by chance.</p><p>The estimate for similarity in expertise is 1.125, with a p-value of 0.016, suggesting that employees with similar expertise are more likely to collaborate in research. Similarly, tenure similarity significantly affects shared publication with an estimate of -1.873 and a pvalue of 0.004. This suggests that employees with different tenures are likelier to engage in collaborative interactions than those with similar tenures.</p><p>Gender similarity is marginally significant in predicting collaborated publication patterns (p = 0.054). While the estimate of 0.911 suggests a positive association, the marginal p-value indicates weaker statistical evidence for this effect.</p><p>The distance matrix shows a significant negative effect with an estimate of -0.206 with a p-value of 0.004, indicating that employees who are physically farther apart are less likely to collaborate. This finding mirrors the result in the supervision network, where a similar negative effect of distance was observed.</p><p>Finally, the hybrid working covariate, with an estimate of 0.420 and a p-value of 0.357 is not found to significantly affect collaborated publication.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.4.">Overview of the Models</head><p>To provide a clear and concise overview of the findings, Table <ref type="table" target="#tab_13">13</ref> summarizes the significance levels of various covariates across the communication, supervision, and publication networks. This section outlines the main differences between these networks to provide a clear understanding of the results.</p><p>The table reveals notable differences in how covariates influence interactions within each network. Expertise is significant in the supervision and publication networks (p &lt; .001 and p = 0.016, respectively), indicating that similar expertise plays a crucial role in formal interactions. However, expertise does not significantly affect the communication network (p = 0.115), suggesting that expertise is less relevant for informal exchanges.</p><p>Tenure demonstrates consistent significance across all networks, though the nature of its influence varies. In the communication network, tenure has a positive estimate, suggesting that shared experiences encourage informal social interactions. However, in the supervision and publication networks, tenure has negative estimates. This indicates that shared experiences do not facilitate formal social interactions, with other factors likely playing a more prominent role.</p><p>To gain deeper insights into the role of tenure in these networks, the degree and betweenness centralities of the nodes were examined. Degree centrality assesses the importance and influence of a node based on the number of edges (i.e., relationships) connected to it. Unlike degree centrality, betweenness centrality evaluates a node's position within the network. Nodes with a higher betweenness centrality are typically more influential, as they can access other nodes more easily and efficiently <ref type="bibr" target="#b25">(Tabassum et al., 2018)</ref>.</p><p>Figures 10 and 11 present the degree and betweenness centralities of nodes within the communication, supervision, and publication networks. Although the figures do not visually differentiate employees based on tenure due to privacy considerations, the analysis reveals that employees with higher tenure tend to exhibit a higher degree and betweenness centrality in the supervision and publication networks. This suggests that more experienced employees occupy more central positions within these networks, likely due to their established roles and connections. This central positioning indicates that experienced employees play a crucial role in facilitating connections between other employees and in maintaining the overall structure of these networks.  Turning back to the results in Table <ref type="table" target="#tab_13">13</ref>, gender is significant in the supervision network (p = 0.004) and marginally significant in the publication network (p = 0.054), but entirely nonsignificant for the communication network (p = 0.998). This suggests that similarity in gender may facilitate formal interactions, but has little impact on informal communication.</p><p>Physical proximity, represented by the distance matrix, significantly influences supervision (p = 0.01) and publication (p = 0.004) networks, highlighting the importance of spatial closeness for collaborated publication and supervision. However, physical proximity is not significant for the communication network (p = 0.414), indicating that proximity is less important for informal interactions.</p><p>Lastly, hybrid working is only significantly affecting the communication network (p = 0.049). Employees in hybrid work arrangements, who are less frequently present in the office, are less likely to engage in casual interactions, underscoring the impact of remote work on informal communication. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion</head><p>This study aimed to answer the research question: "How do physical space, in the form of office layout, similarity, and presence affect social interaction?" To explore this question, three networks within a research group were analyzed: the communication network, the supervision network, and the publication network. These networks were chosen to represent different aspects of social interaction within the organization: the communication network reflects all forms of interactions, the supervision network captures formal hierarchical relationships, and the publication network represents collaborative academic work and research.</p><p>A combination of space syntax methodologies, network analysis, and observations was used to assess how various factors, such as physical proximity and similarity characteristics affect social interaction within the organization. This mixed-method approach is unique in comparison to most existing literature, which typically relies on a single method. By integrating these different approaches, this study provides a more comprehensive understanding of the factors influencing social interaction in an office environment.</p><p>The results reveal that physical proximity and similarity factors influence the three networks differently. One key factor affecting all networks is tenure. In the communication network, employees with similar tenure levels are more likely to communicate with one another. However, employees working in a hybrid model are less likely to communicate with colleagues compared to those who primarily work in the office. This suggests that while shared tenure encourages communication, hybrid work reduces face-to-face interactions, highlighting the importance of physical presence in fostering communication.</p><p>In both the supervision and publication networks, tenure negatively impacts collaboration. Employees with similar tenure are less likely to work together in supervisory or research activities. However, physical proximity and expertise play contrasting roles. In both networks, employees who are physically farther apart are less likely to engage in joint activities, while employees with similar areas of expertise are more likely to collaborate. This underscores the importance of both physical proximity and shared expertise in fostering collaboration, whether in supervisory relationships or research publications.</p><p>There is thus a notable difference in the factors that influence social interactions within the communication network compared to those that influence interactions within the supervision and publication networks. It is important to note that the communication network encompasses all forms of communication, including both formal and informal interactions. In contrast, supervision and publication networks are formal networks that are most often shaped by existing relationships between employees. These relationships are likely influenced by the intentional office layout within the research group, where individuals who share similar areas of expertise are placed closer to one another. This intentional placement facilitates interaction among colleagues in close proximity. This point will be explored further in this discussion.</p><p>Finally, the study also included observations to capture spontaneous social interactions within the office. Surprisingly, only six observations were recorded over fifty observational rounds. This relatively small suggests that factors like the office layout, which may not be facilitative to spontaneous interactions, and the hybrid working model, could be limiting informal social interactions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Interpretation</head><p>In this chapter, the findings will be interpreted in relation to the research hypotheses presented earlier. Specifically, the discussion will focus on how the results inform the factors influencing social interactions within the three networks: communication, supervision, and publication. The analysis will also explore the role of the control variable, hybrid working, and examine the impact of office layout on social interaction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.1.">Physical Proximity</head><p>The first hypothesis is based on the proven connection between physical proximity and social interaction within an office space, as demonstrated in previous literature <ref type="bibr" target="#b2">(Allen &amp; Fustfeld, 1975;</ref><ref type="bibr" target="#b21">Sailer &amp; McCulloh, 2012;</ref><ref type="bibr" target="#b22">Sailer &amp; Penn, 2009;</ref><ref type="bibr" target="#b24">Sugiyama et al., 2021;</ref><ref type="bibr" target="#b29">Wineman et al., 2009)</ref>, and is formulated as: Hypothesis 1: Employees who are physically closer to each other in the office are more likely to engage in social interactions.</p><p>Indeed, within both the supervision and the publication networks, employees situated farther from each other were less likely to interact. This finding aligns with the work of <ref type="bibr" target="#b29">Wineman et al. (2009)</ref>, who observed that faculty members were less likely to co-author papers when their offices were located farther apart. However, surprisingly, physical proximity did not significantly influence social interactions within the communication network. As a result, the hypothesis is only partially supported, applying to supervisory tasks and research collaboration but not general communication.</p><p>One explanation for the significance of physical proximity within the supervision and publication networks lies in the way offices are allocated to employees. Earlier in this paper, it was noted that office seating arrangements are often flexible. Over time, employees may move closer to the colleagues they frequently work with <ref type="bibr" target="#b29">(Wineman et al., 2009)</ref>. Interestingly, within the research group, office seating arrangements are organized based on expertise and academic level. Professors with similar expertise are assigned to share an office, except for full professors, who are provided with their own office. Additionally, PhD candidates are grouped within shared offices. This intentional structuring suggests that physical proximity may not be the sole driver of interaction but is intentionally created to facilitate, for example, collaboration.</p><p>Much of the existing research on office layouts and social interaction has focused on physical proximity as the primary factor influencing interaction, often overlooking the role of similarity characteristics. However, my findings support the work of <ref type="bibr" target="#b17">Newcomb (1956)</ref>, who emphasized the importance of both physical proximity and perceived similarity in forming interpersonal relationships. According to Newcomb, people tend to form stronger connections with others who are not only physically close but also share similarities since this fosters mutual attraction.</p><p>In this context, the combination of proximity and shared expertise appears to play a critical role in shaping interactions and relationships within the workplace. However, the findings indicate that informal communication can transcend these factors, suggesting that interactions may occur regardless of the formal office layout.</p><p>To understand why physical proximity does not influence social interactions within the communication network, unlike in the supervision and publication networks, it is important to consider other factors. As mentioned earlier, hybrid working has a significant, but negative, effect on social interactions within the communication network but does not appear to have the same significant effect on the supervision and publication networks. Employees working in a hybrid model are less likely to interact with their colleagues within the communication network. Hybrid working implies that employees are not consistently sharing the same physical space with their colleagues and must rely on alternative communication methods such as video calls and emails. While these tools facilitate interactions across physical distances, they reduce the frequency of spontaneous, in-person communication, thereby diminishing the relevance of proximity in the communication network. In contrast, supervision and publication networks are more structured, with meetings often planned ahead. These networks rely on more taskoriented interactions, which can occur in hybrid formats.</p><p>In conclusion, the first hypothesis, which suggests that employees who are physically closer to each other in the office are more likely to engage in social interactions, is not fully supported by the findings. While physical proximity does play a significant role in fostering interactions within the supervision and publication networks, where employees located closer to each other were more likely to collaborate or engage in collaborated publication or joint supervisory tasks, this effect is likely influenced by the intentional office layout based on expertise and academic level. Thus, proximity alone may not fully explain these interactions.</p><p>In contrast, physical proximity did not significantly affect social interactions within the communication network. Instead, the presence of employees in the office, shaped by hybrid working practices, emerged as a more significant factor. Hybrid working reduces the frequency of interactions and shifts communication to virtual tools such as video calls and emails.</p><p>Therefore, while proximity may remain influential in more structured, task-oriented networks, its role in informal communication networks is diminished, with presence playing a more pivotal role.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.2.">Similarity</head><p>The second hypothesis of this study examines the role of similarity in social interactions. Previous research suggested that similarity in professional background or similarity in interest facilitates communication and collaboration <ref type="bibr" target="#b12">(Kleinbaum et al., 2013;</ref><ref type="bibr" target="#b13">Koskinen et al., 2003)</ref>. Therefore, the second hypothesis proposes the following:</p><p>Hypothesis 2: The more similar employees are -in terms of shared experiences or interests -the more likely they are to engage in social interaction.</p><p>As mentioned, the hypothesis was partly based on a study by <ref type="bibr" target="#b13">Koskinen et al. (2003)</ref>, which suggested that similarities, such as shared experiences, play a crucial role in enhancing communication among colleagues. This aspect was captured via the attribute of tenure, which measured the years of employment.</p><p>Within the communication network, similar tenure positively influenced social interactions between employees, thereby supporting the second hypothesis that those with shared experiences are more likely to interact with each other. However, in both the supervision network and publication network, employees with similar tenure were less likely to interact with each other. To understand this finding, it is important to consider that the supervision and publication networks are formal networks. In an academic organization like the research group, education and mentorship play a significant role. Newly employed individuals may be often intentionally paired with more experienced colleagues to facilitate learning and guidance, which may reduce interactions between employees of similar tenure.</p><p>The second hypothesis was also partially based on a statement by <ref type="bibr" target="#b22">Sailer and Penn (2009)</ref>, which suggested that in a research institute, colleagues are more likely to engage with one another based on expertise rather than proximity. The findings reveal that colleagues are more likely to engage with each other within the supervision and publication networks if they have similar expertise. Therefore, the second hypothesis is supported in the sense that employees with similar expertise are more likely to engage in formal social interaction. A possible explanation for this finding lies in the organization's approach to collaborated publication and supervision, which is often linked to specific subjects. These subjects are based on the employees' expertise, making those with similar expertise more likely to supervise or collaborate since they share knowledge in that area. For instance, if a master's student wishes to conduct a thesis project on environmental psychology, the student's two supervisors will likely have environmental psychology as their area of expertise.</p><p>Surprisingly, within the supervision network, employees of the same gender are more likely to engage in joint supervision. This raises an interesting question: why does gender not appear to influence social interactions within the communication network and only marginally in the publication network? One possible explanation is that certain areas of expertise may be more popular among women or men, leading to gender-based clustering within specific domains. Another possible explanation is that those in supervision roles, which are inherently formal and often involve authority-driven interactions, view gender similarity as contributing to smoother collaboration. In this context, gender similarity might play a subtle role in fostering a sense of ease and mutual understanding, which could contribute to smoother collaboration and decision-making within these formal relationships. Supporting this, previous research by <ref type="bibr" target="#b14">Kwiek and Roszka (2021)</ref> found that employees of the same gender, particularly males, are more likely to collaborate. Their findings emphasize that similarity often breeds connection.</p><p>In short, the second hypothesis, which proposed that employees with similar experiences or interests are more likely to engage in social interactions, is partially supported by the findings. The results demonstrate that within the communication network, employees with similar tenure were more likely to interact, aligning with the hypothesis. The opposite was observed in the more formal supervision and publication networks. In these two networks, specifically, employees with similar expertise were more likely to engage in supervision or publication, supporting the idea that shared interests encourage interaction. An unexpected finding emerged in the supervision network, where employees of the same gender were more likely to collaborate. This suggests that gender similarity may influence social interactions in formal settings, offering comfort and familiarity in these hierarchical relationships. These findings highlight that while similarity in experiences and interests fosters interaction, other factors, such as similar gender also play a role in shaping social dynamics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.3.">Hybrid Working</head><p>This paper acknowledged the rise of hybrid working, which challenges the idea that proximity alone drives social interaction in today's workplaces (Van Elburg, 2024). As a result, hybrid working was considered as a control variable in this study.</p><p>By accounting for whether an employee works in a hybrid model, the study found that those working in hybrid arrangements are less likely to communicate with others than those who primarily work in the office. Employees working in a hybrid model are typically in the office only a few days each week. On the days they are not present, interactions with colleagues take place through online platforms, which are likely to be planned rather than spontaneous.</p><p>As a result, the amount of social interaction is likely to decrease when an employee is not physically present in the office.</p><p>This reduction in social interaction has implications. As discussed previously, social interaction among employees is especially effective in generating new ideas that contribute to innovative products, services, and processes <ref type="bibr" target="#b11">(Huang &amp; Li, 2009)</ref>. When social interactions decrease due to employees' physical absence, the generation of such ideas may be significantly hindered.</p><p>Furthermore, the physical office environment plays a crucial role in fostering casual conversations and unplanned interactions. For instance, proximity to pedestrian traffic, such as situating communal areas near busy corridors, promotes social interaction <ref type="bibr" target="#b28">(Whyte, 1980)</ref>.</p><p>However, employees working from home are not exposed to these environmental stimuli that encourage spontaneous engagement, further diminishing opportunities for interaction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.4.">Office Design</head><p>During the fifty observational rounds, only six social interactions were recorded. This number was surprisingly low, especially considering the number of employees within the research group and their physical presence in the office during these observations. This raises questions about what factors, beyond mere physical presence, might be influencing the occurrence of social interactions.</p><p>The low number of observed interactions can be explained by several factors, including a limitation of the method used. This limitation will be discussed later in the paper. However, one factor worth addressing here is the layout of the office environment.</p><p>As previously mentioned, several key factors can encourage interactions in public spaces, which are also relevant to office environments. These factors include movable seating, refreshment points, proximity to pedestrian traffic, and triangulation <ref type="bibr" target="#b28">(Whyte, 1980)</ref>. However, viewing the office layout reveals that these factors were not considered during the office design.</p><p>Figure <ref type="figure" target="#fig_12">12</ref> illustrates the hallway on the top floor, where most offices are located. The hallway is divided into two narrow walking paths by furniture placed in the middle. This arrangement unintentionally creates barriers to interaction. Due to the limited space, walking side by side is difficult, and the hallway naturally divides into one-way lanes. Conversations are unlikely to occur in such a setting, as employees are more inclined to move quickly through the area rather than stop and engage. Refreshment points further highlight the issue of limited opportunities for spontaneous social interactions. The primary coffee machine for employees is located on the eighth floor, while most research group members are based on the ninth floor. Although there are a few flex workspaces for PhD candidates on the bottom floor, employees often use one of the hallway furniture pieces on the top floor as an informal refreshment area by placing sweet treats there.</p><p>Additionally, the communal areas are not situated near high-traffic areas. Figure <ref type="figure" target="#fig_5">5</ref>, which illustrates the segment analysis of the office environment, shows that none of the office segments are located near the coffee machine. Communal spaces positioned far from busy corridors are less likely to promote spontaneous social interactions, further limiting opportunities for employees to connect.</p><p>In summary, the limited social interactions observed during the study highlight how the design and layout of the office environment can unintentionally hinder opportunities for connection. While physical presence in the office is necessary for in-person interactions, it is not sufficient on its own. Factors such as narrow hallways, poorly positioned refreshment points, and communal areas away from high-traffic zones significantly limit the likelihood of spontaneous interactions. These findings emphasize the need for intentional office design that fosters connectivity, promoting social interactions among employees.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Practical Implications</head><p>The findings of this study not only provided valuable insights into the factors influencing workplace interactions but also highlighted opportunities to improve organizational practices. By analyzing the dynamics of communication, supervision, and publication networks, organizations can develop targeted strategies to foster a more connected and collaborative work environment. Therefore, this section explores how the study's results can be translated into practical implications, focusing on strategies to address the challenges of hybrid working and to optimize office layout to support social interactions, among employees.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.1.">Optimizing Hybrid Working</head><p>The rise of hybrid working introduces challenges in fostering social interaction within the workplace. This study revealed that employees who work in a hybrid model are less likely to communicate with colleagues compared to those who work primarily in the office. This reduction in interaction can be attributed to the limited time hybrid employees spend on-site, resulting in fewer opportunities for spontaneous encounters. Virtual interactions, which are often scheduled in advance, may not offer the same opportunities for creating informal connections that can be fostered in a physical office setting.</p><p>Organizations can address these challenges by encouraging greater participation from hybrid employees in the workplace. <ref type="bibr" target="#b18">Olson and Olson (2000)</ref> earlier identified several key factors crucial for successful remote work. One of these key factors is creating common ground among employees. A strategy for building common ground involves fostering relationships through activities such as virtual coffee breaks, team-building exercises, and social events. For instance, organizing casual virtual meet-ups can provide employees with opportunities to interact more naturally and build connections beyond work tasks.</p><p>Another key factor <ref type="bibr" target="#b18">Olson and Olson (2000)</ref> identified is collaboration technology readiness. Effective remote work relies heavily on the availability and usability of appropriate technology. While many organizations now use online tools to facilitate communication, it is worth considering how to integrate technologies that replicate the spontaneity of in-person interactions. For instance, hybrid workers may miss out on opportunities like meeting newly hired employees. Introducing a platform where employees can create profiles to introduce themselves could help foster familiarity among colleagues. These profiles could include details such as interests and areas of expertise, aligning with the study's findings that employees with similar expertise are more likely to engage in supervision or collaboration together.</p><p>However, it is important to recognize that, at least for now, there may not be a perfect equivalent to physical presence in virtual platforms. The spontaneous, informal interactions that occur when employees are physically present in the same space may not be fully replicated through virtual interactions, even with the use of technology.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.2.">Optimizing Office Design for Interaction</head><p>The physical layout of the office environment is another factor that influences workplace interactions. This study identified several barriers within the research group's office design, including narrow hallways that discourage casual conversations and communal areas located away from pedestrian traffic. These features contribute to a lack of spontaneous social interactions, as observed during the study.</p><p>To promote more social interactions, changes to the office design are necessary. For example, removing or repositioning hallway furniture to create wider walking would facilitate more casual encounters between colleagues. By removing some furniture, opportunities could be created for communal areas, such as shared seating in high-traffic locations, which would encourage more spontaneous interactions. Additionally, subtle elements like a small art installation or an interactive board could be introduced to incorporate triangulation, as suggested by <ref type="bibr" target="#b28">Whyte (1980)</ref>. Such installations can serve as a common point of interest and stimulate conversation.</p><p>Although these modifications may be relatively small, they could significantly improve the overall social atmosphere in the workplace. Figure <ref type="figure" target="#fig_13">13</ref> illustrates a potential office layout after these adjustments. For instance, three cabinets that previously obstructed the central hallway have been removed, creating space for two small seating areas and wider walking paths.</p><p>The first seating area is located at the entrance of the hallway, accommodating a minimum of two round tables with chairs. Additionally, there is still space available for a coffee machine or another refreshment point next to these seating arrangements. The second seating area is situated at the end of the central hallway. This smaller space includes a table and a few chairs.</p><p>The literature review highlighted that employees prefer organizations to prioritize reducing crowdedness <ref type="bibr" target="#b3">(Appel-Meulenbroek et al., 2022)</ref>. With the new seating areas positioned near meeting rooms, they can serve not only as social spaces but also as waiting areas, helping to ease possible congestion in the hallway and improving the use of available space.</p><p>Finally, a couch with tables has been added around the corner of the hallway. This area can serve as a social space or a quiet retreat for employees seeking a change of scenery from their office environment. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.">Strengths and Limitations</head><p>This research produced interesting findings and potential implications. As previously mentioned, a key strength of this thesis is its use of a mixed-method approach, which stands out compared to most existing literature that typically relies on a single method. For example, if the approach used by <ref type="bibr" target="#b19">Rashid et al. (2006)</ref>, which emphasized observations, had been adopted, this thesis would not have been able to generate sufficient results or draw meaningful conclusions due to limited observation data.</p><p>Another key strength of this study is its examination of three distinct social networks: communication, supervision, and publication. By considering multiple types of networks, this research provides a more comprehensive understanding of how various factors influence social interactions within the workplace. Unlike many studies that concentrate on a single network, this study examines a wider range of interaction networks, enabling a more detailed analysis.</p><p>However, the communication network includes instead of one of the types, both formal and informal elements since the survey did not explicitly differentiate between these types. This lack of distinction limited the ability to explore the individual impacts of formal and informal communication in more detail. Nevertheless, the inclusion of three different networks offers a valuable contribution by highlighting the unique factors influencing social interactions within each network, providing a richer understanding of workplace dynamics than a focus on a single network would have.</p><p>While the mixed-method approach is one of the strengths of this thesis, the methodology employed had some limitations. First, the network survey contained some ambiguities for the respondents. One of the questions asked how much an employee typically communicates with a specific colleague relative to others in the group. This question did not Additionally, not all employees of the research group participated in the study. Out of the 55 employees, 33 responded to the survey. Several employees expressed concerns about the sensitivity of sharing the information requested and thus chose not to participate. The communication network constructed from the gathered data is quite dense, but it is possible that some employees, particularly those less connected within the network, were not captured due to their lack of participation. This limitation should be considered when interpreting the findings, as it may influence the representation of the social dynamics within the organization.</p><p>Another key aspect of the methodology was the use of ERGMs to analyze the three social networks. This approach provided a valuable opportunity to incorporate multiple node attributes (e.g., tenure, expertise, gender, hybrid working, and physical proximity) and examine how they influence the structure of the networks. However, a limitation of ERGM is that it requires the network matrices to be binary, meaning that only the presence or absence of relationships between nodes was considered. As a result, the strength of the relationships, whether they are strong, weak, or somewhere in between, was not accounted for in the analysis.</p><p>This limitation prevents a deeper understanding of the interactions and the relationships within the networks.</p><p>To address this limitation, I conducted a follow-up ERGM analysis focusing only on the strong relationships within the communication network (i.e., those where employees indicated that they communicated much more with each other than with others). This analysis revealed additional insights into the factors influencing social interactions. In the original communication network, similar tenure was positively associated with the likelihood of interaction, while employees working in a hybrid model were less likely to interact with each other. In the follow-up analysis of strong relationships, the results showed that employees with similar expertise and tenure were more likely to interact, while employees located farther from each other were less likely to interact. The difference in these findings further supports the idea that accounting for relationship strength can offer deeper insights into the dynamics of workplace interactions (see Appendix for detailed results of the follow-up analysis).</p><p>The final limitation concerns the observations included in the study. Similar to the study by <ref type="bibr" target="#b19">Rashid et al. (2006)</ref>, a predetermined route was followed in the office environment of the HTI group. The observations were conducted over the course of two weeks, with five observation periods each day, resulting in a total of fifty rounds of observations. While the route was walked five times per day, the total amount of time spent in the designated office environment was limited. In total, walking the predetermined route took approximately five minutes, leading to only 25 minutes per day spent in the designated areas. Given the relatively short duration compared to a full workday of approximately six hours, it is likely that many social interactions were not captured. Future studies could consider extending observation periods or incorporating sensor-based methods, such as wearable devices, to capture a more comprehensive range of interactions.</p><p>While the findings from this study represent an improvement over existing literature, particularly in terms of the mixed-methodology approach and the focus on three distinct networks, they also provide valuable insights into workplace interactions. However, the study's generalizability is limited by several factors. The focus on a single research institute may restrict the applicability of the findings to other organizational types, as different industries may experience varying social dynamics. Furthermore, the non-participation of some employees and, as a result, potential gaps in the captured network may result in an incomplete representation of workplace interactions, further limiting the generalizability of the results. The following section will discuss improvements for future research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4.">Future Research</head><p>This study has provided valuable insights into how physical space, similarity, and presence influence social interactions within the workplace. Based on these findings, several potential implications have been identified. However, the long-term effects of these implications remain unclear. To gain a deeper understanding, future research could consider conducting longitudinal studies to examine how social interactions evolve over time, particularly in response to specific interventions. Such studies could provide a clearer picture of how the dynamics of social interactions shift in the long run.</p><p>Additionally, future research could explore how physical space, similarity, and presence influence social interactions in a broader range of organizational settings. This study focused on a research institute, but as suggested by <ref type="bibr" target="#b22">Sailer and Penn (2009)</ref>, different types of organizations respond differently to similar office layouts. Therefore, it would be valuable to investigate which factors influence social interactions across various organizational contexts and to explore both the similarities and differences in these factors.</p><p>Furthermore, expanding the geographic and cultural scope of future studies could provide insights into whether the patterns observed in this study are consistent across different regions and cultural contexts. Social interaction dynamics may differ across countries or regions due to cultural norms, communication styles, or organizational practices. Gaining a deeper understanding of these differences could improve the applicability of the findings globally.</p><p>Another area for future research involves examining methodological improvements to deepen the understanding of social interaction within the three networks. While this study employed ERGMs to analyze network structures, a limitation of this method is that it considers only the presence or absence of relationships, not their strength. As a result, it does not fully capture the intensity of connections between employees. To gain deeper insights, future research could explore methods that account for the strength of relationships in addition to their presence. For example, it would be valuable to examine whether employees with similar tenure and situated closer to each other in the office environment have stronger relationships than those with similar tenure who are located farther apart. Such an analysis would require more advanced modeling techniques that account for the presence of relationships, node attributes, and the strength of those relationships.</p><p>Lastly, as explained previously, physical proximity is not the sole driver of interaction but is intentionally structured to facilitate, for example, collaboration. This finding was already explored by <ref type="bibr" target="#b17">Newcomb (1956)</ref> years ago. Newcomb conducted a study with male transfer students at the University of Michigan, who were strangers before sharing a student house.</p><p>This provided an opportunity to examine the development of interpersonal attraction in a controlled environment. To investigate whether physical proximity influences social interactions within office environments, a similarly controlled setting would be necessary. An office environment where employees are randomly assigned to workstations would be an ideal approach for studying the factors that influence social interactions. Future research could thus benefit from implementing such a controlled environment to better isolate the effects of physical proximity and other variables on social interactions in the workplace.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusion</head><p>Social interactions within office environments are crucial for generating new ideas that contribute to innovative products, services, and processes <ref type="bibr" target="#b11">(Huang &amp; Li, 2009)</ref>. This is particularly important in high-tech industries where innovation, design, and the production of complex products are critical focal points <ref type="bibr" target="#b27">(van Kappen et al., 2024)</ref>. While previous studies have highlighted the influence of proximity on communication in office settings <ref type="bibr" target="#b2">(Allen &amp; Fustfeld, 1975;</ref><ref type="bibr" target="#b21">Sailer &amp; McCulloh, 2012;</ref><ref type="bibr" target="#b22">Sailer &amp; Penn, 2009;</ref><ref type="bibr" target="#b24">Sugiyama et al., 2021;</ref><ref type="bibr" target="#b29">Wineman et al., 2009)</ref>, gaps remain regarding the effects of employee similarities and hybrid working on social interactions. This study aimed to answer the research question: "How do physical space, in the form of office layout, similarity, and presence, affect social interaction?"</p><p>In response to the research question, the findings showed that physical space, in the form of office layout, employee similarity, and presence, each plays a distinct role in shaping social interaction within the workplace. The influence of these factors varies across different types of networks, including communication, supervision, and publication.</p><p>Physical proximity was found to significantly affect social interactions in the supervision and publication networks, where employees located closer to each other were more likely to collaborate or engage in supervisory tasks. However, this effect was also influenced by the intentional office layout, which places employees with similar expertise in close proximity. This suggests that proximity alone does not fully explain these interactions, as shared expertise also plays a crucial role. On the other hand, physical proximity did not have a significant impact on social interactions within the communication network, indicating that other factors were more influential in fostering informal interactions.</p><p>Employee similarity, particularly in terms of expertise, was another key factor shaping social interactions. Employees with similar expertise were more likely to collaborate in formal networks, reinforcing the idea that professional similarity encourages task-oriented connections. In the communication network, similarity in tenure also facilitated social interactions, but in more formal networks, employees with similar tenure were less likely to engage with one another, likely due to the mentorship structures within the organization.</p><p>Additionally, gender similarity emerged as an important factor in the supervision network, where employees of the same gender were more likely to engage in joint supervision.</p><p>Hybrid working practices emerged as a significant factor affecting social interaction, particularly within the communication network. Employees who worked in a hybrid model were less likely to engage in communication compared to those who worked primarily in the office. This shift to virtual communication platforms possibly reduced the frequency of spontaneous, face-to-face interactions, which are essential for informal communication. Given the increasing prevalence of hybrid working, this study underscores the need for organizations to develop strategies and office layouts that foster interaction, even when employees are not consistently present in the office.</p><p>In conclusion, the findings highlight the complex relationship between physical space, employee similarity, and presence in influencing social interaction. While proximity and shared expertise facilitate collaboration in formal networks, hybrid working practices, and office layout must be taken into account to maintain opportunities for informal interactions. This study's findings have important implications for how organizations design their workspaces, particularly in hybrid settings. Office environments should be designed to encourage interaction, with features such as communal areas near pedestrian traffic or strategically placed collaboration spaces. Additionally, new technologies or stimulating and creating common ground among employees can help bridge the gap between remote and inperson employees.</p><p>Further research is needed to explore these dynamics across different organizational and cultural contexts to deepen our understanding of how workspace design can foster meaningful social interactions in the modern workplace. Future studies could also benefit from employing controlled environments, such as randomly assigning employees to workstations, to better isolate the effects of physical proximity and other factors on social interactions.</p><p>Additionally, conducting longitudinal studies could provide valuable insights into how social interactions evolve over time, particularly in response to specific interventions.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. An overview of two floors of the Atlas building. The floors are connected by a staircase. The bottom floor primarily serves as a flexible workspace for PhD students, while the top floor consists of designated offices.</figDesc><graphic coords="16,72.00,72.00,451.30,208.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Simplified office layout with a segment maps analysis. First, movement lines are drawn from each workplace. Secondly, lines are displayed as elements. These elements are separated into segments which can be translated into a graph. Note the distinction between open workplaces (D and E) and offices (B, C, F, G, H), with offices only represented by one segment and open workplaces with a segment for each desk.</figDesc><graphic coords="18,108.00,476.83,451.30,203.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Office floor map of the bottom floor, showing the observed walking route for data collection.</figDesc><graphic coords="21,72.00,450.14,456.58,211.95" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Office floor map of the top floor, showing the observed walking route for data collection.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><figDesc>were developed to capture the organization's network structure. The first base model focused on the presence or absence of interactions (edges) within the communication network. The second base model was based on the supervision network, reflecting collaborative student supervision efforts. The third base model represented the research publication network, capturing joint research partnerships.Additional covariates were introduced after creating the base models to evaluate their influence on interaction frequency. These covariates included the physical proximity of employees' workspaces (measured using segment analysis), pre-existing connections, and similarity attributes. Pre-existing connections established through current supervision collaborations were incorporated as edge covariates, allowing the model to control for their influence on interaction patterns. Data for the similarity attributes were sourced from the Eindhoven University of Technology's research portal and the secretary of the research group. Tenure was classified into six levels: 1) 0 -4 years, 2) 5 -9 years, 3) 10 -14 years, 4) 15 -19 years, 5) 20 -24 years, and 6) 25 -29 years. Areas of expertise were grouped into five categories: 1) Behavioral and social computing, 2) Human-robot relations and collaborations, 3) Ethical and human-centered AI, 4) Responsible, open, and interdisciplinary science practices, and 5) Healthful environments, services, and applications. Gender was included as an additional covariate and categorized as male, female, or other. Hybrid working status was also added as a covariate to account for variations in interaction patterns potentially influenced by differing work arrangements (e.g., remote vs. in-office work).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Visualization of the segment analysis process: movement lines, their transformation into elements, and subsequent segmentation. The dark red represents the stairs, the lightest red corresponds to the bottom floor, and the medium red indicates the top floor.</figDesc><graphic coords="28,85.38,504.12,424.55,206.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. Graph representation of office segments: Nodes represent individual segments, with edges indicating connections between adjacent segments.</figDesc><graphic coords="29,72.00,72.00,451.30,351.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 7 .</head><label>7</label><figDesc>Figure 7. Comparison of academic roles in the HTI research group and survey respondents. The chart shows the number of PhD students, postdoctoral researchers, assistant professors, associate professors, and full professors.</figDesc><graphic coords="30,72.00,162.79,440.40,261.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 8 .</head><label>8</label><figDesc>Figure 8. Map of the office showing locations of social interaction observations, with interactions occurring on the top floor and one on the staircase leading to the top floor.</figDesc><graphic coords="32,72.00,162.79,451.30,198.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure 9 .</head><label>9</label><figDesc>Figure 9. Visual representation of three networks: (top left) Publication network, (top right) Supervision network, and (bottom) Communication network. Nodes represent employees, and edges indicate interactions between them.</figDesc><graphic coords="33,72.00,72.00,446.40,428.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Figure 10 .</head><label>10</label><figDesc>Figure 10. Betweenness centrality in the communication, supervision, and publication networks, based on the tenure of the nodes. Larger nodes indicate higher centrality.</figDesc><graphic coords="45,72.00,72.00,451.30,485.95" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Figure 11 .</head><label>11</label><figDesc>Figure 11. Degree centrality in the communication, supervision, and publication networks, based on the tenure of the nodes. Larger nodes indicate higher centrality.</figDesc><graphic coords="46,72.00,72.00,435.80,432.05" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Figure 12 .</head><label>12</label><figDesc>Figure 12. Layout of the top floor hallway, showing the division of walking paths by furniture placement. The narrow space leads to a one-way traffic flow, with the furniture inadvertently creating a barrier to social interaction.</figDesc><graphic coords="56,182.15,363.98,230.98,302.65" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>Figure 13 .</head><label>13</label><figDesc>Figure 13. Modified office layout highlighting the removal of central cabinets and the addition of seating areas, creating improved social spaces and reducing hallway congestion.</figDesc><graphic coords="60,72.00,490.37,451.30,186.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><figDesc>specify a time frame, leading to confusion among respondents. This lack of clarity may have resulted in different interpretations of the question. For example, one respondent might have considered communication from the past week, while another may have recalled communication over the past few years. This ambiguity could lead to inconsistent data and potentially undermine the reliability of the findings related to communication patterns. Future studies should aim to specify a time frame to improve clarity and ensure consistent interpretations across respondents.Another limitation of the network survey relates to the type of questions asked. To ensure the survey remained manageable for respondents, it was kept relatively short, despite containing 118 questions. As a result, the survey addressed only general communication, losing the clear distinction between formal and informal communication. This distinction could have added value to the study by providing a more detailed understanding of communication flows.Formal and informal communication networks serve different purposes and can have different impacts on workplace dynamics. Informal communication, for instance, is crucial for building social connections and can be seen as the "human side" of the organization. In times of ambiguity or uncertainty, informal networks support employees by providing essential information<ref type="bibr" target="#b7">(Crampton et al., 1998)</ref>. In contrast, formal communication is often more structured and task-oriented. Differentiating these communication networks would have highlighted specific areas where communication strategies could be improved to foster potentially better collaboration and efficiency within the organization. Future research could explore these networks separately to gain deeper insights into communication dynamics within organizations.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Example of recorded observations during the walking route, showing data collected for analysis.</figDesc><table><row><cell>Interaction ID</cell><cell>Time</cell><cell>Data</cell><cell>Individuals Involved</cell></row><row><cell>...</cell><cell></cell><cell></cell><cell></cell></row></table><note><p>...:... .../.../... Employee A, Employee B, ...</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Summary of metrics for the communication, supervision, and publication networks, highlighting differences in connectivity, density, and clustering across the three types of networks.</figDesc><table><row><cell></cell><cell>Communication</cell><cell>Supervision</cell><cell>Publication</cell></row><row><cell>nodes</cell><cell>33</cell><cell>33</cell><cell>33</cell></row><row><cell>edges</cell><cell>393</cell><cell>48</cell><cell>22</cell></row><row><cell>density</cell><cell>.744</cell><cell>.091</cell><cell>.042</cell></row><row><cell>components</cell><cell>1</cell><cell>14</cell><cell>16</cell></row><row><cell>diameter</cell><cell>2</cell><cell>4</cell><cell>7</cell></row><row><cell>clustering coefficient</cell><cell>.802</cell><cell>.413</cell><cell>.184</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>Comparison of small-world characteristics (clustering coefficient, average path length, and components) between observed and random versions of the communication, supervision, and publication networks.</figDesc><table><row><cell></cell><cell>Clustering Coefficient</cell><cell>Average path length</cell><cell>Components</cell></row><row><cell>communication</cell><cell>.802</cell><cell>1.256</cell><cell>1</cell></row><row><cell>communication (random)</cell><cell>.604</cell><cell>1.633</cell><cell></cell></row><row><cell>supervision</cell><cell>.413</cell><cell>2.115</cell><cell>14</cell></row><row><cell>supervision (random)</cell><cell>.085</cell><cell>3.725</cell><cell></cell></row><row><cell>publication</cell><cell>.184</cell><cell>3.029</cell><cell>16</cell></row><row><cell>publication (random)</cell><cell>.036</cell><cell>1.897</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 .</head><label>4</label><figDesc>Base model of the communication network.</figDesc><table><row><cell></cell><cell>Estimate</cell><cell>Std. Error</cell><cell>z value</cell><cell>p-value</cell></row><row><cell>edges</cell><cell>1.069</cell><cell>.0997</cell><cell>10.71</cell><cell>&lt; .001</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 .</head><label>5</label><figDesc>Full model of the communication network.</figDesc><table><row><cell></cell><cell>Estimate</cell><cell>Std. Error</cell><cell>z value</cell><cell>p-value</cell></row><row><cell>edges</cell><cell>1.094</cell><cell>.423</cell><cell>2.585</cell><cell>.010</cell></row><row><cell>expertise</cell><cell>.431</cell><cell>.274</cell><cell>1.575</cell><cell>.115</cell></row><row><cell>tenure</cell><cell>1.112</cell><cell>.229</cell><cell>4.864</cell><cell>&lt; .001</cell></row><row><cell>gender</cell><cell>-.001</cell><cell>.207</cell><cell>-.003</cell><cell>.998</cell></row><row><cell>distance matrix</cell><cell>.023</cell><cell>.029</cell><cell>.818</cell><cell>.414</cell></row><row><cell>hybrid working</cell><cell>-.404</cell><cell>.205</cell><cell>-1.973</cell><cell>.049</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 6 .</head><label>6</label><figDesc>Analysis of deviance table of the communication network.</figDesc><table><row><cell></cell><cell>df</cell><cell cols="2">Deviance Residual df</cell><cell>Residual Deviance</cell><cell>p-value</cell></row><row><cell>Base Model</cell><cell>1</cell><cell>131.636</cell><cell>527</cell><cell>600.33</cell><cell>&lt; .001</cell></row><row><cell>Full Model</cell><cell>5</cell><cell>33.509</cell><cell>522</cell><cell>566.82</cell><cell>&lt; .001</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 7 .</head><label>7</label><figDesc>Base model of the supervision network.</figDesc><table><row><cell></cell><cell>Estimate</cell><cell>Std. Error</cell><cell>z value</cell><cell>p-value</cell></row><row><cell>edges</cell><cell>-2.303</cell><cell>.151</cell><cell>-15.21</cell><cell>&lt; .001</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 8 .</head><label>8</label><figDesc>Full model of the supervision network.</figDesc><table><row><cell></cell><cell>Estimate</cell><cell>Std. Error</cell><cell>z value</cell><cell>p-value</cell></row><row><cell>edges</cell><cell>-2.336</cell><cell>.656</cell><cell>-3.559</cell><cell>&lt;.001</cell></row><row><cell>expertise</cell><cell>1.280</cell><cell>.333</cell><cell>3.839</cell><cell>&lt;.001</cell></row><row><cell>tenure</cell><cell>-1.622</cell><cell>.415</cell><cell>-3.909</cell><cell>&lt; .001</cell></row><row><cell>gender</cell><cell>.956</cell><cell>.334</cell><cell>2.859</cell><cell>.004</cell></row><row><cell>distance matrix</cell><cell>-.118</cell><cell>.046</cell><cell>-2.574</cell><cell>.010</cell></row><row><cell>hybrid working</cell><cell>.256</cell><cell>.311</cell><cell>.824</cell><cell>.410</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 9 .</head><label>9</label><figDesc>Analysis of deviance table of the supervision network.</figDesc><table><row><cell></cell><cell>df</cell><cell cols="2">Deviance Residual df</cell><cell>Residual Deviance</cell><cell>p-value</cell></row><row><cell>Base Model</cell><cell>1</cell><cell>410.27</cell><cell>527</cell><cell>321.70</cell><cell>&lt; .001</cell></row><row><cell>Full Model</cell><cell>5</cell><cell>43.75</cell><cell>522</cell><cell>227.95</cell><cell>&lt; .001</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 10 .</head><label>10</label><figDesc>Base model of the publication network</figDesc><table><row><cell></cell><cell>Estimate</cell><cell>Std. Error</cell><cell>z value</cell><cell>p-value</cell></row><row><cell>edges</cell><cell>-3.136</cell><cell>.218</cell><cell>-14.4</cell><cell>&lt; .001</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10"><head>Table 11 .</head><label>11</label><figDesc>Full model of the publication network.</figDesc><table><row><cell></cell><cell>Estimate</cell><cell>Std. Error</cell><cell>z value</cell><cell>p-value</cell></row><row><cell>edges</cell><cell>-2.856</cell><cell>.969</cell><cell>-2.948</cell><cell>.003</cell></row><row><cell>expertise</cell><cell>1.125</cell><cell>.467</cell><cell>2.410</cell><cell>.016</cell></row><row><cell>tenure</cell><cell>-1.873</cell><cell>.652</cell><cell>-2.874</cell><cell>.004</cell></row><row><cell>gender</cell><cell>.911</cell><cell>.473</cell><cell>1.924</cell><cell>.054</cell></row><row><cell>distance matrix</cell><cell>-.206</cell><cell>.071</cell><cell>-2.890</cell><cell>.004</cell></row><row><cell>hybrid working</cell><cell>.421</cell><cell>.456</cell><cell>.920</cell><cell>.357</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11"><head>Table 12</head><label>12</label><figDesc>549.06 and for the full model being 27.10. The residual deviance for the full model (155.80) is lower than that of the base model (182.90), indicating that the full model explains the data better. The difference in deviance is statistically significant (p &lt; .001 for the base model</figDesc><table><row><cell>and p &lt; .001 for the full model), suggesting that the inclusion of covariates improves the</cell></row><row><cell>model's fit.</cell></row></table><note><p>compares the fit of the two models for the publication network. The analysis shows a reduction in deviance when comparing the models, with the deviance for the base model being</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_12"><head>Table 12 .</head><label>12</label><figDesc>Analysis of deviance table of the publication network.</figDesc><table><row><cell></cell><cell>df</cell><cell cols="2">Deviance Residual df</cell><cell>Residual Deviance</cell><cell>p-value</cell></row><row><cell>Base Model</cell><cell>1</cell><cell>549.06</cell><cell>527</cell><cell>182.90</cell><cell>&lt; .001</cell></row><row><cell>Full Model</cell><cell>5</cell><cell>27.10</cell><cell>522</cell><cell>155.80</cell><cell>&lt; .001</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_13"><head>Table 13 .</head><label>13</label><figDesc>Significance of covariates across communication, supervision, and publication networks in ERGM analysis. Significant values are highlighted in bold.</figDesc><table><row><cell></cell><cell>Communication</cell><cell>Supervision</cell><cell>Publication</cell></row><row><cell>expertise</cell><cell>.115</cell><cell>&lt;.001</cell><cell>.016</cell></row><row><cell>tenure</cell><cell>&lt;.001</cell><cell>&lt;.001</cell><cell>.004</cell></row><row><cell>gender</cell><cell>.998</cell><cell>.004</cell><cell>.054</cell></row><row><cell>distance matrix</cell><cell>.414</cell><cell>.010</cell><cell>.004</cell></row><row><cell>hybrid working</cell><cell>.049</cell><cell>.410</cell><cell>.357</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix Follow-up ERGM Analysis of Strong Relationships in the Communication Network</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_14"><head>Table 14 .</head><label>14</label><figDesc>Base model of the strong relationships in the communication network.</figDesc><table><row><cell></cell><cell>Estimate</cell><cell>Std. Error</cell><cell>z value</cell><cell>p-value</cell></row><row><cell>edges</cell><cell>-1.862</cell><cell>.128</cell><cell>-14.6</cell><cell>&lt; .001</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_15"><head>Table 15 .</head><label>15</label><figDesc>Full model of the strong relationships in the communication network.</figDesc><table><row><cell></cell><cell>Estimate</cell><cell>Std. Error</cell><cell>z value</cell><cell>p-value</cell></row><row><cell>edges</cell><cell>-1.281</cell><cell>.538</cell><cell>-2.382</cell><cell>.017</cell></row><row><cell>expertise</cell><cell>1.427</cell><cell>.300</cell><cell>4.765</cell><cell>&lt;.001</cell></row><row><cell>tenure</cell><cell>.949</cell><cell>.286</cell><cell>3.316</cell><cell>&lt;.001</cell></row><row><cell>gender</cell><cell>.226</cell><cell>.283</cell><cell>.797</cell><cell>.425</cell></row><row><cell>distance matrix</cell><cell>-.243</cell><cell>.042</cell><cell>-5.724</cell><cell>&lt;.001</cell></row><row><cell>hybrid working</cell><cell>-.005</cell><cell>.252</cell><cell>-.020</cell><cell>.984</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_16"><head>Table 16 .</head><label>16</label><figDesc>Analysis of deviance table of the strong relationships in the communication network.</figDesc><table><row><cell></cell><cell>df</cell><cell cols="2">Deviance Residual df</cell><cell>Residual Deviance</cell><cell>p-value</cell></row><row><cell>Base Model</cell><cell>1</cell><cell>315.06</cell><cell>527</cell><cell>416.90</cell><cell>&lt; .001</cell></row><row><cell>Full Model</cell><cell>5</cell><cell>74.01</cell><cell>522</cell><cell>342.89</cell><cell>&lt; .001</cell></row></table></figure>
+			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct status="extracted" xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>References</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">References</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Research on knowledge transfer in organizations: a morphology</title>
+		<author>
+			<persName><forename type="first">Ajith</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ganesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">S</forename></persName>
+		</author>
+		<idno type="DOI">10.1108/13673270910971905</idno>
+		<ptr target="https://doi.org/10.1108/13673270910971905" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Knowledge Management</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="161" to="174" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ajith Kumar, J., &amp; Ganesh, L. S. (2009). Research on knowledge transfer in organizations: a morphology. Journal of Knowledge Management, 13(4), 161-174. https://doi.org/10.1108/13673270910971905</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Research laboratory architecture and the structuring of communications</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Allen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Fustfeld</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1467-9310.1975.tb01230.x</idno>
+		<ptr target="https://doi.org/10.1111/j.1467-9310.1975.tb01230.x" />
+	</analytic>
+	<monogr>
+		<title level="j">R&amp;D Management</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="153" to="164" />
+			<date type="published" when="1975">1975</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Allen, T. J., &amp; Fustfeld, A. R. (1975). Research laboratory architecture and the structuring of communications. R&amp;D Management, 5(2), 153-164. https://doi.org/10.1111/j.1467- 9310.1975.tb01230.x</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">How to attract employees back to the office? A stated choice study on hybrid working preferences</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Appel-Meulenbroek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kemperman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Van De Water</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Weijs-Perrée</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Verhaegh</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jenvp.2022.101784</idno>
+		<ptr target="https://doi.org/10.1016/j.jenvp.2022.101784" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Environmental Psychology</title>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="page">101784</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Appel-Meulenbroek, R., Kemperman, A., van de Water, A., Weijs-Perrée, M., &amp; Verhaegh, J. (2022). How to attract employees back to the office? A stated choice study on hybrid working preferences. Journal of Environmental Psychology, 81, 101784. https://doi.org/10.1016/j.jenvp.2022.101784</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b4">
+	<monogr>
+		<title level="m" type="main">How Hybrid Working From Home Works Out</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Bloom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liang</surname></persName>
+		</author>
+		<idno type="DOI">10.3386/w30292</idno>
+		<ptr target="https://doi.org/10.3386/w30292" />
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bloom, N., Han, R., &amp; Liang, J. (2022). How Hybrid Working From Home Works Out. https://doi.org/10.3386/w30292</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Is Hybrid Work the Best of Both Worlds? Evidence from a Field Experiment</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Khanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Makridis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Schirmann</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/rest_a_01428</idno>
+		<ptr target="https://doi.org/10.1162/rest_a_01428" />
+	</analytic>
+	<monogr>
+		<title level="j">Review of Economics and Statistics</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="24" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Choudhury, P., Khanna, T., Makridis, C. A., &amp; Schirmann, K. (2024). Is Hybrid Work the Best of Both Worlds? Evidence from a Field Experiment. Review of Economics and Statistics, 1-24. https://doi.org/10.1162/rest_a_01428</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Deterministic small-world networks</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Comellas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sampels</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0378-4371(02)00741-0</idno>
+		<ptr target="https://doi.org/10.1016/S0378-4371(02)00741-0" />
+	</analytic>
+	<monogr>
+		<title level="j">Physica A: Statistical Mechanics and Its Applications</title>
+		<imprint>
+			<biblScope unit="volume">309</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="231" to="235" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Comellas, F., &amp; Sampels, M. (2002). Deterministic small-world networks. Physica A: Statistical Mechanics and Its Applications, 309(1-2), 231-235. https://doi.org/10.1016/S0378-4371(02)00741-0</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The Informal Communication Network: Factors Influencing Grapevine Activity</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Crampton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Hodge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Mishra</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/009102609802700410</idno>
+		<ptr target="https://doi.org/10.1177/009102609802700410" />
+	</analytic>
+	<monogr>
+		<title level="j">Public Personnel Management</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="569" to="584" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Crampton, S. M., Hodge, J. W., &amp; Mishra, J. M. (1998). The Informal Communication Network: Factors Influencing Grapevine Activity. Public Personnel Management, 27(4), 569-584. https://doi.org/10.1177/009102609802700410</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Making Invisible Work Visible: Using Social Network Analysis to Support Strategic Collaboration</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Cross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Borgatti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Parker</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/41166121</idno>
+		<ptr target="https://doi.org/10.2307/41166121" />
+	</analytic>
+	<monogr>
+		<title level="j">California Management Review</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="25" to="46" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cross, R., Borgatti, S. P., &amp; Parker, A. (2002). Making Invisible Work Visible: Using Social Network Analysis to Support Strategic Collaboration. California Management Review, 44(2), 25-46. https://doi.org/10.2307/41166121</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b9">
+	<monogr>
+		<ptr target="https://www.tue.nl/en/our-university/tue-campus/buildings/atlas/atlas-most-sustainable-education-building-in-the-world" />
+		<title level="m">Atlas most sustainable education building in the world</title>
+		<imprint/>
+		<respStmt>
+			<orgName>Eindhoven University of Technology</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">Eindhoven University of Technology. (n.d.). Atlas most sustainable education building in the world. https://www.tue.nl/en/our-university/tue-campus/buildings/atlas/atlas-most- sustainable-education-building-in-the-world</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b10">
+	<monogr>
+		<title level="m" type="main">The Social Logic of Space</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hillier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hanson</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/CBO9780511597237</idno>
+		<ptr target="https://doi.org/10.1017/CBO9780511597237" />
+		<imprint>
+			<date type="published" when="1984">1984</date>
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hillier, B., &amp; Hanson, J. (1984). The Social Logic of Space. Cambridge University Press. https://doi.org/10.1017/CBO9780511597237</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The mediating effect of knowledge management on social interaction and innovation performance</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/01437720910956772</idno>
+		<ptr target="https://doi.org/10.1108/01437720910956772" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Manpower</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="285" to="301" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Huang, J., &amp; Li, Y. (2009). The mediating effect of knowledge management on social interaction and innovation performance. International Journal of Manpower, 30(3), 285-301. https://doi.org/10.1108/01437720910956772</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Discretion Within Constraint: Homophily and Structure in a Formal Organization</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Kleinbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">E</forename><surname>Stuart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Tushman</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/orsc.1120.0804</idno>
+		<ptr target="https://doi.org/10.1287/orsc.1120.0804" />
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1316" to="1336" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kleinbaum, A. M., Stuart, T. E., &amp; Tushman, M. L. (2013). Discretion Within Constraint: Homophily and Structure in a Formal Organization. Organization Science, 24(5), 1316- 1336. https://doi.org/10.1287/orsc.1120.0804</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Tacit knowledge acquisition and sharing in a project work context</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">U</forename><surname>Koskinen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pihlanto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Vanharanta</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0263-7863(02)00030-3</idno>
+		<ptr target="https://doi.org/10.1016/S0263-7863(02)00030-3" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Project Management</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="281" to="290" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Koskinen, K. U., Pihlanto, P., &amp; Vanharanta, H. (2003). Tacit knowledge acquisition and sharing in a project work context. International Journal of Project Management, 21(4), 281-290. https://doi.org/10.1016/S0263-7863(02)00030-3</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Gender-based homophily in research: A large-scale study of man-woman collaboration</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kwiek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Roszka</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.joi.2021.101171</idno>
+		<ptr target="https://doi.org/10.1016/j.joi.2021.101171" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Informetrics</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">101171</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Kwiek, M., &amp; Roszka, W. (2021). Gender-based homophily in research: A large-scale study of man-woman collaboration. Journal of Informetrics, 15(3), 101171. https://doi.org/10.1016/j.joi.2021.101171</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Statistical Network Models</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Luke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">A User&apos;s Guide to Network Analysis in R</title>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="163" to="187" />
+		</imprint>
+	</monogr>
+	<note>st ed.</note>
+	<note type="raw_reference">Luke, D. A. (2015). Statistical Network Models. In A User&apos;s Guide to Network Analysis in R (1st ed., pp. 163-187). Springer Cham.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Birds of a Feather: Homophily in Social Networks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mcpherson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Smith-Lovin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Cook</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.soc.27.1.415</idno>
+		<ptr target="https://doi.org/10.1146/annurev.soc.27.1.415" />
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Sociology</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="415" to="444" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">McPherson, M., Smith-Lovin, L., &amp; Cook, J. M. (2001). Birds of a Feather: Homophily in Social Networks. Annual Review of Sociology, 27(1), 415-444. https://doi.org/10.1146/annurev.soc.27.1.415</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The prediction of interpersonal attraction</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Newcomb</surname></persName>
+		</author>
+		<idno type="DOI">10.1037/h0046141</idno>
+		<ptr target="https://doi.org/10.1037/h0046141" />
+	</analytic>
+	<monogr>
+		<title level="j">American Psychologist</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="575" to="586" />
+			<date type="published" when="1956">1956</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Newcomb, T. M. (1956). The prediction of interpersonal attraction. American Psychologist, 11(11), 575-586. https://doi.org/10.1037/h0046141</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Distance Matters</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Olson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Olson</surname></persName>
+		</author>
+		<idno type="DOI">10.1207/S15327051HCI1523_4</idno>
+		<ptr target="https://doi.org/10.1207/S15327051HCI1523_4" />
+	</analytic>
+	<monogr>
+		<title level="j">Human-Computer Interaction</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2-3</biblScope>
+			<biblScope unit="page" from="139" to="178" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Olson, G. M., &amp; Olson, J. S. (2000). Distance Matters. Human-Computer Interaction, 15(2- 3), 139-178. https://doi.org/10.1207/S15327051HCI1523_4</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Spatial Layout and Faceto-Face Interaction in Offices-A Study of the Mechanisms of Spatial Effects on Faceto-Face Interaction</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rashid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kampschroer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wineman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zimring</surname></persName>
+		</author>
+		<idno type="DOI">10.1068/b31123</idno>
+		<ptr target="https://doi.org/10.1068/b31123" />
+	</analytic>
+	<monogr>
+		<title level="j">Environment and Planning B: Planning and Design</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="825" to="844" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rashid, M., Kampschroer, K., Wineman, J., &amp; Zimring, C. (2006). Spatial Layout and Face- to-Face Interaction in Offices-A Study of the Mechanisms of Spatial Effects on Face- to-Face Interaction. Environment and Planning B: Planning and Design, 33(6), 825- 844. https://doi.org/10.1068/b31123</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Space Syntax Theory: Understanding human movement, co-presence and encounters in relation to the spatial structure of workplaces</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sailer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Koutsolampros</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9781003128830-21</idno>
+		<ptr target="https://doi.org/10.1201/9781003128830-21" />
+	</analytic>
+	<monogr>
+		<title level="m">A Handbook of Theories on Designing Alignment Between People and the Office Environment</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="248" to="260" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sailer, K., &amp; Koutsolampros, P. (2021). Space Syntax Theory: Understanding human movement, co-presence and encounters in relation to the spatial structure of workplaces. In A Handbook of Theories on Designing Alignment Between People and the Office Environment (pp. 248-260). CRC Press. https://doi.org/10.1201/9781003128830-21</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Social networks and spatial configuration-How office layouts drive social interaction</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sailer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Mcculloh</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.socnet.2011.05.005</idno>
+		<ptr target="https://doi.org/10.1016/j.socnet.2011.05.005" />
+	</analytic>
+	<monogr>
+		<title level="j">Social Networks</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="47" to="58" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sailer, K., &amp; McCulloh, I. (2012). Social networks and spatial configuration-How office layouts drive social interaction. Social Networks, 34(1), 47-58. https://doi.org/10.1016/j.socnet.2011.05.005</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b22">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sailer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Penn</surname></persName>
+		</author>
+		<title level="m">Spatiality and transpatiality in workplace environments</title>
+		<imprint>
+			<date type="published" when="2009-01">2009. January</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sailer, K., &amp; Penn, A. (2009, January). Spatiality and transpatiality in workplace environments.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Spatial and social configurations in offices</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Steen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Space Syntax</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="121" to="132" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Steen, J. (2009). Spatial and social configurations in offices. The Journal of Space Syntax, 1, 121-132.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Office spatial design attributes, sitting, and face-to-face interactions: Systematic review and research agenda</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sugiyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hadgraft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">K</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Dunstan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chevez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">N</forename><surname>Healy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cerin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Lamontagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Shibata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Oka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Owen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.buildenv.2020.107426</idno>
+		<ptr target="https://doi.org/10.1016/j.buildenv.2020.107426" />
+	</analytic>
+	<monogr>
+		<title level="j">Building and Environment</title>
+		<imprint>
+			<biblScope unit="volume">187</biblScope>
+			<biblScope unit="page">107426</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sugiyama, T., Hadgraft, N., Clark, B. K., Dunstan, D. W., Chevez, A., Healy, G. N., Cerin, E., LaMontagne, A. D., Shibata, A., Oka, K., &amp; Owen, N. (2021). Office spatial design attributes, sitting, and face-to-face interactions: Systematic review and research agenda. Building and Environment, 187, 107426. https://doi.org/10.1016/j.buildenv.2020.107426</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Social network analysis: An overview</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tabassum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">S F</forename><surname>Pereira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Fernandes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gama</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/widm.1256</idno>
+		<ptr target="https://doi.org/10.1002/widm.1256" />
+	</analytic>
+	<monogr>
+		<title level="j">WIREs Data Mining and Knowledge Discovery</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tabassum, S., Pereira, F. S. F., Fernandes, S., &amp; Gama, J. (2018). Social network analysis: An overview. WIREs Data Mining and Knowledge Discovery, 8(5). https://doi.org/10.1002/widm.1256</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b26">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Van Elburg</surname></persName>
+		</author>
+		<ptr target="https://www.cobouw.nl/308211/de-Kantoortuin-Heeft-Afgedaan" />
+		<title level="m">De Nederlandse kantoormarkt in cijfers</title>
+		<imprint>
+			<date type="published" when="2024-04-18">2024. April 18</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Van Elburg, A. (2024, April 18). De Nederlandse kantoormarkt in cijfers. https://www.cobouw.nl/308211/de-Kantoortuin-Heeft-Afgedaan.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b27">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><surname>Van Kappen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Van Bree</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stolwijk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yagafarova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Van Der Horst</surname></persName>
+		</author>
+		<title level="m">Hightechindustrie 2040</title>
+		<imprint>
+			<publisher>TNO</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="1" to="24" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">van Kappen, P., van Bree, T., Stolwijk, C., Yagafarova, A., &amp; van der Horst, T. (2024). Hightechindustrie 2040 (pp. 1-24). TNO.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b28">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">H</forename><surname>Whyte</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1980">1980</date>
+			<publisher>The Social Life of Small Urban Spaces</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Whyte, W. H. (1980). The Social Life of Small Urban Spaces.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Spatial and Social Networks in Organizational Innovation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Wineman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Kabo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">F</forename><surname>Davis</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0013916508314854</idno>
+		<ptr target="https://doi.org/10.1177/0013916508314854" />
+	</analytic>
+	<monogr>
+		<title level="j">Environment and Behavior</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="427" to="442" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wineman, J. D., Kabo, F. W., &amp; Davis, G. F. (2009). Spatial and Social Networks in Organizational Innovation. Environment and Behavior, 41(3), 427-442. https://doi.org/10.1177/0013916508314854</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

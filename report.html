@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Pr. Dr.&nbsp;Daniël Lakens">
+<meta name="author" content="Raphael Merz">
+<meta name="author" content="Dr.&nbsp;Cristian Mesquida">
+
+<title>Supporting Master’s Students and Supervisors with Metacheck — Project Report</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="report_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="report_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="report_files/libs/quarto-html/popper.min.js"></script>
+<script src="report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="report_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="report_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="report_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="report_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#motivation-and-procedure" id="toc-motivation-and-procedure" class="nav-link active" data-scroll-target="#motivation-and-procedure">Motivation and Procedure</a></li>
+  <li><a href="#survey-of-ieis-supervisors" id="toc-survey-of-ieis-supervisors" class="nav-link" data-scroll-target="#survey-of-ieis-supervisors">Survey of IE&amp;IS Supervisors</a>
+  <ul class="collapse">
+  <li><a href="#survey-results" id="toc-survey-results" class="nav-link" data-scroll-target="#survey-results">Survey Results</a></li>
+  </ul></li>
+  <li><a href="#using-metacheck" id="toc-using-metacheck" class="nav-link" data-scroll-target="#using-metacheck">Using Metacheck</a></li>
+  <li><a href="#applying-metacheck-to-masters-theses" id="toc-applying-metacheck-to-masters-theses" class="nav-link" data-scroll-target="#applying-metacheck-to-masters-theses">Applying Metacheck to Master’s Theses</a>
+  <ul class="collapse">
+  <li><a href="#ethics_check-module" id="toc-ethics_check-module" class="nav-link" data-scroll-target="#ethics_check-module"><code>ethics_check</code> module</a></li>
+  <li><a href="#stat_p_nonsig-module" id="toc-stat_p_nonsig-module" class="nav-link" data-scroll-target="#stat_p_nonsig-module"><code>stat_p_nonsig</code> module</a></li>
+  <li><a href="#marginal-module" id="toc-marginal-module" class="nav-link" data-scroll-target="#marginal-module"><code>marginal</code> module</a></li>
+  <li><a href="#stat_effect_size-module" id="toc-stat_effect_size-module" class="nav-link" data-scroll-target="#stat_effect_size-module"><code>stat_effect_size</code> module</a></li>
+  <li><a href="#stat_check-module" id="toc-stat_check-module" class="nav-link" data-scroll-target="#stat_check-module"><code>stat_check</code> module</a></li>
+  <li><a href="#repo_check-module" id="toc-repo_check-module" class="nav-link" data-scroll-target="#repo_check-module"><code>repo_check</code> module</a></li>
+  <li><a href="#power-module" id="toc-power-module" class="nav-link" data-scroll-target="#power-module"><code>power</code> module</a></li>
+  <li><a href="#ref_pubpeer-module" id="toc-ref_pubpeer-module" class="nav-link" data-scroll-target="#ref_pubpeer-module"><code>ref_pubpeer</code> module</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#appendix-a-survey" id="toc-appendix-a-survey" class="nav-link" data-scroll-target="#appendix-a-survey">Appendix A: Survey&nbsp;</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Supporting Master’s Students and Supervisors with Metacheck — Project Report</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Pr. Dr.&nbsp;Daniël Lakens </p>
+             <p>Raphael Merz </p>
+             <p>Dr.&nbsp;Cristian Mesquida </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="motivation-and-procedure" class="level1">
+<h1>Motivation and Procedure</h1>
+<p>The aim of this project was to extend Metacheck, an existing tool for automatically checking research outputs with modules that could be useful to master’s students and their supervisors. Metacheck is a modular, meaning that each module performs a specific type of check. It is available as an <a href="https://www.scienceverse.org/metacheck/">R package</a> and a <a href="https://shiny.ieis.tue.nl/metacheck/">Shiny app</a>. The motivation was that students often make recurring mistakes in areas such as adherence to reporting guidelines, interpretation of <em>p</em>-values or documentation of research practices (e.g., the reporting of a power analysis). Identifying such issues can require substantial time from supervisors, particularly when they need to provide similar feedback repeatedly. Automated checks could therefore help students in identifying and addressing potential issues before submitting their thesis, while simultaneously reducing the burden on supervisors.</p>
+<p>By now, Metacheck has developed into an extensible collection of automated checks for research outputs. Inspired by software development, where checks are used to identify potential problems before software is released, Metacheck screens research outputs (e.g., manuscripts and theses) for potential issues and provides information that can help researchers or students follow best practices. Importantly, these checks are intended to support rather than replace human expertise. For example, a check may identify a misreported statistical test or flag a misinterpreted <em>p</em>-value, but interpreting the result and deciding whether action is necessary remains the responsibility of the researcher or supervisor.</p>
+<p>To better understand which aspects of thesis supervision could benefit from automated checks and how these align with Metacheck’s current modules, we conducted a survey among scientific staff involved in supervising master’s theses in the Department of Industrial Engineering &amp; Innovation Sciences (IE&amp;IS) at TU/e. The results of this survey are presented in the following section.</p>
+</section>
+<section id="survey-of-ieis-supervisors" class="level1">
+<h1>Survey of IE&amp;IS Supervisors</h1>
+<p>The survey was shared in November 2025 with all IE&amp;IS staff members involved in the supervision of master’s theses, with 22 participating. The survey consisted of four open-ended questions addressing (1) the most common types of feedback supervisors provide to master’s students on their theses, (2) which aspects of this feedback they believe could be (partially) automated, (3) which aspects they believe should not be automated, and (4) whether they or their students follow specific reporting guidelines, such as APA. The full survey can be found in Appendix A.</p>
+<section id="survey-results" class="level2">
+<h2 class="anchored" data-anchor-id="survey-results">Survey Results</h2>
+<p>The survey results indicate that supervisors provide feedback on a broad range of aspects of thesis quality, including both formal presentation and substantive content. Commonly mentioned issues included the coherence and narrative flow of the thesis, the connection between literature and the current study, the formulation and derivation of research questions and hypotheses, and the justification of methodological choices. Supervisors also frequently commented on formatting and structure, the quality of literature summaries and discussions, and citation and reference issues. Statistical reporting was another recurring area of feedback, including checking test assumptions, conducting and reporting power analyses, and providing complete information such as test statistics, degrees of freedom, and exact <em>p</em>-values.</p>
+<p>Most respondents agreed that at least some of these aspects could be (partially) automated. Formatting, structure and layout were considered particularly suitable, as were checks of research questions, citations, and references. These aspects can generally be assessed against relatively explicit criteria or conventions. However, respondents also identified several areas that they considered less suitable for automation. These mainly involved tasks requiring content expertise, contextual understanding, or critical thinking, such as evaluating methodological choices, developing research questions, and assessing the substantive quality of a thesis. Opinions differed somewhat regarding the overall “storyline” of a thesis: while some considered this inherently dependent on human judgment, others suggested that large language models (LLMs) could potentially help improve the structure and clarity of a thesis. Respondents also emphasized that feedback should be tailored to the individual student and that automated tools should flag potential issues rather than evaluate or grade the overall quality of a thesis.&nbsp;</p>
+<p>Some respondents questioned the desirability of automated feedback, particularly when using LLMs, and raised concerns about privacy and the costs of developing and maintaining such systems. They emphasized that any automated system should therefore be carefully tested before implementation.</p>
+<p>Finally, most respondents reported using APA guidelines, while a small number mentioned Harvard or guidelines specific to particular conferences or journals. Overall, the results suggest that automation is most promising for checks based on explicit rules or conventions, whereas tasks requiring contextual judgment and content expertise should remain primarily the responsibility of students and supervisors.</p>
+</section>
+</section>
+<section id="using-metacheck" class="level1">
+<h1>Using Metacheck</h1>
+<p>The survey results suggest that that automated checks could complement the existing supervision process. In particular, when supervisors repeatedly provide similar feedback on statistical reporting, citations and references, and the documentation of research practices, automated checks could allow students to detect and address some of these issues independently.</p>
+<p>Metacheck is well suited to this role because its checks are designed as supporting tools rather than automated evaluations. The output of a module does not constitute a judgment of the overall quality of a thesis. Instead, it highlights a potential issue, provides guidance, and leaves the final interpretation and decision to the user.</p>
+<p>Broadly speaking, Metacheck modules can be classified into four categories: <strong>general modules</strong>, <strong>method modules</strong>, <strong>results modules</strong> and <strong>reference modules</strong>. For a detailed description of all modules, readers are referred to the <a href="https://www.scienceverse.org/metacheck_book/">Metacheck guide</a>. First, the <strong>general modules</strong> check for statements related to Open Science practices, including open and code sharing, conflict of interest, ethics and funding.</p>
+<p>Second, the method modules check for preregistrations and the presence and reporting of power analyses.That is, if a power analysis is detected, the corresponding module provides feedback on whether the analysis is fully reported.</p>
+<p>The results modules currently provide a broad collection of checks covering adherence to reporting guidelines, including the reporting of and recomputation of effect sizes and <em>p</em>-values, interpretation of <em>p</em>-values, and best research practices when sharing data and code. Where research outputs are shared in repositories, it can additionally examine the organisation and documentation of data and code, identify potential data-quality and reproducibility problems, and check aspects of compliance with standards for organizing research data.</p>
+<p>Finally, the reference modules can identify inconsistencies in reference information and cross-reference cited literature with databases containing information about retractions, replication attempts, and post-publication peer review (i.e., comments on PubPeer). These checks can be useful to identify potentially problematic references, such as papers for which replication attempts exist but are not cited, or papers with PubPeer comments, which may concern methodlogical issues.</p>
+<p>The current functionality therefore aligns particularly well with the types of feedback that supervisors identified as potentially automatable: checks based on explicit reporting conventions, common statistical practices, citation and reference information, and other relatively well-defined criteria. At the same time, the survey highlighted several areas that are less suitable for automation, such as evaluating the overall quality of a thesis, judging methodological choices, assessing the substantive contribution of the research, or providing highly context-dependent feedback on its storyline. Metacheck does not attempt to replace this type of supervision. Instead, its role is to identify potential issues that can be checked systematically, allowing students to address more routine problems themselves and enabling supervisors to focus their time on feedback that requires expertise, context, and critical judgment.</p>
+<p>Finally, Metacheck can apply multiple modules to a single research output and combine their results into a single report, allowing a thesis and its associated research outputs to be screened across several dimensions at once. This makes it possible to use Metacheck as a first layer of quality control before a supervisor reviews the work in detail. Metacheck can also apply the same set of modules to multiple research outputs simulataneously, allowing supervisors to screen several master’s theses in a single analysis.</p>
+</section>
+<section id="applying-metacheck-to-masters-theses" class="level1">
+<h1>Applying Metacheck to Master’s Theses</h1>
+<p>To illustrate how Metacheck can be applied to master’s theses, we ran the R package <code>metacheck</code> on 10 master’s theses manually downloaded as PDFs from the <a href="https://research.tue.nl/en/studentTheses/">TU/e library portal</a> on 10 August 2026. We searched for master’s theses written in 2025 within the Human-Technology Interaction (HTI) group, which yielded 55 results. We then used the <code>sample()</code> function in R to randomly select 10 unique numbers between 1 and 55. The report was written in Quarto using R, including the <code>metacheck</code>, <code>tidyverse</code> and <code>kableExtra</code> packages. All materials, generated data and code required to reproduce this report can be found on Github.</p>
+<section id="ethics_check-module" class="level2">
+<h2 class="anchored" data-anchor-id="ethics_check-module"><code>ethics_check</code> module</h2>
+<p>The <code>ethics_check</code> module searches a paper for a statement indicating that the research received <strong>ethics approval</strong>, for example from an Institutional Review Board (IRB), a Research Ethics Committee, or an animal-care committee, or that the research was explicitly exempted from or waived of ethics approval. Reporting ethics approval is generally expected for studies involving human or animal participants.</p>
+<p>To illustrate this, we use Thesis 1 and apply the module to identify sentences that may contain an ethics statement. If the module detects an ethics approval statement in a thesis that appears to involve data collection, it returns the following message:</p>
+<blockquote class="blockquote">
+<p><strong>Ethics Approval Check:</strong> All papers that appeared to involve live data collection contained an ethics approval statement.</p>
+</blockquote>
+<p><a href="#tbl-ethics_check" class="quarto-xref">Table&nbsp;1</a> shows the three sentences identified by the module that might refer to an ethics statement. In the first case, the detected sentence is indeed an ethics statement.</p>
+<div class="cell">
+<div id="tbl-ethics_check" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ethics_check-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Potential ethics statements detected by the <code>ethics_check</code> module
+</figcaption>
+<div aria-describedby="tbl-ethics_check-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 15cm;">The study was approved by the TU/e Ethical Review Board (experiment ID 2207), and all participants provided informed consent and received monetary compensation for their participation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 15cm;">After logging in, participants submitted the informed consent form (approved by the TU/e Ethical Review Board) and gave explicit consent to their participation and optionally consented to publicly sharing their recorded data in the Open Science Framework (n.d.).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 15cm;">Experiment Procedure Flowchart Next, participants were shown the informed consent form, which had been approved by the TU/e Ethics Review Board.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="stat_p_nonsig-module" class="level2">
+<h2 class="anchored" data-anchor-id="stat_p_nonsig-module"><code>stat_p_nonsig</code> module</h2>
+<p>The <code>stat_p_nonsig</code> module finds every non-significant <em>p</em>-value (<em>p</em> <span class="math inline">\(\geq\)</span>$\geq$ .05) so a reader can check whether the surrounding text interprets it correctly. A common error is to treat a non-significant result as evidence that there is no effect (“there was no difference between groups, <em>p</em> = .27”), when a non-significant result is simply inconclusive.</p>
+<p><a href="#tbl-stat_p_nonsig" class="quarto-xref">Table&nbsp;2</a> shows the first five non-significant <em>p</em>-values detected by the module, along with the sentence in which each <em>p</em>-value appears. This allows users to assess whether the <em>p</em>-value may have been misinterpreted. In this case, none of the sentences include a statement indicating that there was no difference.</p>
+<div class="cell">
+<div id="tbl-stat_p_nonsig" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stat_p_nonsig-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Non-significant <em>p</em>-values detected by the <code>stat_p_nonsig</code> module
+</figcaption>
+<div aria-describedby="tbl-stat_p_nonsig-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">expanded</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 2cm;">p = .924</td>
+<td style="text-align: left; width: 13cm;">The test showed that individual differences (F(31, 62) = 10.37, p &lt; .001) was a significant predictor while XAI condition (F(2, 62) = 0.08, p = .924) was not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 2cm;">p = .421</td>
+<td style="text-align: left; width: 13cm;">No significant effect was found for condition as predictor, χ²(1) = 0.649, p = .421 (corrected for ties).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 2cm;">p = .088</td>
+<td style="text-align: left; width: 13cm;">The overall model was almost significant with Wald χ²(12) = 19.01, p = .088.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 2cm;">p =0.1033</td>
+<td style="text-align: left; width: 13cm;">■ CS Correlation: r = 0.982, p = 0.0184 ■ Gold Correlation: r = 0.897, p =0.1033</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 2cm;">p = 0.1033</td>
+<td style="text-align: left; width: 13cm;">Gold accumulation also showed a strong positive correlation (r = 0.897), though the result was not statistically significant (p = 0.1033), likely due to the small sample size (n = 4 matchups) and the limitations of the gold estimation model.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="marginal-module" class="level2">
+<h2 class="anchored" data-anchor-id="marginal-module"><code>marginal</code> module</h2>
+<p>The <code>marginal</code> module lists sentences describing an effect as “marginally significant” (or a related phrase). Describing a non-significant result as “marginally significant”, “approaching significance”, or “trending toward significance” is a common way to misinterpret a non-significant <em>p</em>-value. The module detects these sentences so the reader can judge each case in context.</p>
+<blockquote class="blockquote">
+<p><strong>Marginal Significance:</strong> You described 5 effect with terms related to ‘marginally significant’ If <em>p</em> values above 0.05 are interpreted as an effect, you inflate the alpha level, and increase the Type 1 error rate. If a <em>p</em> value is higher than the prespecified alpha level, it should be interpreted as a non-significant result.</p>
+</blockquote>
+<p><a href="#tbl-marginal" class="quarto-xref">Table&nbsp;3</a> shows the <em>p</em>-values that were detected as being interpreted as “marginally significant” across the ten theses in the Results section.</p>
+<div class="cell">
+<div id="tbl-marginal" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: <em>P</em>-values detected as being interpreted as marginally significant by the <code>marginal</code> module
+</figcaption>
+<div aria-describedby="tbl-marginal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">section_type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 12cm;">The overall model was almost significant with Wald χ²(12) = 19.01, p = .088.</td>
+<td style="text-align: left; width: 3cm;">results</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 12cm;">Gender similarity is marginally significant in predicting collaborated publication patterns (p = 0.054).</td>
+<td style="text-align: left; width: 3cm;">results</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 12cm;">Turning back to the results in Table 13, gender is significant in the supervision network (p = 0.004) and marginally significant in the publication network (p = 0.054), but entirely nonsignificant for the communication network (p = 0.998).</td>
+<td style="text-align: left; width: 3cm;">results</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="stat_effect_size-module" class="level2">
+<h2 class="anchored" data-anchor-id="stat_effect_size-module"><code>stat_effect_size</code> module</h2>
+<p>The <code>stat_effect_size</code> module checks whether effect sizes are reported for <em>t</em>-tests and <em>F</em>-tests. Reporting a standardized effect size alongside a test is recommended by the APA Journal Article Reporting Standards, and makes the result more readily usable in meta-analyses.</p>
+<p>Running the <code>stat_effect_size</code> module on the ten theses, returns the following warning:</p>
+<blockquote class="blockquote">
+<p><strong>Effect Sizes in t-tests and F-tests</strong>: We found 26 t-tests and/or F-tests where effect sizes are not reported. Check these tests in the table below, and consider adding effect sizes</p>
+</blockquote>
+<p><a href="#tbl-stat_effect_size" class="quarto-xref">Table&nbsp;4</a> shows the statistical tests detected by the module in Thesis 1, including the extracted test, the effect size and text from which it was extracted. For all five statistical tests, no standardized effect size was reported as indicated by the <code>NA</code> values in the <code>es</code> column.</p>
+<div class="cell">
+<div id="tbl-stat_effect_size" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stat_effect_size-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Statistical tests detected by the <code>stat_effect_size</code> module
+</figcaption>
+<div aria-describedby="tbl-stat_effect_size-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">test_text</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">es</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">F(31, 62) = 10.37</td>
+<td style="text-align: left; width: 1cm;">NA</td>
+<td style="text-align: left; width: 10cm;">The test showed that individual differences (F(31, 62) = 10.37, p &lt; .001) was a significant predictor while XAI condition (F(2, 62) = 0.08, p = .924) was not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">F(2, 62) = 0.08</td>
+<td style="text-align: left; width: 1cm;">NA</td>
+<td style="text-align: left; width: 10cm;">The test showed that individual differences (F(31, 62) = 10.37, p &lt; .001) was a significant predictor while XAI condition (F(2, 62) = 0.08, p = .924) was not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">F(31, 62) = 8.57</td>
+<td style="text-align: left; width: 1cm;">NA</td>
+<td style="text-align: left; width: 10cm;">The test showed that both individual differences (F(31, 62) = 8.57, p = .009) and XAI condition (F(1, 62) = 7.55, p &lt; .001) are significant predictors.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">F(1, 62) = 7.55</td>
+<td style="text-align: left; width: 1cm;">NA</td>
+<td style="text-align: left; width: 10cm;">The test showed that both individual differences (F(31, 62) = 8.57, p = .009) and XAI condition (F(1, 62) = 7.55, p &lt; .001) are significant predictors.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>The <code>stat_effect_size</code> module also checks whether the reported effect size is coherent with the reported test statistic and degrees of freedom. The module recomputes what the effect size should be from the test statistic and degrees of freedom. It checks Cohen’s <em>d</em> and <em>g</em> for <em>t</em>-tests, and <span class="math inline">\(\eta_p^2\)</span> and <span class="math inline">\(\omega_p^2\)</span> for <em>F</em>-tests. <a href="#tbl-stat_effect_size_coherence" class="quarto-xref">Table&nbsp;5</a> shows the first two detected <em>F</em>-tests and the recomputed effect size in Thesis 6. If no standardized effect size is detected, then the <code>es</code> column appears as <code>NA</code>.</p>
+<div class="cell">
+<div id="tbl-stat_effect_size_coherence" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stat_effect_size_coherence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5: Coherence of standardized effect sizes reported along with an <em>F</em>-test by the <code>stat_effect_size</code> module
+</figcaption>
+<div aria-describedby="tbl-stat_effect_size_coherence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">test_text</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">es</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">eta_implied_partial</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">eta_coherence_note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">F(7, 21) = 5.93</td>
+<td style="text-align: left; width: 2cm;">NA</td>
+<td style="text-align: left; width: 4cm;">0.664053751399776</td>
+<td style="text-align: left; width: 5cm;">No parseable eta-squared effect size found.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">F(1, 27) = 34.35</td>
+<td style="text-align: left; width: 2cm;">η² = .56</td>
+<td style="text-align: left; width: 4cm;">0.559902200488998</td>
+<td style="text-align: left; width: 5cm;">Eta-squared reported; cannot be reconstructed from F and dfs in factorial or repeated-measures designs.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="stat_check-module" class="level2">
+<h2 class="anchored" data-anchor-id="stat_check-module"><code>stat_check</code> module</h2>
+<p>The <code>stat_check</code> module recomputes the <em>p</em>-value from each reported test statistic and its degrees of freedom. It flags cases where the reported <em>p</em>-value is inconsistent with the test statistic and degrees of freedom and, more seriously, where the inconsistency changes the statistical significance decision (i.e., a decision error, such as claiming significance when the recomputed <em>p</em>-value is not significant). The <code>stat_check</code> module return results only for <em>t</em>-tests and <em>F</em>-tests and detects only statistics reported in APA format, which is commonly used in psychology journals. <a href="#tbl-stat_check" class="quarto-xref">Table&nbsp;6</a> shows the five <em>p</em>-values identified as reporting errors by the module after recomputation.</p>
+<div class="cell">
+<div id="tbl-stat_check" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stat_check-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6: Errors in the reporting of <em>p</em>-values detected by <code>stat_check</code> module
+</figcaption>
+<div aria-describedby="tbl-stat_check-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">test_type</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">reported_p</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">computed_p</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">error</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">decision_error</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 2cm;">F</td>
+<td style="text-align: right; width: 2cm;">0.009</td>
+<td style="text-align: right; width: 2cm;">0.0000000</td>
+<td style="text-align: left; width: 2cm;">TRUE</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 2cm;">F</td>
+<td style="text-align: right; width: 2cm;">0.001</td>
+<td style="text-align: right; width: 2cm;">0.0078480</td>
+<td style="text-align: left; width: 2cm;">TRUE</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 2cm;">t</td>
+<td style="text-align: right; width: 2cm;">0.000</td>
+<td style="text-align: right; width: 2cm;">0.0000064</td>
+<td style="text-align: left; width: 2cm;">TRUE</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 2cm;">t</td>
+<td style="text-align: right; width: 2cm;">0.023</td>
+<td style="text-align: right; width: 2cm;">0.0273977</td>
+<td style="text-align: left; width: 2cm;">TRUE</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 2cm;">t</td>
+<td style="text-align: right; width: 2cm;">0.015</td>
+<td style="text-align: right; width: 2cm;">0.0191509</td>
+<td style="text-align: left; width: 2cm;">TRUE</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="repo_check-module" class="level2">
+<h2 class="anchored" data-anchor-id="repo_check-module"><code>repo_check</code> module</h2>
+<p>The <code>repo_check</code> module identifies links to research repositories in research outputs including, the Open Science Framework (OSF), GitHub, ResearchBox, PsychArchives, and Zenodo. It then retrieves the list of files in each and reports what has been shared. <a href="#tbl-repo_check_summary" class="quarto-xref">Table&nbsp;7</a> displays the summary of the modules, including the number of repositories, files, data files, code files, readme files and naming issues. We can see that two theses reported links to repositories.</p>
+<div class="cell">
+<div id="tbl-repo_check_summary" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-repo_check_summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7: Summary of the <code>repo_check</code> module
+</figcaption>
+<div aria-describedby="tbl-repo_check_summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 17%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">paper_id</th>
+<th style="text-align: right;">repo_n</th>
+<th style="text-align: right;">files_n</th>
+<th style="text-align: right;">files_data</th>
+<th style="text-align: right;">files_code</th>
+<th style="text-align: right;">files_readme</th>
+<th style="text-align: right;">naming_issues</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7035</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>The module also detects naming issues in repository files, such as spaces in file names, which can cause problems when sharing code and data. To illustrate some of the issues that can be detected in file naming, we use Thesis 3, for which the module detected naming issues, as shown in <a href="#tbl-repo_check_summary" class="quarto-xref">Table&nbsp;7</a>. <a href="#tbl-repo_check_naming" class="quarto-xref">Table&nbsp;8</a> shows the first five naming issues detected by the module in Thesis 3, along with the type of issue and an explanation of each issue.</p>
+<div class="cell">
+<div id="tbl-repo_check_naming" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-repo_check_naming-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;8: Naming issues detected by the <code>repo_check</code> module in Thesis 3
+</figcaption>
+<div aria-describedby="tbl-repo_check_naming-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">file_name</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">rule</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">detail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 6cm;">Train test splits.ipynb</td>
+<td style="text-align: left; width: 3cm;">spaces</td>
+<td style="text-align: left; width: 5cm;">contains a space</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 6cm;">Pubmed data.csv</td>
+<td style="text-align: left; width: 3cm;">spaces</td>
+<td style="text-align: left; width: 5cm;">contains a space</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 6cm;">ssc_test (1).csv</td>
+<td style="text-align: left; width: 3cm;">spaces</td>
+<td style="text-align: left; width: 5cm;">contains a space</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 6cm;">ssc_test (1).csv</td>
+<td style="text-align: left; width: 3cm;">special-characters</td>
+<td style="text-align: left; width: 5cm;">contains a character other than letters, digits, underscore, or dash</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 6cm;">3-classes-bert-finetuning (1).ipynb</td>
+<td style="text-align: left; width: 3cm;">spaces</td>
+<td style="text-align: left; width: 5cm;">contains a space</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="power-module" class="level2">
+<h2 class="anchored" data-anchor-id="power-module"><code>power</code> module</h2>
+<p>The `power` module uses regular expressions to identify sentences describing statistical power analyses and classifies each as a priori, sensitivity, or post-hoc. When collecting data, best practice is to conduct an a priori power analysis to ensure that study design has adequate statistical power to detect the effect size of interest.</p>
+<p><a href="#tbl-power" class="quarto-xref">Table&nbsp;9</a> shows the three power analyses detected by the module, including the extracted sentence, the section were it was detected and the type of power analysis assigned. Two could not be classified (i.e., were labelled “unknown”) because they did not contain terms such as “a priori”, “sensitivity” or “post-hoc” while one was classified as “a priori”. It is worth noting that the third power analysis is not a power analysis but rather a statement about how small sample sizes may result in inadequate statistical power.</p>
+<div class="cell">
+<div id="tbl-power" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-power-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;9: Power analyses detected by the <code>power</code> module
+</figcaption>
+<div aria-describedby="tbl-power-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">section_type</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">power_type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 9cm;">Participants were recruited through a participant database and from the experimenter's network. An a priori power analysis was conducted to determine the required sample. Earlier work by Nazaretsky et al. (2024) examined the effect of feedback source (human vs. AI) on source credibility, reporting a large effect size (d = 0.88). To detect an effect size of Cohen's d = 0.88, a two-tailed Wilcoxon signed-rank test (matched pairs) was used, with 𝞪 error = 0.05 and power = 0.9. This resulted in a required sample size of N = 17. However, to allow for additional analyses involving multiple within-subject measurements, a repeated-measures ANOVA (within factors) was also considered (f = 0.40, 𝞪 error = 0.05, power = 0.9, two groups, five measurements). This resulted in a required sample size of N =28.</td>
+<td style="text-align: left; width: 3cm;">method</td>
+<td style="text-align: left; width: 2cm;">apriori</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 9cm;">The sample size was calculated based on expected differences in the main dependent variable of interest: self-reported trust. A realistic and meaningful difference between any two conditions would be 0.5 points on a 7-point Likert scale and a 1.53 points standard deviation (Brdnik et al., 2025). Using the Superpower package in R, a sample size of 25 is calculated to achieve a power of 90% (see Appendix A). Five extra participants were added to account for unforeseen issues. Therefore, the recruitment goal for this experiment was 30 participants.</td>
+<td style="text-align: left; width: 3cm;">method</td>
+<td style="text-align: left; width: 2cm;">unknown</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 9cm;">Another notable limitation is the relatively small sample size, which may affect the generalizability of the findings. Currently, we have only collected about 29,000 match-up samples from the Riot API and 5 analyzed video clips for different levels of players with different combinations of melee and ranged champions. Small sample sizes can limit the statistical power of a study and increase the margin of error, potentially leading to less reliable conclusions.</td>
+<td style="text-align: left; width: 3cm;">discussion</td>
+<td style="text-align: left; width: 2cm;">unknown</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>To assess the completeness of power analysis reporting, we rely on an LLM to extract and classify information from reported power analysis statements. This can be enabled by setting <code>llm_use(TRUE)</code>. The LLM is also used to classify potential power statements that do not contain terms such as “a priori,” “sensitivity,” or “post-hoc.” When enabled, the module reads each power analysis statement and extracts structured information, including the statistical test, planned sample size, alpha level, desired power, and effect size. It then uses this information to assess whether the power analysis is fully reported.</p>
+<div id="tbl-power_llm" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-power_llm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10: Classification and completeness of power analyses by the <code>power</code> module using LLM functionality
+</figcaption>
+<div aria-describedby="tbl-power_llm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+
+</div>
+</div>
+</figure>
+</div>
+</section>
+<section id="ref_pubpeer-module" class="level2">
+<h2 class="anchored" data-anchor-id="ref_pubpeer-module"><code>ref_pubpeer</code> module</h2>
+<p>The <code>ref_pubpeer</code> module cross-references the cited references against <a href="https://pubpeer.com">PubPeer</a>, a platform for post-publication peer review. The module reports which cited references have PubPeer comments, how many, and a link, so readers can read the discussion and judge its relevance themselves. Comments can range from minor requests for clarification to serious concerns about the research. Therefore, identifying cited articles with potentially serious concerns raised on PubPeer can provide useful information for students and supervisors to consider when evaluating the cited literature. <a href="#tbl-ref_pubpeer" class="quarto-xref">Table&nbsp;11</a> shows the cited articles with PubPeer comments detected by the module, along with their corresponding DOIs and links to the PubPeer discussions.</p>
+<div class="cell">
+<div id="tbl-ref_pubpeer" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ref_pubpeer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;11: PubPeer comments on cited articles detected using the <code>ref_pubpeer module</code>
+</figcaption>
+<div aria-describedby="tbl-ref_pubpeer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">doi</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">total_comments</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">10.1038/s41579-022-00846-2</td>
+<td style="text-align: right; width: 3cm;">1</td>
+<td style="text-align: left; width: 8cm;">https://pubpeer.com/publications/51B4F00847F3BDC740ED6B2DA01792</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">10.3390/app12094429</td>
+<td style="text-align: right; width: 3cm;">2</td>
+<td style="text-align: left; width: 8cm;">https://pubpeer.com/publications/2A82DBF15C686901A71FD31FA9F880</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">10.1136/bmj.g7015</td>
+<td style="text-align: right; width: 3cm;">1</td>
+<td style="text-align: left; width: 8cm;">https://pubpeer.com/publications/BE2197AED4AB91C2338FF0DA99B962</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<p>Overall, these examples illustrate how Metacheck can be used to identify potential issues in master’s theses from both the student’s perspective, as a tool for identifying and addressing common issues before submission, and the supervisor’s perspective, as a first layer of quality control that can help identify areas requiring further attention. However, automated tools such as Metacheck are not infallible and may produce both false positives and false negatives. The results should therefore be interpreted as indicators of potential issues rather than definitive judgments. Ultimately, it remains the responsibility of the student or supervisor to review the flagged issues, assess their relevance in context, and determine whether any action is required.</p>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="appendix-a-survey" class="level1">
+<h1>Appendix A: Survey&nbsp;</h1>
+<p><strong>Survey on Automated Feedback for Master Theses</strong>&nbsp;</p>
+<p>Dear participant,</p>
+<p><br>
+We are developing new modules for a tool designed to help master students and their supervisors check for common mistakes and improve adherence to best research practices in theses. This tool currently detects issues such as missing sample size justifications, incorrect statistical interpretations of non-significant p-values, and references to retracted papers.&nbsp;</p>
+<p>This survey aims to identify common feedback provided by supervisors on master’s theses, focusing on recurring mistakes related to structural aspects, research methods and statistical reporting, and citations. Additionally, we also&nbsp;seek&nbsp;to understand which aspects of feedback supervisors believe could be automated to better assist students in the process. </p>
+<p>Examples of these automated checks include:</p>
+<ul>
+<li>verifying the presence/absence of section headers;</li>
+<li>analyzing the number of references and their citation frequency;</li>
+<li>and checking whether tables and figures are referenced in the main text. &nbsp;</li>
+</ul>
+<p>To develop these new modules, we are exploring different approaches, including rule-based text searches (e.g., identifying specific phrases indicating common mistakes) and using large language models (LLMs) to detect issues and provide automated suggestions. Note that we only use LLM and API providers with high data security standards, ensuring that any data processed by the tool will not be shared with third parties or used for model training.</p>
+<p>Your input will help shape the development of this tool, ensuring that it addresses real challenges faced by students and supervisors. The survey should take approximately  <strong>5 minutes</strong>  to complete. </p>
+<p>Thank you for your time and insights!</p>
+<p>Q1: What are some of the most common types of feedback you provide to master students on their theses? Please focus on recurring issues related to the structure of the master thesis (e.g., missing headings), research methods (e.g., not reporting statistical tests, poor reporting practices (not reporting exact <em>p</em>-values), citations (missing reference), or other structural aspects.</p>
+<p>Q2: Are there any aspects of the feedback process that you think could be (partially) automated?</p>
+<p>Q3:&nbsp;Are there any aspects of thesis feedback that you believe should not be automated?</p>
+<p>Q4: Do you or your students follow any field-specific reporting guidelines when writing/critiquing&nbsp;the thesis?  For instance, social scientists and psychologists often use the American Psychological Association (APA) guidelines to format manuscripts and report results.&nbsp;</p>
+<p>Q5: Is there anything else you would like to share with us?</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
