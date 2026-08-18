@@ -379,6 +379,8 @@ To assess the completeness of power analysis reporting, we rely on an LLM to ext
 #| eval: FALSE
 #| echo: FALSE
 
+# TODO CM: When running the below code I get an error that my API is invalid. I have it in my r environment and have used it before so not sure what is triggering the error.
+
 # Enables LLM support
 llm_use(TRUE)
 
