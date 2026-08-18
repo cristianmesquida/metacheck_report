@@ -52,7 +52,7 @@ Finally, Metacheck can apply multiple modules to a single research output and co
 
 # Applying Metacheck to Master’s Theses
 
-To illustrate how Metacheck can be applied to master’s theses, we ran the R package `metacheck` on 10 master’s theses manually downloaded as PDFs from the [TU/e library portal](https://research.tue.nl/en/studentTheses/) on 10 August 2026. We searched for master’s theses written in 2025 within the Human-Technology Interaction (HTI) group, which yielded 55 results. We then used the `sample()` function in R to randomly select 10 unique numbers between 1 and 55. The report was written in Quarto using R, including the `metacheck`, `tidyverse` and `kableExtra` packages. All materials, generated data and code required to reproduce this report can be found on Github.
+To illustrate how Metacheck can be applied to master’s theses, we ran the R package `metacheck` on 10 master’s theses manually downloaded as PDFs from the [TU/e library portal](https://research.tue.nl/en/studentTheses/) on 10 August 2026. We searched for master’s theses written in 2025 within the Human-Technology Interaction (HTI) group, which yielded 55 results. We then used the `sample()` function in R to randomly select 10 unique numbers between 1 and 55. The report was written in Quarto using R, including the `metacheck`, `tidyverse` and `kableExtra` packages. All materials, generated data and code required to reproduce this report can be found on the [project's Github repository](https://github.com/cristianmesquida/metacheck_report).
 
 ```{r}
 #| echo: FALSE
