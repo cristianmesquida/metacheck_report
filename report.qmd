@@ -140,7 +140,7 @@ To illustrate how Metacheck can be applied to master’s theses, we applied sele
 The report was written in Quarto using R, including the `metacheck`, `tidyverse` and `kableExtra` packages. All materials, generated data and code required to reproduce this report can be found in the [project's Github repository](https://github.com/cristianmesquida/metacheck_report).
 
 ::: callout-tip
-Although the analyses in this report were conducted the R `metacheck` package, the most convenient way for supervisors and students to use Metacheck might be through its [Shiny app](https://shiny.ieis.tue.nl/metacheck/) which is hosted on the TU/e servers. Through it, users can run all Metacheck modules at once and generates a user-friendly [report](https://www.scienceverse.org/metacheck/report-example.html) summarizing the results.
+Although the analyses in this report were conducted with the R `metacheck` package, the most convenient way for supervisors and students to use Metacheck might be through its [Shiny app](https://shiny.ieis.tue.nl/metacheck/) which is hosted on the TU/e servers. Through it, users can run all Metacheck modules at once and generate a user-friendly [report](https://www.scienceverse.org/metacheck/report-example.html) summarizing the results.
 :::
 
 ```{r}
