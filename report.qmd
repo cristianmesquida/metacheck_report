@@ -38,7 +38,7 @@ The survey results suggest that automated checks could complement the existing s
 
 Metacheck is well suited to this role because its checks are designed as supporting tools rather than automated evaluations. The output of a module does not constitute a judgment of the overall quality of a thesis. Instead, it highlights a potential issue, provides guidance, and leaves the final interpretation and decision to the user.
 
-Broadly speaking, Metacheck modules can be classified into four categories: **general modules**, **method modules**, **results modules** and **reference modules**. For a detailed description of all modules, readers are referred to the [Metacheck guide](https://www.scienceverse.org/metacheck_book/). First, the **general modules** check for statements related to Open Science practices, including open and code sharing, conflict of interest, ethics and funding.
+Broadly speaking, Metacheck modules can be classified into four categories: **general modules**, **method modules**, **results modules** and **reference modules**. For a detailed description of all modules, readers are referred to the [Metacheck documentation](https://www.scienceverse.org/metacheck_book/). First, the **general modules** check for statements related to Open Science practices, including open and code sharing, conflict of interest, ethics and funding.
 
 Second, the method modules check for preregistrations and the presence and reporting of power analyses. That is, if a power analysis is detected, the corresponding module provides feedback on whether the analysis is fully reported.
 
@@ -369,30 +369,33 @@ power <- module_run(theses, "power")
 # Display results as a table
 power$table |> 
   select(
-    text,
-    section_type,
+    paper_id,
+    text,,
     power_type
   ) |> 
   kable() |> 
-  column_spec(1, width = "9cm") |> 
-  column_spec(2, width = "3cm") |> 
+  column_spec(1, width = "1cm") |> 
+  column_spec(2, width = "9cm") |> 
   column_spec(3, width = "2cm")
 ```
 
-To assess the completeness of power analysis reporting, we rely on an LLM to extract and classify information from reported power analysis statements. This can be enabled by setting `llm_use(TRUE)`. The LLM is also used to classify potential power statements that do not contain terms such as “a priori”, “sensitivity” or “post-hoc”. When enabled, the module reads each power analysis statement and extracts structured information, including the statistical test, planned sample size, alpha level, desired power, and effect size. It then uses this information to assess whether the power analysis is fully reported.
+To assess the completeness of power analysis reporting, we use an LLM to extract and classify information from reported power analysis statements. The LLM is also used to identify potential power analysis statements that do not contain terms such as “a priori”, “sensitivity”, or “post-hoc”. When enabled, the module processes each power analysis statement and extracts structured information, including the statistical test, planned sample size, alpha level, desired power, and effect size. This information is then used to assess whether the power analysis is fully reported.
+
+The LLM functionality can be enabled using `llm_use(TRUE)`. For this report, we used the local Ollama model `qwen2.5:3b`, specified with `llm_model("ollama/qwen2.5:3b")` after downloading the model. For further information on how to run a model locally, see the [Metacheck documentation](https://www.scienceverse.org/metacheck_book/). To demonstrate the LLM functionality of the `power` module, we applied it to Thesis 1, which reported a power analysis as shown in @tbl-power.
+
+@tbl-power_llm shows the components extracted and classified by the LLM. It also includes the `complete` table which represents whether all components of the power analysis were reported. In this example, the LLM failed to detect the sample size of 25 reported in the power analysis statement and incorrectly classified the effect size of 0.5 as unstandardized. However, it correctly detected the effect size, desired power, and software, as well as identifying missing information such as the statistical test and alpha level. Although the LLM can be useful for assessing the completeness of power analyses, users should always verify the results before drawing conclusions.
+
+<!-- TODO CM & DL: The LLM did not do very well. Shall we try a more powerful module? Should we also say anything about classifying the power analysis as posthoc?-->
 
 ```{r}
 #| eval: FALSE
 #| echo: FALSE
 
-# TODO CM: When running the below code I get the error that the model does not exists. The model `llama-3.1-8b-instant` does not exist or you do not have access to it. Provider says: The model `llama-3.1-8b-instant` does not exist or you do not have access to it.
-
 # Enables LLM support
 llm_use(TRUE)
 
 # Specify model
-llm_model("groq") 
-llm_model_list()
+llm_model("ollama/qwen2.5:3b") 
 
 # Run power module with LLM support
 res_llm_power <- module_run(theses, "power")
@@ -402,7 +405,6 @@ saveRDS(res_llm_power, "results/res_llm_power.RDS")
 ```
 
 ```{r}
-#| eval: FALSE
 #| echo: FALSE
 #| label: tbl-power_llm
 #| tbl-cap: "Classification and completeness of power analyses by the `power` module using LLM functionality"
@@ -411,7 +413,21 @@ saveRDS(res_llm_power, "results/res_llm_power.RDS")
 res_llm_power <- readRDS("results/res_llm_power.RDS")
 
 # Display results as a table
-res_llm_power$table
+res_llm_power$table[4, ] |> 
+  select(
+    text, 
+    power_type, 
+    statistical_test, 
+    sample_size, 
+    alpha_level, 
+    power, 
+    effect_size, 
+    effect_size_metric, 
+    software, 
+    complete
+    ) |> 
+kable() |> 
+  column_spec(1, width = "5cm")
 ```
 
 ## `ref_pubpeer` module

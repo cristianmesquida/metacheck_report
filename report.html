@@ -651,25 +651,25 @@ Table&nbsp;9: Power analyses detected by the <code>power</code> module
 <table class="cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">paper_id</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">section_type</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">power_type</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left; width: 1cm;">6</td>
 <td style="text-align: left; width: 9cm;">Participants were recruited through a participant database and from the experimenter's network. An a priori power analysis was conducted to determine the required sample. Earlier work by Nazaretsky et al. (2024) examined the effect of feedback source (human vs. AI) on source credibility, reporting a large effect size (d = 0.88). To detect an effect size of Cohen's d = 0.88, a two-tailed Wilcoxon signed-rank test (matched pairs) was used, with 𝞪 error = 0.05 and power = 0.9. This resulted in a required sample size of N = 17. However, to allow for additional analyses involving multiple within-subject measurements, a repeated-measures ANOVA (within factors) was also considered (f = 0.40, 𝞪 error = 0.05, power = 0.9, two groups, five measurements). This resulted in a required sample size of N =28.</td>
-<td style="text-align: left; width: 3cm;">method</td>
 <td style="text-align: left; width: 2cm;">apriori</td>
 </tr>
 <tr class="even">
+<td style="text-align: left; width: 1cm;">1</td>
 <td style="text-align: left; width: 9cm;">The sample size was calculated based on expected differences in the main dependent variable of interest: self-reported trust. A realistic and meaningful difference between any two conditions would be 0.5 points on a 7-point Likert scale and a 1.53 points standard deviation (Brdnik et al., 2025). Using the Superpower package in R, a sample size of 25 is calculated to achieve a power of 90% (see Appendix A). Five extra participants were added to account for unforeseen issues. Therefore, the recruitment goal for this experiment was 30 participants.</td>
-<td style="text-align: left; width: 3cm;">method</td>
 <td style="text-align: left; width: 2cm;">unknown</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left; width: 1cm;">2</td>
 <td style="text-align: left; width: 9cm;">Another notable limitation is the relatively small sample size, which may affect the generalizability of the findings. Currently, we have only collected about 29,000 match-up samples from the Riot API and 5 analyzed video clips for different levels of players with different combinations of melee and ranged champions. Small sample sizes can limit the statistical power of a study and increase the margin of error, potentially leading to less reliable conclusions.</td>
-<td style="text-align: left; width: 3cm;">discussion</td>
 <td style="text-align: left; width: 2cm;">unknown</td>
 </tr>
 </tbody>
@@ -679,18 +679,52 @@ Table&nbsp;9: Power analyses detected by the <code>power</code> module
 </figure>
 </div>
 </div>
-<p>To assess the completeness of power analysis reporting, we rely on an LLM to extract and classify information from reported power analysis statements. This can be enabled by setting <code>llm_use(TRUE)</code>. The LLM is also used to classify potential power statements that do not contain terms such as “a priori”, “sensitivity” or “post-hoc”. When enabled, the module reads each power analysis statement and extracts structured information, including the statistical test, planned sample size, alpha level, desired power, and effect size. It then uses this information to assess whether the power analysis is fully reported.</p>
+<p>To assess the completeness of power analysis reporting, we use an LLM to extract and classify information from reported power analysis statements. The LLM is also used to identify potential power analysis statements that do not contain terms such as “a priori”, “sensitivity”, or “post-hoc”. When enabled, the module processes each power analysis statement and extracts structured information, including the statistical test, planned sample size, alpha level, desired power, and effect size. This information is then used to assess whether the power analysis is fully reported.</p>
+<p>The LLM functionality can be enabled using <code>llm_use(TRUE)</code>. For this report, we used the local Ollama model <code>qwen2.5:3b</code>, specified with <code>llm_model("ollama/qwen2.5:3b")</code> after downloading the model. To demonstrate the LLM functionality of the <code>power</code> module, we applied it to Thesis 1, which reported a power analysis as shown in <a href="#tbl-power" class="quarto-xref">Table&nbsp;9</a>.</p>
+<p><a href="#tbl-power_llm" class="quarto-xref">Table&nbsp;10</a> shows the components extracted and classified by the LLM. It also includes the <code>complete</code> table which represents whether all components of the power analysis were reported. In this example, the LLM failed to detect the sample size of 25 reported in the power analysis statement and incorrectly classified the effect size of 0.5 as unstandardized. However, it correctly detected the effect size, desired power, and software, as well as identifying missing information such as the statistical test and alpha level. Although the LLM can be useful for assessing the completeness of power analyses, users should always verify the results before drawing conclusions.</p>
+<!-- TODO CM & DL: The LLM did not do very well. Shall we try a more powerful module? Should we also say anything about classifying the power analysis as posthoc?-->
+<div class="cell">
 <div id="tbl-power_llm" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-power_llm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;10: Classification and completeness of power analyses by the <code>power</code> module using LLM functionality
 </figcaption>
 <div aria-describedby="tbl-power_llm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">power_type</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">statistical_test</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">sample_size</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">alpha_level</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">power</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">effect_size</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">effect_size_metric</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">software</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">complete</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 5cm;">The sample size was calculated based on expected differences in the main dependent variable of interest: self-reported trust. A realistic and meaningful difference between any two conditions would be 0.5 points on a 7-point Likert scale and a 1.53 points standard deviation (Brdnik et al., 2025). Using the Superpower package in R, a sample size of 25 is calculated to achieve a power of 90% (see Appendix A). Five extra participants were added to account for unforeseen issues. Therefore, the recruitment goal for this experiment was 30 participants.</td>
+<td style="text-align: left;">posthoc</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Superpower</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </figure>
+</div>
 </div>
 </section>
 <section id="ref_pubpeer-module" class="level2">

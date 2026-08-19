@@ -8,13 +8,12 @@
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Europe/Amsterdam
- date     2026-08-18
+ date     2026-08-19
  pandoc   3.8.3 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/aarch64/ (via rmarkdown)
  quarto   1.9.38 @ /usr/local/bin/quarto
 
 ─ Packages ───────────────────────────────────────────────────────────────────
  package      * version date (UTC) lib source
- callr          3.7.6   2024-03-25 [1] CRAN (R 4.5.0)
  cli            3.6.6   2026-04-09 [1] CRAN (R 4.5.2)
  coro           1.1.0   2024-11-05 [1] CRAN (R 4.5.0)
  crayon         1.5.3   2024-06-20 [1] CRAN (R 4.5.0)
@@ -44,13 +43,10 @@
  magrittr       2.0.5   2026-04-04 [1] CRAN (R 4.5.2)
  metacheck    * 0.2.1   2026-08-18 [1] Github (scienceverse/metacheck@eff145a)
  otel           0.2.0   2025-08-29 [1] CRAN (R 4.5.0)
- pak            0.11.1  2026-07-22 [1] CRAN (R 4.5.2)
  pillar         1.11.1  2025-09-17 [1] CRAN (R 4.5.0)
  pkgconfig      2.0.3   2019-09-22 [1] CRAN (R 4.5.0)
  prettyunits    1.2.0   2023-09-24 [1] CRAN (R 4.5.0)
- processx       3.9.0   2026-04-22 [1] CRAN (R 4.5.2)
  progress       1.2.3   2023-12-06 [1] CRAN (R 4.5.0)
- ps             1.9.3   2026-04-20 [1] CRAN (R 4.5.2)
  purrr        * 1.2.2   2026-04-10 [1] CRAN (R 4.5.2)
  R6             2.6.1   2025-02-15 [1] CRAN (R 4.5.0)
  rappdirs       0.3.4   2026-01-17 [1] CRAN (R 4.5.2)
