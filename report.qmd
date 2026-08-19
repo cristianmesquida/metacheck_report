@@ -48,7 +48,7 @@ Finally, the reference modules can identify inconsistencies in reference informa
 
 The current functionality therefore aligns particularly well with the types of feedback that supervisors identified as potentially automatable: checks based on explicit reporting conventions, common statistical practices, citation and reference information, and other relatively well-defined criteria. At the same time, the survey highlighted several areas that are less suitable for automation, such as evaluating the overall quality of a thesis, judging methodological choices, assessing the substantive contribution of the research, or providing highly context-dependent feedback on its storyline. Metacheck does not attempt to replace this type of supervision. Instead, its role is to identify potential issues that can be checked systematically, allowing students to address more routine problems themselves and enabling supervisors to focus their time on feedback that requires expertise, context, and critical judgment.
 
-Metacheck can apply multiple modules to a single research output and combine their results into a single report, allowing a thesis and its associated research outputs to be screened across several dimensions at once. This makes it possible to use Metacheck as a first layer of quality control before a supervisor reviews the work in detail. Metacheck can also apply the same set of modules to multiple research outputs simultaneously, allowing supervisors to screen several master's theses in a single analysis. 
+Metacheck can apply multiple modules to a single research output and combine their results into a single report, allowing a thesis and its associated research outputs to be screened across several dimensions at once. This makes it possible to use Metacheck as a first layer of quality control before a supervisor reviews the work in detail. Metacheck can also apply the same set of modules to multiple research outputs simultaneously, allowing supervisors to screen several master's theses in a single analysis.
 
 Finally, Metacheck does not use LLMs by default, but some modules can optionally use LLMs to extract and classify information from text. This can be useful for tasks such as classifying power analyses or extracting information from power analyses statements.
 
@@ -58,14 +58,13 @@ To illustrate how Metacheck can be applied to master’s theses, we applied sele
 
 The report was written in Quarto using R, including the `metacheck`, `tidyverse` and `kableExtra` packages. All materials, generated data and code required to reproduce this report can be found in the [project's Github repository](https://github.com/cristianmesquida/metacheck_report).
 
-
 ```{r}
 #| echo: FALSE
 #| message: FALSE
 #| warning: FALSE
 
 # Install the development version of metacheck
-pak::pkg_install("scienceverse/metacheck@dev")
+# pak::pkg_install("scienceverse/metacheck@dev")
 
 # Load packages
 library(metacheck)
@@ -325,7 +324,7 @@ repo_check$summary_table |>
   kable()
 ```
 
-The module also detects naming issues in repository files, such as spaces in file names, which can cause problems when sharing code and data. To illustrate some of the issues that can be detected in file naming, we use Thesis 4, for which the module detected naming issues, as shown in @tbl-repo_check_summary. 
+The module also detects naming issues in repository files, such as spaces in file names, which can cause problems when sharing code and data. To illustrate some of the issues that can be detected in file naming, we use Thesis 4, for which the module detected naming issues, as shown in @tbl-repo_check_summary.
 
 @tbl-repo_check_naming shows the first five naming issues detected by the module in Thesis 4, along with the type of issue and an explanation of each issue.
 
@@ -386,14 +385,14 @@ To assess the completeness of power analysis reporting, we rely on an LLM to ext
 #| eval: FALSE
 #| echo: FALSE
 
-# TODO CM: When running the below code I get an error that my API is invalid. I have it in my r environment and have used it before so not sure what is triggering the error.
+# TODO CM: When running the below code I get the error that the model does not exists. The model `llama-3.1-8b-instant` does not exist or you do not have access to it. Provider says: The model `llama-3.1-8b-instant` does not exist or you do not have access to it.
 
 # Enables LLM support
 llm_use(TRUE)
 
 # Specify model
-llm_model("ollama/qwen3.5:latest") 
-llm_list()
+llm_model("groq") 
+llm_model_list()
 
 # Run power module with LLM support
 res_llm_power <- module_run(theses, "power")
