@@ -1,12 +1,93 @@
 ---
-title: "Supporting Master’s Students and Supervisors with Metacheck — Project Report"
+title: "Supporting Master's Students and Supervisors with Metacheck"
+subtitle: "Project Report"
 author:
   - name: "Daniël Lakens"
   - name: "Raphael Merz"
   - name: "Cristian Mesquida"
-format: html
-toc: true
-toc-depth: 3
+date: today
+date-format: "MMMM YYYY"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+  pdf:
+    documentclass: scrreprt
+    classoption:
+      - oneside
+    papersize: a4
+    geometry:
+      - margin=2.5cm
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    pdf-engine: lualatex
+    mainfont: "Source Sans Pro"
+    sansfont: "Lato"
+    monofont: "Fira Mono"
+    fontsize: 10.5pt
+    linkcolor: "reportred"
+    urlcolor: "reportred"
+    citecolor: "reportred"
+    toccolor: "reportdark"
+    include-in-header:
+      text: |
+        \usepackage{graphicx}
+        \usepackage{fancyhdr}
+        \usepackage{xcolor}
+        \usepackage{eso-pic}
+        % Suppress Pandoc's automatic \maketitle page -- replaced by the
+        % custom styled title page below (include-before-body)
+        \AtBeginDocument{\let\maketitle\relax}
+        \definecolor{reportred}{HTML}{C6001E}
+        \definecolor{reportdark}{HTML}{1A1A1A}
+        \definecolor{reportgrey}{HTML}{6E6E6E}
+        % Section/heading styling
+        \addtokomafont{disposition}{\sffamily}
+        \addtokomafont{chapter}{\color{reportdark}}
+        \addtokomafont{section}{\color{reportred}}
+        \addtokomafont{subsection}{\color{reportdark}}
+        \RedeclareSectionCommand[
+          beforeskip=1.5\baselineskip,
+          afterskip=0.5\baselineskip
+        ]{chapter}
+        % Header/footer
+        \pagestyle{fancy}
+        \fancyhf{}
+        \renewcommand{\headrulewidth}{0.4pt}
+        \renewcommand{\headrule}{\hbox to\headwidth{\color{reportred}\leaders\hrule height \headrulewidth\hfill}}
+        \fancyhead[L]{\small\sffamily\color{reportgrey} Metacheck Project Report}
+        \fancyhead[R]{\small\sffamily\color{reportgrey} \leftmark}
+        \fancyfoot[C]{\small\sffamily\color{reportgrey} \thepage}
+        \fancypagestyle{plain}{
+          \fancyhf{}
+          \fancyfoot[C]{\small\sffamily\color{reportgrey} \thepage}
+          \renewcommand{\headrulewidth}{0pt}
+        }
+        \usepackage{booktabs}
+    include-before-body:
+      text: |
+        \begin{titlepage}
+          \newgeometry{margin=2.5cm}
+          \AddToShipoutPictureBG*{%
+            \AtPageUpperLeft{%
+              \color{reportred}\rule[-1cm]{\paperwidth}{1cm}%
+            }
+          }
+          \begin{center}
+            \vspace*{2cm}
+            \includegraphics[width=4cm]{metacheck_logo.png}\\[1.5cm]
+            {\sffamily\color{reportgrey}\large Eindhoven University of Technology}\\[0.3cm]
+            {\sffamily\color{reportgrey}\normalsize Department of Industrial Engineering \& Innovation Sciences}\\[2.5cm]
+            {\sffamily\bfseries\color{reportdark}\Huge Supporting Master's Students\\[0.3cm] and Supervisors with Metacheck}\\[1cm]
+            {\sffamily\color{reportred}\Large Project Report}\\[3cm]
+            {\sffamily\color{reportdark}\large Daniël Lakens \quad Raphael Merz \quad Cristian Mesquida}\\[0.5cm]
+            {\sffamily\color{reportgrey}\normalsize \today}
+          \end{center}
+          \vfill
+          \restoregeometry
+        \end{titlepage}
 editor: visual
 ---
 
@@ -20,7 +101,7 @@ To better understand which aspects of thesis supervision could benefit from auto
 
 # Survey of IE&IS Supervisors
 
-The survey was shared in November 2025 with all IE&IS staff members involved in the supervision of master’s theses, with 22 participating. The survey consisted of four open-ended questions addressing (1) the most common types of feedback supervisors provide to master’s students on their theses, (2) which aspects of this feedback they believe could be (partially) automated, (3) which aspects they believe should not be automated, and (4) whether they or their students follow specific reporting guidelines, such as APA. The full survey can be found in [Appendix A](#sec-survey)
+The survey was shared in November 2025 with all IE&IS staff members involved in the supervision of master’s theses, with 22 participating. The survey consisted of five open-ended questions addressing (1) the most common types of feedback supervisors provide to master’s students on their theses, (2) which aspects of this feedback they believe could be (partially) automated, (3) which aspects they believe should not be automated, (4) whether they or their students follow specific reporting guidelines, such as APA, and (5) any other feedback they wished to share. The full survey can be found in [Appendix A](#sec-survey)
 
 ## Survey Results
 
@@ -74,6 +155,7 @@ Although the analyses in this report were conducted the R `metacheck` package, t
 library(metacheck)
 library(tidyverse)
 library(kableExtra)
+
 ```
 
 ```{r}
@@ -179,7 +261,7 @@ The `marginal` module lists sentences describing an effect as “marginally sign
 marginal <- module_run(theses, "marginal")
 ```
 
-> **Marginal Significance:** You described 5 effect with terms related to 'marginally significant' If *p* values above 0.05 are interpreted as an effect, you inflate the alpha level, and increase the Type 1 error rate. If a *p* value is higher than the prespecified alpha level, it should be interpreted as a non-significant result.
+> **Marginal Significance:** You described 3 effects with terms related to 'marginally significant' in the Results section. If *p* values above 0.05 are interpreted as an effect, you inflate the alpha level, and increase the Type 1 error rate. If a *p* value is higher than the prespecified alpha level, it should be interpreted as a non-significant result.
 
 @tbl-marginal shows the *p*-values that were detected as being interpreted as “marginally significant” across the ten theses in the Results section.
 
@@ -215,7 +297,7 @@ effect_size <- module_run(theses, "stat_effect_size")
 
 > **Effect Sizes in t-tests and F-tests**: We found 26 t-tests and/or F-tests where effect sizes are not reported. Check these tests in the table below, and consider adding effect sizes
 
-@tbl-stat_effect_size shows the statistical tests detected by the module in Thesis 1, including the extracted test, the effect size and text from which it was extracted. For all five statistical tests, no standardized effect size was reported as indicated by the `NA` values in the `es` column.
+@tbl-stat_effect_size shows the statistical tests detected by the module in Thesis 1, including the extracted test, the effect size and text from which it was extracted. For all four statistical tests, no standardized effect size was reported as indicated by the `NA` values in the `es` column.
 
 ```{r}
 #| echo: FALSE
@@ -330,7 +412,7 @@ repo_check$summary_table |>
 
 The module also detects naming issues in repository files, such as spaces in file names, which can cause problems when sharing code and data. To illustrate some of the issues that can be detected in file naming, we use Thesis 4, for which the module detected naming issues, as shown in @tbl-repo_check_summary.
 
-@tbl-repo_check_naming shows the first five naming issues detected by the module in Thesis 4, along with the type of issue and an explanation of each issue.
+@tbl-repo_check_naming shows the first five naming issues detected by the module in Thesis 4, along with the type of issue and an explanation of each issue. Note that `repo_check` queries the repository live, so its results reflect the repository's contents at the time the report was rendered rather than at the time it was written: at the time we first checked the repository, it contained 26 naming issues (as reported in @tbl-repo_check_summary above); since then, the repository has changed, and it now contains 32.
 
 ```{r}
 #| echo: FALSE
@@ -385,11 +467,11 @@ power$table |>
 
 To assess the completeness of power analysis reporting, we use an LLM to extract and classify information from reported power analysis statements. The LLM is also used to identify potential power analysis statements that do not contain terms such as “a priori”, “sensitivity”, or “post-hoc”. When enabled, the module processes each power analysis statement and extracts structured information, including the statistical test, planned sample size, alpha level, desired power, and effect size. This information is then used to assess whether the power analysis is fully reported.
 
-The LLM functionality can be enabled using `llm_use(TRUE)`. For this report, we used the local Ollama model `qwen2.5:3b`, specified with `llm_model("ollama/qwen2.5:3b")` after downloading the model. For further information on how to run a model locally, see the [Metacheck documentation](https://www.scienceverse.org/metacheck_book/). To demonstrate the LLM functionality of the `power` module, we applied it to Thesis 1, which reported a power analysis as shown in @tbl-power.
+The LLM functionality can be enabled using `llm_use(TRUE)`. The model is set with `llm_model()`; calling it with no argument returns the current default (`"groq"`), and passing a model name such as `llm_model("groq/openai/gpt-oss-120b")` changes it. We initially used the small local Ollama model `qwen2.5:3b`, but it misclassified the power analysis in Thesis 1 as post-hoc rather than a priori and failed to detect the reported sample size. We therefore used the larger `openai/gpt-oss-120b` model hosted on [Groq](https://console.groq.com). Using Groq requires a free API key, which should be stored as `GROQ_API_KEY` in the `.Renviron` file. For further information on how to run a model locally or through Groq, see the [Metacheck documentation](https://www.scienceverse.org/metacheck_book/).
 
-@tbl-power_llm shows the components extracted and classified by the LLM. It also includes the `complete` table which represents whether all components of the power analysis were reported. In this example, the LLM failed to detect the sample size of 25 reported in the power analysis statement and incorrectly classified the effect size of 0.5 as unstandardized. However, it correctly detected the effect size, desired power, and software, as well as identifying missing information such as the statistical test and alpha level. Although the LLM can be useful for assessing the completeness of power analyses, users should always verify the results before drawing conclusions.
+While testing this with Groq, we ran into a schema bug affecting optional fields (e.g., `software`, `alpha_level`) that are genuinely not mentioned in the source text. Replacing the module's enum-constrained optional fields with a plain nullable string listing the same allowed values in its description avoided the bug; @tbl-power_llm below uses this workaround. This has been reported upstream to the `metacheck` maintainers.
 
-<!-- TODO CM & DL: The LLM did not do very well. Shall we try a more powerful module? Should we also say anything about classifying the power analysis as posthoc?-->
+@tbl-power_llm shows the components extracted and classified by the LLM for all three power analysis statements shown in @tbl-power, including the `complete` column, which represents whether all components of the power analysis were reported. For Thesis 1, the model correctly classified the power analysis as a priori and correctly detected the sample size, desired power, effect size, and software (`Superpower`), while correctly leaving the statistical test and alpha level missing, since neither was reported in the text. It reported the effect size as a standardized Cohen's *d* (0.5 / 1.53 = 0.33), computed from the raw mean difference and standard deviation given in the text, rather than the unstandardized value of 0.5 as reported by the thesis. For Thesis 6, the model correctly split the paragraph into its two separate power analyses (a Wilcoxon signed-rank test and a repeated-measures ANOVA), correctly extracted both sample sizes, alpha levels, and effect sizes, and correctly left `software` missing, since none was named in the text. None of the three statements had every field reported, so `complete` is `FALSE` throughout — reflecting incompletely reported power analyses in the underlying theses rather than an extraction failure. As with any LLM-based extraction, users should always verify the results before drawing conclusions.
 
 ```{r}
 #| eval: FALSE
@@ -398,11 +480,81 @@ The LLM functionality can be enabled using `llm_use(TRUE)`. For this report, we 
 # Enables LLM support
 llm_use(TRUE)
 
-# Specify model
-llm_model("ollama/qwen2.5:3b") 
+# Specify model (Groq requires a GROQ_API_KEY in .Renviron)
+llm_model("groq/openai/gpt-oss-120b")
 
-# Run power module with LLM support
-res_llm_power <- module_run(theses, "power")
+# The power module's built-in schema marks optional fields with
+# ellmer::type_enum(..., required = FALSE), which currently causes Groq to
+# either 400 or fabricate a value when the field is genuinely absent from the
+# text. This locally patched schema replaces the affected enum fields with
+# plain nullable strings (valid values listed in the
+# description instead of enforced by the schema) as a working workaround.
+power_type_spec_fixed <- function() {
+  ellmer::type_object(
+    power_analyses = ellmer::type_array(
+      description = "Power analyses found in the text. Empty array if none.",
+      ellmer::type_object(
+        power_type = ellmer::type_enum(
+          c("apriori", "sensitivity", "posthoc", "unknown"),
+          description = "The type of power analysis. Apriori calculates the required sample size to achieve a desired power given an effect size, statistical test, and alpha level. Sensitivity estimates, given a sample size, which effect sizes a design has sufficient power to detect. Posthoc (observed/retrospective power) computes achieved power for an empirically observed effect size. Use unknown if a power analysis is present but its type cannot be determined."
+        ),
+        statistical_test = ellmer::type_string(
+          "The statistical test used, e.g. paired t-test, unpaired t-test, one-sample t-test, 1-way ANOVA, 2-way ANOVA, 3-way ANOVA, MANOVA, regression, chi-square, correlation, or other. Use null if unclear.",
+          required = FALSE
+        ),
+        sample_size = ellmer::type_number(
+          "The sample size determined by or used in the power analysis. Give the total number if this is expressed as number per group.",
+          required = FALSE
+        ),
+        alpha_level = ellmer::type_number(
+          "The alpha threshold used to determine significance.",
+          required = FALSE
+        ),
+        power = ellmer::type_number(
+          "The statistical power, expressed as a number between 0 and 1.",
+          required = FALSE
+        ),
+        effect_size = ellmer::type_number(
+          "The numeric effect size used in or determined from the power analysis.",
+          required = FALSE
+        ),
+        effect_size_metric = ellmer::type_string(
+          "The effect size metric, e.g. Cohen's d, Hedges' g, Cohen's f, partial eta squared, eta squared, unstandardised, or other. Use unstandardised for raw/non-standardized effects.",
+          required = FALSE
+        ),
+        software = ellmer::type_string(
+          "The software used to conduct the power analysis, e.g. G*Power, Superpower, Pangea, Morepower, PASS, pwr, simr, PowerUpR, simulation, InteractionPoweR, pwrss, or other. Use null if not mentioned.",
+          required = FALSE
+        )
+      )
+    )
+  )
+}
+
+# Get the candidate power-analysis paragraphs the same way the module does
+llm_use(FALSE)
+candidates <- module_run(theses, "power")$table |> select(paper_id, text)
+llm_use(TRUE)
+
+# Extract with the patched schema
+res <- llm(
+  text = candidates,
+  system_prompt = "Identify power analyses from excerpts of scientific manuscripts. Use null/omit a field when information is missing, do not invent values. Only use the literal word 'other' if a value not in the enumerated options can be identified; otherwise use null.",
+  type = power_type_spec_fixed(),
+  text_col = "text",
+  model = llm_model(),
+  params = list(seed = 42)
+)
+
+# Clean up column names and drop rows with no power analysis detected
+names(res) <- sub("^power_analyses\\.", "", names(res))
+llm_cols <- c("power_type", "statistical_test", "sample_size", "alpha_level",
+              "power", "effect_size", "effect_size_metric", "software")
+res_llm_power <- res |>
+  filter(!is.na(power_type)) |>
+  mutate(complete = !apply(
+    select(pick(everything()), any_of(llm_cols)), 1, function(row) any(is.na(row))
+  ))
 
 # Save results for efficiency
 saveRDS(res_llm_power, "results/res_llm_power.RDS")
@@ -417,22 +569,24 @@ saveRDS(res_llm_power, "results/res_llm_power.RDS")
 res_llm_power <- readRDS("results/res_llm_power.RDS")
 
 # Display results as a table
-res_llm_power$table[4, ] |> 
+res_llm_power |>
   select(
-    text, 
-    power_type, 
-    statistical_test, 
-    sample_size, 
-    alpha_level, 
-    power, 
-    effect_size, 
-    effect_size_metric, 
-    software, 
+    paper_id,
+    power_type,
+    statistical_test,
+    sample_size,
+    alpha_level,
+    power,
+    effect_size,
+    effect_size_metric,
+    software,
     complete
-    ) |> 
-kable() |> 
-  column_spec(1, width = "3cm") |> 
-  column_spec(2:10, width = "1cm")
+    ) |>
+kable(col.names = c(
+    "paper_id", "power_type", "stat_test", "n", "alpha", "power",
+    "es", "es_metric", "software", "complete"
+  )) |>
+  column_spec(1:10, width = "1cm")
 ```
 
 ## `ref_pubpeer` module
@@ -456,10 +610,10 @@ pubpeer$table |>
     total_comments, 
     url
     ) |> 
-  head(3) |> 
-  kable() |> 
-  column_spec(1, width = "3cm") |> 
-  column_spec(2, width = "3cm") |> 
+  head(6) |>
+  kable() |>
+  column_spec(1, width = "3cm") |>
+  column_spec(2, width = "3cm") |>
   column_spec(3, width = "8cm")
 ```
 
@@ -469,6 +623,7 @@ Overall, these examples illustrate how Metacheck can be used to identify potenti
 
 ```{r}
 #| echo: FALSE
+#| warning: FALSE
 
 # Create a text file with session information
 capture.output(

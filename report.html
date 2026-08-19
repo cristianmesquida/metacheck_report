@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,7 +10,7 @@
 <meta name="author" content="Raphael Merz">
 <meta name="author" content="Cristian Mesquida">
 
-<title>Supporting Master’s Students and Supervisors with Metacheck — Project Report</title>
+<title>Supporting Master’s Students and Supervisors with Metacheck</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,12 +36,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="report_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="report_files/libs/quarto-html/anchor.min.js"></script>
 <link href="report_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="report_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="report_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="report_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="report_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="report_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="report_files/libs/kePrint-0.0.1/kePrint.js"></script>
+
 <link href="report_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -103,13 +105,14 @@ window.Quarto = {
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#sec-survey" id="toc-sec-survey" class="nav-link" data-scroll-target="#sec-survey">Appendix A</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="report.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Supporting Master’s Students and Supervisors with Metacheck — Project Report</h1>
+<h1 class="title">Supporting Master’s Students and Supervisors with Metacheck</h1>
+<p class="subtitle lead">Project Report</p>
 </div>
 
 
@@ -125,6 +128,12 @@ window.Quarto = {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -142,7 +151,7 @@ window.Quarto = {
 </section>
 <section id="survey-of-ieis-supervisors" class="level1">
 <h1>Survey of IE&amp;IS Supervisors</h1>
-<p>The survey was shared in November 2025 with all IE&amp;IS staff members involved in the supervision of master’s theses, with 22 participating. The survey consisted of four open-ended questions addressing (1) the most common types of feedback supervisors provide to master’s students on their theses, (2) which aspects of this feedback they believe could be (partially) automated, (3) which aspects they believe should not be automated, and (4) whether they or their students follow specific reporting guidelines, such as APA. The full survey can be found in <a href="#sec-survey">Appendix A</a></p>
+<p>The survey was shared in November 2025 with all IE&amp;IS staff members involved in the supervision of master’s theses, with 22 participating. The survey consisted of five open-ended questions addressing (1) the most common types of feedback supervisors provide to master’s students on their theses, (2) which aspects of this feedback they believe could be (partially) automated, (3) which aspects they believe should not be automated, (4) whether they or their students follow specific reporting guidelines, such as APA, and (5) any other feedback they wished to share. The full survey can be found in <a href="#sec-survey">Appendix A</a></p>
 <section id="survey-results" class="level2">
 <h2 class="anchored" data-anchor-id="survey-results">Survey Results</h2>
 <p>The survey results indicate that supervisors provide feedback on a broad range of aspects of thesis quality, including both formal presentation and substantive content. Commonly mentioned issues included the coherence and narrative flow of the thesis, the connection between literature and the current study, the formulation and derivation of research questions and hypotheses, and the justification of methodological choices. Supervisors also frequently commented on formatting and structure, the quality of literature summaries and discussions, and citation and reference issues. Statistical reporting was another recurring area of feedback, including checking test assumptions, conducting and reporting power analyses, and providing complete information such as test statistics, degrees of freedom, and exact <em>p</em>-values.</p>
@@ -272,7 +281,7 @@ Table&nbsp;2: Non-significant <em>p</em>-values detected by the <code>stat_p_non
 <h2 class="anchored" data-anchor-id="marginal-module"><code>marginal</code> module</h2>
 <p>The <code>marginal</code> module lists sentences describing an effect as “marginally significant” (or a related phrase). Describing a non-significant result as “marginally significant”, “approaching significance”, or “trending toward significance” is a common way to misinterpret a non-significant <em>p</em>-value. The module detects these sentences so the reader can judge each case in context.</p>
 <blockquote class="blockquote">
-<p><strong>Marginal Significance:</strong> You described 5 effect with terms related to ‘marginally significant’ If <em>p</em> values above 0.05 are interpreted as an effect, you inflate the alpha level, and increase the Type 1 error rate. If a <em>p</em> value is higher than the prespecified alpha level, it should be interpreted as a non-significant result.</p>
+<p><strong>Marginal Significance:</strong> You described 3 effects with terms related to ‘marginally significant’ in the Results section. If <em>p</em> values above 0.05 are interpreted as an effect, you inflate the alpha level, and increase the Type 1 error rate. If a <em>p</em> value is higher than the prespecified alpha level, it should be interpreted as a non-significant result.</p>
 </blockquote>
 <p><a href="#tbl-marginal" class="quarto-xref">Table&nbsp;3</a> shows the <em>p</em>-values that were detected as being interpreted as “marginally significant” across the ten theses in the Results section.</p>
 <div class="cell">
@@ -318,7 +327,7 @@ Table&nbsp;3: <em>P</em>-values detected as being interpreted as marginally sign
 <blockquote class="blockquote">
 <p><strong>Effect Sizes in t-tests and F-tests</strong>: We found 26 t-tests and/or F-tests where effect sizes are not reported. Check these tests in the table below, and consider adding effect sizes</p>
 </blockquote>
-<p><a href="#tbl-stat_effect_size" class="quarto-xref">Table&nbsp;4</a> shows the statistical tests detected by the module in Thesis 1, including the extracted test, the effect size and text from which it was extracted. For all five statistical tests, no standardized effect size was reported as indicated by the <code>NA</code> values in the <code>es</code> column.</p>
+<p><a href="#tbl-stat_effect_size" class="quarto-xref">Table&nbsp;4</a> shows the statistical tests detected by the module in Thesis 1, including the extracted test, the effect size and text from which it was extracted. For all four statistical tests, no standardized effect size was reported as indicated by the <code>NA</code> values in the <code>es</code> column.</p>
 <div class="cell">
 <div id="tbl-stat_effect_size" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -598,7 +607,7 @@ Table&nbsp;7: Summary of the <code>repo_check</code> module
 </div>
 </div>
 <p>The module also detects naming issues in repository files, such as spaces in file names, which can cause problems when sharing code and data. To illustrate some of the issues that can be detected in file naming, we use Thesis 4, for which the module detected naming issues, as shown in <a href="#tbl-repo_check_summary" class="quarto-xref">Table&nbsp;7</a>.</p>
-<p><a href="#tbl-repo_check_naming" class="quarto-xref">Table&nbsp;8</a> shows the first five naming issues detected by the module in Thesis 4, along with the type of issue and an explanation of each issue.</p>
+<p><a href="#tbl-repo_check_naming" class="quarto-xref">Table&nbsp;8</a> shows the first five naming issues detected by the module in Thesis 4, along with the type of issue and an explanation of each issue. Note that <code>repo_check</code> queries the repository live, so its results reflect the repository’s contents at the time the report was rendered rather than at the time it was written: at the time we first checked the repository, it contained 26 naming issues (as reported in <a href="#tbl-repo_check_summary" class="quarto-xref">Table&nbsp;7</a> above); since then, the repository has changed, and it now contains 32.</p>
 <div class="cell">
 <div id="tbl-repo_check_naming" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -693,9 +702,9 @@ Table&nbsp;9: Power analyses detected by the <code>power</code> module
 </div>
 </div>
 <p>To assess the completeness of power analysis reporting, we use an LLM to extract and classify information from reported power analysis statements. The LLM is also used to identify potential power analysis statements that do not contain terms such as “a priori”, “sensitivity”, or “post-hoc”. When enabled, the module processes each power analysis statement and extracts structured information, including the statistical test, planned sample size, alpha level, desired power, and effect size. This information is then used to assess whether the power analysis is fully reported.</p>
-<p>The LLM functionality can be enabled using <code>llm_use(TRUE)</code>. For this report, we used the local Ollama model <code>qwen2.5:3b</code>, specified with <code>llm_model("ollama/qwen2.5:3b")</code> after downloading the model. For further information on how to run a model locally, see the <a href="https://www.scienceverse.org/metacheck_book/">Metacheck documentation</a>. To demonstrate the LLM functionality of the <code>power</code> module, we applied it to Thesis 1, which reported a power analysis as shown in <a href="#tbl-power" class="quarto-xref">Table&nbsp;9</a>.</p>
-<p><a href="#tbl-power_llm" class="quarto-xref">Table&nbsp;10</a> shows the components extracted and classified by the LLM. It also includes the <code>complete</code> table which represents whether all components of the power analysis were reported. In this example, the LLM failed to detect the sample size of 25 reported in the power analysis statement and incorrectly classified the effect size of 0.5 as unstandardized. However, it correctly detected the effect size, desired power, and software, as well as identifying missing information such as the statistical test and alpha level. Although the LLM can be useful for assessing the completeness of power analyses, users should always verify the results before drawing conclusions.</p>
-<!-- TODO CM & DL: The LLM did not do very well. Shall we try a more powerful module? Should we also say anything about classifying the power analysis as posthoc?-->
+<p>The LLM functionality can be enabled using <code>llm_use(TRUE)</code>. The model is set with <code>llm_model()</code>; calling it with no argument returns the current default (<code>"groq"</code>), and passing a model name such as <code>llm_model("groq/openai/gpt-oss-120b")</code> changes it. We initially used the small local Ollama model <code>qwen2.5:3b</code>, but it misclassified the power analysis in Thesis 1 as post-hoc rather than a priori and failed to detect the reported sample size. We therefore used the larger <code>openai/gpt-oss-120b</code> model hosted on <a href="https://console.groq.com">Groq</a>. Using Groq requires a free API key, which should be stored as <code>GROQ_API_KEY</code> in the <code>.Renviron</code> file. For further information on how to run a model locally or through Groq, see the <a href="https://www.scienceverse.org/metacheck_book/">Metacheck documentation</a>.</p>
+<p>While testing this with Groq, we ran into a schema bug affecting optional fields (e.g., <code>software</code>, <code>alpha_level</code>) that are genuinely not mentioned in the source text. Replacing the module’s enum-constrained optional fields with a plain nullable string listing the same allowed values in its description avoided the bug; <a href="#tbl-power_llm" class="quarto-xref">Table&nbsp;10</a> below uses this workaround. This has been reported upstream to the <code>metacheck</code> maintainers.</p>
+<p><a href="#tbl-power_llm" class="quarto-xref">Table&nbsp;10</a> shows the components extracted and classified by the LLM for all three power analysis statements shown in <a href="#tbl-power" class="quarto-xref">Table&nbsp;9</a>, including the <code>complete</code> column, which represents whether all components of the power analysis were reported. For Thesis 1, the model correctly classified the power analysis as a priori and correctly detected the sample size, desired power, effect size, and software (<code>Superpower</code>), while correctly leaving the statistical test and alpha level missing, since neither was reported in the text. It reported the effect size as a standardized Cohen’s <em>d</em> (0.5 / 1.53 = 0.33), computed from the raw mean difference and standard deviation given in the text, rather than the unstandardized value of 0.5 as reported by the thesis. For Thesis 6, the model correctly split the paragraph into its two separate power analyses (a Wilcoxon signed-rank test and a repeated-measures ANOVA), correctly extracted both sample sizes, alpha levels, and effect sizes, and correctly left <code>software</code> missing, since none was named in the text. None of the three statements had every field reported, so <code>complete</code> is <code>FALSE</code> throughout — reflecting incompletely reported power analyses in the underlying theses rather than an extraction failure. As with any LLM-based extraction, users should always verify the results before drawing conclusions.</p>
 <div class="cell">
 <div id="tbl-power_llm" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -707,27 +716,51 @@ Table&nbsp;10: Classification and completeness of power analyses by the <code>po
 <table class="cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">text</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">paper_id</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">power_type</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">statistical_test</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">sample_size</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">alpha_level</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">stat_test</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">alpha</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">power</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">effect_size</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">effect_size_metric</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">es</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">es_metric</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">software</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">complete</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left; width: 3cm;">The sample size was calculated based on expected differences in the main dependent variable of interest: self-reported trust. A realistic and meaningful difference between any two conditions would be 0.5 points on a 7-point Likert scale and a 1.53 points standard deviation (Brdnik et al., 2025). Using the Superpower package in R, a sample size of 25 is calculated to achieve a power of 90% (see Appendix A). Five extra participants were added to account for unforeseen issues. Therefore, the recruitment goal for this experiment was 30 participants.</td>
-<td style="text-align: left; width: 1cm;">posthoc</td>
+<td style="text-align: left; width: 1cm;">6</td>
+<td style="text-align: left; width: 1cm;">apriori</td>
+<td style="text-align: left; width: 1cm;">Wilcoxon signed-rank test</td>
+<td style="text-align: right; width: 1cm;">17</td>
+<td style="text-align: right; width: 1cm;">0.05</td>
+<td style="text-align: right; width: 1cm;">0.9</td>
+<td style="text-align: right; width: 1cm;">0.88</td>
+<td style="text-align: left; width: 1cm;">Cohen's d</td>
 <td style="text-align: left; width: 1cm;">NA</td>
-<td style="text-align: right; width: 1cm;">NA</td>
+<td style="text-align: left; width: 1cm;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 1cm;">6</td>
+<td style="text-align: left; width: 1cm;">apriori</td>
+<td style="text-align: left; width: 1cm;">repeated-measures ANOVA</td>
+<td style="text-align: right; width: 1cm;">28</td>
+<td style="text-align: right; width: 1cm;">0.05</td>
+<td style="text-align: right; width: 1cm;">0.9</td>
+<td style="text-align: right; width: 1cm;">0.40</td>
+<td style="text-align: left; width: 1cm;">Cohen's f</td>
+<td style="text-align: left; width: 1cm;">NA</td>
+<td style="text-align: left; width: 1cm;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 1cm;">1</td>
+<td style="text-align: left; width: 1cm;">apriori</td>
+<td style="text-align: left; width: 1cm;">NA</td>
+<td style="text-align: right; width: 1cm;">25</td>
 <td style="text-align: right; width: 1cm;">NA</td>
 <td style="text-align: right; width: 1cm;">0.9</td>
-<td style="text-align: right; width: 1cm;">0.5</td>
+<td style="text-align: right; width: 1cm;">NA</td>
 <td style="text-align: left; width: 1cm;">NA</td>
 <td style="text-align: left; width: 1cm;">Superpower</td>
 <td style="text-align: left; width: 1cm;">FALSE</td>
@@ -772,6 +805,21 @@ Table&nbsp;11: PubPeer comments on cited articles detected using the <code>ref_p
 <td style="text-align: left; width: 8cm;">https://pubpeer.com/publications/2A82DBF15C686901A71FD31FA9F880</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left; width: 3cm;">10.1136/bmj.g7015</td>
+<td style="text-align: right; width: 3cm;">1</td>
+<td style="text-align: left; width: 8cm;">https://pubpeer.com/publications/BE2197AED4AB91C2338FF0DA99B962</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">10.1136/bmj.g7015</td>
+<td style="text-align: right; width: 3cm;">1</td>
+<td style="text-align: left; width: 8cm;">https://pubpeer.com/publications/BE2197AED4AB91C2338FF0DA99B962</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">10.1136/bmj.g7015</td>
+<td style="text-align: right; width: 3cm;">1</td>
+<td style="text-align: left; width: 8cm;">https://pubpeer.com/publications/BE2197AED4AB91C2338FF0DA99B962</td>
+</tr>
+<tr class="even">
 <td style="text-align: left; width: 3cm;">10.1136/bmj.g7015</td>
 <td style="text-align: right; width: 3cm;">1</td>
 <td style="text-align: left; width: 8cm;">https://pubpeer.com/publications/BE2197AED4AB91C2338FF0DA99B962</td>
