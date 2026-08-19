@@ -38,7 +38,7 @@ The survey results suggest that automated checks could complement the existing s
 
 Metacheck is well suited to this role because its checks are designed as supporting tools rather than automated evaluations. The output of a module does not constitute a judgment of the overall quality of a thesis. Instead, it highlights a potential issue, provides guidance, and leaves the final interpretation and decision to the user.
 
-Broadly speaking, Metacheck modules can be classified into four categories: **general modules**, **method modules**, **results modules** and **reference modules**. For a detailed description of all modules, readers are referred to the [Metacheck documentation](https://www.scienceverse.org/metacheck_book/). First, the **general modules** check for statements related to Open Science practices, including open and code sharing, conflict of interest, ethics and funding.
+Broadly speaking, Metacheck modules can be classified into four categories: **general modules**, **method modules**, **results modules** and **reference modules**. For a detailed description of all modules, readers are referred to the [Metacheck documentation](https://www.scienceverse.org/metacheck_book/). First, the general modules check for statements related to Open Science practices, including open and code sharing, conflict of interest, ethics and funding.
 
 Second, the method modules check for preregistrations and the presence and reporting of power analyses. That is, if a power analysis is detected, the corresponding module provides feedback on whether the analysis is fully reported.
 
@@ -48,15 +48,19 @@ Finally, the reference modules can identify inconsistencies in reference informa
 
 The current functionality therefore aligns particularly well with the types of feedback that supervisors identified as potentially automatable: checks based on explicit reporting conventions, common statistical practices, citation and reference information, and other relatively well-defined criteria. At the same time, the survey highlighted several areas that are less suitable for automation, such as evaluating the overall quality of a thesis, judging methodological choices, assessing the substantive contribution of the research, or providing highly context-dependent feedback on its storyline. Metacheck does not attempt to replace this type of supervision. Instead, its role is to identify potential issues that can be checked systematically, allowing students to address more routine problems themselves and enabling supervisors to focus their time on feedback that requires expertise, context, and critical judgment.
 
-Metacheck can apply multiple modules to a single research output and combine their results into a single report, allowing a thesis and its associated research outputs to be screened across several dimensions at once. This makes it possible to use Metacheck as a first layer of quality control before a supervisor reviews the work in detail. Metacheck can also apply the same set of modules to multiple research outputs simultaneously, allowing supervisors to screen several master's theses in a single analysis.
+Metacheck can apply multiple modules to a single research output and combine their results into a single report, allowing a thesis and its associated research outputs to be screened across several dimensions at once. This makes it possible to use Metacheck as a first layer of quality control before a supervisor reviews the work in detail. Metacheck can also apply the same set of modules to multiple research outputs simultaneously, allowing supervisors to screen several theses in a single analysis.
 
-Finally, Metacheck does not use LLMs by default, but some modules can optionally use LLMs to extract and classify information from text. This can be useful for tasks such as classifying power analyses or extracting information from power analyses statements.
+Finally, Metacheck does not use LLMs by default, but some modules can optionally use LLMs to extract and classify information from text. This can be useful for tasks like extracting information about power analyses, whose reporting tends to vary considerably due to a lack of established reporting guidelines.
 
 # Applying Metacheck to Master’s Theses
 
 To illustrate how Metacheck can be applied to master’s theses, we applied selected modules from the R package `metacheck` to 10 master’s theses. We first searched the [TU/e library portal](https://research.tue.nl/en/studentTheses/) on 10 August 2026 for master’s theses completed in 2025 within the Human-Technology Interaction (HTI) group, which yielded 55 results. We then used the sample() function in R to randomly select 10 unique integers between 1 and 55, each corresponding to one master’s thesis. The selected theses were subsequently manually downloaded as PDFs from the TU/e library portal.
 
 The report was written in Quarto using R, including the `metacheck`, `tidyverse` and `kableExtra` packages. All materials, generated data and code required to reproduce this report can be found in the [project's Github repository](https://github.com/cristianmesquida/metacheck_report).
+
+::: callout-tip
+Although the analyses in this report were conducted the R `metacheck` package, the most convenient way for supervisors and students to use Metacheck might be through its [Shiny app](https://shiny.ieis.tue.nl/metacheck/) which is hosted on the TU/e servers. Through it, users can run all Metacheck modules at once and generates a user-friendly [report](https://www.scienceverse.org/metacheck/report-example.html) summarizing the results.
+:::
 
 ```{r}
 #| echo: FALSE
@@ -427,7 +431,8 @@ res_llm_power$table[4, ] |>
     complete
     ) |> 
 kable() |> 
-  column_spec(1, width = "5cm")
+  column_spec(1, width = "3cm") |> 
+  column_spec(2:10, width = "1cm")
 ```
 
 ## `ref_pubpeer` module

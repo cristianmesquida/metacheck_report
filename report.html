@@ -155,18 +155,31 @@ window.Quarto = {
 <h1>Using Metacheck</h1>
 <p>The survey results suggest that automated checks could complement the existing supervision process. In particular, when supervisors repeatedly provide similar feedback on statistical reporting, citations and references, and the documentation of research practices, automated checks could allow students to detect and address some of these issues independently.</p>
 <p>Metacheck is well suited to this role because its checks are designed as supporting tools rather than automated evaluations. The output of a module does not constitute a judgment of the overall quality of a thesis. Instead, it highlights a potential issue, provides guidance, and leaves the final interpretation and decision to the user.</p>
-<p>Broadly speaking, Metacheck modules can be classified into four categories: <strong>general modules</strong>, <strong>method modules</strong>, <strong>results modules</strong> and <strong>reference modules</strong>. For a detailed description of all modules, readers are referred to the <a href="https://www.scienceverse.org/metacheck_book/">Metacheck documentation</a>. First, the <strong>general modules</strong> check for statements related to Open Science practices, including open and code sharing, conflict of interest, ethics and funding.</p>
+<p>Broadly speaking, Metacheck modules can be classified into four categories: <strong>general modules</strong>, <strong>method modules</strong>, <strong>results modules</strong> and <strong>reference modules</strong>. For a detailed description of all modules, readers are referred to the <a href="https://www.scienceverse.org/metacheck_book/">Metacheck documentation</a>. First, the general modules check for statements related to Open Science practices, including open and code sharing, conflict of interest, ethics and funding.</p>
 <p>Second, the method modules check for preregistrations and the presence and reporting of power analyses. That is, if a power analysis is detected, the corresponding module provides feedback on whether the analysis is fully reported.</p>
 <p>The results modules currently provide a broad collection of checks covering adherence to reporting guidelines, including the reporting and recomputation of effect sizes and <em>p</em>-values, interpretation of <em>p</em>-values, and best research practices when sharing data and code. Where research outputs are shared in repositories, it can additionally examine the organisation and documentation of data and code, identify potential data-quality and reproducibility problems, and check aspects of compliance with standards for organizing research data.</p>
 <p>Finally, the reference modules can identify inconsistencies in reference information and cross-reference cited literature with databases containing information about retractions, replication attempts, and post-publication peer review (i.e., comments on PubPeer). These checks can be useful to identify potentially problematic references, such as papers for which replication attempts exist but are not cited, or papers with PubPeer comments, which may concern methodological issues.</p>
 <p>The current functionality therefore aligns particularly well with the types of feedback that supervisors identified as potentially automatable: checks based on explicit reporting conventions, common statistical practices, citation and reference information, and other relatively well-defined criteria. At the same time, the survey highlighted several areas that are less suitable for automation, such as evaluating the overall quality of a thesis, judging methodological choices, assessing the substantive contribution of the research, or providing highly context-dependent feedback on its storyline. Metacheck does not attempt to replace this type of supervision. Instead, its role is to identify potential issues that can be checked systematically, allowing students to address more routine problems themselves and enabling supervisors to focus their time on feedback that requires expertise, context, and critical judgment.</p>
-<p>Metacheck can apply multiple modules to a single research output and combine their results into a single report, allowing a thesis and its associated research outputs to be screened across several dimensions at once. This makes it possible to use Metacheck as a first layer of quality control before a supervisor reviews the work in detail. Metacheck can also apply the same set of modules to multiple research outputs simultaneously, allowing supervisors to screen several master’s theses in a single analysis.</p>
-<p>Finally, Metacheck does not use LLMs by default, but some modules can optionally use LLMs to extract and classify information from text. This can be useful for tasks such as classifying power analyses or extracting information from power analyses statements.</p>
+<p>Metacheck can apply multiple modules to a single research output and combine their results into a single report, allowing a thesis and its associated research outputs to be screened across several dimensions at once. This makes it possible to use Metacheck as a first layer of quality control before a supervisor reviews the work in detail. Metacheck can also apply the same set of modules to multiple research outputs simultaneously, allowing supervisors to screen several theses in a single analysis.</p>
+<p>Finally, Metacheck does not use LLMs by default, but some modules can optionally use LLMs to extract and classify information from text. This can be useful for tasks like extracting information about power analyses, whose reporting tends to vary considerably due to a lack of established reporting guidelines.</p>
 </section>
 <section id="applying-metacheck-to-masters-theses" class="level1">
 <h1>Applying Metacheck to Master’s Theses</h1>
 <p>To illustrate how Metacheck can be applied to master’s theses, we applied selected modules from the R package <code>metacheck</code> to 10 master’s theses. We first searched the <a href="https://research.tue.nl/en/studentTheses/">TU/e library portal</a> on 10 August 2026 for master’s theses completed in 2025 within the Human-Technology Interaction (HTI) group, which yielded 55 results. We then used the sample() function in R to randomly select 10 unique integers between 1 and 55, each corresponding to one master’s thesis. The selected theses were subsequently manually downloaded as PDFs from the TU/e library portal.</p>
 <p>The report was written in Quarto using R, including the <code>metacheck</code>, <code>tidyverse</code> and <code>kableExtra</code> packages. All materials, generated data and code required to reproduce this report can be found in the <a href="https://github.com/cristianmesquida/metacheck_report">project’s Github repository</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Although the analyses in this report were conducted the R <code>metacheck</code> package, the most convenient way for supervisors and students to use Metacheck might be through its <a href="https://shiny.ieis.tue.nl/metacheck/">Shiny app</a> which is hosted on the TU/e servers. Through it, users can run all Metacheck modules at once and generates a user-friendly <a href="https://www.scienceverse.org/metacheck/report-example.html">report</a> summarizing the results.</p>
+</div>
+</div>
 <section id="ethics_check-module" class="level2">
 <h2 class="anchored" data-anchor-id="ethics_check-module"><code>ethics_check</code> module</h2>
 <p>The <code>ethics_check</code> module searches a paper for a statement indicating that the research received <strong>ethics approval</strong>, for example from an Institutional Review Board (IRB), a Research Ethics Committee, or an animal-care committee, or that the research was explicitly exempted from or waived of ethics approval. Reporting ethics approval is generally expected for studies involving human or animal participants.</p>
@@ -708,16 +721,16 @@ Table&nbsp;10: Classification and completeness of power analyses by the <code>po
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left; width: 5cm;">The sample size was calculated based on expected differences in the main dependent variable of interest: self-reported trust. A realistic and meaningful difference between any two conditions would be 0.5 points on a 7-point Likert scale and a 1.53 points standard deviation (Brdnik et al., 2025). Using the Superpower package in R, a sample size of 25 is calculated to achieve a power of 90% (see Appendix A). Five extra participants were added to account for unforeseen issues. Therefore, the recruitment goal for this experiment was 30 participants.</td>
-<td style="text-align: left;">posthoc</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">0.9</td>
-<td style="text-align: right;">0.5</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">Superpower</td>
-<td style="text-align: left;">FALSE</td>
+<td style="text-align: left; width: 3cm;">The sample size was calculated based on expected differences in the main dependent variable of interest: self-reported trust. A realistic and meaningful difference between any two conditions would be 0.5 points on a 7-point Likert scale and a 1.53 points standard deviation (Brdnik et al., 2025). Using the Superpower package in R, a sample size of 25 is calculated to achieve a power of 90% (see Appendix A). Five extra participants were added to account for unforeseen issues. Therefore, the recruitment goal for this experiment was 30 participants.</td>
+<td style="text-align: left; width: 1cm;">posthoc</td>
+<td style="text-align: left; width: 1cm;">NA</td>
+<td style="text-align: right; width: 1cm;">NA</td>
+<td style="text-align: right; width: 1cm;">NA</td>
+<td style="text-align: right; width: 1cm;">0.9</td>
+<td style="text-align: right; width: 1cm;">0.5</td>
+<td style="text-align: left; width: 1cm;">NA</td>
+<td style="text-align: left; width: 1cm;">Superpower</td>
+<td style="text-align: left; width: 1cm;">FALSE</td>
 </tr>
 </tbody>
 </table>
